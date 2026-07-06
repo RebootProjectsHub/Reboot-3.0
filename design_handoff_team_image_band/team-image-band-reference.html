@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team image band (5B — quote + rating) — reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FCF2EC;
+    --ink:#4A1220;
+    --body:#7A5A62;
+    --red:#F73A3C;
+    --hairline:#EAD9C9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);font-family:'Hanken Grotesk',sans-serif}
+
+  /* Sits directly under the hero. Outer wrapper is NOT clipped so the doodles
+     can spill past the photo's rounded corners. */
+  .team-band{position:relative;max-width:1360px;margin:0 auto}
+
+  .team-band .photo{width:100%;height:520px;border-radius:28px;overflow:hidden}
+  .team-band .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+  /* Decorative doodle marks — echo the hero's hand-drawn accents.
+     Swap for the brand's real doodle SVGs if available. */
+  .team-band .doodle{position:absolute;line-height:1;pointer-events:none}
+  .team-band .doodle.star{left:-8px;top:-8px;font-size:54px;color:var(--ink)}
+  .team-band .doodle.plus{right:34px;top:10px;font-size:32px;color:var(--red);font-weight:700}
+
+  /* Quote + rating panel overlapping the bottom-left of the photo. */
+  .team-band .panel{
+    position:absolute;left:44px;bottom:44px;max-width:450px;
+    background:var(--cream);border-radius:22px;padding:34px;
+    box-shadow:0 30px 60px -30px rgba(74,18,32,.5);
+  }
+  .team-band .panel .top{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px;
+  }
+  .team-band .panel .stars{color:var(--red);letter-spacing:3px;font-size:18px}
+  .team-band .panel .score{font-size:13px;font-weight:700;color:var(--ink)}
+  .team-band .panel blockquote{
+    font-family:'Source Serif 4',serif;font-size:21px;line-height:1.35;font-weight:500;
+    color:var(--ink);margin:0 0 18px;
+  }
+  .team-band .panel .foot{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding-top:18px;border-top:1px solid var(--hairline);
+  }
+  .team-band .panel .who .name{font-size:14.5px;font-weight:700;color:var(--ink)}
+  .team-band .panel .who .org{font-size:13px;color:var(--body);margin-top:2px}
+  .team-band .panel .link{
+    display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+    color:var(--red);text-decoration:none;font-size:14.5px;font-weight:600;
+    transition:gap .2s;
+  }
+  .team-band .panel .link:hover{gap:14px}
+</style>
+</head>
+<body>
+
+  <section class="team-band">
+    <div class="photo">
+      <img src="team.jpg" alt="reboot-teamet i m&oslash;te">
+    </div>
+
+    <span class="doodle star">&#10035;</span>
+    <span class="doodle plus">+</span>
+
+    <div class="panel">
+      <div class="top">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5,0 p&aring; Google</span>
+      </div>
+      <blockquote>&laquo;Veldig forn&oslash;yde med v&aring;r nye nettside &ndash; anbefales p&aring; det varmeste.&raquo;</blockquote>
+      <div class="foot">
+        <div class="who">
+          <div class="name">Kristine J&oslash;rstad Bock</div>
+          <div class="org">OBOS</div>
+        </div>
+        <a href="/referanser" class="link">Se referanser <span>&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

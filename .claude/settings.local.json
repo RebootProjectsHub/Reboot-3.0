@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/henri/AppData/Local/Temp/claude/C--Users-henri-Claude-Projects-Reboot3/e4b0952b-95ff-4357-95f9-4274c377720a/scratchpad/v0-extract\")",
+      "Bash(unzip -o \"G:/My Drive/Reboot/Downloads/untitled-chat.zip\" -d .)",
+      "Bash(npm -v)",
+      "Bash(pnpm -v)",
+      "PowerShell(winget install --id OpenJS.NodeJS.LTS -e --accept-package-agreements --accept-source-agreements)",
+      "Bash(node -e ' *)",
+      "Bash(find \"C:/Users/henri/AppData/Local/Temp/claude\" -iname \"*paste*\" -o -iname \"*clipboard*\" 2>/dev/null | head -30)",
+      "Bash(find \"C:/Users/henri/AppData/Local/Temp/claude/C--Users-henri-Claude-Projects-Reboot3/e4b0952b-95ff-4357-95f9-4274c377720a\" -type f -newermt \"-30 minutes\" 2>/dev/null | head -30 *)",
+      "Read(//c/Users/henri/**)",
+      "Read(//g/My Drive/Reboot/Downloads/**)",
+      "Bash(cp \"G:/My Drive/Reboot/Downloads/OBOS_Svart_Liggende \\(1\\).svg\" \"C:/Users/henri/Claude/Projects/Reboot3/public/logos/obos.svg\")",
+      "Bash(cp \"G:/My Drive/Reboot/Downloads/Hoegh-EVI-logo_1 \\(2\\).svg\" \"C:/Users/henri/Claude/Projects/Reboot3/public/logos/hoegh-evi.svg\")",
+      "Bash(cp \"G:/My Drive/Reboot/Downloads/Runners-world-logo-2025 \\(2\\).svg\" \"C:/Users/henri/Claude/Projects/Reboot3/public/logos/runners-world.svg\")",
+      "Bash(cp \"G:/My Drive/Reboot/Downloads/Akademikerne-pluss-logo-2025 \\(2\\).svg\" \"C:/Users/henri/Claude/Projects/Reboot3/public/logos/akademikerne-pluss.svg\")",
+      "Bash(powershell -NoProfile -Command \"Get-Process -Id 27232 | Select-Object Id,ProcessName,Path,StartTime\")",
+      "PowerShell(Stop-Process -Id 27232 -Force)",
+      "PowerShell(Get-Process -Id 25684)",
+      "PowerShell(Stop-Process -Id 25684 -Force)",
+      "Bash(powershell -Command \"Stop-Process -Id 6848 -Force\")",
+      "Bash(ls -la \"C:\\\\Users\\\\CL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\F--CL-Claude-Projects-Reboot3\\\\4a11a811-dae0-4bc5-afcc-a65a07666562\\\\scratchpad\" 2>/dev/null; echo \"---\"; find \"C:\\\\Users\\\\CL\\\\AppData\\\\Local\\\\Temp\" -maxdepth 3 -iname \"*.png\" -newermt \"-10 minutes\" 2>/dev/null | head -20; find \"C:\\\\Users\\\\CL\\\\AppData\\\\Local\\\\Temp\" -maxdepth 3 -iname \"*.jpg\" -newermt \"-10 minutes\" 2>/dev/null | head -20)",
+      "Bash(find \"C:\\\\Users\\\\CL\" -maxdepth 6 \\\\\\( -iname \"*.png\" -o -iname \"*.jpg\" \\\\\\) -newermt \"-20 minutes\" 2>/dev/null | grep -v node_modules | head -30)",
+      "Bash(curl -s \"https://use.typekit.net/aah4tvk.css\")",
+      "Bash(cp \"D:/Google Drive/Reboot/Downloads/naf1.png\" \"F:/CL/Claude/Projects/Reboot3/public/naf1.png\" && rm \"F:/CL/Claude/Projects/Reboot3/public/naf1.png - Shortcut.lnk\" && ls -la \"F:/CL/Claude/Projects/Reboot3/public/naf1.png\")",
+      "Bash(powershell -Command \"Stop-Process -Id 2640 -Force\")",
+      "Bash(powershell -Command \"Stop-Process -Id 764 -Force\")"
+    ]
+  }
+}

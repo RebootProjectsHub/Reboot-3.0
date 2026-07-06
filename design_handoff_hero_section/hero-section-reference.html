@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hero Section (1A — centered / editorial) — reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FCF2EC;
+    --ink:#4A1220;
+    --body:#7A5A62;
+    --red:#F73A3C;
+    --red-dark:#DD2A2C;
+    --pill:#F1E0D3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);font-family:'Hanken Grotesk',sans-serif}
+
+  .hero{
+    position:relative;
+    max-width:1360px;
+    margin:0 auto;
+    min-height:700px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:64px 90px 90px;
+    overflow:hidden;
+  }
+
+  /* Ambient hand-drawn doodle accents (echo the brand illustration).
+     Replace with the real doodle SVGs if you have them as separate assets. */
+  .hero .doodle{position:absolute;color:var(--ink);pointer-events:none;line-height:1}
+  .hero .doodle.d1{left:11%;top:19%;font-size:44px;opacity:.45}
+  .hero .doodle.d2{right:14%;top:17%;font-size:30px;color:var(--red);opacity:.8;font-weight:700}
+  .hero .doodle.d3{left:18%;bottom:30%;font-size:38px;opacity:.30}
+  .hero .doodle.d4{right:15%;bottom:33%;font-size:52px;opacity:.35}
+
+  /* Mascot: the reboot net-and-ideas illustration. Swap this box for your
+     <img>/<svg>. Recommended rendered size ~172x172. */
+  .hero .mascot{
+    width:172px;height:172px;border-radius:22px;margin-bottom:26px;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    background:rgba(74,18,32,.04);
+    border:1.5px dashed rgba(74,18,32,.25);
+    color:rgba(74,18,32,.5);
+    font:500 12px/1.4 'Hanken Grotesk',sans-serif;
+  }
+
+  .hero .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:8px 16px;border-radius:999px;background:var(--pill);
+    color:var(--ink);font-size:12.5px;font-weight:700;letter-spacing:.12em;
+    text-transform:uppercase;margin-bottom:26px;
+  }
+
+  .hero h1{
+    font-family:'Source Serif 4',serif;
+    font-size:78px;line-height:1.0;font-weight:600;letter-spacing:-.02em;
+    color:var(--ink);margin:0 0 24px;max-width:900px;text-wrap:balance;
+  }
+
+  .hero .sub{
+    font-size:19px;line-height:1.55;color:var(--body);
+    margin:0 0 34px;max-width:560px;text-wrap:pretty;
+  }
+
+  .hero .actions{display:flex;align-items:center;gap:22px}
+
+  .hero .btn{
+    display:inline-flex;align-items:center;padding:16px 30px;border-radius:999px;
+    background:var(--red);color:#fff;text-decoration:none;font-size:16px;font-weight:600;
+    transition:background .2s, transform .2s;
+  }
+  .hero .btn:hover{background:var(--red-dark);transform:translateY(-2px)}
+
+  .hero .link{
+    display:inline-flex;align-items:center;gap:8px;
+    color:var(--ink);text-decoration:none;font-size:16px;font-weight:600;
+    transition:gap .2s;
+  }
+  .hero .link:hover{gap:14px}
+
+  .hero .logos{
+    position:absolute;bottom:34px;left:0;right:0;
+    display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap;
+    font-size:14.5px;font-weight:600;letter-spacing:.02em;color:var(--ink);opacity:.5;
+  }
+  .hero .logos .dot{opacity:.4}
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <span class="doodle d1">&#10035;</span>
+    <span class="doodle d2">+</span>
+    <span class="doodle d3">&#10022;</span>
+    <span class="doodle d4">&#65374;</span>
+
+    <div class="mascot">reboot-illustrasjon<br>(172&times;172)</div>
+
+    <div class="eyebrow">Digitalt byr&aring; &middot; Nydalen, Oslo</div>
+
+    <h1>Vi elsker &aring; lage nettsider!</h1>
+
+    <p class="sub">Vi er et verdidrevet byr&aring; med lidenskap for teknologi, mennesker og veien mot de gode digitale l&oslash;sningene for v&aring;re kunder.</p>
+
+    <div class="actions">
+      <a href="#" class="btn">Slik kan vi hjelpe deg</a>
+      <a href="#" class="link">Se hva vi jobber med <span>&rarr;</span></a>
+    </div>
+
+    <div class="logos">
+      <span>OBOS</span><span class="dot">&bull;</span>
+      <span>H&ouml;egh Evi</span><span class="dot">&bull;</span>
+      <span>Ditt Apotek</span><span class="dot">&bull;</span>
+      <span>Romerikes R&aring;este</span><span class="dot">&bull;</span>
+      <span>Studio Pietra</span><span class="dot">&bull;</span>
+      <span>Cosmica</span>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services Section — reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FDF6EF;
+    --card:#FAEDE0;
+    --ink:#45101E;
+    --body:#7B5A55;
+    --red:#F3323E;
+    --icon-bg:#F4E1D2;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);font-family:'Hanken Grotesk',sans-serif}
+
+  .services{max-width:1180px;margin:0 auto;padding:72px 64px;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+
+  .service-card{
+    display:flex;flex-direction:column;
+    background:var(--card);
+    border:1.5px solid transparent;
+    border-radius:26px;
+    padding:36px 34px 40px;
+    transition:transform .28s cubic-bezier(.2,.7,.2,1), box-shadow .28s, border-color .28s;
+  }
+  .service-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 26px 46px -26px rgba(69,16,30,.4);
+    border-color:var(--red);
+  }
+
+  .service-card .kicker{
+    font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--red);margin-bottom:14px;
+  }
+  .service-card h3{
+    font-family:'Source Serif 4',serif;
+    font-size:29px;line-height:1.14;font-weight:600;letter-spacing:-.01em;
+    color:var(--ink);margin:0;
+  }
+  .service-card .accent{
+    width:46px;height:4px;border-radius:2px;background:var(--red);margin:18px 0 20px;
+  }
+  .service-card p{
+    font-size:16.5px;line-height:1.6;color:var(--body);margin:0;
+  }
+  .service-card .spacer{flex:1;min-height:28px}
+
+  .service-card .icon{
+    align-self:flex-end;
+    width:54px;height:54px;border-radius:50%;
+    background:var(--icon-bg);color:var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    transition:background .22s, color .22s;
+  }
+  .service-card:hover .icon{background:var(--red);color:#fff}
+</style>
+</head>
+<body>
+
+  <section class="services">
+
+    <article class="service-card">
+      <div class="kicker">Ny nettside &amp; redesign</div>
+      <h3>Vi bygger og fornyer nettsider for bedrifter</h3>
+      <div class="accent"></div>
+      <p>Fra bunnen av eller redesign av eksisterende side &mdash; moderne, raskt og skreddersydd.</p>
+      <div class="spacer"></div>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+      </div>
+    </article>
+
+    <article class="service-card">
+      <div class="kicker">SEO</div>
+      <h3>Bli funnet &mdash; p&aring; Google og i AI-svar</h3>
+      <div class="accent"></div>
+      <p>Vi optimaliserer innholdet ditt for tradisjonelt s&oslash;k og AI-genererte svar fra ChatGPT, Gemini og Claude.</p>
+      <div class="spacer"></div>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+      </div>
+    </article>
+
+    <article class="service-card">
+      <div class="kicker">AI-r&aring;dgivning</div>
+      <h3>Bygget noe med AI? Vi gj&oslash;r det klart for verden.</h3>
+      <div class="accent"></div>
+      <p>Vi hjelper deg fra AI-prototype til ferdig, driftssikker nettside &mdash; pluss AI-synlighetssjekk og automatisering for bedriften din.</p>
+      <div class="spacer"></div>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+      </div>
+    </article>
+
+  </section>
+
+</body>
+</html>
