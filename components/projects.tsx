@@ -35,7 +35,7 @@ export function Projects() {
           </h2>
           <a
             href="#kontakt"
-            className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary"
+            className="hidden w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary md:inline-flex"
           >
             Se flere prosjekter
             <ArrowUpRight className="size-4" />
@@ -90,6 +90,16 @@ export function Projects() {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="mt-8 flex justify-center md:hidden">
+          <a
+            href="#kontakt"
+            className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary"
+          >
+            Se flere prosjekter
+            <ArrowUpRight className="size-4" />
+          </a>
         </div>
       </div>
     </section>

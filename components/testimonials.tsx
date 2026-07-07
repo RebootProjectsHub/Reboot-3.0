@@ -72,11 +72,11 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="no-scrollbar -mx-4 mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:snap-none sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3">
           {testimonials.map((t) => (
             <figure
               key={t.name}
-              className="flex flex-col rounded-[var(--radius)] border border-border bg-card p-7"
+              className="flex w-[85%] shrink-0 snap-center flex-col rounded-[var(--radius)] border border-border bg-card p-7 sm:w-auto sm:shrink sm:snap-align-none"
             >
               <div className="flex" aria-hidden="true">
                 {Array.from({ length: 5 }).map((_, i) => (

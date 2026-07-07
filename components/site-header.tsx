@@ -5,11 +5,10 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
-  { label: "Dette gjør vi", href: "#tjenester" },
+  { label: "Våre tjenester", href: "#tjenester" },
   { label: "Kundecaser", href: "#kundecaser" },
   { label: "Aktuelt", href: "#aktuelt" },
   { label: "Om oss", href: "#om-oss" },
-  { label: "Ta kontakt", href: "#kontakt" },
 ]
 
 export function SiteHeader() {
@@ -50,15 +49,24 @@ export function SiteHeader() {
           </a>
         </div>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="inline-flex size-11 items-center justify-center rounded-full border border-border text-foreground lg:hidden"
-          aria-label={open ? "Lukk meny" : "Åpne meny"}
-          aria-expanded={open}
-        >
-          {open ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
+        <div className="flex items-center gap-3 lg:hidden">
+          <a
+            href="#kontakt"
+            className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary"
+          >
+            Kontakt oss
+          </a>
+
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="inline-flex size-11 shrink-0 items-center justify-center rounded-full border border-border text-foreground"
+            aria-label={open ? "Lukk meny" : "Åpne meny"}
+            aria-expanded={open}
+          >
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
       </div>
 
       {open && (

@@ -43,57 +43,61 @@ function ClientLogo({
   )
 }
 
-export function ClientLogos() {
+/** Small screens only — NAF centered between Oslo City Legesenter and Ditt Apotek, wide logos capped. */
+export function ClientLogosMobile() {
   return (
-    <div className="px-4 sm:px-6 md:absolute md:inset-x-0 md:bottom-[34px] lg:px-10">
-      <div className="mx-auto mt-10 max-w-[1360px] md:mt-0">
-        {/* Small screens: NAF centered between Oslo City Legesenter and Ditt Apotek, wide logos capped */}
-        <div className="md:hidden">
-          <p className="mb-5 text-center font-mono text-xs uppercase tracking-[0.12em] text-foreground/70">
-            Noen av våre kunder
-          </p>
-          <div className="flex flex-col items-center gap-y-5">
-            <div className="grid w-full grid-cols-2 items-center justify-items-center gap-x-8">
-              <ClientLogo client={clients[0]} sizeClassName="h-5 max-w-[120px]" />
-              <ClientLogo client={clients[1]} sizeClassName="h-5 max-w-[120px]" />
-            </div>
+    <div className="px-4 py-10 sm:px-6 md:hidden">
+      <div className="mx-auto max-w-[1360px]">
+        <p className="mb-5 text-center font-mono text-xs uppercase tracking-[0.12em] text-foreground/70">
+          Noen av våre kunder
+        </p>
+        <div className="flex flex-col items-center gap-y-5">
+          <div className="grid w-full grid-cols-2 items-center justify-items-center gap-x-8">
+            <ClientLogo client={clients[0]} sizeClassName="h-5 max-w-[120px]" />
+            <ClientLogo client={clients[1]} sizeClassName="h-5 max-w-[120px]" />
+          </div>
 
-            <div className="flex items-center gap-x-8">
-              <ClientLogo client={clients[2]} sizeClassName="h-5 max-w-[100px]" />
-              <ClientLogo client={clients[3]} sizeClassName="h-7" />
-              <ClientLogo client={clients[4]} sizeClassName="h-5 max-w-[100px]" />
-            </div>
+          <div className="flex items-center gap-x-8">
+            <ClientLogo client={clients[2]} sizeClassName="h-5 max-w-[100px]" />
+            <ClientLogo client={clients[3]} sizeClassName="h-7" />
+            <ClientLogo client={clients[4]} sizeClassName="h-5 max-w-[100px]" />
+          </div>
 
-            <div className="grid w-full grid-cols-2 items-center justify-items-center gap-x-8">
-              <ClientLogo client={clients[5]} sizeClassName="h-5 max-w-[120px]" />
-              <ClientLogo client={clients[6]} sizeClassName="h-5 max-w-[120px]" />
-            </div>
+          <div className="grid w-full grid-cols-2 items-center justify-items-center gap-x-8">
+            <ClientLogo client={clients[5]} sizeClassName="h-5 max-w-[120px]" />
+            <ClientLogo client={clients[6]} sizeClassName="h-5 max-w-[120px]" />
           </div>
         </div>
+      </div>
+    </div>
+  )
+}
 
-        {/* Medium screens and up: all logos in a single row, NAF pinned to true center with even flanking gaps */}
-        <div className="hidden items-center md:flex">
-          <div className="flex flex-1 items-center justify-end gap-x-3 lg:gap-x-6 xl:gap-x-10 2xl:gap-x-12">
-            {clients
-              .filter((client) => client.name !== "NAF")
-              .slice(0, 3)
-              .map((client) => (
-                <ClientLogo key={client.name} client={client} />
-              ))}
-          </div>
+/** Medium screens and up — all logos in a single row overlaid on the hero, NAF pinned to true center with even flanking gaps. */
+export function ClientLogosDesktop() {
+  return (
+    <div className="hidden px-4 sm:px-6 md:absolute md:inset-x-0 md:bottom-[34px] md:block lg:px-10">
+      <div className="mx-auto flex max-w-[1360px] items-center">
+        <div className="flex flex-1 items-center justify-end gap-x-3 lg:gap-x-6 xl:gap-x-10 2xl:gap-x-12">
+          {clients
+            .filter((client) => client.name !== "NAF")
+            .slice(0, 3)
+            .map((client) => (
+              <ClientLogo key={client.name} client={client} />
+            ))}
+        </div>
 
-          <div className="mx-3 flex shrink-0 items-center lg:mx-6 xl:mx-10 2xl:mx-12">
-            <ClientLogo client={clients.find((client) => client.name === "NAF")!} />
-          </div>
+        <div className="mx-3 flex shrink-0 items-center lg:mx-6 xl:mx-10 2xl:mx-12">
+          <ClientLogo client={clients.find((client) => client.name === "NAF")!} />
+        </div>
 
-          <div className="flex flex-1 items-center justify-start gap-x-3 lg:gap-x-6 xl:gap-x-10 2xl:gap-x-12">
-            {clients
-              .filter((client) => client.name !== "NAF")
-              .slice(3)
-              .map((client) => (
-                <ClientLogo key={client.name} client={client} />
-              ))}
-          </div>
+        <div className="flex flex-1 items-center justify-start gap-x-3 lg:gap-x-6 xl:gap-x-10 2xl:gap-x-12">
+          {clients
+            .filter((client) => client.name !== "NAF")
+            .slice(3)
+            .map((client) => (
+              <ClientLogo key={client.name} client={client} />
+            ))}
         </div>
       </div>
     </div>

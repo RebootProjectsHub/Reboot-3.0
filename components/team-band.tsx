@@ -5,7 +5,7 @@ export function TeamBand() {
   return (
     <section className="px-4 py-12 sm:px-6 lg:px-10 lg:py-16">
       <div className="relative mx-auto max-w-[1360px]">
-        <div className="h-[clamp(420px,42vw,620px)] overflow-hidden rounded-[28px]">
+        <div className="aspect-[1966/1002] overflow-hidden rounded-[28px] sm:aspect-auto sm:h-[clamp(420px,42vw,620px)]">
           <Image
             src="/team-band.jpg"
             alt="Reboot-teamet i et møte"
@@ -28,7 +28,7 @@ export function TeamBand() {
           +
         </span>
 
-        <div className="relative mt-6 max-w-[540px] rounded-[22px] bg-background p-[34px] shadow-[0_30px_60px_-30px_rgba(74,18,32,0.5)] md:absolute md:bottom-11 md:left-11 md:mt-0">
+        <div className="relative mt-6 hidden max-w-[540px] rounded-[22px] bg-background p-[34px] shadow-[0_30px_60px_-30px_rgba(74,18,32,0.5)] md:absolute md:bottom-11 md:left-11 md:mt-0 md:block">
           <div className="mb-[18px] flex items-center justify-between gap-4">
             <div className="flex gap-[3px]" aria-hidden="true">
               {Array.from({ length: 5 }).map((_, i) => (
@@ -41,8 +41,8 @@ export function TeamBand() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-mono text-[13px] font-medium text-foreground hover:text-brand"
             >
-              5,0 på Google
-              <ArrowUpRight className="size-3.5" aria-hidden />
+              5.0
+			  {/*<ArrowUpRight className="size-3.5" aria-hidden />*/}
             </a>
           </div>
 

@@ -11,7 +11,7 @@ export function Articles() {
           </h2>
           <a
             href="#aktuelt"
-            className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary"
+            className="hidden w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary md:inline-flex"
           >
             Se flere artikler
             <ArrowUpRight className="size-4" />
@@ -64,6 +64,16 @@ export function Articles() {
             </h3>
             <ArrowUpRight className="mt-6 size-6 text-brand-foreground/80 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           </article>
+        </div>
+
+        <div className="mt-8 flex justify-center md:hidden">
+          <a
+            href="#aktuelt"
+            className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary"
+          >
+            Se flere artikler
+            <ArrowUpRight className="size-4" />
+          </a>
         </div>
       </div>
     </section>

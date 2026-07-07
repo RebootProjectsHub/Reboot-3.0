@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/reboot-design-system-a9b924a4-0a35-4ba3-ae0f-50a7ff840420/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/reboot-design-system-a9b924a4-0a35-4ba3-ae0f-50a7ff840420/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/reboot-design-system-a9b924a4-0a35-4ba3-ae0f-50a7ff840420/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/reboot-design-system-a9b924a4-0a35-4ba3-ae0f-50a7ff840420/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/reboot-design-system-a9b924a4-0a35-4ba3-ae0f-50a7ff840420/components/components.css">
+  <link rel="stylesheet" href="_ds/reboot-design-system-a9b924a4-0a35-4ba3-ae0f-50a7ff840420/styles.css">
+  <script src="_ds/reboot-design-system-a9b924a4-0a35-4ba3-ae0f-50a7ff840420/_ds_bundle.js"></script>
+</helmet>
+
+<div style="background: var(--cream-200); min-height: 100vh;">
+
+  <x-import component-from-global-scope="RebootDesignSystem_a9b924.SiteHeader" hint-size="100%,80px"></x-import>
+
+  <section data-screen-label="Hero" style="position: relative; max-width: 1180px; margin: 0 auto; padding: 64px 90px 0; display: flex; flex-direction: column; align-items: center; text-align: center; overflow: hidden;">
+
+    <span aria-hidden="true" style="position: absolute; left: 6%; top: 6%; font-size: 40px; color: var(--ink-900); opacity: 0.35;">✳</span>
+    <span aria-hidden="true" style="position: absolute; right: 9%; top: 2%; font-size: 26px; color: var(--brand); opacity: 0.8; font-weight: 700;">+</span>
+
+    <x-import component-from-global-scope="RebootDesignSystem_a9b924.Badge" variant="pill" hint-size="auto,36px">Nydalen, Oslo</x-import>
+
+    <h1 style="font-family: var(--font-display); font-size: clamp(40px, 6vw, 68px); font-weight: 600; line-height: 1.05; letter-spacing: var(--tracking-display-tight); color: var(--ink-900); max-width: 760px; margin: 26px 0 22px;">Én partner for alt innen nettsider</h1>
+
+    <p style="font-size: var(--text-body-lg); line-height: var(--leading-body); color: var(--ink-700); max-width: 480px; margin: 0 0 32px;">Moderne nettsider med fokus på synlighet på Google og i AI-søk.</p>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 26px; margin-bottom: 64px;">
+      <x-import component-from-global-scope="RebootDesignSystem_a9b924.Button" variant="primary" size="lg" href="#tjenester" hint-size="auto,50px">Se våre tjenester</x-import>
+
+      <a href="#referanser" aria-label="5,0 av 5 stjerner på Google – se anmeldelsene" style="display: inline-flex; align-items: center; gap: 14px; text-decoration: none; text-align: left;">
+        <span style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: color-mix(in srgb, var(--brand) 10%, var(--card)); color: var(--ink-900); font-family: var(--font-display); font-size: 17px; font-weight: 600; letter-spacing: var(--tracking-display-tight);">5,0</span>
+        <span style="display: flex; flex-direction: column; align-items: flex-start; gap: 3px;">
+          <span aria-hidden="true" style="color: var(--brand); font-size: 13px; letter-spacing: 2px; line-height: 1;">★★★★★</span>
+          <span style="font-family: var(--font-sans); font-size: 13px; font-weight: 500; color: var(--ink-700); line-height: 1.2;">Se anmeldelsene på Google</span>
+        </span>
+      </a>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 44px; padding-bottom: 64px;">
+      <span role="img" aria-label="OBOS" style="display: inline-block; width: 90px; height: 26px; background: var(--ink-900); opacity: 0.75; -webkit-mask: url('assets/logos/obos.svg') no-repeat center / contain; mask: url('assets/logos/obos.svg') no-repeat center / contain;"></span>
+      <span role="img" aria-label="Höegh Evi" style="display: inline-block; width: 110px; height: 22px; background: var(--ink-900); opacity: 0.75; -webkit-mask: url('assets/logos/hoegh-evi.svg') no-repeat center / contain; mask: url('assets/logos/hoegh-evi.svg') no-repeat center / contain;"></span>
+      <span role="img" aria-label="Oslo City Legesenter" style="display: inline-block; width: 150px; height: 24px; background: var(--ink-900); opacity: 0.75; -webkit-mask: url('assets/logos/oslo-city-legesenter.svg') no-repeat center / contain; mask: url('assets/logos/oslo-city-legesenter.svg') no-repeat center / contain;"></span>
+      <span role="img" aria-label="NAF" style="display: inline-block; width: 52px; height: 52px; background: var(--ink-900); opacity: 0.75; -webkit-mask: url('assets/logos/naf.png') no-repeat center / contain; mask: url('assets/logos/naf.png') no-repeat center / contain;"></span>
+      <span role="img" aria-label="Ditt Apotek" style="display: inline-block; width: 130px; height: 26px; background: var(--ink-900); opacity: 0.75; -webkit-mask: url('assets/logos/ditt-apotek.png') no-repeat center / contain; mask: url('assets/logos/ditt-apotek.png') no-repeat center / contain;"></span>
+      <span role="img" aria-label="Runner's World" style="display: inline-block; width: 120px; height: 22px; background: var(--ink-900); opacity: 0.75; -webkit-mask: url('assets/logos/runners-world.svg') no-repeat center / contain; mask: url('assets/logos/runners-world.svg') no-repeat center / contain;"></span>
+      <span role="img" aria-label="Akademikerne pluss" style="display: inline-block; width: 150px; height: 24px; background: var(--ink-900); opacity: 0.75; -webkit-mask: url('assets/logos/akademikerne-pluss.svg') no-repeat center / contain; mask: url('assets/logos/akademikerne-pluss.svg') no-repeat center / contain;"></span>
+    </div>
+  </section>
+
+  <section style="position: relative; max-width: 1440px; margin: 0 auto; padding: 0 24px 90px;">
+    <div style="position: relative; border-radius: var(--radius-photo); overflow: hidden;">
+      <span aria-hidden="true" style="position: absolute; left: 24px; top: 24px; font-size: 30px; color: var(--cream-100); opacity: 0.8; z-index: 1;">✳</span>
+      <span aria-hidden="true" style="position: absolute; right: 24px; top: 24px; font-size: 26px; color: var(--brand); opacity: 0.9; font-weight: 700; z-index: 1;">+</span>
+      <img src="assets/team-band.jpg" alt="Reboot-teamet smiler sammen på kontoret" style="width: 100%; height: 620px; object-fit: cover; display: block;">
+
+      <div style="position: absolute; left: 40px; bottom: -40px; max-width: 450px;">
+        <x-import component-from-global-scope="RebootDesignSystem_a9b924.QuotePanel" quote="Vi er veldig fornøyde med vår nye nettside, og responsen fra kundene har vært over all forventning." name="Kristine Jørstad Bock" role="OBOS" score="5,0 på Google" link-label="Se referanser" href="#referanser" hint-size="450px,260px"></x-import>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>

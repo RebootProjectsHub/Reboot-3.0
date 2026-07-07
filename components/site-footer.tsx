@@ -43,7 +43,7 @@ export function SiteFooter() {
           </div>
           {columns.map((col) => (
             <div key={col.title}>
-              <p className="font-heading text-sm font-normal text-ink-foreground/60">
+              <p className="font-heading text-xs font-normal text-ink-foreground/60">
                 {col.title}
               </p>
               <ul className="mt-5 space-y-3">
@@ -61,8 +61,12 @@ export function SiteFooter() {
             </div>
           ))}
         </div>
-        <div className="mt-14 flex flex-col gap-3 border-t border-ink-foreground/15 pt-6 font-mono text-sm text-ink-foreground/60 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Reboot AS. Alle rettigheter forbeholdt.</p>
+        <div className="mt-14 flex flex-col gap-3 border-t border-ink-foreground/15 pt-6 font-mono text-sm text-ink-foreground/60 sm:flex-row sm:items-start sm:justify-between">
+          <div className="space-y-1">
+            <p>Reboot Norge AS </p>
+            <p>Business Village Nydalen, Sandakerveien 138, 0484 Oslo</p>
+            <p>Org.nr. 929 57 8139</p>
+          </div>
           <p>Designet og utviklet i Nydalen, Oslo</p>
         </div>
       </div>

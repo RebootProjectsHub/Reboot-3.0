@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
 import { TeamBand } from "@/components/team-band"
+import { ClientLogosMobile } from "@/components/client-logos"
 import { WhatWeDo } from "@/components/what-we-do"
 import { Services } from "@/components/services"
 import { WhoWeAre } from "@/components/who-we-are"
@@ -17,6 +18,7 @@ export default function Page() {
       <SiteHeader />
       <Hero />
       <TeamBand />
+      <ClientLogosMobile />
       <WhatWeDo />
       <Services />
       <WhoWeAre />

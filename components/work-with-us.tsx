@@ -7,7 +7,7 @@ export function WorkWithUs() {
         <div className="relative">
           <div className="overflow-hidden rounded-[var(--radius)] border border-border">
             <Image
-              src="/team-meeting.jpg"
+              src="/Felles5.webp"
               alt="Teamet i Reboot i et møte rundt et bord"
               width={1200}
               height={900}

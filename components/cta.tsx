@@ -34,25 +34,27 @@ export function Cta() {
               </div>
             </dl>
 
-            <Image
-              src="/Progress.svg"
-              alt=""
-              aria-hidden
-              width={622}
-              height={25}
-              className="my-6 h-1.5 w-28"
-            />
+            <div className="hidden md:block">
+              <Image
+                src="/Progress.svg"
+                alt=""
+                aria-hidden
+                width={622}
+                height={25}
+                className="my-6 h-1.5 w-28"
+              />
 
-            <dl className="space-y-3">
-              <div className="flex gap-2">
-                <dt className="font-semibold text-foreground">Adresse:</dt>
-                <dd>Reboot Norge AS <br /><i>Business Village Nydalen</i> <br />Sandakerveien 138 <br />0484 Oslo</dd>
-              </div>
-              <div className="flex gap-2">
-                <dt className="font-semibold text-foreground">Org.nr.:</dt>
-                <dd>929 57 8139</dd>
-              </div>
-            </dl>
+              <dl className="space-y-3">
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-foreground">Adresse:</dt>
+                  <dd>Reboot Norge AS <br /><i>Business Village Nydalen</i> <br />Sandakerveien 138 <br />0484 Oslo</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-foreground">Org.nr.:</dt>
+                  <dd>929 57 8139</dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </div>
 

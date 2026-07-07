@@ -25,7 +25,8 @@
       "Bash(curl -s \"https://use.typekit.net/aah4tvk.css\")",
       "Bash(cp \"D:/Google Drive/Reboot/Downloads/naf1.png\" \"F:/CL/Claude/Projects/Reboot3/public/naf1.png\" && rm \"F:/CL/Claude/Projects/Reboot3/public/naf1.png - Shortcut.lnk\" && ls -la \"F:/CL/Claude/Projects/Reboot3/public/naf1.png\")",
       "Bash(powershell -Command \"Stop-Process -Id 2640 -Force\")",
-      "Bash(powershell -Command \"Stop-Process -Id 764 -Force\")"
+      "Bash(powershell -Command \"Stop-Process -Id 764 -Force\")",
+      "Bash(powershell -Command \"Stop-Process -Id 1456 -Force\")"
     ]
   }
 }
