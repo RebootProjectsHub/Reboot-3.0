@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
 const services = [
@@ -5,16 +6,19 @@ const services = [
     kicker: "Ny nettside & redesign",
     title: "Ny nettside / redesign",
     body: "Fra bunnen av eller redesign av eksisterende side, leverer vi moderne, raske og skreddersydde nettsider.",
+    href: "/tjenester",
   },
   {
     kicker: "Synlighet & vekst",
     title: "SEO og AI-svar",
     body: "Vi sørger for at bedriften din rangerer høyt i tradisjonelt Google-søk, og blir anbefalt når folk spør ChatGPT, Gemini og Claude.",
+    href: "/tjenester#seo-og-ai-svar",
   },
   {
     kicker: "AI-hjelp",
     title: "Vi bistår med AI-rådgivning.",
     body: "Enten du trenger konkret hjelp eller en trygg partner innen AI, sørger vi for at bedriften din får mest mulig ut av teknologien.",
+    href: "/tjenester#ai-radgivning",
   },
 ]
 
@@ -24,9 +28,10 @@ export function Services() {
       <div className="mx-auto max-w-[1280px]">
         <div className="grid gap-[22px] sm:grid-cols-3">
           {services.map((item) => (
-            <article
+            <Link
               key={item.kicker}
-              className="group flex flex-col rounded-[26px] border-[1.5px] border-transparent bg-card pt-9 px-[34px] pb-10 transition duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:-translate-y-1.5 hover:border-brand"
+              href={item.href}
+              className="group flex flex-col rounded-[26px] border-[1.5px] border-transparent bg-card pt-9 px-[34px] pb-10 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand"
             >
               <span className="mb-3.5 font-mono text-xs uppercase tracking-[0.13em] text-brand">
                 {item.kicker}
@@ -45,7 +50,7 @@ export function Services() {
               <div className="flex size-[54px] shrink-0 items-center justify-center self-end rounded-full bg-brand/10 text-brand transition-colors duration-200 group-hover:bg-brand group-hover:text-brand-foreground">
                 <ArrowUpRight className="size-[22px]" strokeWidth={2} />
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

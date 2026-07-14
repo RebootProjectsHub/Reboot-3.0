@@ -3,11 +3,21 @@ import Image from "next/image"
 const columns = [
   {
     title: "Våre tjenester",
-    links: ["Ny nettside", "Redesign", "SEO og AI-søk", "Hosting & support"],
+    links: [
+      { label: "Ny nettside", href: "/tjenester" },
+      { label: "Redesign", href: "/tjenester" },
+      { label: "SEO og AI-søk", href: "/tjenester" },
+      { label: "Hosting & support", href: "/tjenester#vedlikehold-og-support" },
+    ],
   },
   {
     title: "Bli kjent med oss",
-    links: ["Kundecaser", "Om oss", "Aktuelt", "Ta kontakt"],
+    links: [
+      { label: "Kundecaser", href: "/referanser" },
+      { label: "Om oss", href: "/om-oss" },
+      { label: "Aktuelt", href: "/aktuelt" },
+      { label: "Ta kontakt", href: "/kontakt" },
+    ],
   },
 ]
 
@@ -26,16 +36,15 @@ export function SiteFooter() {
             />
             <p className="mt-6 max-w-xs leading-relaxed text-ink-foreground/70">
               Moderne nettsider med fokus på synlighet på Google og i AI-søk.
-              Designet og utviklet i Nydalen, Oslo.
             </p>
             <a
-              href="mailto:hei@reboot.no"
+              href="mailto:hallo@reboot.no"
               className="mt-5 block font-normal text-ink-foreground underline-offset-4 hover:underline"
             >
               hallo@reboot.no
             </a>
             <a
-              href="mailto:hei@reboot.no"
+              href="tel:+4797675848"
               className="block font-normal text-ink-foreground underline-offset-4 hover:underline"
             >
               +47 97 67 58 48
@@ -48,12 +57,12 @@ export function SiteFooter() {
               </p>
               <ul className="mt-5 space-y-3">
                 {col.links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-ink-foreground/85 transition-colors hover:text-brand"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
@@ -61,7 +70,7 @@ export function SiteFooter() {
             </div>
           ))}
         </div>
-        <div className="mt-14 flex flex-col gap-3 border-t border-ink-foreground/15 pt-6 font-mono text-sm text-ink-foreground/60 sm:flex-row sm:items-start sm:justify-between">
+        <div className="mt-14 flex flex-col gap-3 border-t border-ink-foreground/15 pt-6 font-mono text-xs text-ink-foreground/60 sm:flex-row sm:items-start sm:justify-between">
           <div className="space-y-1">
             <p>Reboot Norge AS </p>
             <p>Business Village Nydalen, Sandakerveien 138, 0484 Oslo</p>

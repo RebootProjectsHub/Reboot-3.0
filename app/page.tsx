@@ -11,6 +11,19 @@ import { Testimonials } from "@/components/testimonials"
 import { Articles } from "@/components/articles"
 import { Cta } from "@/components/cta"
 import { SiteFooter } from "@/components/site-footer"
+import { VideoBubble } from "@/components/video-bubble"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = {
+  ...pageMetadata({
+    title: "Én partner for alt innen nettsider",
+    description:
+      "Moderne nettsider med fokus på synlighet på Google og i AI-søk. Designet og utviklet i Nydalen, Oslo.",
+    path: "/",
+  }),
+  // Keep the brand-first wording on the homepage instead of the "%s | Reboot" template.
+  title: { absolute: "Reboot | Én partner for alt innen nettsider" },
+}
 
 export default function Page() {
   return (
@@ -28,6 +41,7 @@ export default function Page() {
       <Articles />
       <Cta />
       <SiteFooter />
+      <VideoBubble />
     </main>
   )
 }

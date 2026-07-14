@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Reboot — Color tokens
+   --------------------------------------------------------------------------
+   Base palette merges the live production theme (app/globals.css) with the
+   three 2026 design-handoff specs (hero / services / team-image-band), which
+   independently converge on the same warm cream + burgundy-ink + coral-red
+   family. Where hex values differ by a shade across sources, the handoff
+   value is used as canonical (it's the more recent, more detailed, and more
+   consistent of the two) and the live site's value is kept as a documented
+   alias so nothing already shipped looks "wrong".
+   ========================================================================== */
+
+:root {
+  /* ---- base: cream (warm off-white backgrounds) ---- */
+  --cream-50:  #FDF6EF; /* lightest — services section bg */
+  --cream-100: #FCF2EC; /* hero band / quote panel bg */
+  --cream-200: #F4ECE3; /* site base page background */
+  --cream-300: #EFDFCE; /* secondary / muted surface */
+  --cream-400: #E7D8C8; /* borders, inputs, hairlines */
+  --card:      #FAEDE0; /* card fill (service, testimonial, project cards) */
+  --pill:      #F1E0D3; /* eyebrow pill / badge fill */
+  --white:     #FFFFFF;
+
+  /* ---- base: ink (burgundy-black text & dark surfaces) ---- */
+  --ink-900: #4A1220; /* primary ink — canonical (handoff). Site ships #4A1522, ~identical */
+  --ink-700: #7A5A62; /* secondary / muted ink text. Site ships #7C5460, ~identical */
+  --ink-400: #EAD9C9; /* hairline on dark-adjacent panels */
+
+  /* ---- base: brand red ---- */
+  --red-500: #F73A3C; /* canonical brand red (hero + team-band handoffs) */
+  --red-600: #DD2A2C; /* hover / active */
+  --red-alt: #F3323E; /* services-card variant of the same red family */
+  --red-live: #FF5747; /* current production value in app/globals.css — kept for parity */
+  --destructive: #D1293A;
+
+  /* ---- semantic aliases ---- */
+  --surface-page:    var(--cream-200);
+  --surface-raised:  var(--card);
+  --surface-sunken:  var(--cream-300);
+  --surface-pill:    var(--pill);
+  --surface-ink:     var(--ink-900);
+
+  --text-primary:    var(--ink-900);
+  --text-secondary:  var(--ink-700);
+  --text-on-ink:     var(--cream-100);
+  --text-on-brand:   var(--white);
+
+  --border-default:  var(--cream-400);
+  --border-hairline:  var(--ink-400);
+
+  --brand:        var(--red-500);
+  --brand-hover:   var(--red-600);
+  --ring:          var(--red-500);
+
+  color-scheme: light;
+}

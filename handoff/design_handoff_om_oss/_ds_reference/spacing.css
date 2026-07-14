@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Reboot — Spacing, radius & shadow tokens
+   ========================================================================== */
+
+:root {
+  /* spacing scale (observed across sections/cards) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 14px;
+  --space-4: 16px;
+  --space-5: 22px;   /* common grid gap */
+  --space-6: 26px;
+  --space-7: 34px;   /* card padding */
+  --space-8: 44px;   /* panel offsets */
+  --space-9: 64px;   /* section padding (desktop) */
+  --space-10: 90px;  /* hero band padding (desktop) */
+
+  /* radius scale — soft & pill-heavy. --radius is the live site's base (30px);
+     card/panel/photo below are the handoffs' precise values (kept exact, not
+     snapped to the base scale). */
+  --radius: 1.875rem;                    /* 30px base, site token */
+  --radius-xs: calc(var(--radius) * 0.4);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+
+  --radius-card: 26px;    /* service / content cards */
+  --radius-panel: 22px;   /* quote/testimonial panel */
+  --radius-photo: 28px;   /* team photo band */
+  --radius-mascot: 22px;  /* illustration slot */
+  --radius-pill: 999px;   /* buttons, pills, badges */
+
+  /* shadow */
+  --shadow-panel: 0 30px 60px -30px rgba(74, 18, 32, 0.5);
+  --shadow-card-hover: 0 26px 46px -26px rgba(69, 16, 30, 0.4);
+
+  /* motion */
+  --ease-card: cubic-bezier(0.2, 0.7, 0.2, 1); /* @kind other */
+  --duration-fast: 0.2s; /* @kind other */
+  --duration-card: 0.28s; /* @kind other */
+}

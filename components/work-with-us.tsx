@@ -22,8 +22,11 @@ export function WorkWithUs() {
           </span>
         </div>
 
-        <div className="max-w-xl">
-          <h2 className="text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
+        <div className="max-w-xl lg:pl-8">
+          <p className="font-heading text-sm font-medium uppercase tracking-[0.18em] text-brand">
+            Fastpris
+          </p>
+          <h2 className="mt-4 text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
             Hva koster en nettside?
           </h2>
           <p className="mt-6 text-pretty text-lg leading-relaxed text-foreground/80">
@@ -35,7 +38,7 @@ export function WorkWithUs() {
           <div className="mt-8">
             <a
               href="#kontakt"
-              className="inline-flex items-center rounded-full bg-ink px-7 py-3.5 text-base font-normal text-ink-foreground transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center rounded-full bg-ink px-7 py-3.5 text-base font-normal text-ink-foreground transition-opacity hover:opacity-85"
             >
               Få et tilbud
             </a>

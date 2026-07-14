@@ -61,7 +61,7 @@ export function Testimonials() {
               ))}
             </div>
             <a
-              href="https://www.google.com/search?sca_esv=ba3772bf42af157a&biw=2558&bih=1278&sxsrf=APpeQnuIEwonI31ZKeHHVr4XLJ_QrK5ZLw:1783265273798&q=reboot.no&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zq0F6Vz7EO5Ce7ptsEaaSkpqSdDQQjCmTN3o6t3o_ccmZAyTcZfl7BqqPKlW0Of1ZaOcyE%3D&uds=AJ5uw192rzALllUuaB2bJuLcuxCmjJGG65AhJl-lsIFqyOyceAlYkVNMWIZPkiU4-MydBzAWv_LcSnk0kXKGtNYAx7uyCI467Xa_3qrGq7RRtxgG_G5innM&sa=X&ved=2ahUKEwik_Lzp7LuVAxV-GBAIHQfFBukQ3PALegQIGxAE"
+              href="https://www.google.com/search?sa=X&sca_esv=ba3772bf42af157a&sxsrf=APpeQnsXDry-b4d9A8A_6udRT-vBckqlFQ:1783773227916&q=Reboot+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDcwMzI0N7I0sjAyNTAyNDQ2MdjAyPiKkS8oNSk_v0QhKLUsM7W8eBErmgAAvsa6BD0AAAA&rldimm=17062172928250211340&tbm=lcl&hl=en-NO&ved=2ahUKEwix8O-M0cqVAxVdBxAIHSlwA-4Q9fQKegQIURAG&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-mono text-sm font-medium text-brand underline-offset-4 hover:underline"

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Reboot — Typography tokens
+   ========================================================================== */
+
+:root {
+  /* families */
+  --font-display: 'Source Serif 4', ui-serif, Georgia, serif;
+  --font-sans:    'Hanken Grotesk', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:    'Space Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* display / headline scale (Source Serif 4, tight tracking) */
+  --text-display-xl: 78px;   /* hero h1 */
+  --text-display-lg: 48px;   /* section h2 (text-5xl) */
+  --text-display-md: 36px;   /* section h2 (text-4xl) */
+  --text-display-sm: 29px;   /* card h3, e.g. service card */
+  --text-display-xs: 23px;   /* smaller card h3 */
+
+  --leading-display-tight: 1.0;
+  --leading-display: 1.1;
+  --leading-display-loose: 1.35;
+
+  --tracking-display: -0.02em;
+  --tracking-display-tight: -0.01em;
+
+  /* body / UI scale (Hanken Grotesk) */
+  --text-body-lg: 19px;
+  --text-body-md: 16.5px;
+  --text-body-base: 16px;
+  --text-body-sm: 14.5px;
+  --text-body-xs: 13px;
+
+  --leading-body: 1.55;
+  --leading-body-relaxed: 1.6;
+
+  /* mono / label scale (Space Mono) — kickers, eyebrows, badges */
+  --text-label-md: 13px;
+  --text-label-sm: 12px;
+  --tracking-label: 0.12em;
+  --tracking-label-loose: 0.18em;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display-tight);
+}

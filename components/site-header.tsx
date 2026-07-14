@@ -5,10 +5,10 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
-  { label: "Våre tjenester", href: "#tjenester" },
-  { label: "Kundecaser", href: "#kundecaser" },
-  { label: "Aktuelt", href: "#aktuelt" },
-  { label: "Om oss", href: "#om-oss" },
+  { label: "Våre tjenester", href: "/tjenester" },
+  { label: "Priser", href: "/nettside-priser" },
+  { label: "Kundecaser", href: "/referanser" },
+  { label: "Om oss", href: "/om-oss" },
 ]
 
 export function SiteHeader() {
@@ -17,7 +17,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between gap-6 px-4 sm:px-6 lg:px-10">
-        <a href="#top" className="flex items-center" aria-label="Reboot forside">
+        <a href="/" className="flex items-center" aria-label="Reboot forside">
           <Image
             src="/Reboot3.svg"
             alt="Reboot"
@@ -42,8 +42,8 @@ export function SiteHeader() {
 
         <div className="hidden items-center lg:flex">
           <a
-            href="#kontakt"
-            className="inline-flex items-center rounded-full bg-ink px-6 py-3 text-sm font-normal text-ink-foreground transition-transform hover:-translate-y-0.5"
+            href="/kontakt"
+            className="inline-flex items-center rounded-full bg-ink px-6 py-3 text-sm font-normal text-ink-foreground transition-opacity hover:opacity-85"
           >
             Kontakt oss
           </a>
@@ -51,7 +51,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3 lg:hidden">
           <a
-            href="#kontakt"
+            href="/kontakt"
             className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary"
           >
             Kontakt oss
@@ -82,13 +82,6 @@ export function SiteHeader() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#kontakt"
-              onClick={() => setOpen(false)}
-              className="mt-2 inline-flex items-center justify-center rounded-full bg-ink px-6 py-3.5 text-base font-normal text-ink-foreground"
-            >
-              Kontakt oss
-            </a>
           </nav>
         </div>
       )}

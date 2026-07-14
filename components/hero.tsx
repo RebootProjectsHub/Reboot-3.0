@@ -1,3 +1,4 @@
+import { Star } from "lucide-react"
 import { ClientLogosDesktop } from "@/components/client-logos"
 
 export function Hero() {
@@ -38,26 +39,38 @@ export function Hero() {
         </h1>
 
         <p className="mb-[34px] max-w-[660px] text-pretty text-[19px] leading-[1.55] text-foreground/70">
-          Moderne nettsider med fokus på synlighet på Google og i AI-søk.
+          Moderne nettsider med fokus på synlighet på Google og i AI-svar.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-[26px]">
           <a
             href="#tjenester"
-            className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-[background-color,transform] duration-200 hover:-translate-y-0.5 hover:bg-[#E8432F]"
+            className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
           >
             Se våre tjenester
           </a>
           <a
-            href="https://www.google.com/search?sca_esv=ba3772bf42af157a&biw=2558&bih=1278&sxsrf=APpeQnuIEwonI31ZKeHHVr4XLJ_QrK5ZLw:1783265273798&q=reboot.no&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zq0F6Vz7EO5Ce7ptsEaaSkpqSdDQQjCmTN3o6t3o_ccmZAyTcZfl7BqqPKlW0Of1ZaOcyE%3D&uds=AJ5uw192rzALllUuaB2bJuLcuxCmjJGG65AhJl-lsIFqyOyceAlYkVNMWIZPkiU4-MydBzAWv_LcSnk0kXKGtNYAx7uyCI467Xa_3qrGq7RRtxgG_G5innM&sa=X&ved=2ahUKEwik_Lzp7LuVAxV-GBAIHQfFBukQ3PALegQIGxAE"
+            href="https://www.google.com/search?sa=X&sca_esv=ba3772bf42af157a&sxsrf=APpeQnsXDry-b4d9A8A_6udRT-vBckqlFQ:1783773227916&q=Reboot+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDcwMzI0N7I0sjAyNTAyNDQ2MdjAyPiKkS8oNSk_v0QhKLUsM7W8eBErmgAAvsa6BD0AAAA&rldimm=17062172928250211340&tbm=lcl&hl=en-NO&ved=2ahUKEwix8O-M0cqVAxVdBxAIHSlwA-4Q9fQKegQIURAG&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="5,0 av 5 stjerner på Google – se anmeldelsene"
             className="group inline-flex items-center gap-3.5 text-left"
           >
             <span className="flex flex-col items-center gap-[3px] text-center sm:items-start sm:text-left">
-              <span aria-hidden className="text-[20px] leading-none tracking-[2px] text-brand">
-                5.0 ★★★★★ 
+              <span aria-hidden className="flex items-center gap-1.5 text-[20px] leading-none text-brand">
+                5.0
+                <span className="relative flex gap-[2px]">
+                  <span className="flex gap-[2px]">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star key={i} className="size-[16px] fill-brand text-brand" />
+                    ))}
+                  </span>
+                  <span className="star-sweep-overlay absolute inset-0 flex gap-[2px]">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star key={i} className="size-[16px] fill-white text-white" />
+                    ))}
+                  </span>
+                </span>
               </span>
               <span className="text-[13px] font-medium leading-[1.2] text-foreground/70">
                 Se anmeldelsene på Google

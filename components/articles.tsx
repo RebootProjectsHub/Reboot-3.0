@@ -1,7 +1,29 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
+import { posts } from "@/posts"
+
+const solidVariants = [
+  {
+    card: "bg-ink text-ink-foreground",
+    kicker: "text-ink-foreground/70",
+    arrow: "text-ink-foreground/70 group-hover:text-ink-foreground",
+  },
+  {
+    card: "bg-brand/25 text-foreground",
+    kicker: "text-foreground/70",
+    arrow: "text-foreground/70 group-hover:text-foreground",
+  },
+  {
+    card: "bg-brand text-brand-foreground",
+    kicker: "text-brand-foreground/80",
+    arrow: "text-brand-foreground/80 group-hover:text-brand-foreground",
+  },
+]
 
 export function Articles() {
+  const [featured, ...rest] = posts.slice(0, 4)
+
   return (
     <section id="aktuelt" className="px-4 py-12 sm:px-6 lg:px-10 lg:py-16">
       <div className="mx-auto max-w-[1280px]">
@@ -10,7 +32,7 @@ export function Articles() {
             Aktuelt fra Reboot
           </h2>
           <a
-            href="#aktuelt"
+            href="/aktuelt"
             className="hidden w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary md:inline-flex"
           >
             Se flere artikler
@@ -19,56 +41,66 @@ export function Articles() {
         </div>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Card with image */}
-          <article className="group flex flex-col overflow-hidden rounded-[var(--radius)] border border-border bg-card transition-colors hover:border-brand">
-            <div className="relative aspect-[4/3] overflow-hidden">
-              <Image
-                src="/work-cro.jpg"
-                alt="Konverteringsoptimalisering"
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                sizes="(max-width: 1024px) 50vw, 25vw"
-              />
-            </div>
-            <div className="flex flex-1 flex-col p-6">
-              <span className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-brand">Faglig</span>
-              <h3 className="mt-3 font-heading text-lg font-normal leading-snug text-foreground">
-                Slik øker du konverteringen på nettsiden med CRO
-              </h3>
-            </div>
-          </article>
+          {featured && (
+            <Link
+              href={`/aktuelt/${featured.slug}`}
+              className="group flex flex-col overflow-hidden rounded-[var(--radius)] border border-border bg-card transition-colors hover:border-brand"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src={featured.image}
+                  alt={featured.imageAlt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-brand">
+                    {featured.category}
+                  </span>
+                  <time dateTime={featured.dateISO} className="font-mono text-[11px] text-foreground/50">
+                    {featured.date}
+                  </time>
+                </div>
+                <h3 className="mt-3 font-heading text-lg font-normal leading-snug text-foreground">
+                  {featured.title}
+                </h3>
+              </div>
+            </Link>
+          )}
 
-          {/* Burgundy solid card */}
-          <article className="group flex flex-col justify-between rounded-[var(--radius)] bg-ink p-7 text-ink-foreground transition-transform hover:-translate-y-1">
-            <span className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-ink-foreground/70">Faglig</span>
-            <h3 className="mt-10 font-heading text-2xl font-normal leading-snug">
-              Tilgjengelighet er ikke et tillegg – det er et krav
-            </h3>
-            <ArrowUpRight className="mt-6 size-6 text-ink-foreground/70 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </article>
-
-          {/* Coral trail solid card */}
-          <article className="group flex flex-col justify-between rounded-[var(--radius)] bg-brand/25 p-7 text-foreground transition-transform hover:-translate-y-1">
-            <span className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">Faglig</span>
-            <h3 className="mt-10 font-heading text-2xl font-normal leading-snug">
-              Hva skjer med UX når AI lager innholdet?
-            </h3>
-            <ArrowUpRight className="mt-6 size-6 text-foreground/70 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </article>
-
-          {/* Coral solid card */}
-          <article className="group flex flex-col justify-between rounded-[var(--radius)] bg-brand p-7 text-brand-foreground transition-transform hover:-translate-y-1">
-            <span className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-brand-foreground/80">Aktuelt</span>
-            <h3 className="mt-10 font-heading text-2xl font-normal leading-snug">
-              Synlighet i AI-søk: dette må du vite i 2026
-            </h3>
-            <ArrowUpRight className="mt-6 size-6 text-brand-foreground/80 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </article>
+          {rest.map((post, i) => {
+            const variant = solidVariants[i % solidVariants.length]
+            return (
+              <Link
+                key={post.slug}
+                href={`/aktuelt/${post.slug}`}
+                className={`group flex flex-col justify-between rounded-[var(--radius)] p-7 transition-opacity hover:opacity-90 ${variant.card}`}
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <span
+                    className={`font-mono text-xs font-semibold uppercase tracking-[0.14em] ${variant.kicker}`}
+                  >
+                    {post.category}
+                  </span>
+                  <time dateTime={post.dateISO} className={`font-mono text-[11px] ${variant.kicker}`}>
+                    {post.date}
+                  </time>
+                </div>
+                <h3 className="mt-10 font-heading text-2xl font-normal leading-snug">
+                  {post.title}
+                </h3>
+                <ArrowUpRight className={`mt-6 size-6 transition-colors ${variant.arrow}`} />
+              </Link>
+            )
+          })}
         </div>
 
         <div className="mt-8 flex justify-center md:hidden">
           <a
-            href="#aktuelt"
+            href="/aktuelt"
             className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary"
           >
             Se flere artikler

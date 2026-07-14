@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Reboot — Web fonts
+   --------------------------------------------------------------------------
+   The live reboot.no site loads a proprietary Adobe Typekit family called
+   "gelica" (kit id `aah4tvk`, <link href="https://use.typekit.net/aah4tvk.css">)
+   for BOTH headings and body text. Typekit fonts are account-locked binaries —
+   they cannot be read or copied from the repo, so they are NOT available here.
+
+   The three most recent design-handoff specs in the source repo
+   (hero, services, team-image-band — see README) independently agree on a
+   replacement pairing built entirely on Google Fonts:
+     - Source Serif 4  → display/headline serif
+     - Hanken Grotesk   → body + UI sans
+   That pairing is what this design system ships. Space Mono is unchanged —
+   the live site already self-hosts it via next/font.
+
+   FLAG FOR THE USER: if you have the real "gelica" Typekit files/license,
+   send them over and we'll swap these @font-face declarations for the real
+   thing and drop the Google Fonts substitution.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');

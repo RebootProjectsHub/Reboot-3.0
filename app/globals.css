@@ -96,6 +96,42 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+@keyframes star-sweep {
+  from {
+    -webkit-mask-position: 88% 0;
+    mask-position: 88% 0;
+  }
+  to {
+    -webkit-mask-position: 12% 0;
+    mask-position: 12% 0;
+  }
+}
+
+.star-sweep-overlay {
+  -webkit-mask-image: linear-gradient(
+    100deg,
+    transparent 42%,
+    rgba(255, 255, 255, 0.75) 50%,
+    transparent 58%
+  );
+  mask-image: linear-gradient(
+    100deg,
+    transparent 42%,
+    rgba(255, 255, 255, 0.75) 50%,
+    transparent 58%
+  );
+  -webkit-mask-size: 300% 100%;
+  mask-size: 300% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 88% 0;
+  mask-position: 88% 0;
+}
+
+.group:hover .star-sweep-overlay {
+  animation: star-sweep 0.7s ease-in-out;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

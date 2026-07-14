@@ -45,7 +45,7 @@ export function WhoWeAre() {
                 <div className="mt-9">
                   <a
                     href="#kontakt"
-                    className="inline-flex items-center rounded-full border border-ink-foreground/30 px-7 py-3.5 text-base font-normal text-ink-foreground transition-transform hover:-translate-y-0.5 hover:border-ink-foreground/50"
+                    className="inline-flex items-center rounded-full border border-ink-foreground/30 px-7 py-3.5 text-base font-normal text-ink-foreground transition-colors hover:border-ink-foreground/50"
                   >
                     Kontakt oss
                   </a>
