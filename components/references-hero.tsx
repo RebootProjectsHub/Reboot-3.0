@@ -23,7 +23,7 @@ export function ReferencesHero() {
       </h1>
 
       <p className="mx-auto max-w-[560px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
-        Et utvalg av prosjektene vi har designet, utviklet og drifter. Fra små bedrifter og oppstartsfirmaer til annerkjente merkevarer.
+        Et utvalg av prosjektene vi har designet, utviklet og drifter. Fra oppstartsbedrifter og små firmaer til annerkjente merkevarer.
       </p>
     </section>
   )
