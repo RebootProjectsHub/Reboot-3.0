@@ -28,12 +28,6 @@ export default function TakkForMeldingenPage() {
           >
             Til forsiden
           </Link>
-          <Link
-            href="/trender"
-            className="inline-flex items-center rounded-full border border-border px-[30px] py-4 text-base font-light text-foreground transition-colors duration-200 hover:border-brand hover:text-brand"
-          >
-            Les fra bloggen
-          </Link>
         </div>
       </section>
       <SiteFooter />
