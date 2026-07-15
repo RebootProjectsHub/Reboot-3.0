@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 // Web3Forms access key — get a free one at https://web3forms.com (just enter
 // hallo@reboot.no). It is public by design (it ships in the page), so it's fine
@@ -14,27 +15,23 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 type Errors = { name?: string; email?: string; message?: string }
 
 export function ContactForm() {
+  const router = useRouter()
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const [errors, setErrors] = useState<Errors>({})
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">(
-    "idle",
-  )
+  const [status, setStatus] = useState<"idle" | "submitting" | "error">("idle")
   const [formError, setFormError] = useState<string>("")
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setFormError("")
 
-    // Honeypot — real users never fill this; silently succeed for bots.
+    // Honeypot — real users never fill this; silently ignore bots.
     const botField = (e.currentTarget.elements.namedItem(
       "botcheck",
     ) as HTMLInputElement | null)
-    if (botField?.checked) {
-      setStatus("success")
-      return
-    }
+    if (botField?.checked) return
 
     const nextErrors: Errors = {}
     if (!name.trim()) nextErrors.name = "Vennligst fyll inn navn."
@@ -72,7 +69,9 @@ export function ContactForm() {
       })
       const data = await res.json()
       if (data.success) {
-        setStatus("success")
+        // Redirect to the confirmation page (keep the button in its
+        // submitting state until the navigation completes).
+        router.push("/takk-for-meldingen/")
       } else {
         setStatus("error")
         setFormError(
@@ -85,22 +84,6 @@ export function ContactForm() {
         "Noe gikk galt da meldingen skulle sendes. Prøv igjen, eller send en e-post til hallo@reboot.no.",
       )
     }
-  }
-
-  if (status === "success") {
-    return (
-      <div className="flex min-h-[280px] flex-col items-start justify-center rounded-[var(--radius)] border border-border bg-card p-7 sm:p-9">
-        <span className="font-mono text-xs uppercase tracking-[0.14em] text-brand">
-          Takk!
-        </span>
-        <h3 className="mt-3 font-heading text-2xl font-normal leading-snug text-foreground">
-          Meldingen er sendt
-        </h3>
-        <p className="mt-3 text-pretty leading-relaxed text-foreground/70">
-          Takk for at du tok kontakt. Vi svarer deg vanligvis i løpet av dagen.
-        </p>
-      </div>
-    )
   }
 
   const pending = status === "submitting"
