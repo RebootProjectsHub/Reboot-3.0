@@ -72,7 +72,7 @@ export const post: Post = {
 <figure><img src="/posts/geometrisk-branding-vitenskapen-bak-logodesign/7.jpg" alt="Geometrisk branding - Vitenskapen bak logodesign" loading="lazy" /></figure>
 <h3>Logodesign – vår konklusjon</h3>
 <p>Å finne den perfekte formen for logoen din krever mer enn bare estetisk sans; det krever en dyp forståelse av hva merkevaren din står for. Du må nøye vurdere merkevarens personlighet, hvilken bransje du opererer i, hvem målgruppen din er, og hvilke designprinsipper som best formidler det budskapet du ønsker å sende ut.</p>
-<p>Ved å følge de rådene vi har gått gjennom her, i kombinasjon med <a href="/aktuelt/effektive-seo-strategier-for-2024">effektive SEO strategier</a>, kan du skape en logoform som ikke bare er visuelt tiltalende, men som også bærer merkevarens verdier og misjon på en klar og tydelig måte.</p>
+<p>Ved å følge de rådene vi har gått gjennom her, i kombinasjon med <a href="/trender/effektive-seo-strategier-for-2024">effektive SEO strategier</a>, kan du skape en logoform som ikke bare er visuelt tiltalende, men som også bærer merkevarens verdier og misjon på en klar og tydelig måte.</p>
 <p>Det er viktig å huske at det enkle ofte er det beste. En logo må være allsidig nok til å fungere på tvers av ulike plattformer og bruksområder, samtidig som den er designet med en klar hensikt. Når du tester logoen din og justerer den basert på tilbakemeldinger fra målgruppen, sikrer du at den virkelig resonnerer med dem.</p>
 <p>Å investere tid og krefter i å velge riktig logoform kan være en utfordring, men det er en investering som betaler seg over tid. En godt designet logo er ikke bare et symbol – det er et verktøy som bygger merkevaregjenkjenning, skaper tillit og styrker lojaliteten hos kundene dine.</p>`,
 }

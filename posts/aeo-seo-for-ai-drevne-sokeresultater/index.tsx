@@ -38,7 +38,7 @@ export const post: Post = {
       <p>
         AI gjør søk mer konversasjonelt, og dermed må innholdet ditt fungere som et
         klart, siterbart svar før det fungerer som tradisjonell{" "}
-        <a href="/aktuelt/slik-skaper-du-landingssider-som-konverterer-besokende">
+        <a href="/trender/slik-skaper-du-landingssider-som-konverterer-besokende">
           landingsside
         </a>
         . AEO handler om å gjøre kunnskapen din forståelig for maskiner og nyttig for
@@ -160,7 +160,7 @@ export const post: Post = {
       <p>
         AEO gjør søk mer menneskelig ved å belønne klare svar, men det erstatter ikke
         grunnmuren vi allerede kjenner. Tradisjonell{" "}
-        <a href="/aktuelt/seo-og-webdesign">SEO</a> er fortsatt ryggraden som sørger for
+        <a href="/trender/seo-og-webdesign">SEO</a> er fortsatt ryggraden som sørger for
         at siden lastes raskt, at strukturen er logisk, og at temaautoritet bygges over
         tid. Derfor må du skrive for et svarfelt og for hele nettsiden samtidig. Start
         med et presist hovedsvar som kan siteres, bygg deretter ut med metode,

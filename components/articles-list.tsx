@@ -5,6 +5,12 @@ import { posts } from "@/posts"
 
 const PAGE_SIZE = 12
 
+// Static, path-based pagination (works with static export / GitHub Pages):
+// page 1 lives at /trender, the rest at /trender/side/<n>.
+function pageHref(n: number): string {
+  return n <= 1 ? "/trender" : `/trender/side/${n}`
+}
+
 export function ArticlesList({ page }: { page: number }) {
   const totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE))
   const currentPage = Math.min(Math.max(1, page), totalPages)
@@ -18,7 +24,7 @@ export function ArticlesList({ page }: { page: number }) {
           {pagePosts.map((post) => (
             <Link
               key={post.slug}
-              href={`/aktuelt/${post.slug}`}
+              href={`/trender/${post.slug}`}
               className="group flex flex-col overflow-hidden rounded-[var(--radius)] border border-border bg-card transition-colors hover:border-brand"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -56,7 +62,7 @@ export function ArticlesList({ page }: { page: number }) {
             className="mt-12 flex items-center justify-center gap-2"
           >
             <Link
-              href={currentPage > 1 ? `/aktuelt?page=${currentPage - 1}` : "#"}
+              href={currentPage > 1 ? pageHref(currentPage - 1) : "#"}
               aria-disabled={currentPage === 1}
               className={`inline-flex size-10 items-center justify-center rounded-full border border-border transition-colors ${
                 currentPage === 1
@@ -73,7 +79,7 @@ export function ArticlesList({ page }: { page: number }) {
               return (
                 <Link
                   key={n}
-                  href={`/aktuelt?page=${n}`}
+                  href={pageHref(n)}
                   aria-current={isCurrent ? "page" : undefined}
                   className={`inline-flex size-10 items-center justify-center rounded-full font-mono text-[13px] transition-colors ${
                     isCurrent
@@ -87,7 +93,7 @@ export function ArticlesList({ page }: { page: number }) {
             })}
 
             <Link
-              href={currentPage < totalPages ? `/aktuelt?page=${currentPage + 1}` : "#"}
+              href={currentPage < totalPages ? pageHref(currentPage + 1) : "#"}
               aria-disabled={currentPage === totalPages}
               className={`inline-flex size-10 items-center justify-center rounded-full border border-border transition-colors ${
                 currentPage === totalPages

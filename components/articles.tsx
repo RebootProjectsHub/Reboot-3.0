@@ -32,7 +32,7 @@ export function Articles() {
             Aktuelt fra Reboot
           </h2>
           <a
-            href="/aktuelt"
+            href="/trender"
             className="hidden w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary md:inline-flex"
           >
             Se flere artikler
@@ -43,7 +43,7 @@ export function Articles() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {featured && (
             <Link
-              href={`/aktuelt/${featured.slug}`}
+              href={`/trender/${featured.slug}`}
               className="group flex flex-col overflow-hidden rounded-[var(--radius)] border border-border bg-card transition-colors hover:border-brand"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -76,7 +76,7 @@ export function Articles() {
             return (
               <Link
                 key={post.slug}
-                href={`/aktuelt/${post.slug}`}
+                href={`/trender/${post.slug}`}
                 className={`group flex flex-col justify-between rounded-[var(--radius)] p-7 transition-opacity hover:opacity-90 ${variant.card}`}
               >
                 <div className="flex items-center justify-between gap-3">
@@ -100,7 +100,7 @@ export function Articles() {
 
         <div className="mt-8 flex justify-center md:hidden">
           <a
-            href="/aktuelt"
+            href="/trender"
             className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary"
           >
             Se flere artikler

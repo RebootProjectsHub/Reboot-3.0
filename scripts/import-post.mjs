@@ -161,7 +161,7 @@ function cleanInline(s) {
     let anchor
     if (internal) {
       const s2 = h.replace(/^https?:\/\/reboot\.no\/trender\//i, "").replace(/^\/trender\//i, "").replace(/\/$/, "")
-      anchor = `<a href="/aktuelt/${s2}">${label}</a>`
+      anchor = `<a href="/trender/${s2}">${label}</a>`
     } else if (/^https?:\/\/reboot\.no\//i.test(h)) {
       // other internal reboot links -> keep relative (portfolio pages etc.)
       anchor = `<a href="${h.replace(/^https?:\/\/reboot\.no/i, "")}">${label}</a>`

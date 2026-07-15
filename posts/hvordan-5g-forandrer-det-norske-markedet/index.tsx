@@ -20,5 +20,5 @@ export const post: Post = {
 <h3>Utfordringer og neste skritt</h3>
 <p>Selv om 5G bringer mange muligheter, medfører det også utfordringer, spesielt knyttet til cybersikkerhet og infrastrukturutvikling. Å investere i sikre IT-tjenester og <a href="/#drift-vedlikehold">kontinuerlig drift og vedlikehold</a> vil være avgjørende for å sikre at 5G-teknologien utnyttes på en trygg og effektiv måte.</p>
 <p>5G representerer en spennende fremtid for Norge. Bedrifter, samfunnsinstitusjoner, og borgere må forberede seg for å utnytte denne nye æraen av hyperkobling og de ubegrensede mulighetene den bringer.</p>
-<p>For mer informasjon om hvordan din bedrift kan forberede seg for 5G og utnytte denne teknologien, forklarer Telenor godt hvordan du kan <a href="https://www.telenor.no/bedrift/aktuelt/5g/5g-norske-bedrifter/" target="_blank" rel="noopener noreferrer">styrke din bedrift med 5G</a>.</p>`,
+<p>For mer informasjon om hvordan din bedrift kan forberede seg for 5G og utnytte denne teknologien, forklarer Telenor godt hvordan du kan <a href="https://www.telenor.no/bedrift/trender/5g/5g-norske-bedrifter/" target="_blank" rel="noopener noreferrer">styrke din bedrift med 5G</a>.</p>`,
 }

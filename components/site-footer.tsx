@@ -15,7 +15,7 @@ const columns = [
     links: [
       { label: "Kundecaser", href: "/referanser" },
       { label: "Om oss", href: "/om-oss" },
-      { label: "Aktuelt", href: "/aktuelt" },
+      { label: "Aktuelt", href: "/trender" },
       { label: "Ta kontakt", href: "/kontakt" },
     ],
   },

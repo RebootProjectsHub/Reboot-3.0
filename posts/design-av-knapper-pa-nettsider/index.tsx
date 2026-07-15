@@ -56,7 +56,7 @@ export const post: Post = {
         får samme størrelse, farge og visuelle tyngde, overlates prioriteringen til
         brukeren. Det er i praksis en designoppgave som grensesnittet selv skulle ha
         løst. En norsk{" "}
-        <a href="/aktuelt/a-bygge-en-brukervennlig-nettbutikk-med-woocommerce">
+        <a href="/trender/a-bygge-en-brukervennlig-nettbutikk-med-woocommerce">
           nettbutikk
         </a>{" "}
         kan for eksempel fremheve «Legg i handlekurven», mens «Lagre til senere» får
@@ -301,7 +301,7 @@ export const post: Post = {
       </p>
       <p>
         Til slutt er knappens kvalitet et uttrykk for kvaliteten i hele{" "}
-        <a href="/aktuelt/brukeropplevelse-ux-vs-brukergrensesnitt-ui-forsta-forskjellene">
+        <a href="/trender/brukeropplevelse-ux-vs-brukergrensesnitt-ui-forsta-forskjellene">
           brukeropplevelsen
         </a>
         . Små uklarheter kan stoppe et kjøp, et skjema eller en viktig henvendelse. Tydelige valg skaper derimot fremdrift og bygger tillit

@@ -59,7 +59,7 @@ export function PostLayout({ post }: { post: Post }) {
 
         <div className="mx-auto mt-14 flex max-w-[720px] flex-wrap items-center justify-between gap-4 border-t border-border pt-8">
           <Link
-            href="/aktuelt"
+            href="/trender"
             className="inline-flex items-center gap-2 text-base font-medium text-foreground/70 transition-colors hover:text-brand"
           >
             <ArrowLeft className="size-4" aria-hidden />

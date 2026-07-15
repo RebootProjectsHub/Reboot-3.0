@@ -36,7 +36,7 @@ export const post: Post = {
 <p>Typografi er et av de kraftigste verktøyene i minimalistisk webdesign. Velg en lettlest skrifttype og hold deg til 2-3 forskjellige skriftstørrelser for å skape en tydelig hierarki. Husk at enkelhet er nøkkelen.</p>
 <p><strong>5. Optimaliser for hastighet</strong></p>
 <p>Minimalistiske sider er ofte raskere å laste fordi de inneholder færre elementer. Sørg for å optimalisere bilder og redusere kode for å sikre at siden din laster raskt. Dette vil forbedre både brukeropplevelsen og SEO.</p>
-<p>For mer detaljer om hvordan du kan implementere disse teknikkene på din egen nettside, anbefaler vi vår artikkel om <a href="/aktuelt/webdesign-tips-for-2024">beste praksis for nettsider</a>.</p>
+<p>For mer detaljer om hvordan du kan implementere disse teknikkene på din egen nettside, anbefaler vi vår artikkel om <a href="/trender/webdesign-tips-for-2024">beste praksis for nettsider</a>.</p>
 <figure><img src="/posts/minimalistisk-webdesign-enkelt-design-med-stor-effekt/3.jpg" alt="Minimalistisk webdesign – enkelt design med stor effekt" loading="lazy" /></figure>
 <h3>Hvorfor minimalistisk design er kommet for å bli</h3>
 <p>Minimalistisk webdesign er ikke bare en trend; det er en strategi som fungerer. I en verden hvor brukernes tid og oppmerksomhet er begrenset, handler det om å gi en enkel, intuitiv og hyggelig opplevelse. Dette kan føre til høyere konverteringsrater, bedre brukerengasjement og økt merkevarelojalitet.</p>

@@ -58,7 +58,7 @@ export const post: Post = {
       <p>
         En produktside har som regel ett mål, å få varen i handlekurven. En prisside
         skal enten starte en prøveperiode eller åpne dialog med salg. En{" "}
-        <a href="/aktuelt/slik-skaper-du-landingssider-som-konverterer-besokende">
+        <a href="/trender/slik-skaper-du-landingssider-som-konverterer-besokende">
           landingsside
         </a>{" "}
         fra en annonse må speile løftet i annonsen ord for ord. Når dette er bestemt,
@@ -262,7 +262,7 @@ export const post: Post = {
       </p>
       <p>
         Samtidig må dette sees i sammenheng med tradisjonell{" "}
-        <a href="/aktuelt/seo-og-webdesign">SEO</a>. Synlighet uten konvertering er
+        <a href="/trender/seo-og-webdesign">SEO</a>. Synlighet uten konvertering er
         bare trafikk, mens konvertering uten synlighet aldri får fart. Når rask ytelse,
         tydelige budskap og gjennomtenkte brukerreiser kombineres med solid
         søkemotoroptimalisering, oppstår en helhet som både tiltrekker riktige

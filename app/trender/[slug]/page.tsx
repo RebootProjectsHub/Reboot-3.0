@@ -16,7 +16,7 @@ export async function generateMetadata({
   const { slug } = await params
   const post = getPost(slug)
   if (!post) return {}
-  const path = `/aktuelt/${post.slug}`
+  const path = `/trender/${post.slug}`
   const image = post.image || "/og-image.png"
   return {
     title: post.title,
