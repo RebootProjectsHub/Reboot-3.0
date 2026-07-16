@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react"
 
 export function ServicesCta() {
   return (
-    <section className="px-4 py-[80px] sm:px-6 lg:px-10 lg:pb-[100px]">
+    <section className="px-4 pb-[80px] pt-16 sm:px-6 lg:px-10 lg:pb-[100px]">
       <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[var(--radius)] border-[1.5px] border-border bg-[#fcf2ec] px-6 py-16 text-center sm:px-12">
         <span
           aria-hidden
