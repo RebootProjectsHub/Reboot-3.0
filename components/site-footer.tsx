@@ -50,25 +50,27 @@ export function SiteFooter() {
               +47 97 67 58 48
             </a>
           </div>
-          {columns.map((col) => (
-            <div key={col.title}>
-              <p className="font-heading text-xs font-normal text-ink-foreground/60">
-                {col.title}
-              </p>
-              <ul className="mt-5 space-y-3">
-                {col.links.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-ink-foreground/85 transition-colors hover:text-brand"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="grid grid-cols-2 gap-6 md:contents">
+            {columns.map((col) => (
+              <div key={col.title}>
+                <p className="font-heading text-xs font-normal text-ink-foreground/60">
+                  {col.title}
+                </p>
+                <ul className="mt-5 space-y-3">
+                  {col.links.map((link) => (
+                    <li key={link.label}>
+                      <a
+                        href={link.href}
+                        className="text-ink-foreground/85 transition-colors hover:text-brand"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="mt-14 flex flex-col gap-3 border-t border-ink-foreground/15 pt-6 font-mono text-xs text-ink-foreground/60 sm:flex-row sm:items-start sm:justify-between">
           <div className="space-y-1">

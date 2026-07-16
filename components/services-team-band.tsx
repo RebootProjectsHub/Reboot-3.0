@@ -3,9 +3,9 @@ import { ArrowRight, Star } from "lucide-react"
 
 export function ServicesTeamBand() {
   return (
-    <section className="px-4 pb-12 pt-20 sm:px-6 sm:pt-24 lg:px-10 lg:pb-4 lg:pt-28">
+    <section className="px-4 pb-20 pt-20 sm:px-6 sm:pt-24 lg:px-10 lg:pb-4 lg:pt-28">
       <div className="relative mx-auto max-w-[1280px]">
-        <div className="relative aspect-[1966/1002] overflow-hidden rounded-[26px] sm:aspect-auto sm:h-[clamp(420px,42vw,620px)]">
+        <div className="relative aspect-[3/2] overflow-hidden rounded-[26px] sm:aspect-auto sm:h-[clamp(420px,42vw,620px)]">
           <Image
             src="/Felles5.webp"
             alt="Teamet i Reboot i et møte rundt et bord"
