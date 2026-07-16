@@ -12,7 +12,7 @@ export const caseStudy: CaseStudy = {
   imageAlt: "Bjørkeved stablet til tørking",
   quote: {
     text: "Anbefales på det sterkeste! Ved på Døra har samarbeidet tett med Reboot siden 2019, og de har de virkelig løftet nettsiden vår til nye høyder. Nettsiden er nå 100% responsiv, med smarte verktøy og systemer som virkelig gir resultater.",
-    author: "Ved På Døra",
+    author: "Christina Håland, Ved På Døra",
   },
   gallery: [
     { src: `${IMG}/skjerm-2.png`, alt: "Kjøp ved — produktside" },
