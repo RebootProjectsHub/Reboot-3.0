@@ -68,7 +68,6 @@ const cardClass =
 
 export function ReferencesGrid() {
   const withCase = references.filter((ref) => ref.caseSlug)
-  const externalOnly = references.filter((ref) => !ref.caseSlug)
 
   return (
     <section className="px-4 pb-16 sm:px-6 lg:px-10 lg:pb-24">
@@ -84,8 +83,18 @@ export function ReferencesGrid() {
             </Link>
           ))}
         </div>
+      </div>
+    </section>
+  )
+}
 
-        <p className="mt-16 font-heading text-sm font-medium uppercase tracking-[0.18em] text-brand">
+export function ReferencesMoreProjects() {
+  const externalOnly = references.filter((ref) => !ref.caseSlug)
+
+  return (
+    <section className="px-4 pb-16 sm:px-6 lg:px-10 lg:pb-24">
+      <div className="mx-auto max-w-[1280px]">
+        <p className="font-heading text-sm font-medium uppercase tracking-[0.18em] text-brand">
           Flere prosjekter
         </p>
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

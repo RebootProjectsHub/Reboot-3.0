@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/site-header"
 import { ReferencesHero } from "@/components/references-hero"
-import { ReferencesGrid } from "@/components/references-grid"
+import { ReferencesGrid, ReferencesMoreProjects } from "@/components/references-grid"
+import { ReferencesTestimonials } from "@/components/references-testimonials"
 import { SiteFooter } from "@/components/site-footer"
 import { pageMetadata } from "@/lib/seo"
 
@@ -17,6 +18,8 @@ export default function ReferanserPage() {
       <SiteHeader />
       <ReferencesHero />
       <ReferencesGrid />
+      <ReferencesTestimonials />
+      <ReferencesMoreProjects />
       <SiteFooter />
     </main>
   )
