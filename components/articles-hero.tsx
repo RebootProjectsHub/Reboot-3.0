@@ -24,7 +24,7 @@ export function ArticlesHero() {
 
       <p className="mx-auto max-w-[560px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
         Artikler, innsikt og nyheter fra teamet. Her kan du lese om webdesign, synlighet, AI og alt
-        som skjer hos oss i Nydalen.
+        som engasjerer oss i hverdagen.
       </p>
     </section>
   )
