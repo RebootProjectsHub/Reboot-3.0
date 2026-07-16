@@ -5,6 +5,7 @@ import { ServicesTeamBand } from "@/components/services-team-band"
 import { ServicesMaintenance } from "@/components/services-maintenance"
 import { ServicesCta } from "@/components/services-cta"
 import { SiteFooter } from "@/components/site-footer"
+import { AnchorHighlight } from "@/components/anchor-highlight"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
@@ -17,6 +18,7 @@ export const metadata = pageMetadata({
 export default function TjenesterPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
+      <AnchorHighlight />
       <SiteHeader />
       <ServicesHero />
       <ServicesGrid />
