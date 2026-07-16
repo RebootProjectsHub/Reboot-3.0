@@ -17,7 +17,7 @@ export const caseStudy: CaseStudy = {
   imageAlt: "Nettsiden til Höegh Evi på ulike enheter",
   quote: {
     text: "Takk for utmerket arbeid. Reboot har vært gjennomgående positive og løsningsorienterte!",
-    author: "Per Øystein Feet, IT Services and Change Manager — Höegh Evi",
+    author: "Per Øystein Feet, IT Services and Change Manager, Höegh Evi",
   },
   gallery: [
     { src: `${IMG}/promo.mp4`, alt: "Promovideo for hoeghevi.com", video: true },
