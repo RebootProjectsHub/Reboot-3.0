@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Check, Minus, Plus } from "lucide-react"
 
 const features = [
@@ -46,6 +46,8 @@ const features = [
   },
 ]
 
+type Feature = (typeof features)[number]
+
 const packages = [
   {
     name: "Standard",
@@ -65,6 +67,169 @@ const packages = [
   },
 ]
 
+type Package = (typeof packages)[number]
+
+function PackageCard({ pkg }: { pkg: Package }) {
+  return (
+    <div
+      className={`group relative flex h-full flex-col rounded-[26px] border-[1.5px] bg-card px-8 pb-8 pt-[34px] transition-colors duration-200 hover:border-brand ${
+        pkg.highlighted ? "border-brand" : "border-border"
+      }`}
+    >
+      {pkg.highlighted && (
+        <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
+          Mest valgt
+        </span>
+      )}
+
+      <span className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-brand">
+        {pkg.name}
+      </span>
+      <div className="mt-3 flex items-baseline gap-1.5">
+        <span className="text-[14.5px] text-foreground/60">kr</span>
+        <span className="font-heading text-[46px] font-normal leading-none text-foreground">
+          {pkg.price}
+        </span>
+        <span className="text-[14.5px] text-foreground/60">/mnd</span>
+      </div>
+
+      <ul className="mt-7 space-y-3">
+        {features.map((feature, i) => {
+          const isIncluded = pkg.included[i]
+          return (
+            <li
+              key={feature.label}
+              title={feature.description}
+              className={`flex items-center gap-3 ${isIncluded ? "" : "opacity-50"}`}
+            >
+              {isIncluded ? (
+                <Check className="size-[17px] shrink-0 text-brand" strokeWidth={2.5} />
+              ) : (
+                <Minus className="size-[17px] shrink-0 text-border" strokeWidth={2.5} />
+              )}
+              <span className="text-[14.5px] text-foreground/85">{feature.label}</span>
+            </li>
+          )
+        })}
+      </ul>
+
+      <a
+        href="/kontakt"
+        className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3.5 text-base font-normal transition-colors duration-200 ${
+          pkg.highlighted
+            ? "bg-ink text-ink-foreground hover:bg-brand"
+            : "border border-border bg-transparent text-foreground group-hover:border-ink group-hover:bg-ink group-hover:text-ink-foreground"
+        }`}
+      >
+        Kom i gang
+      </a>
+    </div>
+  )
+}
+
+// Mobile carousel: horizontal scroll-snap with the centered card shown at
+// full size and its neighbors scaled down, so whichever package is centered
+// (not necessarily the "highlighted" one) always reads as the focal card.
+function PricingSlider() {
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([])
+  const initialIndex = Math.max(
+    packages.findIndex((p) => p.highlighted),
+    0,
+  )
+  const [centerIndex, setCenterIndex] = useState(initialIndex)
+
+  useEffect(() => {
+    const container = scrollRef.current
+    const card = cardRefs.current[initialIndex]
+    if (!container || !card) return
+    container.scrollLeft = card.offsetLeft - (container.clientWidth - card.clientWidth) / 2
+    // Run once on mount only.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  useEffect(() => {
+    const container = scrollRef.current
+    if (!container) return
+    let raf = 0
+    const handleScroll = () => {
+      cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        const containerCenter = container.scrollLeft + container.clientWidth / 2
+        let closest = 0
+        let closestDist = Infinity
+        cardRefs.current.forEach((card, i) => {
+          if (!card) return
+          const cardCenter = card.offsetLeft + card.offsetWidth / 2
+          const dist = Math.abs(cardCenter - containerCenter)
+          if (dist < closestDist) {
+            closestDist = dist
+            closest = i
+          }
+        })
+        setCenterIndex(closest)
+      })
+    }
+    container.addEventListener("scroll", handleScroll, { passive: true })
+    return () => {
+      container.removeEventListener("scroll", handleScroll)
+      cancelAnimationFrame(raf)
+    }
+  }, [])
+
+  function scrollToIndex(i: number) {
+    const container = scrollRef.current
+    const card = cardRefs.current[i]
+    if (!container || !card) return
+    container.scrollTo({
+      left: card.offsetLeft - (container.clientWidth - card.clientWidth) / 2,
+      behavior: "smooth",
+    })
+  }
+
+  return (
+    <div className="sm:hidden">
+      <div
+        ref={scrollRef}
+        className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-[11%] pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
+        {packages.map((pkg, i) => (
+          <div
+            key={pkg.name}
+            ref={(el) => {
+              cardRefs.current[i] = el
+            }}
+            className="w-[78%] shrink-0 snap-center"
+          >
+            <div
+              className={`origin-center transition-transform duration-300 ${
+                i === centerIndex ? "scale-100" : "scale-90"
+              }`}
+            >
+              <PackageCard pkg={pkg} />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-5 flex items-center justify-center gap-2">
+        {packages.map((pkg, i) => (
+          <button
+            key={pkg.name}
+            type="button"
+            onClick={() => scrollToIndex(i)}
+            aria-label={`Vis ${pkg.name}`}
+            aria-current={i === centerIndex}
+            className={`size-2 rounded-full transition-colors duration-200 ${
+              i === centerIndex ? "bg-brand" : "bg-border"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function FeatureDetails() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
@@ -74,7 +239,7 @@ function FeatureDetails() {
         Hva er inkludert i pakkene?
       </h3>
       <ul className="mt-6 divide-y divide-border border-y border-border">
-        {features.map((feature, i) => {
+        {features.map((feature: Feature, i) => {
           const isOpen = openIndex === i
           return (
             <li key={feature.label}>
@@ -124,63 +289,13 @@ export function ServicesMaintenance() {
           </p>
         </div>
 
-        <div className="mx-auto mt-12 grid max-w-[1060px] gap-[22px] sm:grid-cols-3">
-          {packages.map((pkg) => (
-            <div
-              key={pkg.name}
-              className={`group relative flex flex-col rounded-[26px] border-[1.5px] bg-card px-8 pb-8 pt-[34px] transition-colors duration-200 hover:border-brand ${
-                pkg.highlighted ? "border-brand" : "border-border"
-              }`}
-            >
-              {pkg.highlighted && (
-                <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
-                  Mest valgt
-                </span>
-              )}
-
-              <span className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-brand">
-                {pkg.name}
-              </span>
-              <div className="mt-3 flex items-baseline gap-1.5">
-                <span className="text-[14.5px] text-foreground/60">kr</span>
-                <span className="font-heading text-[46px] font-normal leading-none text-foreground">
-                  {pkg.price}
-                </span>
-                <span className="text-[14.5px] text-foreground/60">/mnd</span>
-              </div>
-
-              <ul className="mt-7 space-y-3">
-                {features.map((feature, i) => {
-                  const isIncluded = pkg.included[i]
-                  return (
-                    <li
-                      key={feature.label}
-                      title={feature.description}
-                      className={`flex items-center gap-3 ${isIncluded ? "" : "opacity-50"}`}
-                    >
-                      {isIncluded ? (
-                        <Check className="size-[17px] shrink-0 text-brand" strokeWidth={2.5} />
-                      ) : (
-                        <Minus className="size-[17px] shrink-0 text-border" strokeWidth={2.5} />
-                      )}
-                      <span className="text-[14.5px] text-foreground/85">{feature.label}</span>
-                    </li>
-                  )
-                })}
-              </ul>
-
-              <a
-                href="/kontakt"
-                className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3.5 text-base font-normal transition-colors duration-200 ${
-                  pkg.highlighted
-                    ? "bg-ink text-ink-foreground hover:bg-brand"
-                    : "border border-border bg-transparent text-foreground group-hover:border-ink group-hover:bg-ink group-hover:text-ink-foreground"
-                }`}
-              >
-                Kom i gang
-              </a>
-            </div>
-          ))}
+        <div className="mt-12">
+          <PricingSlider />
+          <div className="mx-auto hidden max-w-[1060px] gap-[22px] sm:grid sm:grid-cols-3">
+            {packages.map((pkg) => (
+              <PackageCard key={pkg.name} pkg={pkg} />
+            ))}
+          </div>
         </div>
 
         <FeatureDetails />
