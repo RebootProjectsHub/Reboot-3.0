@@ -28,7 +28,7 @@ const projects: Project[] = [
   {
     kicker: "Ditt Apotek",
     title: "Shopify nettbutikk med Vipps og BankID for Ditt Apotek",
-    image: "/work-apotek.png",
+    image: "/Ditt-apotek-forside.jpg",
     href: "/ny-nettside/ditt-apotek-opera",
   },
   {
