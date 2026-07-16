@@ -72,7 +72,7 @@ type Package = (typeof packages)[number]
 function PackageCard({ pkg }: { pkg: Package }) {
   return (
     <div
-      className={`group relative flex h-full flex-col rounded-[26px] border-[1.5px] bg-card px-8 pb-8 pt-[34px] transition-colors duration-200 hover:border-brand ${
+      className={`group relative flex h-full flex-col rounded-[26px] border-[1.5px] bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px] ${
         pkg.highlighted ? "border-brand" : "border-border"
       }`}
     >
@@ -86,28 +86,30 @@ function PackageCard({ pkg }: { pkg: Package }) {
         {pkg.name}
       </span>
       <div className="mt-3 flex items-baseline gap-1.5">
-        <span className="text-[14.5px] text-foreground/60">kr</span>
-        <span className="font-heading text-[46px] font-normal leading-none text-foreground">
+        <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">kr</span>
+        <span className="whitespace-nowrap font-heading text-[32px] font-normal leading-none text-foreground sm:text-[46px]">
           {pkg.price}
         </span>
-        <span className="text-[14.5px] text-foreground/60">/mnd</span>
+        <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">/mnd</span>
       </div>
 
-      <ul className="mt-7 space-y-3">
+      <ul className="mt-6 space-y-2.5 sm:mt-7 sm:space-y-3">
         {features.map((feature, i) => {
           const isIncluded = pkg.included[i]
           return (
             <li
               key={feature.label}
               title={feature.description}
-              className={`flex items-center gap-3 ${isIncluded ? "" : "opacity-50"}`}
+              className={`flex items-center gap-2.5 sm:gap-3 ${isIncluded ? "" : "opacity-50"}`}
             >
               {isIncluded ? (
-                <Check className="size-[17px] shrink-0 text-brand" strokeWidth={2.5} />
+                <Check className="size-[15px] shrink-0 text-brand sm:size-[17px]" strokeWidth={2.5} />
               ) : (
-                <Minus className="size-[17px] shrink-0 text-border" strokeWidth={2.5} />
+                <Minus className="size-[15px] shrink-0 text-border sm:size-[17px]" strokeWidth={2.5} />
               )}
-              <span className="text-[14.5px] text-foreground/85">{feature.label}</span>
+              <span className="text-[13.5px] text-foreground/85 sm:text-[14.5px]">
+                {feature.label}
+              </span>
             </li>
           )
         })}
@@ -191,7 +193,7 @@ function PricingSlider() {
     <div className="sm:hidden">
       <div
         ref={scrollRef}
-        className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-[11%] pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-[8%] pb-2 pt-5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {packages.map((pkg, i) => (
           <div
@@ -199,7 +201,7 @@ function PricingSlider() {
             ref={(el) => {
               cardRefs.current[i] = el
             }}
-            className="w-[78%] shrink-0 snap-center"
+            className="w-[84%] shrink-0 snap-center"
           >
             <div
               className={`origin-center transition-transform duration-300 ${
