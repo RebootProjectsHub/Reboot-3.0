@@ -157,7 +157,7 @@ export function ContactForm() {
             onChange={(e) => setMessage(e.target.value)}
             aria-invalid={errors.message ? true : undefined}
             className="resize-none rounded-[var(--radius-xs)] border border-border bg-background px-4 py-3 text-foreground outline-none transition-colors placeholder:text-foreground/40 focus:border-brand"
-            placeholder="Fortell oss kort om hva vi kan hjelpe med"
+            placeholder="Fortell oss kort om hva vi kan hjelpe deg med"
           />
           {errors.message && (
             <p className="text-sm text-brand">{errors.message}</p>
