@@ -19,7 +19,7 @@ export const references: Reference[] = [
   {
     name: "Akademikerne Pluss",
     url: "https://akademikernepluss.no/",
-    image: "/referanser/akademikerne-pluss.jpg",
+    image: "/referanser/getty-images-OVHhgc0Y8nU-unsplash-scaled.jpg",
   },
   {
     name: "Runner's World",
