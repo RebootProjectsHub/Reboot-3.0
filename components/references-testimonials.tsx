@@ -32,7 +32,7 @@ export function ReferencesTestimonials() {
   return (
     <section className="px-4 pb-16 sm:px-6 lg:px-10 lg:pb-24">
       <div className="mx-auto max-w-[1280px]">
-        <div className="rounded-[var(--radius)] border border-border bg-card px-6 py-14 sm:px-12 sm:py-16">
+        <div className="rounded-[var(--radius)] border border-ink-foreground/15 bg-ink px-6 py-14 text-ink-foreground sm:px-12 sm:py-16">
           <figure className="mx-auto max-w-[720px] text-center">
             <div className="flex justify-center" aria-hidden="true">
               {Array.from({ length: 5 }).map((_, i) => (
@@ -42,13 +42,13 @@ export function ReferencesTestimonials() {
 
             <blockquote
               key={review.slug}
-              className="mt-7 min-h-[110px] text-balance font-heading text-[clamp(22px,3vw,32px)] font-normal leading-[1.35] text-foreground sm:min-h-[90px]"
+              className="mt-7 min-h-[100px] text-balance font-heading text-[clamp(19px,2.6vw,27px)] font-normal leading-[1.4] text-ink-foreground sm:min-h-[80px]"
             >
               «{review.text}»
             </blockquote>
 
             <figcaption className="mt-7">
-              <p className="font-semibold text-foreground">{review.author}</p>
+              <p className="font-semibold text-ink-foreground">{review.author}</p>
               <Link
                 href={`/ny-nettside/${review.slug}`}
                 className="mt-1 inline-block text-sm text-brand underline-offset-4 hover:underline"
@@ -64,7 +64,7 @@ export function ReferencesTestimonials() {
                 type="button"
                 onClick={prev}
                 aria-label="Forrige omtale"
-                className="inline-flex size-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-brand hover:text-brand"
+                className="inline-flex size-10 items-center justify-center rounded-full border border-ink-foreground/20 text-ink-foreground transition-colors hover:border-brand hover:text-brand"
               >
                 <ChevronLeft className="size-4" aria-hidden />
               </button>
@@ -78,7 +78,7 @@ export function ReferencesTestimonials() {
                     aria-label={`Vis omtale fra ${r.name}`}
                     aria-current={i === index}
                     className={`size-2 rounded-full transition-colors duration-200 ${
-                      i === index ? "bg-brand" : "bg-border"
+                      i === index ? "bg-brand" : "bg-ink-foreground/25"
                     }`}
                   />
                 ))}
@@ -88,7 +88,7 @@ export function ReferencesTestimonials() {
                 type="button"
                 onClick={next}
                 aria-label="Neste omtale"
-                className="inline-flex size-10 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-brand hover:text-brand"
+                className="inline-flex size-10 items-center justify-center rounded-full border border-ink-foreground/20 text-ink-foreground transition-colors hover:border-brand hover:text-brand"
               >
                 <ChevronRight className="size-4" aria-hidden />
               </button>

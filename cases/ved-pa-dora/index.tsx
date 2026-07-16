@@ -11,7 +11,7 @@ export const caseStudy: CaseStudy = {
   image: `${IMG}/hero.jpg`,
   imageAlt: "Bjørkeved stablet til tørking",
   quote: {
-    text: "Med Reboot på laget har vi gått fra å være en parentes i bransjen til en stor og etablert aktør.",
+    text: "Anbefales på det sterkeste! Ved på Døra har samarbeidet tett med Reboot siden 2019, og de har de virkelig løftet nettsiden vår til nye høyder. Nettsiden er nå 100% responsiv, med smarte verktøy og systemer som virkelig gir resultater.",
     author: "Ved På Døra",
   },
   gallery: [
