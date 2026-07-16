@@ -5,8 +5,8 @@ const columns = [
     title: "Våre tjenester",
     links: [
       { label: "Ny nettside", href: "/tjenester" },
-      { label: "Redesign", href: "/tjenester" },
-      { label: "SEO og AI-søk", href: "/tjenester" },
+      { label: "AI-rådgivning", href: "/tjenester#ai-radgivning" },
+      { label: "SEO og AI-søk", href: "/tjenester#seo-og-ai-svar" },
       { label: "Hosting & support", href: "/tjenester#vedlikehold-og-support" },
     ],
   },
