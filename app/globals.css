@@ -133,21 +133,23 @@
 }
 
 @keyframes anchor-highlight-fade {
-  from {
+  0%,
+  35% {
     border-color: var(--brand);
   }
-  to {
+  100% {
     border-color: transparent;
   }
 }
 
-/* Flashes a target section/card's border brand-red then fades back to
-   transparent, drawing attention to it when landing on a page via an
-   anchor link. The target needs its own border-width defined (with
-   border-transparent at rest) for this to have something to animate. */
+/* Flashes a target section/card's border brand-red, holds it briefly, then
+   fades back to transparent, drawing attention to it when landing on a
+   page via an anchor link. The target needs its own border-width defined
+   (with border-transparent at rest) for this to have something to
+   animate. */
 @media (prefers-reduced-motion: no-preference) {
   .anchor-highlight {
-    animation: anchor-highlight-fade 1.8s ease-out;
+    animation: anchor-highlight-fade 2.8s ease-out;
   }
 }
 

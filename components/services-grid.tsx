@@ -169,7 +169,7 @@ export function ServicesGrid() {
             <article
               key={item.title}
               id={item.id}
-              className="flex scroll-mt-24 flex-col rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-10 pt-9 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand"
+              className="flex scroll-mt-24 flex-col rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-10 pt-9 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-muted-foreground/40"
             >
               <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
                 {item.kicker}
