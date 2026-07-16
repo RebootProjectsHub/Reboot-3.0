@@ -23,7 +23,7 @@ export function AboutHero() {
       </h1>
 
       <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
-        Vi er et faglig sterkt team i Nydalen, Oslo som designer, utvikler og drifter nettsider.
+        Vi er et faglig sterkt team som designer, utvikler og drifter nettsider.
       </p>
     </section>
   )
