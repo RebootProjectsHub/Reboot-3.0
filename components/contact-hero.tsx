@@ -23,8 +23,8 @@ export function ContactHero() {
       </h1>
 
       <p className="mx-auto max-w-[560px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
-        Enten du har et konkret prosjekt eller bare en idé — send oss en melding, så
-        svarer vi i løpet av dagen. Uforpliktende, selvfølgelig.
+        Enten du har et konkret prosjekt eller bare en idé, send oss en melding så
+        svarer vi i løpet av dagen. Helt uforpliktende, selvfølgelig.
       </p>
     </section>
   )
