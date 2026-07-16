@@ -58,7 +58,7 @@ export function TeamBand() {
               <p className="mt-0.5 text-[13px] text-foreground/70">OBOS</p>
             </div>
             <a
-              href="#kundecaser"
+              href="/referanser"
               className="inline-flex items-center gap-2 whitespace-nowrap text-[14.5px] font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
             >
               Se referanser
