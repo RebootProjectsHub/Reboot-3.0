@@ -162,7 +162,7 @@ function ServiceList({
 
 export function ServicesGrid() {
   return (
-    <section className="px-4 py-20 sm:px-6 lg:px-10">
+    <section className="px-4 py-14 sm:px-6 lg:px-10">
       <div className="mx-auto max-w-[1280px]">
         <div className="grid gap-[22px] sm:grid-cols-2">
           {services.map((item) => (

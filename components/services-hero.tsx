@@ -1,6 +1,6 @@
 export function ServicesHero() {
   return (
-    <section className="relative mx-auto max-w-[820px] px-6 pb-20 pt-20 text-center sm:pt-24">
+    <section className="relative mx-auto max-w-[820px] px-6 pb-16 pt-16 text-center sm:pt-24">
       <span
         aria-hidden
         className="absolute left-[6%] top-10 hidden text-[26px] leading-none text-brand/45 md:block"
