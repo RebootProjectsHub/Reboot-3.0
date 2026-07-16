@@ -6,7 +6,7 @@ const services = [
     kicker: "Ny nettside & redesign",
     title: "Ny nettside / redesign",
     body: "Fra bunnen av eller redesign av eksisterende side, leverer vi moderne, raske og skreddersydde nettsider.",
-    href: "/tjenester",
+    href: "/tjenester#skreddersydd-nettside",
   },
   {
     kicker: "Synlighet & vekst",

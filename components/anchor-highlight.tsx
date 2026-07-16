@@ -2,7 +2,13 @@
 
 import { useEffect } from "react"
 
+// Targets that should still be scrolled to via their hash, but not
+// flashed — vedlikehold-og-support wraps a large full-width section
+// (not a compact card), so the flash was excluded there by request.
+const NO_FLASH_IDS = new Set(["vedlikehold-og-support"])
+
 function flash(id: string) {
+  if (NO_FLASH_IDS.has(id)) return
   const el = document.getElementById(id)
   if (!el) return
   el.classList.remove("anchor-highlight")
