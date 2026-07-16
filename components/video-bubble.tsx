@@ -104,7 +104,7 @@ export function VideoBubble() {
                 løsning skreddersydd deres behov.
               </p>
               <a
-                href="mailto:hallo@reboot.no"
+                href="/kontakt"
                 className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-ink-foreground/15 px-4 py-2 text-sm font-medium text-ink-foreground backdrop-blur-sm transition-[background-color,gap] duration-200 hover:gap-2.5 hover:bg-ink-foreground/25"
               >
                 Kom i gang
