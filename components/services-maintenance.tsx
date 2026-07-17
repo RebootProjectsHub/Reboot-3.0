@@ -216,10 +216,7 @@ function PricingSlider() {
                 i === centerIndex ? "scale-100" : "scale-90"
               }`}
             >
-              <PackageCard
-                pkg={pkg}
-                borderColor={i === centerIndex ? "border-brand" : "border-ink"}
-              />
+              <PackageCard pkg={pkg} borderColor="border-brand" />
             </div>
           </div>
         ))}
