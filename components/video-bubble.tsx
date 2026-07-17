@@ -49,7 +49,7 @@ export function VideoBubble() {
             type="button"
             onClick={() => setOpen(true)}
             aria-label="Se video fra Reboot"
-            className="block size-20 cursor-pointer overflow-hidden rounded-full ring-2 ring-brand ring-offset-4 ring-offset-background transition-transform duration-200 hover:scale-105 sm:size-24"
+            className="block size-16 cursor-pointer overflow-hidden rounded-full ring-2 ring-brand ring-offset-2 ring-offset-background transition-transform duration-200 hover:scale-105 sm:size-24 sm:ring-offset-4"
           >
             <video
               src="/reboot-intro-kort-video.mp4"
@@ -64,9 +64,9 @@ export function VideoBubble() {
             type="button"
             onClick={() => setDismissed(true)}
             aria-label="Lukk video"
-            className="absolute -right-1 -top-1 inline-flex size-6 cursor-default items-center justify-center rounded-full bg-brand text-white transition-colors hover:bg-[#DD2A2C]"
+            className="absolute -right-1 -top-1 inline-flex size-5 cursor-default items-center justify-center rounded-full bg-brand text-white transition-colors hover:bg-[#DD2A2C] sm:size-6"
           >
-            <X className="size-3.5" strokeWidth={2.5} aria-hidden />
+            <X className="size-3 sm:size-3.5" strokeWidth={2.5} aria-hidden />
           </button>
         </div>
       )}
