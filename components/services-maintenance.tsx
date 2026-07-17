@@ -69,12 +69,20 @@ const packages = [
 
 type Package = (typeof packages)[number]
 
-function PackageCard({ pkg }: { pkg: Package }) {
+function PackageCard({
+  pkg,
+  borderColor,
+}: {
+  pkg: Package
+  /** Overrides the resting border color class. Defaults to the desktop-grid
+   *  rule (brand for the highlighted package, the default border otherwise);
+   *  the mobile slider passes its own centered/not-centered colors instead. */
+  borderColor?: string
+}) {
+  const border = borderColor ?? (pkg.highlighted ? "border-brand" : "border-border")
   return (
     <div
-      className={`group relative flex h-full flex-col rounded-[26px] border-[1.5px] bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px] ${
-        pkg.highlighted ? "border-brand" : "border-border"
-      }`}
+      className={`group relative flex h-full flex-col rounded-[26px] border-[1.5px] bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px] ${border}`}
     >
       {pkg.highlighted && (
         <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
@@ -208,7 +216,10 @@ function PricingSlider() {
                 i === centerIndex ? "scale-100" : "scale-90"
               }`}
             >
-              <PackageCard pkg={pkg} />
+              <PackageCard
+                pkg={pkg}
+                borderColor={i === centerIndex ? "border-brand" : "border-ink"}
+              />
             </div>
           </div>
         ))}
