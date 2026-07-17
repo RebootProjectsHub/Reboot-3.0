@@ -43,7 +43,7 @@ export function Services() {
                 <div className="h-1 w-[28px] rounded-full bg-brand" />
                 <div className="h-1 w-[16px] rounded-full bg-brand/25" />
               </div>
-              <p className="text-[16.5px] leading-[1.6] text-foreground/70">
+              <p className="hidden text-[16.5px] leading-[1.6] text-foreground/70 sm:block">
                 {item.body}
               </p>
               <div className="min-h-7 flex-1" />
