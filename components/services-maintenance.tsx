@@ -214,7 +214,10 @@ function PricingSlider() {
         ))}
       </div>
 
-      <div className="mt-5 flex items-center justify-center gap-2">
+      {/* Indicator pills echo the logo's underline (Progress.svg): a long
+          solid brand bar for the active card, shorter faded bars for the
+          rest, animating between the two states. */}
+      <div className="mt-5 flex items-center justify-center gap-[3px]">
         {packages.map((pkg, i) => (
           <button
             key={pkg.name}
@@ -222,8 +225,8 @@ function PricingSlider() {
             onClick={() => scrollToIndex(i)}
             aria-label={`Vis ${pkg.name}`}
             aria-current={i === centerIndex}
-            className={`size-2 rounded-full transition-colors duration-200 ${
-              i === centerIndex ? "bg-brand" : "bg-border"
+            className={`h-1.5 rounded-full transition-[width,background-color] duration-300 ease-out ${
+              i === centerIndex ? "w-8 bg-brand" : "w-4 bg-brand/25"
             }`}
           />
         ))}
