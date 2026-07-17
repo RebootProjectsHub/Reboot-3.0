@@ -31,24 +31,26 @@ export function Services() {
             <Link
               key={item.kicker}
               href={item.href}
-              className="group flex flex-col rounded-[26px] border-[1.5px] border-transparent bg-card pt-9 px-[34px] pb-10 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand"
+              className="group flex flex-row items-center justify-between gap-4 rounded-[20px] border-[1.5px] border-transparent bg-card px-5 py-4 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand sm:flex-col sm:items-stretch sm:justify-start sm:gap-0 sm:rounded-[26px] sm:px-[34px] sm:pb-10 sm:pt-9"
             >
-              <span className="mb-3.5 font-mono text-xs uppercase tracking-[0.13em] text-brand">
-                {item.kicker}
-              </span>
-              <h3 className="font-heading text-[23px] font-normal leading-[1.14] tracking-[-0.01em] text-foreground">
-                {item.title}
-              </h3>
-              <div className="mt-[18px] mb-5 flex items-center gap-[2px]">
+              <div className="min-w-0">
+                <span className="mb-1 block font-mono text-xs uppercase tracking-[0.13em] text-brand sm:mb-3.5">
+                  {item.kicker}
+                </span>
+                <h3 className="font-heading text-[17px] font-normal leading-[1.25] tracking-[-0.01em] text-foreground sm:text-[23px] sm:leading-[1.14]">
+                  {item.title}
+                </h3>
+              </div>
+              <div className="mt-[18px] mb-5 hidden items-center gap-[2px] sm:flex">
                 <div className="h-1 w-[28px] rounded-full bg-brand" />
                 <div className="h-1 w-[16px] rounded-full bg-brand/25" />
               </div>
               <p className="hidden text-[16.5px] leading-[1.6] text-foreground/70 sm:block">
                 {item.body}
               </p>
-              <div className="min-h-7 flex-1" />
-              <div className="flex size-[54px] shrink-0 items-center justify-center self-end rounded-full bg-brand/10 text-brand transition-colors duration-200 group-hover:bg-brand group-hover:text-brand-foreground">
-                <ArrowUpRight className="size-[22px]" strokeWidth={2} />
+              <div className="hidden min-h-7 flex-1 sm:block" />
+              <div className="flex size-11 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand transition-colors duration-200 group-hover:bg-brand group-hover:text-brand-foreground sm:size-[54px] sm:self-end">
+                <ArrowUpRight className="size-[18px] sm:size-[22px]" strokeWidth={2} />
               </div>
             </Link>
           ))}
