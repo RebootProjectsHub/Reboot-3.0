@@ -50,7 +50,7 @@ export function Services() {
               </p>
               <div className="hidden min-h-7 flex-1 sm:block" />
               <div className="flex size-11 shrink-0 items-center justify-center text-brand transition-colors duration-200 sm:size-[54px] sm:self-end sm:rounded-full sm:bg-brand/10 sm:group-hover:bg-brand sm:group-hover:text-brand-foreground">
-                <ArrowUpRight className="size-6 stroke-[1.5] sm:size-[22px] sm:stroke-2" strokeWidth={2} />
+                <ArrowUpRight className="size-6 stroke-1 sm:size-[22px] sm:stroke-2" strokeWidth={2} />
               </div>
             </Link>
           ))}
