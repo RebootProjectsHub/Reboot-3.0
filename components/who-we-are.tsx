@@ -53,7 +53,7 @@ export function WhoWeAre() {
               </div>
             </div>
 
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[calc(var(--radius)-0.75rem)] sm:aspect-[16/9] lg:aspect-auto lg:h-full">
+            <div className="relative aspect-[4/4.5] overflow-hidden rounded-[calc(var(--radius)-0.75rem)] sm:aspect-[16/9] lg:aspect-auto lg:h-full">
               <Image
                 src="/sable-flow-o-6GhmpELnw-unsplash.jpg"
                 alt="Reboot-teamet i en idémyldring rundt en tavle med merkevareelementer"
