@@ -3,7 +3,7 @@ import { ArrowRight, Star } from "lucide-react"
 
 export function ServicesTeamBand() {
   return (
-    <section className="px-4 pb-14 pt-20 sm:px-6 sm:pt-24 lg:px-10 lg:pb-4 lg:pt-28">
+    <section className="px-4 pb-14 pt-10 sm:px-6 sm:pt-24 lg:px-10 lg:pb-4 lg:pt-28">
       <div className="relative mx-auto max-w-[1280px]">
         <div className="relative aspect-[3/2] overflow-hidden rounded-[26px] sm:aspect-auto sm:h-[clamp(420px,42vw,620px)]">
           <Image
