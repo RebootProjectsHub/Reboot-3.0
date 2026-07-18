@@ -10,10 +10,11 @@ export function CaseGallery({ gallery }: { gallery: GalleryItem[] }) {
   const itemRefs = useRef<(HTMLDivElement | null)[]>([])
   const [centerIndex, setCenterIndex] = useState(0)
 
-  // Landscape shots don't fit the slider's fixed-height cards without
-  // stretching, so on mobile they're pulled out and shown as normal
-  // full-width images below it instead.
-  const sliderItems = gallery.filter((shot) => shot.video || shot.portrait)
+  // Landscape shots and videos don't fit the slider's fixed-height portrait
+  // cards without stretching, so on mobile they're pulled out and shown as
+  // normal full-width media above/below it instead.
+  const sliderItems = gallery.filter((shot) => shot.portrait)
+  const videoItems = gallery.filter((shot) => shot.video)
   const landscapeItems = gallery.filter((shot) => !shot.video && !shot.portrait)
 
   useEffect(() => {
@@ -57,15 +58,32 @@ export function CaseGallery({ gallery }: { gallery: GalleryItem[] }) {
 
   return (
     <>
-      {/* Mobile: edge-to-edge scroll-snap slider for portrait shots/videos.
-          Landscape shots are shown separately below as normal full-width
-          images instead of being squeezed into the fixed-height cards. */}
+      {/* Mobile: edge-to-edge scroll-snap slider for portrait shots only.
+          Videos are shown above it and landscape shots below it, as normal
+          full-width media, instead of being squeezed into the slider. */}
       <div className="sm:hidden">
+        {videoItems.length > 0 && (
+          <div className="mb-5 flex flex-col gap-5">
+            {videoItems.map((shot) => (
+              <video
+                key={shot.src}
+                src={shot.src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                aria-label={shot.alt}
+                className="w-full rounded-[26px] border border-border"
+              />
+            ))}
+          </div>
+        )}
+
         {sliderItems.length > 0 && (
           <>
             <div
               ref={scrollRef}
-              className="-mx-4 flex snap-x snap-mandatory items-stretch gap-5 overflow-x-auto px-4 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              className="-mx-4 flex snap-x snap-mandatory items-stretch gap-3 overflow-x-auto px-4 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             >
               {sliderItems.map((shot, i) => (
                 <div
@@ -75,25 +93,13 @@ export function CaseGallery({ gallery }: { gallery: GalleryItem[] }) {
                   }}
                   className="w-[85%] shrink-0 snap-center"
                 >
-                  {shot.video ? (
-                    <video
-                      src={shot.src}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      aria-label={shot.alt}
-                      className="w-full rounded-[26px] border border-border"
-                    />
-                  ) : (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={shot.src}
-                      alt={shot.alt}
-                      loading="lazy"
-                      className="h-[380px] w-auto rounded-[26px] border border-border object-cover"
-                    />
-                  )}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={shot.src}
+                    alt={shot.alt}
+                    loading="lazy"
+                    className="h-[380px] w-auto rounded-[26px] border border-border object-cover"
+                  />
                 </div>
               ))}
             </div>
