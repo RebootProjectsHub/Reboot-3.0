@@ -289,7 +289,7 @@ export function ServicesMaintenance() {
   return (
     <section
       id="vedlikehold-og-support"
-      className="scroll-mt-24 border-[1.5px] border-transparent px-4 py-[90px] sm:px-6 lg:px-10"
+      className="scroll-mt-24 border-[1.5px] border-transparent px-4 py-16 sm:px-6 sm:py-20 lg:px-10 lg:py-[90px]"
     >
       <div className="mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[550px] text-center">
