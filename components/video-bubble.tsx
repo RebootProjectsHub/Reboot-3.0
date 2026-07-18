@@ -78,7 +78,7 @@ export function VideoBubble() {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative aspect-[9/16] w-full max-w-[380px] overflow-hidden rounded-[26px] bg-ink"
+            className="relative aspect-[9/16] w-full max-w-[300px] overflow-hidden rounded-[26px] bg-ink sm:max-w-[380px]"
           >
             <video
               ref={videoRef}
