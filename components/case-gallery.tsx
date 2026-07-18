@@ -91,7 +91,7 @@ export function CaseGallery({ gallery }: { gallery: GalleryItem[] }) {
                   ref={(el) => {
                     itemRefs.current[i] = el
                   }}
-                  className="w-[85%] shrink-0 snap-center"
+                  className="shrink-0 snap-center"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
