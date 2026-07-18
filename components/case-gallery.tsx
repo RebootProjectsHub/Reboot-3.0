@@ -10,6 +10,12 @@ export function CaseGallery({ gallery }: { gallery: GalleryItem[] }) {
   const itemRefs = useRef<(HTMLDivElement | null)[]>([])
   const [centerIndex, setCenterIndex] = useState(0)
 
+  // Landscape shots don't fit the slider's fixed-height cards without
+  // stretching, so on mobile they're pulled out and shown as normal
+  // full-width images below it instead.
+  const sliderItems = gallery.filter((shot) => shot.video || shot.portrait)
+  const landscapeItems = gallery.filter((shot) => !shot.video && !shot.portrait)
+
   useEffect(() => {
     const container = scrollRef.current
     if (!container) return
@@ -51,67 +57,78 @@ export function CaseGallery({ gallery }: { gallery: GalleryItem[] }) {
 
   return (
     <>
-      {/* Mobile: edge-to-edge scroll-snap slider. Landscape shots/videos keep
-          their own aspect ratio (self-start, no forced height) instead of
-          being stretched to match the portrait screenshots' fixed height. */}
+      {/* Mobile: edge-to-edge scroll-snap slider for portrait shots/videos.
+          Landscape shots are shown separately below as normal full-width
+          images instead of being squeezed into the fixed-height cards. */}
       <div className="sm:hidden">
-        <div
-          ref={scrollRef}
-          className="-mx-4 flex snap-x snap-mandatory items-stretch gap-5 overflow-x-auto px-4 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-        >
-          {gallery.map((shot, i) => (
+        {sliderItems.length > 0 && (
+          <>
             <div
-              key={shot.src}
-              ref={(el) => {
-                itemRefs.current[i] = el
-              }}
-              className="w-[85%] shrink-0 snap-center"
+              ref={scrollRef}
+              className="-mx-4 flex snap-x snap-mandatory items-stretch gap-5 overflow-x-auto px-4 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             >
-              {shot.video ? (
-                <video
-                  src={shot.src}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  aria-label={shot.alt}
-                  className="w-full self-start rounded-[26px] border border-border"
-                />
-              ) : shot.portrait ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={shot.src}
-                  alt={shot.alt}
-                  loading="lazy"
-                  className="h-[380px] w-auto rounded-[26px] border border-border object-cover"
-                />
-              ) : (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={shot.src}
-                  alt={shot.alt}
-                  loading="lazy"
-                  className="w-full self-start rounded-[26px] border border-border"
-                />
-              )}
+              {sliderItems.map((shot, i) => (
+                <div
+                  key={shot.src}
+                  ref={(el) => {
+                    itemRefs.current[i] = el
+                  }}
+                  className="w-[85%] shrink-0 snap-center"
+                >
+                  {shot.video ? (
+                    <video
+                      src={shot.src}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      aria-label={shot.alt}
+                      className="w-full rounded-[26px] border border-border"
+                    />
+                  ) : (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={shot.src}
+                      alt={shot.alt}
+                      loading="lazy"
+                      className="h-[380px] w-auto rounded-[26px] border border-border object-cover"
+                    />
+                  )}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
 
-        {/* Progress-bar indicators (same motif as the pricing slider, echoing
-            the logo's underline). */}
-        {gallery.length > 1 && (
-          <div className="mt-5 flex items-center justify-center gap-[3px]">
-            {gallery.map((shot, i) => (
-              <button
+            {/* Progress-bar indicators (same motif as the pricing slider, echoing
+                the logo's underline). */}
+            {sliderItems.length > 1 && (
+              <div className="mt-5 flex items-center justify-center gap-[3px]">
+                {sliderItems.map((shot, i) => (
+                  <button
+                    key={shot.src}
+                    type="button"
+                    onClick={() => scrollToIndex(i)}
+                    aria-label={`Vis bilde ${i + 1}`}
+                    aria-current={i === centerIndex}
+                    className={`h-1.5 rounded-full transition-[width,background-color] duration-300 ease-out ${
+                      i === centerIndex ? "w-8 bg-brand" : "w-4 bg-brand/25"
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
+          </>
+        )}
+
+        {landscapeItems.length > 0 && (
+          <div className={`flex flex-col gap-5 ${sliderItems.length > 0 ? "mt-5" : ""}`}>
+            {landscapeItems.map((shot) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 key={shot.src}
-                type="button"
-                onClick={() => scrollToIndex(i)}
-                aria-label={`Vis bilde ${i + 1}`}
-                aria-current={i === centerIndex}
-                className={`h-1.5 rounded-full transition-[width,background-color] duration-300 ease-out ${
-                  i === centerIndex ? "w-8 bg-brand" : "w-4 bg-brand/25"
-                }`}
+                src={shot.src}
+                alt={shot.alt}
+                loading="lazy"
+                className="w-full rounded-[26px] border border-border"
               />
             ))}
           </div>
