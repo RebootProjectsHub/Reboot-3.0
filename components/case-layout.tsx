@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, ArrowUpRight } from "lucide-react"
 import type { CaseStudy } from "@/cases/types"
+import { CaseGallery } from "@/components/case-gallery"
 
 export function CaseLayout({ caseStudy }: { caseStudy: CaseStudy }) {
   return (
@@ -103,43 +104,7 @@ export function CaseLayout({ caseStudy }: { caseStudy: CaseStudy }) {
       {caseStudy.gallery && caseStudy.gallery.length > 0 && (
         <div className="px-4 pb-12 sm:px-6 sm:pb-16 lg:px-10">
           <div className="mx-auto max-w-[1140px]">
-            {/* Horizontal scroll-snap slider on mobile (edge-to-edge, cancels
-                the section's own px-4); reverts to the original wrapped
-                layout from sm and up. */}
-            <div className="-mx-4 flex snap-x snap-mandatory items-stretch gap-5 overflow-x-auto px-4 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:snap-none sm:justify-center sm:overflow-visible sm:px-0 sm:pb-0 [&::-webkit-scrollbar]:hidden">
-              {caseStudy.gallery.map((shot) =>
-                shot.video ? (
-                  <video
-                    key={shot.src}
-                    src={shot.src}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    aria-label={shot.alt}
-                    className="w-[85%] shrink-0 snap-center rounded-[26px] border border-border sm:w-full sm:shrink"
-                  />
-                ) : shot.portrait ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    key={shot.src}
-                    src={shot.src}
-                    alt={shot.alt}
-                    loading="lazy"
-                    className="h-[380px] w-auto shrink-0 snap-center rounded-[26px] border border-border object-cover sm:h-[540px]"
-                  />
-                ) : (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    key={shot.src}
-                    src={shot.src}
-                    alt={shot.alt}
-                    loading="lazy"
-                    className="w-[85%] shrink-0 snap-center rounded-[26px] border border-border sm:w-full sm:shrink"
-                  />
-                ),
-              )}
-            </div>
+            <CaseGallery gallery={caseStudy.gallery} />
           </div>
         </div>
       )}
