@@ -58,7 +58,7 @@ export function WhoWeAre() {
                 src="/sable-flow-o-6GhmpELnw-unsplash.jpg"
                 alt="Reboot-teamet i en idémyldring rundt en tavle med merkevareelementer"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
