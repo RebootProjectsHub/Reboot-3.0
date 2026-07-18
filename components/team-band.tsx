@@ -36,7 +36,7 @@ export function TeamBand() {
               ))}
             </div>
             <a
-              href="https://www.google.com/search?sa=X&sca_esv=ba3772bf42af157a&sxsrf=APpeQnsXDry-b4d9A8A_6udRT-vBckqlFQ:1783773227916&q=Reboot+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDcwMzI0N7I0sjAyNTAyNDQ2MdjAyPiKkS8oNSk_v0QhKLUsM7W8eBErmgAAvsa6BD0AAAA&rldimm=17062172928250211340&tbm=lcl&hl=en-NO&ved=2ahUKEwix8O-M0cqVAxVdBxAIHSlwA-4Q9fQKegQIURAG&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews"
+              href="https://www.google.com/search?sa=X&sca_esv=ba3772bf42af157a&sxsrf=APpeQnsXDry-b4d9A8A_6udRT-vBckqlFQ:1783773227916&q=Reboot+Anmeldelser&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDcwMzI0N7I0sjAyNTAyNDQ2MdjAyPiKkS8oNSk_v0QhKLUsM7W8eBErmgAAvsa6BD0AAAA&rldimm=17062172928250211340&tbm=lcl&hl=en-NO&ved=2ahUKEwix8O-M0cqVAxVdBxAIHSlwA-4Q9fQKegQIURAG&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-mono text-[13px] font-medium text-foreground hover:text-brand"
