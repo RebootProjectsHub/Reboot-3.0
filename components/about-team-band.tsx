@@ -43,7 +43,9 @@ Vi bruker moderne teknologi der det faktisk gir mening, men det personlige tar v
                 {stats.map((stat) => (
                   <div
                     key={stat.label}
-                    className="min-w-24 rounded-2xl px-4 py-3"
+                    className={`min-w-24 rounded-2xl px-4 py-3 ${
+                      stat.label === "Kundeoppfølging" ? "hidden sm:block" : ""
+                    }`}
                   >
                     <div className="flex items-baseline gap-1 font-heading text-2xl font-normal leading-none">
                       {stat.value}
