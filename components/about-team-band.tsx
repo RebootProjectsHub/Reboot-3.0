@@ -25,7 +25,7 @@ export function AboutTeamBand() {
           </span>
 
           <div className="relative grid gap-8 lg:grid-cols-2 lg:gap-0 lg:items-stretch">
-            <div className="flex min-w-0 flex-col justify-center py-10 pl-8 pr-6 sm:py-12 sm:pl-14 sm:pr-10 lg:py-24 lg:pl-20 lg:pr-12">
+            <div className="order-2 flex min-w-0 flex-col justify-center py-10 pl-8 pr-6 sm:py-12 sm:pl-14 sm:pr-10 lg:order-none lg:py-24 lg:pl-20 lg:pr-12">
               <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-brand">
                 Hvem er vi i Reboot?
               </span>
@@ -61,7 +61,7 @@ Vi bruker moderne teknologi der det faktisk gir mening, men det personlige tar v
               </div>
             </div>
 
-            <div className="relative min-h-[280px] lg:min-h-[360px]">
+            <div className="order-1 relative min-h-[280px] lg:order-none lg:min-h-[360px]">
               <Image
                 src="/sable-flow-o-6GhmpELnw-unsplash2.jpg"
                 alt="Reboot-teamet i en idémyldring rundt en tavle"
