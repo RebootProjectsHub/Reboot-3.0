@@ -206,19 +206,17 @@ export default function WordPressPage() {
           <div className="rounded-[var(--radius)] bg-card px-8 py-12 sm:px-12 sm:py-14 lg:px-16">
             <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
               <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
-                Plattformen bak de aller fleste nettsidene vi leverer
+                Vi bruker Wordpress for de fleste av våre leveranser
               </h2>
               <div>
                 <p className="text-[17px] leading-[1.7] text-foreground/75">
                   Det er en grunn til at vi stadig vender tilbake til WordPress:
                   det gir kundene våre en nettside de selv kan oppdatere, et
-                  økosystem som ikke låser dem til ett byrå, og fleksibilitet
-                  til alt fra enkle bedriftssider til bookingportaler og
-                  nettbutikker med medlemskap.
+                  økosystem som ikke låser dem til ett byrå og fleksibilitet
+                  et helt skreddersydd oppsett.
                 </p>
                 <p className="mt-4 text-[17px] leading-[1.7] text-foreground/75">
-                  Vi bygger alltid uten kjøpte temaer – skreddersydd design og
-                  ryddig kode, avtalt til fastpris før vi starter.
+                  Vi tilpasser oss hver eneste bedrift vi jobber for. Noen ønsker å bruke ferdigbygde temaer for å spare kostnader, mens andre ønsker et skreddersydd bygd opp fra bunnen får å realisere en spesifikk visjon.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-10">
                   <div>
