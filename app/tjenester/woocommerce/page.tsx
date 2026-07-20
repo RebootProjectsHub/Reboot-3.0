@@ -168,7 +168,7 @@ export default function WooCommercePage() {
         </span>
 
         <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
-          WooCommerce-byrå i Oslo
+          WooCommerce-eksperter i Oslo
         </h1>
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
