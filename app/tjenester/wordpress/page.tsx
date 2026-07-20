@@ -8,7 +8,7 @@ import { FaqList } from "@/components/faq-list"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
-  title: "WordPress-byrå i Oslo",
+  title: "WordPress-utvikler i Oslo",
   description:
     "Reboot er et WordPress-byrå i Nydalen, Oslo. Vi designer, utvikler og drifter WordPress-nettsider med WooCommerce, Vipps og booking. Fastpris og norsk support.",
   path: "/tjenester/wordpress",
@@ -180,7 +180,7 @@ export default function WordPressPage() {
         </span>
 
         <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
-          WordPress-byrå i Oslo
+          WordPress-utvikler i Oslo
         </h1>
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
