@@ -268,9 +268,18 @@ export default function WordPressPage() {
               <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
                 Hva vi hjelper deg med
               </span>
-              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground lg:sticky lg:top-28">
+              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
                 WordPress-tjenester fra A til Å
               </h2>
+              <div className="relative mt-7 aspect-[1500/1091] overflow-hidden rounded-[var(--radius)]">
+                <Image
+                  src="/wp-har-wordpress.jpg"
+                  alt="WordPress-administrasjonspanel"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+              </div>
             </div>
             <ol className="divide-y divide-border border-y border-border">
               {services.map((service, i) => (
