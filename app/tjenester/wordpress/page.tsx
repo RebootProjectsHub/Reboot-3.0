@@ -185,9 +185,9 @@ export default function WordPressPage() {
         </h1>
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
-          WordPress er ryggraden i det vi bygger. Fra bedriftssider til
-          bookingportaler og nettbutikker – vi designer, utvikler og drifter
-          løsninger som varer, fra kontoret vårt i Nydalen.
+          WordPress er ryggraden i mye av det vi bygger. Fra landingssider til
+          bookingportaler og nettbutikker: vi designer, utvikler og drifter
+          løsninger som varer.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -195,20 +195,13 @@ export default function WordPressPage() {
             href="/kontakt"
             className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
           >
-            Få et uforpliktende tilbud
-          </a>
-          <a
-            href="#prosjekter"
-            className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
-          >
-            Se WordPress-prosjektene våre
-            <ArrowRight className="size-4" aria-hidden />
+            Fortell oss om ditt prosjekt
           </a>
         </div>
       </section>
 
       {/* Editorial intro with stats */}
-      <section className="px-4 pb-14 sm:px-6 lg:px-10">
+      <section className="px-4 pt-7 pb-14 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
           <div className="rounded-[var(--radius)] bg-card px-8 py-12 sm:px-12 sm:py-14 lg:px-16">
             <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
@@ -271,9 +264,9 @@ export default function WordPressPage() {
               <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
                 WordPress-tjenester fra A til Å
               </h2>
-              <div className="relative mt-7 aspect-[1500/1091] overflow-hidden rounded-[var(--radius)]">
+              <div className="relative mt-14 aspect-[1500/1091] overflow-hidden rounded-[var(--radius)]">
                 <Image
-                  src="/wp-har-wordpress.jpg"
+                  src="/Reboot-Norge-ipad-scaled.jpg"
                   alt="WordPress-administrasjonspanel"
                   fill
                   className="object-cover"
