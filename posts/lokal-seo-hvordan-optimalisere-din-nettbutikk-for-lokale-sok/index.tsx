@@ -22,5 +22,5 @@ export const post: Post = {
 <h3>Drift og support</h3>
 <p>Kontinuerlig drift og støtte er avgjørende for en nettbutikk. Ved å tilby <a href="/#drift-vedlikehold">drift og vedlikehold</a> sikrer du stabil funksjon og rask support om noe skulle gå galt.</p>
 <p>Å bygge en brukervennlig nettbutikk krever en kombinasjon av strategisk planlegging, forståelse av kundenes behov, og teknisk kompetanse. Med Woocommerce som fundament, kan du skape en tilpasset og fleksibel nettbutikk som kan skaleres i takt med din virksomhet.</p>
-<p>Trenger du hjelp til å komme i gang med din <a href="/tjenester/#digitale-tjenester">nettbutikk</a>? Hos Reboot tilbyr vi ekspertise innen etablering og drift av Woocommerce-nettbutikker. <a href="/kontakt">Ta kontakt</a> med oss i dag for å utforske hvordan vi kan støtte din e-handelssatsning!</p>`,
+<p>Trenger du hjelp til å komme i gang med din <a href="/tjenester/#digitale-tjenester">nettbutikk</a>? Hos Reboot tilbyr vi ekspertise innen etablering og drift av både Woocommerce- og <a href="/tjenester/shopify">Shopify-nettbutikker</a>. <a href="/kontakt">Ta kontakt</a> med oss i dag for å utforske hvordan vi kan støtte din e-handelssatsning!</p>`,
 }

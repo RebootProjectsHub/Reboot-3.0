@@ -59,6 +59,9 @@ export const post: Post = {
         Vipps tilbyr ulike integrasjoner, og vi velger løsning basert på behovet. For
         WordPress-baserte nettsteder bruker vi ofte WooCommerce med Vipps-plugin. Her
         kan vi tilpasse både design og funksjonalitet slik at det ser helhetlig ut.
+        For nettbutikker bygget på <a href="/tjenester/shopify">Shopify</a> setter vi
+        opp Vipps gjennom Shopify-integrasjonen, slik vi gjorde for nettbutikken til
+        Ditt Apotek.
       </p>
       <p>
         I noen tilfeller setter vi også opp Vipps Hurtigkasse, en løsning der brukeren

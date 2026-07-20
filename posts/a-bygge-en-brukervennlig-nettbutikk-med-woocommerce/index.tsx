@@ -25,5 +25,6 @@ export const post: Post = {
 <p>Før lansering, gjennomgå grundig testing. Sjekk brukervennlighet, lenker, betalingsprosesser, og sørge for at nettsiden lastes raskt og korrekt på alle enheter og nettlesere. Det er viktig at nettbutikken oppfyller <a href="https://www.uutilsynet.no/" target="_blank" rel="noopener noreferrer">krav om universell utforming</a>.</p>
 <h3>Markedsføring og SEO</h3>
 <p>Til slutt, sørger du for å implementere en solid SEO-strategi og markedføringsplan for å drive trafikk til den nye nettbutikken din. Fra produktbeskrivelser til metabeskrivelser, bør hver tekstbit være SEO-optimalisert for å nå ut til din målgruppe.</p>
-<p>Å bygge en <strong>brukervennlig nettbutikk</strong> med Woocommerce kan virke som en stor oppgave, men med riktig planlegging og utførelse, vil du snart se din online butikk blomstre. Husk å alltid sette brukeren først, og suksess vil følge i dine fotspor.</p>`,
+<p>Å bygge en <strong>brukervennlig nettbutikk</strong> med Woocommerce kan virke som en stor oppgave, men med riktig planlegging og utførelse, vil du snart se din online butikk blomstre. Husk å alltid sette brukeren først, og suksess vil følge i dine fotspor.</p>
+<p>Usikker på om WooCommerce er riktig plattform for deg? Vi jobber også som <a href="/tjenester/shopify">Shopify-byrå</a> og hjelper deg gjerne å velge løsningen som passer din nettbutikk best.</p>`,
 }

@@ -144,7 +144,7 @@ function ServiceList({
               {href ? (
                 <a
                   href={href}
-                  className="inline-block rounded-full bg-foreground/5 px-3.5 py-1.5 text-[13.5px] text-foreground/85 transition-colors hover:bg-brand hover:text-white"
+                  className="inline-block rounded-full bg-ink px-3.5 py-1.5 text-[13.5px] text-ink-foreground transition-colors hover:bg-brand hover:text-white"
                 >
                   {bullet}
                 </a>
