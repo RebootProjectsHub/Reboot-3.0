@@ -164,7 +164,7 @@ export default function WooCommercePage() {
         </span>
 
         <span className="inline-flex items-center rounded-full bg-secondary px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-foreground">
-          Nettbutikk på WordPress
+          Nettbutikk i WordPress
         </span>
 
         <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
