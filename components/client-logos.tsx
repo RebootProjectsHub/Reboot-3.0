@@ -58,7 +58,7 @@ export function ClientLogosMobile() {
           </div>
 
           <div className="flex items-center gap-x-8">
-            <ClientLogo client={clients[2]} sizeClassName="h-5 max-w-[100px]" />
+            <ClientLogo client={clients[2]} sizeClassName="relative -left-3 h-5 max-w-[130px]" />
             <ClientLogo client={clients[3]} sizeClassName="h-7" />
             <ClientLogo client={clients[4]} sizeClassName="h-5 max-w-[100px]" />
           </div>
