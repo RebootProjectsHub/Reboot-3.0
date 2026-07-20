@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE}/tjenester/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/tjenester/shopify/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/tjenester/wordpress/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/nettside-priser/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/referanser/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/om-oss/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

@@ -8,107 +8,109 @@ import { FaqList } from "@/components/faq-list"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
-  title: "Shopify-byrå i Oslo",
+  title: "WordPress-byrå i Oslo",
   description:
-    "Reboot er et Shopify-byrå i Nydalen, Oslo. Vi designer, bygger og drifter Shopify-nettbutikker med Vipps, BankID og integrasjoner. Fastpris og norsk support.",
-  path: "/tjenester/shopify",
+    "Reboot er et WordPress-byrå i Nydalen, Oslo. Vi designer, utvikler og drifter WordPress-nettsider med WooCommerce, Vipps og booking. Fastpris og norsk support.",
+  path: "/tjenester/wordpress",
 })
 
 const deliverables = [
   {
-    title: "Ny nettbutikk på Shopify",
-    body: "Komplett nettbutikk designet fra bunnen av rundt merkevaren og produktene dine – ikke en ferdig mal med ny logo.",
+    title: "Ny nettside på WordPress",
+    body: "Skreddersydd design og utvikling fra bunnen av – ingen kjøpte temaer. Du får en rask, sikker nettside som er enkel å oppdatere selv.",
   },
   {
-    title: "Migrering til Shopify",
-    body: "Vi flytter nettbutikken din trygt fra WooCommerce, Wix, Squarespace eller andre plattformer – med produkter, kunder og SEO-verdier intakt.",
+    title: "Redesign av eksisterende side",
+    body: "Vi gir eldre WordPress-sider nytt liv med nytt design, bedre ytelse og ryddig kode – uten at du mister innhold eller plasseringene på Google.",
   },
   {
-    title: "Vipps, BankID og integrasjoner",
-    body: "Norske betalings- og innloggingsløsninger, frakt, regnskap og lagersystemer – vi kobler Shopify til verktøyene dere allerede bruker.",
+    title: "Nettbutikk med WooCommerce",
+    body: "Komplett nettbutikk på WordPress med produkter, betaling, frakt, medlemskap og abonnement – tilpasset norske forhold.",
   },
   {
-    title: "Design som selger",
-    body: "Tydelige produktsider, gjennomtenkt handlekurv og rask checkout. Målet er ikke bare en pen butikk, men flere gjennomførte kjøp.",
+    title: "Vipps, booking og integrasjoner",
+    body: "Vipps-betaling, bookingsystemer og kobling mot verktøyene dere allerede bruker – vi har bygget det for kunder som OBOS og Runner's World.",
   },
   {
-    title: "Drift, support og videreutvikling",
-    body: "Vi blir med videre etter lansering: oppdateringer, ny funksjonalitet og rask hjelp når du trenger det – med støtteavtale fra 990,- per måned.",
+    title: "Drift, vedlikehold og support",
+    body: "Vi holder WordPress, temaer og plugins oppdatert, tar daglig backup og overvåker siden – med støtteavtale fra 990,- per måned.",
   },
   {
-    title: "SEO for nettbutikken",
-    body: "Teknisk SEO, produkttekster og struktur som gjør at butikken synes på Google – og i AI-søk som ChatGPT og Gemini.",
+    title: "SEO som synes",
+    body: "Teknisk SEO, struktur og innhold som gjør at nettsiden rangerer på Google – og blir anbefalt i AI-søk som ChatGPT og Gemini.",
   },
 ]
 
 const faqItems = [
   {
-    question: "Hva koster en nettbutikk på Shopify?",
+    question: "Hva koster en WordPress-nettside?",
     answer: (
       <p>
-        Det avhenger av design, antall produkter og hvilke integrasjoner dere
-        trenger. Vi jobber alltid med fastpris, så du vet nøyaktig hva det koster
-        før vi starter. Ta <a href="/kontakt">kontakt</a> for et konkret tilbud,
-        eller se <a href="/nettside-priser">prisene våre</a> for en pekepinn.
+        En ny nettside hos oss starter på 29 900,-, og vi jobber alltid med
+        fastpris – du vet nøyaktig hva det koster før vi starter. Se{" "}
+        <a href="/nettside-priser">prisene våre</a> eller{" "}
+        <a href="/kontakt">ta kontakt</a> for et konkret tilbud.
       </p>
     ),
     plainAnswer:
-      "Det avhenger av design, antall produkter og hvilke integrasjoner dere trenger. Vi jobber alltid med fastpris, så du vet nøyaktig hva det koster før vi starter. Ta kontakt for et konkret tilbud.",
+      "En ny nettside hos oss starter på 29 900,-, og vi jobber alltid med fastpris – du vet nøyaktig hva det koster før vi starter. Ta kontakt for et konkret tilbud.",
   },
   {
-    question: "Kan dere sette opp Vipps og BankID i Shopify?",
+    question: "Kan dere ta over en WordPress-side noen andre har laget?",
     answer: (
       <p>
-        Ja. Vi har satt opp både Vipps-betaling og BankID-innlogging i Shopify
-        for norske nettbutikker – blant annet for{" "}
-        <Link href="/ny-nettside/ditt-apotek-opera">Ditt Apotek</Link>.
+        Ja. Vi tar jevnlig over drift og videreutvikling av WordPress-sider
+        bygget av andre. Vi starter med en gjennomgang av teknisk tilstand,
+        sikkerhet og ytelse, og gir deg en tydelig anbefaling om veien videre.
       </p>
     ),
     plainAnswer:
-      "Ja. Vi har satt opp både Vipps-betaling og BankID-innlogging i Shopify for norske nettbutikker, blant annet for Ditt Apotek.",
+      "Ja. Vi tar jevnlig over drift og videreutvikling av WordPress-sider bygget av andre. Vi starter med en gjennomgang av teknisk tilstand, sikkerhet og ytelse, og gir deg en tydelig anbefaling om veien videre.",
   },
   {
-    question: "Kan dere flytte en eksisterende nettbutikk til Shopify?",
+    question: "Kan jeg oppdatere innholdet selv?",
     answer: (
       <p>
-        Ja, vi migrerer nettbutikker fra WooCommerce, Wix, Squarespace og andre
-        plattformer. Produkter, kundedata og ordrehistorikk blir med over, og vi
-        setter opp videresendinger slik at dere beholder plasseringene på Google.
+        Ja, det er noe av det beste med WordPress. Du får redigeringstilgang og
+        opplæring, slik at dere selv kan endre tekster, bilder og sider – uten å
+        kunne kode.
       </p>
     ),
     plainAnswer:
-      "Ja, vi migrerer nettbutikker fra WooCommerce, Wix, Squarespace og andre plattformer. Produkter, kundedata og ordrehistorikk blir med over, og vi setter opp videresendinger slik at dere beholder plasseringene på Google.",
+      "Ja, det er noe av det beste med WordPress. Du får redigeringstilgang og opplæring, slik at dere selv kan endre tekster, bilder og sider – uten å kunne kode.",
   },
   {
-    question: "Hjelper dere med drift etter lansering?",
+    question: "Hva skjer etter lansering?",
     answer: (
       <p>
-        Ja, de fleste kundene våre fortsetter med en{" "}
-        <a href="/tjenester#vedlikehold-og-support">støtteavtale</a> fra 990,- per
-        måned. Da tar vi oss av oppdateringer, overvåking og småjusteringer, og du
-        havner først i køen når du trenger hjelp.
-      </p>
-    ),
-    plainAnswer:
-      "Ja, de fleste kundene våre fortsetter med en støtteavtale fra 990,- per måned. Da tar vi oss av oppdateringer, overvåking og småjusteringer, og du havner først i køen når du trenger hjelp.",
-  },
-  {
-    question: "Shopify eller WooCommerce – hva bør jeg velge?",
-    answer: (
-      <p>
-        Shopify passer best når dere vil ha en stabil alt-i-ett-løsning med lite
-        teknisk vedlikehold, mens WooCommerce gir mer fleksibilitet hvis dere
-        allerede bruker <Link href="/tjenester/wordpress">WordPress</Link>. Vi
-        jobber med begge og hjelper dere å velge
-        riktig – les gjerne{" "}
-        <Link href="/trender/shopify-vs-woocommerce-i-2024">
-          sammenligningen vår av Shopify og WooCommerce
+        De fleste kundene våre fortsetter med en støtteavtale fra 990,- per
+        måned. Da holder vi WordPress, temaer og plugins oppdatert, tar daglig
+        backup og overvåker siden døgnet rundt. Les mer om{" "}
+        <Link href="/trender/hva-inngar-egentlig-i-en-driftsavtale">
+          hva som inngår i en driftsavtale
         </Link>
         .
       </p>
     ),
     plainAnswer:
-      "Shopify passer best når dere vil ha en stabil alt-i-ett-løsning med lite teknisk vedlikehold, mens WooCommerce gir mer fleksibilitet hvis dere allerede bruker WordPress. Vi jobber med begge og hjelper dere å velge riktig.",
+      "De fleste kundene våre fortsetter med en støtteavtale fra 990,- per måned. Da holder vi WordPress, temaer og plugins oppdatert, tar daglig backup og overvåker siden døgnet rundt.",
+  },
+  {
+    question: "WordPress eller Shopify – hva bør jeg velge?",
+    answer: (
+      <p>
+        For nettbutikker er Shopify en stabil alt-i-ett-løsning, mens WordPress
+        med WooCommerce gir mer fleksibilitet og full kontroll. Vi jobber med
+        begge og hjelper deg å velge riktig – les{" "}
+        <Link href="/trender/shopify-vs-woocommerce-i-2024">
+          sammenligningen vår
+        </Link>{" "}
+        eller se hvordan vi jobber som{" "}
+        <Link href="/tjenester/shopify">Shopify-byrå</Link>.
+      </p>
+    ),
+    plainAnswer:
+      "For nettbutikker er Shopify en stabil alt-i-ett-løsning, mens WordPress med WooCommerce gir mer fleksibilitet og full kontroll. Vi jobber med begge og hjelper deg å velge riktig.",
   },
 ]
 
@@ -122,7 +124,7 @@ const faqSchema = {
   })),
 }
 
-export default function ShopifyPage() {
+export default function WordPressPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <script
@@ -147,18 +149,18 @@ export default function ShopifyPage() {
         </span>
 
         <span className="inline-flex items-center rounded-full bg-secondary px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-foreground">
-          Nettbutikk &amp; e-handel
+          Nettsider &amp; nettbutikker
         </span>
 
         <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
-          Shopify-byrå i Oslo
+          WordPress-byrå i Oslo
         </h1>
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
-          Vi designer, bygger og drifter Shopify-nettbutikker for norske
-          bedrifter – med Vipps, BankID og integrasjonene dere trenger. Fra
-          kontoret vårt i Nydalen får du direkte kontakt med de som faktisk
-          bygger butikken din.
+          Vi designer, utvikler og drifter WordPress-nettsider for norske
+          bedrifter – fra bedriftssider til nettbutikker med WooCommerce, Vipps
+          og booking. Fra kontoret vårt i Nydalen får du direkte kontakt med de
+          som faktisk bygger siden din.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -169,10 +171,10 @@ export default function ShopifyPage() {
             Få et uforpliktende tilbud
           </a>
           <Link
-            href="/ny-nettside/ditt-apotek-opera"
+            href="/ny-nettside/obos"
             className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
           >
-            Se en Shopify-butikk vi har laget
+            Se en WordPress-løsning vi har laget
             <ArrowRight className="size-4" aria-hidden />
           </Link>
         </div>
@@ -203,15 +205,15 @@ export default function ShopifyPage() {
         </div>
       </section>
 
-      {/* Case band: Ditt Apotek */}
+      {/* Case band: OBOS */}
       <section className="px-4 py-6 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
           <div className="relative overflow-hidden rounded-[var(--radius)] bg-ink text-ink-foreground">
             <div className="relative grid lg:grid-cols-2 lg:items-stretch">
               <div className="relative min-h-[260px] lg:min-h-[420px]">
                 <Image
-                  src="/ny-nettside/ditt-apotek-opera/hero.jpg"
-                  alt="Ditt Apotek sin fysiske butikk ved Operaen i Bjørvika"
+                  src="/ny-nettside/obos/hero.jpg"
+                  alt="OBOS-bygg sett nedenfra"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -220,30 +222,33 @@ export default function ShopifyPage() {
 
               <div className="flex min-w-0 flex-col justify-center px-8 py-10 sm:px-14 sm:py-12 lg:py-20 lg:pl-16 lg:pr-20">
                 <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-brand">
-                  Kundecase · Shopify
+                  Kundecase · WordPress
                 </span>
                 <h2 className="mt-5 text-balance font-heading text-[clamp(28px,3.2vw,40px)] font-normal leading-[1.12] tracking-[-0.02em]">
-                  Nettbutikk for Ditt Apotek
+                  Bookingløsning for OBOS
                 </h2>
                 <p className="mt-5 text-[17px] leading-[1.65] text-ink-foreground/80">
-                  For Ditt Apotek ved Operaen i Bjørvika bygde vi en
-                  Shopify-nettbutikk som håndterer et stort produktvolum, med
-                  Vipps-betaling og skreddersydd funksjonalitet. Resultatet ble
-                  økt salg – og en butikk de ansatte enkelt drifter selv.
+                  For OBOS bygde vi en WordPress-løsning der beboere booker
+                  gjesteleiligheter selv – med WooCommerce Bookings og Vipps
+                  Hurtigkasse. Et tungvint manuelt system ble til en smidig
+                  selvbetjeningsløsning som sparer administrasjonen for mye
+                  arbeid.
                 </p>
                 <ul className="mt-6 flex flex-wrap gap-2">
-                  {["Shopify", "Vipps", "BankID", "Webdesign"].map((chip) => (
-                    <li
-                      key={chip}
-                      className="rounded-full bg-ink-foreground/10 px-3.5 py-1.5 text-[13.5px] text-ink-foreground/85"
-                    >
-                      {chip}
-                    </li>
-                  ))}
+                  {["WordPress", "WooCommerce", "Vipps", "Bookingsystem"].map(
+                    (chip) => (
+                      <li
+                        key={chip}
+                        className="rounded-full bg-ink-foreground/10 px-3.5 py-1.5 text-[13.5px] text-ink-foreground/85"
+                      >
+                        {chip}
+                      </li>
+                    ),
+                  )}
                 </ul>
                 <div className="mt-8">
                   <Link
-                    href="/ny-nettside/ditt-apotek-opera"
+                    href="/ny-nettside/obos"
                     className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
                   >
                     Les hele caset
@@ -260,14 +265,14 @@ export default function ShopifyPage() {
       <section className="px-6 py-14 sm:py-16">
         <div className="mx-auto max-w-[720px]">
           <h2 className="text-balance text-center font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
-            Hvorfor velge oss som Shopify-byrå?
+            Hvorfor velge oss som WordPress-byrå?
           </h2>
           <ul className="mx-auto mt-8 max-w-[560px] space-y-[14px]">
             {[
-              "Direkte kontakt med de som bygger butikken – ingen mellomledd",
+              "WordPress er plattformen vi kan best – de aller fleste nettsidene vi bygger står på den",
+              "Direkte kontakt med de som bygger siden – ingen mellomledd",
               "Fastpris avtalt før vi starter, ingen overraskelser underveis",
-              "Erfaring med norske løsninger som Vipps og BankID",
-              "Drift og support etter lansering, med rask responstid",
+              "Erfaring med Vipps, booking og WooCommerce for norske bedrifter",
               "Lokalt byrå i Nydalen i Oslo – møt oss gjerne over en kaffe",
             ].map((point) => (
               <li key={point} className="flex items-start gap-[12px]">
@@ -288,7 +293,7 @@ export default function ShopifyPage() {
       <section className="px-6 pb-16">
         <div className="mx-auto max-w-[700px]">
           <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
-            Ofte stilte spørsmål om Shopify
+            Ofte stilte spørsmål om WordPress
           </h2>
           <div className="mt-8">
             <FaqList

@@ -6,7 +6,7 @@ export const caseStudy: CaseStudy = {
   slug: "obos",
   name: "OBOS",
   tagline: "Design og utvikling av nettside med bookingsystem",
-  services: ["Bookingsystem", "WooCommerce", "Vipps"],
+  services: ["WordPress", "Bookingsystem", "WooCommerce", "Vipps"],
   image: `${IMG}/hero.jpg`,
   imageAlt: "OBOS-bygg sett nedenfra",
   quote: {

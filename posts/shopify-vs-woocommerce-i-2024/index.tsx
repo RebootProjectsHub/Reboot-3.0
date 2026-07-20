@@ -9,7 +9,7 @@ export const post: Post = {
   excerpt: "Woocommerce og Shopify har lenge vært på toppen av e-handelsplattformmarkedet, men de tjener ulike typer bedrifter og behov. Shopify, kjent for sin …",
   image: "/posts/shopify-vs-woocommerce-i-2024/featured.jpg",
   imageAlt: "Shopify vs. WooCommerce i 2024",
-  contentHtml: `<p>Woocommerce og Shopify har lenge vært på toppen av e-handelsplattformmarkedet, men de tjener ulike typer bedrifter og behov. Shopify, kjent for sin brukervennlighet, tilbyr en alt-i-ett-løsning, mens WooCommerce er kjent for sin tilpasningsevne og integrasjon med WordPress.</p>
+  contentHtml: `<p>Woocommerce og Shopify har lenge vært på toppen av e-handelsplattformmarkedet, men de tjener ulike typer bedrifter og behov. Shopify, kjent for sin brukervennlighet, tilbyr en alt-i-ett-løsning, mens WooCommerce er kjent for sin tilpasningsevne og integrasjon med <a href="/tjenester/wordpress">WordPress</a>.</p>
 <p><strong>Shopify: En komplett og brukervennlig løsning</strong></p>
 <p>Nettbutikken Shopify tilbyr en intuitiv og brukervennlig plattform som er ideell for små til mellomstore bedrifter som ønsker en effektiv og problemfri e-handelsopplevelse. Med Shopify, kan du raskt sette opp din nettbutikk uten omfattende teknisk kunnskap. Plattformen inkluderer hosting, SSL-sertifikat, et bredt utvalg av designmaler, og robuste innebygde funksjoner som betalingsbehandling og sikkerhet. Se ShopiEase sin oversikt over <a href="https://shopiease.no/shopify-norge/" target="_blank" rel="noopener noreferrer">nybegynnerfeil i Shopify</a>.</p>
 <h2>Fordeler med Shopify:</h2>

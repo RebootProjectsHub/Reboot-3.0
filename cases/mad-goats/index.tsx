@@ -7,7 +7,7 @@ export const caseStudy: CaseStudy = {
   name: "Mad Goats",
   tagline: "Friskere og mer moderne design, med forbedret Google-rangering",
   url: "https://madgoats.no",
-  services: ["Moderne redesign", "Økt ytelse", "SEO", "Enkel redigering av innhold"],
+  services: ["WordPress", "Moderne redesign", "Økt ytelse", "SEO", "Enkel redigering av innhold"],
   image: `${IMG}/hero.jpg`,
   imageAlt: "Mad Goats",
   gallery: [

@@ -7,7 +7,7 @@ export const caseStudy: CaseStudy = {
   name: "Ved På Døra",
   tagline: "Design og oppsett av nettside med nettbutikk",
   url: "https://vedpadora.no",
-  services: ["Nettbutikk", "Webdesign", "Integrasjoner"],
+  services: ["WordPress", "Nettbutikk", "Webdesign", "Integrasjoner"],
   image: `${IMG}/hero.jpg`,
   imageAlt: "Bjørkeved stablet til tørking",
   quote: {

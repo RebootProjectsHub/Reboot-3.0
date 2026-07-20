@@ -12,7 +12,7 @@ export const post: Post = {
   contentHtml: `<p>En nettside er aldri ferdig. Den må vedlikeholdes, oppdateres og følges opp. En driftsavtale gjør det mulig å tenke langsiktig, og gir deg både trygghet og forutsigbarhet i det daglige.</p>
 <p>For mange høres «drift» teknisk og diffust ut. Det kan virke som noe som skjer i bakgrunnen, og det stemmer, på sett og vis. Men det som skjer i bakgrunnen, er ofte det som gjør at alt i fronten fungerer. En god driftsavtale handler derfor ikke bare om servere og sikkerhet, men om at nettsiden skal være en aktiv, fungerende del av bedriften.</p>
 <h2>Vedlikehold og sikkerhet</h2>
-<p>Det mest grunnleggende i en <a href="/#drift-vedlikehold">driftsavtale</a> er at nettsiden holdes oppdatert. Alle systemer utvikler seg. Når WordPress, temaer og plugins får nye versjoner, er det ikke bare for å legge til funksjoner, det handler også om å tette sikkerhetshull, gjøre løsningen raskere og mer stabil.</p>
+<p>Det mest grunnleggende i en <a href="/#drift-vedlikehold">driftsavtale</a> er at nettsiden holdes oppdatert. Alle systemer utvikler seg. Når <a href="/tjenester/wordpress">WordPress</a>, temaer og plugins får nye versjoner, er det ikke bare for å legge til funksjoner, det handler også om å tette sikkerhetshull, gjøre løsningen raskere og mer stabil.</p>
 <p>Hos Reboot oppdaterer vi nettsidene vi drifter månedlig. Det betyr at kundene våre slipper å følge med selv. I tillegg tar vi daglig backup av hele siden, så hvis noe uventet skjer, kan vi rulle tilbake med et tastetrykk.</p>
 <figure><img src="/posts/hva-inngar-egentlig-i-en-driftsavtale/1.jpg" alt="Hva inngår egentlig i en driftsavtale?" loading="lazy" /></figure>
 <h3>Stabilitet døgnet rundt</h3>

@@ -5,4 +5,5 @@
  */
 export const techPages: Record<string, string> = {
   Shopify: "/tjenester/shopify",
+  WordPress: "/tjenester/wordpress",
 }
