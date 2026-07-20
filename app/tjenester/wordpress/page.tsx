@@ -77,6 +77,7 @@ const faqItems = [
         fastpris slik at du vet nøyaktig hva det koster før vi starter. Se{" "}
         <a href="/nettside-priser">prisene våre</a> eller{" "}
         <a href="/kontakt">ta kontakt</a> for et konkret tilbud.
+      </p>
     ),
     plainAnswer:
       "En ny nettside hos oss starter på 29 900,-, og vi jobber alltid med fastpris slik at du vet nøyaktig hva det koster før vi starter. Ta kontakt for et konkret tilbud.",
