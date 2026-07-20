@@ -10,7 +10,7 @@ export const metadata = {
   ...pageMetadata({
     title: "Nettsidepriser 2026",
     description:
-      "Sjekk ut vår prisoversikt for ny hjemmeside til din bedrift. Med våre faste, lave priser ser du nøyaktig hva det koster med en ny nettside.",
+      "Faste, forutsigbare priser på nettside, hosting og vedlikehold. Ny nettside fra 29 900,‑ og støtteavtaler fra 990,‑ per måned. Ingen overraskelser.",
     path: "/nettside-priser",
   }),
   title: { absolute: "Nettsidepriser 2026 | Reboot" },

@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo"
 export const metadata = pageMetadata({
   title: "Referanser",
   description:
-    "Et utvalg av nettsidene vi har designet, utviklet og drifter — fra små bedrifter til store organisasjoner.",
+    "Se hva vi har levert for kunder som OBOS, NAF, Höegh Evi og Ditt Apotek. Nettsider, nettbutikker og digitale løsninger som skaper resultater.",
   path: "/referanser",
 })
 

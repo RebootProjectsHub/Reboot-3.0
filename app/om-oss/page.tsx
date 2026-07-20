@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo"
 export const metadata = pageMetadata({
   title: "Om oss",
   description:
-    "Møt teamet bak Reboot – et lite, dedikert webbyrå i Nydalen, Oslo som designer, utvikler og drifter moderne nettsider for bedrifter.",
+    "Møt teamet bak Reboot. Vi er et lite webbyrå i Nydalen, Oslo, der du snakker direkte med de som designer, utvikler og drifter nettsiden din.",
   path: "/om-oss",
 })
 

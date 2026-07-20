@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo"
 export const metadata = pageMetadata({
   title: "Moderne nettsider, design og digitale tjenester",
   description:
-    "Reboot er ekspert på hjemmesider, design og digitale løsninger. Fra strategi og design til utvikling, synlighet og drift – din digitale partner i Oslo.",
+    "Nettsider, SEO og AI‑rådgivning fra et lite team i Oslo. Vi bygger raske, moderne nettsider og sørger for at dere blir funnet, både på Google og i AI‑søk.",
   path: "/tjenester",
 })
 

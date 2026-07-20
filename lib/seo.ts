@@ -11,17 +11,21 @@ export function pageMetadata({
   description,
   path,
   image = "/og-image.png",
+  noIndex = false,
 }: {
   title: string
   description: string
   path: string
   image?: string
+  /** Set for paginated/duplicate-content routes that shouldn't be indexed. */
+  noIndex?: boolean
 }): Metadata {
   const fullTitle = `${title} | Reboot`
   return {
     title,
     description,
     alternates: { canonical: path },
+    ...(noIndex && { robots: { index: false, follow: true } }),
     openGraph: {
       type: "website",
       locale: "nb_NO",

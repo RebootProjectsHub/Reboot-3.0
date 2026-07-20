@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo"
 export const metadata = pageMetadata({
   title: "Aktuelt",
   description:
-    "Innsikt, tips og trender om webdesign, SEO, UX og digitale løsninger fra teamet i Reboot.",
+    "Artikler og innsikt fra teamet i Reboot om webdesign, SEO og AI. Les hva som skjer hos oss i Nydalen.",
   path: "/trender",
 })
 

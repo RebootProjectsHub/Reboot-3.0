@@ -30,6 +30,7 @@ export async function generateMetadata({
     description:
       "Innsikt, tips og trender om webdesign, SEO, UX og digitale løsninger fra teamet i Reboot.",
     path: `/trender/side/${page}`,
+    noIndex: true,
   })
 }
 
