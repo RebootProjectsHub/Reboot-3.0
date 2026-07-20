@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ArrowRight, Check, Plus } from "lucide-react"
+import { techPages } from "@/lib/tech-links"
 
 const services = [
   {
@@ -136,14 +137,25 @@ function ServiceList({
   if (variant === "chips") {
     return (
       <ul className="mt-[18px] flex flex-wrap gap-2">
-        {bullets.map((bullet) => (
-          <li
-            key={bullet}
-            className="rounded-full bg-foreground/5 px-3.5 py-1.5 text-[13.5px] text-foreground/85"
-          >
-            {bullet}
-          </li>
-        ))}
+        {bullets.map((bullet) => {
+          const href = techPages[bullet]
+          return (
+            <li key={bullet}>
+              {href ? (
+                <a
+                  href={href}
+                  className="inline-block rounded-full bg-foreground/5 px-3.5 py-1.5 text-[13.5px] text-foreground/85 transition-colors hover:bg-brand hover:text-white"
+                >
+                  {bullet}
+                </a>
+              ) : (
+                <span className="inline-block rounded-full bg-foreground/5 px-3.5 py-1.5 text-[13.5px] text-foreground/85">
+                  {bullet}
+                </span>
+              )}
+            </li>
+          )
+        })}
       </ul>
     )
   }

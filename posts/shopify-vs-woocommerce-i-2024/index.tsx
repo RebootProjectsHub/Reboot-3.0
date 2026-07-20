@@ -20,5 +20,5 @@ export const post: Post = {
 <h2>Shopify vs. WooCommerce: Hvilken er best</h2>
 <p>Når du bestemmer deg mellom Shopify og WooCommerce, er det flere viktige faktorer å vurdere:</p>
 <p>Å velge mellom Shopify og WooCommerce i 2024 avhenger av dine forretningsbehov, tekniske ferdigheter og vekstambisjoner. Shopify tilbyr en brukervennlig og omfattende e-handelsløsning, mens WooCommerce gir mer fleksibilitet og tilpasning til en potensielt lavere kostnad.</p>
-<p>Vurderer du Shopify eller WooCommerce for din nettbutikk? Ta kontakt med vårt team for ekspertveiledning og støtte <a href="/kontakt">her</a>. For mer informasjon om hvilke tjenester vi tilbyr innen e-handel og beste praksiser, se <a href="/tjenester">våre tjenester</a>.</p>`,
+<p>Vurderer du Shopify eller WooCommerce for din nettbutikk? Ta kontakt med vårt team for ekspertveiledning og støtte <a href="/kontakt">her</a>. Les mer om hvordan vi jobber som <a href="/tjenester/shopify">Shopify-byrå i Oslo</a>, eller se <a href="/tjenester">alle tjenestene våre</a>.</p>`,
 }

@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowLeft, ArrowUpRight } from "lucide-react"
 import type { CaseStudy } from "@/cases/types"
 import { CaseGallery } from "@/components/case-gallery"
+import { techPages } from "@/lib/tech-links"
 
 export function CaseLayout({ caseStudy }: { caseStudy: CaseStudy }) {
   return (
@@ -35,14 +36,25 @@ export function CaseLayout({ caseStudy }: { caseStudy: CaseStudy }) {
 
         {caseStudy.services && (
           <ul className="mt-6 flex flex-wrap items-center justify-center gap-2">
-            {caseStudy.services.map((service) => (
-              <li
-                key={service}
-                className="rounded-full bg-foreground/5 px-3.5 py-1.5 text-[13.5px] text-foreground/85"
-              >
-                {service}
-              </li>
-            ))}
+            {caseStudy.services.map((service) => {
+              const href = techPages[service]
+              return (
+                <li key={service}>
+                  {href ? (
+                    <Link
+                      href={href}
+                      className="inline-block rounded-full bg-foreground/5 px-3.5 py-1.5 text-[13.5px] text-foreground/85 transition-colors hover:bg-brand hover:text-white"
+                    >
+                      {service}
+                    </Link>
+                  ) : (
+                    <span className="inline-block rounded-full bg-foreground/5 px-3.5 py-1.5 text-[13.5px] text-foreground/85">
+                      {service}
+                    </span>
+                  )}
+                </li>
+              )
+            })}
           </ul>
         )}
 
