@@ -17,24 +17,24 @@ export const metadata = pageMetadata({
 const useCases = [
   {
     kicker: "Produkter",
-    title: "Nettbutikk som selger",
-    body: "Klassisk netthandel med produktsider, handlekurv og rask checkout – koblet til Vipps, Google Shopping og Prisjakt. For Ved På Døra har vi driftet og videreutviklet nettbutikken siden 2019.",
+    title: "Nettbutikk",
+    body: "Klassisk netthandel med produktsider, handlekurv og rask checkout. Koblet til Vipps, Google Shopping og Prisjakt.",
     image: "/ny-nettside/ved-pa-dora/hero.jpg",
     caseHref: "/ny-nettside/ved-pa-dora",
-    caseLabel: "Se caset: Ved På Døra",
+    caseLabel: "Se case: Ved På Døra",
   },
   {
     kicker: "Medlemskap & abonnement",
-    title: "Løpende inntekter, ikke bare enkeltsalg",
-    body: "Med WooCommerce Memberships og Subscriptions kan du selge medlemskap, abonnement og tilgang til innhold. For Runner's World Norge håndterer løsningen kontoer, tilganger og fornyelser automatisk.",
+    title: "Abonnement",
+    body: "Med WooCommerce Memberships og Subscriptions kan du selge medlemskap, abonnement og tilgang til innhold.",
     image: "/ny-nettside/runners-world/hero.jpg",
     caseHref: "/ny-nettside/runners-world",
-    caseLabel: "Se caset: Runner's World",
+    caseLabel: "Se case: Runner's World",
   },
   {
     kicker: "Booking & utleie",
-    title: "Reservasjoner rett i nettbutikken",
-    body: "WooCommerce Bookings gjør nettbutikken til et bookingsystem. For OBOS bygde vi en portal der beboere selv reserverer og betaler gjesteleiligheter med Vipps Hurtigkasse.",
+    title: "Bookingløsning",
+    body: "WooCommerce Bookings gjør nettbutikken til et bookingsystem. For OBOS bygde vi en portal for utleie av leiligheter med betaling via Vipps Hurtigkasse.",
     image: "/work-obos.png",
     caseHref: "/ny-nettside/obos",
     caseLabel: "Se caset: OBOS",
@@ -42,13 +42,13 @@ const useCases = [
 ]
 
 const included = [
-  "Skreddersydd design – ingen kjøpte temaer",
+  "Skreddersydd design",
   "Vipps og kortbetaling i samme kasse",
   "Frakt-integrasjoner og ordreflyt",
   "Produktimport og opplæring i admin",
   "Sikkerhet, backup og overvåking",
   "Teknisk SEO for produktsider",
-  "Redigeringstilgang – oppdater alt selv",
+  "Full redigeringstilgang",
   "Drift og support fra 990,- per måned",
 ]
 
@@ -172,10 +172,7 @@ export default function WooCommercePage() {
         </h1>
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
-          Nettbutikk, medlemskap, abonnement eller booking – WooCommerce dekker
-          det meste som kan selges på nett. Vi designer, bygger og drifter
-          løsningen fra kontoret vårt i Nydalen, med Vipps og integrasjonene
-          norske kunder forventer.
+          Vi er eksperter på Woocommerce og alle mulighetene denne plattformen byr på, med alt fra nettbutikk til abonnement og bookingløsninger.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -185,20 +182,13 @@ export default function WooCommercePage() {
           >
             Få et uforpliktende tilbud
           </a>
-          <a
-            href="#bruksomrader"
-            className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
-          >
-            Se hva WooCommerce kan brukes til
-            <ArrowRight className="size-4" aria-hidden />
-          </a>
         </div>
       </section>
 
       {/* Use cases, each anchored in a real project */}
       <section
         id="bruksomrader"
-        className="scroll-mt-24 px-4 pb-14 sm:px-6 lg:px-10"
+        className="scroll-mt-24 px-4 py-14 sm:px-6 lg:px-10"
       >
         <div className="mx-auto max-w-[1280px]">
           <h2 className="max-w-2xl text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
@@ -245,7 +235,7 @@ export default function WooCommercePage() {
       </section>
 
       {/* What's included */}
-      <section className="px-4 py-6 sm:px-6 lg:px-10">
+      <section className="px-4 py-14 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
           <div className="rounded-[var(--radius)] border-[1.5px] border-border bg-[#fcf2ec] px-8 py-12 sm:px-12 sm:py-14">
             <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
@@ -254,12 +244,10 @@ export default function WooCommercePage() {
                   Alt inkludert
                 </span>
                 <h2 className="mt-4 text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
-                  En nettbutikk som er klar til å selge fra dag én
+                  Nettbutikk med fokus på høy konvertering
                 </h2>
                 <p className="mt-4 text-[16.5px] leading-[1.65] text-foreground/70">
-                  Vi leverer ikke en halvferdig installasjon. Nettbutikken
-                  kommer komplett med betaling, frakt og opplæring – og vi blir
-                  med videre etter lansering.
+                  Vi leverer nettbutikker som kommer komplett med konverterings-optimalisering, betalingsløsning, frakt og kobling til regnskapssystem.
                 </p>
               </div>
               <ul className="grid content-center gap-x-8 gap-y-[14px] sm:grid-cols-2">
@@ -282,7 +270,7 @@ export default function WooCommercePage() {
 
       {/* Platform choice band */}
       <section className="px-4 py-6 sm:px-6 lg:px-10">
-        <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[var(--radius)] bg-ink px-8 py-12 text-ink-foreground sm:px-12 sm:py-14">
+        <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[var(--radius)] bg-ink px-8 mt-7 py-12 text-ink-foreground sm:px-12 sm:py-14">
           <span
             aria-hidden
             className="absolute right-[6%] top-8 hidden text-[30px] leading-none text-ink-foreground/20 lg:block"
@@ -302,8 +290,8 @@ export default function WooCommercePage() {
                 WordPress
               </Link>{" "}
               og gir full kontroll og fleksibilitet. Vil dere heller ha en
-              alt-i-ett-løsning med mindre teknisk vedlikehold, bygger vi også
-              på{" "}
+              alt-i-ett-løsning med mindre teknisk vedlikehold, tilbyr vi også
+              {" "}
               <Link
                 href="/tjenester/shopify"
                 className="text-brand underline-offset-4 hover:underline"
