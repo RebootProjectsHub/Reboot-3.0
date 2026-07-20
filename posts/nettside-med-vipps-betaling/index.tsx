@@ -57,9 +57,9 @@ export const post: Post = {
       <h3>Hvordan fungerer det rent teknisk?</h3>
       <p>
         Vipps tilbyr ulike integrasjoner, og vi velger løsning basert på behovet. For{" "}
-        <a href="/tjenester/wordpress">WordPress-baserte nettsteder</a> bruker vi ofte
-        WooCommerce med Vipps-plugin. Her kan vi tilpasse både design og
-        funksjonalitet slik at det ser helhetlig ut.
+        <a href="/tjenester/wordpress">WordPress-baserte nettsteder</a> bruker vi ofte{" "}
+        <a href="/tjenester/woocommerce">WooCommerce</a> med Vipps-plugin. Her kan vi
+        tilpasse både design og funksjonalitet slik at det ser helhetlig ut.
         For nettbutikker bygget på <a href="/tjenester/shopify">Shopify</a> setter vi
         opp Vipps gjennom Shopify-integrasjonen, slik vi gjorde for nettbutikken til
         Ditt Apotek.

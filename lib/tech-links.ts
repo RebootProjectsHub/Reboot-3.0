@@ -6,4 +6,7 @@
 export const techPages: Record<string, string> = {
   Shopify: "/tjenester/shopify",
   WordPress: "/tjenester/wordpress",
+  // Both spellings occur in case data and the tjenester chip list.
+  WooCommerce: "/tjenester/woocommerce",
+  Woocommerce: "/tjenester/woocommerce",
 }

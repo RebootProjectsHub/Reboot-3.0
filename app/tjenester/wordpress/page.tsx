@@ -127,8 +127,9 @@ const faqItems = [
     answer: (
       <p>
         For nettbutikker er Shopify en stabil alt-i-ett-løsning, mens WordPress
-        med WooCommerce gir mer fleksibilitet og full kontroll. Vi jobber med
-        begge og hjelper deg å velge riktig – les{" "}
+        med <Link href="/tjenester/woocommerce">WooCommerce</Link> gir mer
+        fleksibilitet og full kontroll. Vi jobber med begge og hjelper deg å
+        velge riktig – les{" "}
         <Link href="/trender/shopify-vs-woocommerce-i-2024">
           sammenligningen vår
         </Link>{" "}

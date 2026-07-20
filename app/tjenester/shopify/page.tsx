@@ -97,9 +97,11 @@ const faqItems = [
     answer: (
       <p>
         Shopify passer best når dere vil ha en stabil alt-i-ett-løsning med lite
-        teknisk vedlikehold, mens WooCommerce gir mer fleksibilitet hvis dere
-        allerede bruker <Link href="/tjenester/wordpress">WordPress</Link>. Vi
-        jobber med begge og hjelper dere å velge
+        teknisk vedlikehold, mens{" "}
+        <Link href="/tjenester/woocommerce">WooCommerce</Link> gir mer
+        fleksibilitet hvis dere allerede bruker{" "}
+        <Link href="/tjenester/wordpress">WordPress</Link>. Vi jobber med begge
+        og hjelper dere å velge
         riktig – les gjerne{" "}
         <Link href="/trender/shopify-vs-woocommerce-i-2024">
           sammenligningen vår av Shopify og WooCommerce
