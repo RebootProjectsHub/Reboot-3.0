@@ -29,7 +29,11 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: '/rfav.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/rfav.png', sizes: '32x32', type: 'image/png' },
+    ],
     apple: '/apple-icon.png',
   },
   openGraph: {
