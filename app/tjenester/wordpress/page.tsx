@@ -16,28 +16,28 @@ export const metadata = pageMetadata({
 
 const services = [
   {
-    title: "Ny nettside på WordPress",
-    body: "Skreddersydd design og utvikling fra bunnen av – ingen kjøpte temaer. Du får en rask, sikker nettside som er enkel å oppdatere selv.",
+    title: "Ny nettside i WordPress",
+    body: "Skreddersydd design og tilpasset din bedrift. Du får en rask, sikker nettside som er enkel å oppdatere selv.",
   },
   {
     title: "Redesign og overtakelse",
-    body: "Vi gir eldre WordPress-sider nytt liv med nytt design og bedre ytelse, og tar gjerne over drift av sider andre har bygget – uten at du mister innhold eller Google-plasseringer.",
+    body: "Vi gir eldre WordPress-sider nytt liv med nytt design og bedre ytelse. Vi tar gjerne over drift av sider andre har bygget, uten at du mister innhold eller Google-plasseringer.",
   },
   {
     title: "Nettbutikk med WooCommerce",
-    body: "Komplett nettbutikk med produkter, betaling, frakt, medlemskap og abonnement – tilpasset norske forhold.",
+    body: "Komplett nettbutikk med produkter, betalingløsning, frakt og integrasjon til regnskapssystem. Tilpasset det norske markedet og din spesifikke bransje.",
   },
   {
     title: "Vipps, booking og integrasjoner",
-    body: "Vipps-betaling, bookingsystemer og kobling mot verktøyene dere allerede bruker – vi har bygget alt fra bookingportaler til medlemsløsninger.",
+    body: "Vipps-betaling, bookingsystemer og kobling mot verktøyene dere allerede bruker.",
   },
   {
     title: "Drift, vedlikehold og support",
-    body: "Vi holder WordPress, temaer og plugins oppdatert, tar daglig backup og overvåker siden døgnet rundt – med støtteavtale fra 990,- per måned.",
+    body: "Vi holder WordPress, temaer og plugins oppdatert, tar daglig backup og overvåker siden døgnet rundt.",
   },
   {
-    title: "SEO som synes",
-    body: "Teknisk SEO, struktur og innhold som gjør at nettsiden rangerer på Google – og blir anbefalt i AI-søk som ChatGPT og Gemini.",
+    title: "SEO som gjør din bedrift synlig",
+    body: "Teknisk SEO, struktur og innhold som gjør at nettsiden rangerer på Google og blir anbefalt i AI-søk som ChatGPT og Gemini.",
   },
 ]
 
@@ -74,13 +74,12 @@ const faqItems = [
     answer: (
       <p>
         En ny nettside hos oss starter på 29 900,-, og vi jobber alltid med
-        fastpris – du vet nøyaktig hva det koster før vi starter. Se{" "}
+        fastpris slik at du vet nøyaktig hva det koster før vi starter. Se{" "}
         <a href="/nettside-priser">prisene våre</a> eller{" "}
         <a href="/kontakt">ta kontakt</a> for et konkret tilbud.
-      </p>
     ),
     plainAnswer:
-      "En ny nettside hos oss starter på 29 900,-, og vi jobber alltid med fastpris – du vet nøyaktig hva det koster før vi starter. Ta kontakt for et konkret tilbud.",
+      "En ny nettside hos oss starter på 29 900,-, og vi jobber alltid med fastpris slik at du vet nøyaktig hva det koster før vi starter. Ta kontakt for et konkret tilbud.",
   },
   {
     question: "Kan dere ta over en WordPress-side noen andre har laget?",
@@ -88,7 +87,7 @@ const faqItems = [
       <p>
         Ja. Vi tar jevnlig over drift og videreutvikling av WordPress-sider
         bygget av andre. Vi starter med en gjennomgang av teknisk tilstand,
-        sikkerhet og ytelse, og gir deg en tydelig anbefaling om veien videre.
+        sikkerhet og ytelse og gir deg en tydelig anbefaling om veien videre.
       </p>
     ),
     plainAnswer:
@@ -104,13 +103,13 @@ const faqItems = [
       </p>
     ),
     plainAnswer:
-      "Ja, det er noe av det beste med WordPress. Du får redigeringstilgang og opplæring, slik at dere selv kan endre tekster, bilder og sider – uten å kunne kode.",
+      "Ja, det er noe av det beste med WordPress. Du får redigeringstilgang og opplæring, slik at dere selv kan endre tekster, bilder og sider, helt uten å behøve noen teknisk forkunnskap.",
   },
   {
     question: "Hva skjer etter lansering?",
     answer: (
       <p>
-        De fleste kundene våre fortsetter med en støtteavtale fra 990,- per
+        De fleste kundene våre fortsetter med en support- og vedlikeholdsavtale fra 990,- per
         måned. Da holder vi WordPress, temaer og plugins oppdatert, tar daglig
         backup og overvåker siden døgnet rundt. Les mer om{" "}
         <Link href="/trender/hva-inngar-egentlig-i-en-driftsavtale">
@@ -129,7 +128,7 @@ const faqItems = [
         For nettbutikker er Shopify en stabil alt-i-ett-løsning, mens WordPress
         med <Link href="/tjenester/woocommerce">WooCommerce</Link> gir mer
         fleksibilitet og full kontroll. Vi jobber med begge og hjelper deg å
-        velge riktig – les{" "}
+        velge riktig. Les{" "}
         <Link href="/trender/shopify-vs-woocommerce-i-2024">
           sammenligningen vår
         </Link>{" "}
@@ -257,10 +256,10 @@ export default function WordPressPage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:gap-20">
             <div>
               <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
-                Hva vi hjelper deg med
+                Spesialister på WordPress
               </span>
               <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
-                WordPress-tjenester fra A til Å
+                WordPress-tjenester fra Reboot
               </h2>
               <div className="relative mt-14 aspect-[1500/1091] overflow-hidden rounded-[var(--radius)]">
                 <Image
