@@ -188,11 +188,11 @@ export default function WooCommercePage() {
       {/* Use cases, each anchored in a real project */}
       <section
         id="bruksomrader"
-        className="scroll-mt-24 px-4 py-14 sm:px-6 lg:px-10"
+        className="scroll-mt-24 px-4 pt-7 pb-14 sm:px-6 lg:px-10"
       >
         <div className="mx-auto max-w-[1280px]">
           <h2 className="max-w-2xl text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
-            Hva vil du selge?
+            Ulike Woocommerce-løsninger
           </h2>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {useCases.map((useCase) => (
