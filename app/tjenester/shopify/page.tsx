@@ -8,7 +8,7 @@ import { FaqList } from "@/components/faq-list"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
-  title: "Shopify-byrå i Oslo",
+  title: "Shopify-ekspterter i Oslo",
   description:
     "Reboot er et Shopify-byrå i Nydalen, Oslo. Vi designer, bygger og drifter Shopify-nettbutikker med Vipps, BankID og integrasjoner. Fastpris og norsk support.",
   path: "/tjenester/shopify",
@@ -16,16 +16,16 @@ export const metadata = pageMetadata({
 
 const deliverables = [
   {
-    title: "Ny nettbutikk på Shopify",
-    body: "Komplett nettbutikk designet fra bunnen av rundt merkevaren og produktene dine – ikke en ferdig mal med ny logo.",
+    title: "Ny nettbutikk i Shopify",
+    body: "Komplett nettbutikk designet fra bunnen av rundt merkevaren og produktene dine.",
   },
   {
     title: "Migrering til Shopify",
-    body: "Vi flytter nettbutikken din trygt fra WooCommerce, Wix, Squarespace eller andre plattformer – med produkter, kunder og SEO-verdier intakt.",
+    body: "Vi flytter nettbutikken din trygt fra WooCommerce, Wix, Squarespace eller andre plattformer.",
   },
   {
     title: "Vipps, BankID og integrasjoner",
-    body: "Norske betalings- og innloggingsløsninger, frakt, regnskap og lagersystemer – vi kobler Shopify til verktøyene dere allerede bruker.",
+    body: "Norske betalings- og innloggingsløsninger, frakt, regnskap og lagersystemer. Vi kobler Shopify til verktøyene dere allerede bruker.",
   },
   {
     title: "Design som selger",
@@ -33,17 +33,17 @@ const deliverables = [
   },
   {
     title: "Drift, support og videreutvikling",
-    body: "Vi blir med videre etter lansering: oppdateringer, ny funksjonalitet og rask hjelp når du trenger det – med støtteavtale fra 990,- per måned.",
+    body: "Vi blir med videre etter lansering: oppdateringer, ny funksjonalitet og rask hjelp når du trenger det.",
   },
   {
     title: "SEO for nettbutikken",
-    body: "Teknisk SEO, produkttekster og struktur som gjør at butikken synes på Google – og i AI-søk som ChatGPT og Gemini.",
+    body: "Teknisk SEO, produkttekster og struktur som gjør at butikken synes på Google og i AI-søk som ChatGPT, Claude og Gemini.",
   },
 ]
 
 const faqItems = [
   {
-    question: "Hva koster en nettbutikk på Shopify?",
+    question: "Hva koster en nettbutikk i Shopify?",
     answer: (
       <p>
         Det avhenger av design, antall produkter og hvilke integrasjoner dere
@@ -102,7 +102,7 @@ const faqItems = [
         fleksibilitet hvis dere allerede bruker{" "}
         <Link href="/tjenester/wordpress">WordPress</Link>. Vi jobber med begge
         og hjelper dere å velge
-        riktig – les gjerne{" "}
+        riktig. Les gjerne{" "}
         <Link href="/trender/shopify-vs-woocommerce-i-2024">
           sammenligningen vår av Shopify og WooCommerce
         </Link>
@@ -158,9 +158,7 @@ export default function ShopifyPage() {
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
           Vi designer, bygger og drifter Shopify-nettbutikker for norske
-          bedrifter – med Vipps, BankID og integrasjonene dere trenger. Fra
-          kontoret vårt i Nydalen får du direkte kontakt med de som faktisk
-          bygger butikken din.
+          bedrifter – med Vipps, BankID og integrasjonene dere trenger. 
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -170,13 +168,6 @@ export default function ShopifyPage() {
           >
             Få et uforpliktende tilbud
           </a>
-          <Link
-            href="/ny-nettside/ditt-apotek-opera"
-            className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
-          >
-            Se en Shopify-butikk vi har laget
-            <ArrowRight className="size-4" aria-hidden />
-          </Link>
         </div>
       </section>
 
@@ -206,7 +197,7 @@ export default function ShopifyPage() {
       </section>
 
       {/* Case band: Ditt Apotek */}
-      <section className="px-4 py-6 sm:px-6 lg:px-10">
+      <section className="px-4 mt-7 py-6 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
           <div className="relative overflow-hidden rounded-[var(--radius)] bg-ink text-ink-foreground">
             <div className="relative grid lg:grid-cols-2 lg:items-stretch">
@@ -221,17 +212,17 @@ export default function ShopifyPage() {
               </div>
 
               <div className="flex min-w-0 flex-col justify-center px-8 py-10 sm:px-14 sm:py-12 lg:py-20 lg:pl-16 lg:pr-20">
-                <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-brand">
+                <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
                   Kundecase · Shopify
                 </span>
                 <h2 className="mt-5 text-balance font-heading text-[clamp(28px,3.2vw,40px)] font-normal leading-[1.12] tracking-[-0.02em]">
                   Nettbutikk for Ditt Apotek
                 </h2>
                 <p className="mt-5 text-[17px] leading-[1.65] text-ink-foreground/80">
-                  For Ditt Apotek ved Operaen i Bjørvika bygde vi en
+                  For Ditt Apotek bygde vi en
                   Shopify-nettbutikk som håndterer et stort produktvolum, med
                   Vipps-betaling og skreddersydd funksjonalitet. Resultatet ble
-                  økt salg – og en butikk de ansatte enkelt drifter selv.
+                  økt salg og en nettbutikk der de ansatte enkelt redigerer produkter og priser selv.
                 </p>
                 <ul className="mt-6 flex flex-wrap gap-2">
                   {["Shopify", "Vipps", "BankID", "Webdesign"].map((chip) => (
@@ -266,11 +257,11 @@ export default function ShopifyPage() {
           </h2>
           <ul className="mx-auto mt-8 max-w-[560px] space-y-[14px]">
             {[
-              "Direkte kontakt med de som bygger butikken – ingen mellomledd",
-              "Fastpris avtalt før vi starter, ingen overraskelser underveis",
+              "Direkte kontakt med de som bygger butikken, ingen mellomledd",
+              "Fastpris avtalt før vi starter",
               "Erfaring med norske løsninger som Vipps og BankID",
               "Drift og support etter lansering, med rask responstid",
-              "Lokalt byrå i Nydalen i Oslo – møt oss gjerne over en kaffe",
+              "Lokalt byrå i Nydalen i Oslo. Møt oss gjerne over en kaffe!",
             ].map((point) => (
               <li key={point} className="flex items-start gap-[12px]">
                 <Check
@@ -287,7 +278,7 @@ export default function ShopifyPage() {
       </section>
 
       {/* FAQ */}
-      <section className="px-6 pb-16">
+      <section className="px-6 pt-7 pb-16">
         <div className="mx-auto max-w-[700px]">
           <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
             Ofte stilte spørsmål om Shopify
