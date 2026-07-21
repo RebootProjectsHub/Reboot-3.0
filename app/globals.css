@@ -137,10 +137,10 @@
     transform: rotate(0) scale(1);
   }
   50% {
-    transform: rotate(90deg) scale(1.25);
+    transform: rotate(45deg) scale(1.25);
   }
   100% {
-    transform: rotate(180deg) scale(1);
+    transform: rotate(90deg) scale(1);
   }
 }
 
