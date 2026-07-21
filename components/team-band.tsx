@@ -36,7 +36,7 @@ export function TeamBand() {
               ))}
             </div>
             <a
-              href="https://www.google.com/search?sa=X&sca_esv=ba3772bf42af157a&sxsrf=APpeQnsXDry-b4d9A8A_6udRT-vBckqlFQ:1783773227916&q=Reboot+Anmeldelser&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDcwMzI0N7I0sjAyNTAyNDQ2MdjAyPiKkS8oNSk_v0QhKLUsM7W8eBErmgAAvsa6BD0AAAA&rldimm=17062172928250211340&tbm=lcl&hl=en-NO&ved=2ahUKEwix8O-M0cqVAxVdBxAIHSlwA-4Q9fQKegQIURAG&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews"
+              href="https://www.google.com/maps/place/Reboot/@59.9518411,10.764818,17z/data=!4m16!1m9!3m8!1s0x46416fc89415ba1d:0xecc903e104a3ec0c!2sReboot!8m2!3d59.9518411!4d10.7673929!9m1!1b1!16s%2Fg%2F11tfnf4p8w!3m5!1s0x46416fc89415ba1d:0xecc903e104a3ec0c!8m2!3d59.9518411!4d10.7673929!16s%2Fg%2F11tfnf4p8w?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-mono text-[13px] font-medium text-foreground hover:text-brand"
