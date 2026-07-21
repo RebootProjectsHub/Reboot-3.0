@@ -37,7 +37,7 @@ export function FaqList({ items }: { items: FaqItem[] }) {
             {/* Always in the DOM (visibility toggled with CSS) so the answer
                 text and its links are server-rendered for search engines. */}
             <div
-              className={`pb-5 pr-8 text-[15px] leading-[1.65] text-foreground/70 [&_a]:text-brand [&_a]:underline-offset-4 hover:[&_a]:underline ${
+              className={`pb-5 pr-8 text-[15px] leading-[1.65] text-foreground/70 [&_a]:text-brand [&_a]:underline-offset-4 [&_a:hover]:underline ${
                 isOpen ? "" : "hidden"
               }`}
             >

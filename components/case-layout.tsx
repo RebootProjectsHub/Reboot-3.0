@@ -87,7 +87,7 @@ export function CaseLayout({ caseStudy }: { caseStudy: CaseStudy }) {
       </div>
 
       <div className="px-6 py-12 sm:py-16">
-        <div className="mx-auto max-w-[720px] text-[17px] leading-[1.75] text-foreground/80 [&_h2]:mt-12 [&_h2]:mb-4 [&_h2]:font-heading [&_h2]:text-[30px] [&_h2]:font-normal [&_h2]:leading-[1.2] [&_h2]:tracking-[-0.01em] [&_h2]:text-foreground [&_h3]:mt-9 [&_h3]:mb-3 [&_h3]:font-heading [&_h3]:text-[21px] [&_h3]:font-normal [&_h3]:leading-[1.3] [&_h3]:text-foreground [&_p]:mb-5 [&_a]:text-brand [&_a]:underline-offset-4 hover:[&_a]:underline [&_h2:first-child]:mt-0">
+        <div className="mx-auto max-w-[720px] text-[17px] leading-[1.75] text-foreground/80 [&_h2]:mt-12 [&_h2]:mb-4 [&_h2]:font-heading [&_h2]:text-[30px] [&_h2]:font-normal [&_h2]:leading-[1.2] [&_h2]:tracking-[-0.01em] [&_h2]:text-foreground [&_h3]:mt-9 [&_h3]:mb-3 [&_h3]:font-heading [&_h3]:text-[21px] [&_h3]:font-normal [&_h3]:leading-[1.3] [&_h3]:text-foreground [&_p]:mb-5 [&_a]:text-brand [&_a]:underline-offset-4 [&_a:hover]:underline [&_h2:first-child]:mt-0">
           {caseStudy.content}
         </div>
       </div>
