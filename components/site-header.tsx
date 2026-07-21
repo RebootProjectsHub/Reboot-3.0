@@ -67,9 +67,9 @@ export function SiteHeader() {
           <div className="hidden items-center lg:flex">
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-normal text-ink-foreground transition-opacity hover:opacity-85"
+              className="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-normal text-ink-foreground transition-opacity hover:opacity-85"
             >
-              <span aria-hidden="true" className="text-brand">
+              <span aria-hidden="true" className="doodle-twinkle text-brand">
                 ✦
               </span>
               Kontakt oss
