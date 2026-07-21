@@ -137,10 +137,10 @@
     transform: rotate(0) scale(1);
   }
   50% {
-    transform: rotate(180deg) scale(1.25);
+    transform: rotate(90deg) scale(1.25);
   }
   100% {
-    transform: rotate(360deg) scale(1);
+    transform: rotate(180deg) scale(1);
   }
 }
 
@@ -151,7 +151,7 @@
     transform: scale(0);
   }
   50% {
-    opacity: 1;
+    opacity: 0.5;
     transform: scale(1);
   }
 }
@@ -180,15 +180,11 @@
   left: -2px;
 }
 .doodle-dot-2 {
-  top: 1px;
+  bottom: -1px;
   right: -2px;
 }
-.doodle-dot-3 {
-  bottom: -1px;
-  right: 2px;
-}
 
-/* One rotation of the ✦ doodle plus a few dots blinking around it while its
+/* A half rotation of the ✦ doodle plus two dots blinking around it while its
    button (.group) is hovered. Dots sit at opacity 0 at rest, so under
    reduced motion nothing shows. */
 @media (prefers-reduced-motion: no-preference) {
@@ -199,10 +195,7 @@
     animation: doodle-dot-blink 0.7s ease-in-out;
   }
   .group:hover .doodle-dot-2 {
-    animation-delay: 0.12s;
-  }
-  .group:hover .doodle-dot-3 {
-    animation-delay: 0.24s;
+    animation-delay: 0.18s;
   }
 }
 

@@ -73,7 +73,6 @@ export function SiteHeader() {
                 <span className="doodle-star">✦</span>
                 <span className="doodle-dot doodle-dot-1" />
                 <span className="doodle-dot doodle-dot-2" />
-                <span className="doodle-dot doodle-dot-3" />
               </span>
               Kontakt oss
             </a>
