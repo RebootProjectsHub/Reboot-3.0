@@ -69,7 +69,7 @@ export function PostLayout({ post }: { post: Post }) {
             href="/kontakt"
             className="inline-flex items-center rounded-full bg-brand px-6 py-3 text-[15px] font-normal text-white transition-colors hover:bg-[#DD2A2C]"
           >
-            Snakk med oss
+            Kontakt oss
           </Link>
         </div>
       </div>
