@@ -34,7 +34,7 @@ const services = [
     id: "seo-og-ai-svar",
     kicker: "Synlighet & søk",
     title: "SEO og AI-svar",
-    body: "God rangering på Google er ikke lenger nok. Vi sørger for at dere også dukker opp når folk spør ChatGPT, Claude  Gemini.",
+    body: "God rangering på Google er ikke lenger nok. Vi sørger for at dere også dukker opp når folk spør ChatGPT, Claude og Gemini.",
     bullets: [
       "Teknisk SEO og innholdsoptimalisering",
       "Synlighet i AI-svar og answer engines",
