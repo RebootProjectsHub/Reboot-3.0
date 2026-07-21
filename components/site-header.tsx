@@ -67,8 +67,11 @@ export function SiteHeader() {
           <div className="hidden items-center lg:flex">
             <a
               href="/kontakt"
-              className="inline-flex items-center rounded-full bg-ink px-6 py-3 text-sm font-normal text-ink-foreground transition-opacity hover:opacity-85"
+              className="inline-flex items-center gap-[9px] rounded-full bg-ink px-6 py-[13px] text-[15px] font-semibold text-ink-foreground transition-[transform,background-color] duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#3a101b] active:translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
+              <span aria-hidden="true" className="text-[16px] leading-none text-brand">
+                ✦
+              </span>
               Kontakt oss
             </a>
           </div>
