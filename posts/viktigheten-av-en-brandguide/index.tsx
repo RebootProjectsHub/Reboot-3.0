@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Brandguide",
   date: "14. november 2024",
   dateISO: "2024-11-14",
-  excerpt: "Merkevareidentitet er viktig for å lykkes med bedriften og en brandguide et uunnværlig verktøy for enhver virksomhet. Denne veilederen viser hvordan bedriften …",
+  excerpt: "Merkevareidentitet er viktig for å lykkes med bedriften og en brandguide et uunnværlig verktøy for enhver virksomhet.",
   image: "/posts/viktigheten-av-en-brandguide/featured.jpg",
   imageAlt: "Viktigheten av en brandguide",
   contentHtml: `<p>Merkevareidentitet er viktig for å lykkes med bedriften og en brandguide et uunnværlig verktøy for enhver virksomhet. Denne veilederen viser hvordan bedriften presenteres visuelt og kommunikativt, sikrer konsistens som er kritisk for å bygge tillit og gjenkjennelse i markedet.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "28. april 2026",
   dateISO: "2026-04-28",
-  excerpt: "Animasjoner har fått en naturlig plass i moderne nettsider, men effekten avhenger helt av hvordan de brukes. Når bevegelse støtter det brukeren prøver å oppnå, kan …",
+  excerpt: "Animasjoner har fått en naturlig plass i moderne nettsider, men effekten avhenger helt av hvordan de brukes.",
   image: "/posts/animasjoner-pa-nettsider/featured.jpg",
   imageAlt: "Animasjoner på nettsider",
   contentHtml: `<p>Animasjoner har fått en naturlig plass i moderne nettsider, men effekten avhenger helt av hvordan de brukes. Når bevegelse støtter det brukeren prøver å oppnå, kan den gjøre opplevelsen tydeligere og mer intuitiv. Samtidig kan den fort bli en distraksjon hvis den brukes uten tydelig hensikt. Derfor handler ikke animasjon først og fremst om estetikk. Det handler om å forsterke forståelse, bygge rytme i opplevelsen og redusere usikkerhet i små øyeblikk der brukeren ellers kunne blitt stående fast.</p>

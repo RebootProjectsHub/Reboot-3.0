@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Søkemotoroptimalisering",
   date: "9. november 2023",
   dateISO: "2023-11-09",
-  excerpt: "I dagens digitale landskap er det avgjørende å sikre at nettsiden din er synlig for søkemotorer. Dette er nøkkelen for å drive organisk trafikk til nettstedet ditt …",
+  excerpt: "I dagens digitale landskap er det avgjørende å sikre at nettsiden din er synlig for søkemotorer.",
   image: "/posts/optimalisering-av-nettsider-for-sokemotorer-var-guide/featured.jpg",
   imageAlt: "Optimalisering av nettsider for søkemotorer: Vår guide",
   contentHtml: `<p>I dagens digitale landskap er det avgjørende å sikre at nettsiden din er synlig for søkemotorer. Dette er nøkkelen for å drive organisk trafikk til nettstedet ditt og oppnå høyere rangeringer i søkeresultatene. I denne trinn-for-trinn guiden, vil vi utforske viktige teknikker for optimalisering av nettsider for søkemotorer.</p>

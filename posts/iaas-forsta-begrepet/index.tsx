@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Bærekraftig webhosting",
   date: "4. juni 2024",
   dateISO: "2024-06-04",
-  excerpt: "Infrastructure as a Service (IaaS) er raskt blitt en bærebjelke i moderne IT-strategier. Som en av de fundamentale kategoriene innen cloud computing, tilbyr IaaS …",
+  excerpt: "Infrastructure as a Service (IaaS) er raskt blitt en bærebjelke i moderne IT-strategier.",
   image: "/posts/iaas-forsta-begrepet/featured.jpg",
   imageAlt: "IaaS former fremtidens IT-infrastruktur",
   contentHtml: `<p>Infrastructure as a Service (IaaS) er raskt blitt en bærebjelke i moderne IT-strategier. Som en av de fundamentale kategoriene innen cloud computing, tilbyr IaaS bedrifter fleksibiliteten til å skalere og tilpasse sin IT-infrastruktur uten de tunge investeringene som tradisjonelt er assosiert med fysisk maskinvare.</p>

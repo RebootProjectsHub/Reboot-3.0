@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Digital modernisering",
   date: "19. desember 2023",
   dateISO: "2023-12-19",
-  excerpt: "Fjernarbeid er ikke bare et spørsmål om å jobbe hjemmefra; det handler om å skape en produktiv og balansert arbeidskultur, selv over avstand. For norske bedrifter …",
+  excerpt: "Fjernarbeid er ikke bare et spørsmål om å jobbe hjemmefra; det handler om å skape en produktiv og balansert arbeidskultur, selv over avstand.",
   image: "/posts/fjernarbeidets-fremtid-hvordan-teknologi-pavirker-norske-arbeidsplasser/featured.jpg",
   imageAlt: "Fjernarbeid: Tips for norske bedriffter",
   contentHtml: `<p>Fjernarbeid er ikke bare et spørsmål om å jobbe hjemmefra; det handler om å skape en produktiv og balansert arbeidskultur, selv over avstand. For norske bedrifter, som allerede er kjent for sin fleksible tilnærming til arbeidslivet, er dette en gylden mulighet til å ta ledelsen.</p>

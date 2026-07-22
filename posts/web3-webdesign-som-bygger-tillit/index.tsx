@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "30. september 2025",
   dateISO: "2025-09-30",
-  excerpt: "Når vi snakker om web3, handler det ikke bare om teknologi, men om å skape digitale rom som føles trygge, raske og menneskelige. Brukeren skal slippe å forstå …",
+  excerpt: "Når vi snakker om web3, handler det ikke bare om teknologi, men om å skape digitale rom som føles trygge, raske og menneskelige.",
   image: "/posts/web3-webdesign-som-bygger-tillit/featured.jpg",
   imageAlt: "Web3 design som bygger tillit",
   contentHtml: `<p>Når vi snakker om web3, handler det ikke bare om teknologi, men om å skape digitale rom som føles trygge, raske og menneskelige. Brukeren skal slippe å forstå kompliserte blokkjeder eller tekniske detaljer for å føle seg hjemme. Her er det lommebøker som erstatter passord, og smarte kontrakter som gjennomfører handlinger i stedet for tradisjonelle servere. Hele opplevelsen må likevel føles enkel og intuitiv. Det krever en bevisst tilnærming til design, der onboarding og første møte med teknologien blir avgjørende. Tenk på nye brukere som møter web3 for første gang: de må ledes inn med klare forklaringer og brukervennlige steg, ikke kastes rett inn i tekniske labyrinter.</p>

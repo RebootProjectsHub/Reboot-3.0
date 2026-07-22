@@ -6,7 +6,7 @@ export const post: Post = {
   category: "UX UI",
   date: "25. november 2024",
   dateISO: "2024-11-25",
-  excerpt: "Flatt design står som et symbol på modernitet innen webutvikling og brukergrensesnitt, kjennetegnet ved sin rendyrkede minimalisme og funksjonalitet. Denne stilen …",
+  excerpt: "Flatt design står som et symbol på modernitet innen webutvikling og brukergrensesnitt, kjennetegnet ved sin rendyrkede minimalisme og funksjonalitet.",
   image: "/posts/moderne-brukergrensesnitt-med-flatt-design/featured.jpg",
   imageAlt: "Moderne brukergrensesnitt med flatt design",
   contentHtml: `<p>Flatt design står som et symbol på modernitet innen webutvikling og brukergrensesnitt, kjennetegnet ved sin rendyrkede minimalisme og funksjonalitet. Denne stilen bruker elementer som er strippet for overflødigheter, med dristige farger som fanger oppmerksomheten.</p>

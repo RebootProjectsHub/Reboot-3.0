@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "24. mai 2024",
   dateISO: "2024-05-24",
-  excerpt: "Med webdesign dominert av minimalisme og ultramoderne design, gjør nostalgi en overraskende inntreden. Denne typen design, inspirert av estetikken fra 80- og …",
+  excerpt: "Nostalgisk vri på moderne nettsteder Med webdesign dominert av minimalisme og ultramoderne design, gjør nostalgi en overraskende inntreden.",
   image: "/posts/nostalgi-i-webdesign/featured.jpg",
   imageAlt: "Nostalgi i webdesign",
   contentHtml: `<h3>Nostalgisk vri på moderne nettsteder</h3>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Big data",
   date: "8. januar 2024",
   dateISO: "2024-01-08",
-  excerpt: "I en verden drevet av teknologi og data, er big data et nøkkelbegrep for bedrifter som søker vekst. La oss utforske hvordan små og mellomstore bedrifter kan utnytte …",
+  excerpt: "I en verden drevet av teknologi og data, er big data et nøkkelbegrep for bedrifter som søker vekst.",
   image: "/posts/dra-nytte-av-big-data-for-a-drive-vekst/featured.jpg",
   imageAlt: "Big data for små bedrifter",
   contentHtml: `<p>I en verden drevet av teknologi og data, er big data et nøkkelbegrep for bedrifter som søker vekst. La oss utforske hvordan små og mellomstore bedrifter kan utnytte data til sin fordel.</p>

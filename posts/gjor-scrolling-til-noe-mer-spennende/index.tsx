@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Moderne webdesign",
   date: "25. april 2024",
   dateISO: "2024-04-25",
-  excerpt: "Med fokus på brukeropplevelse og levende webdesign har scrolling med animasjoner blitt et essensielt verktøy for å engasjere besøkende på nettstedet. Dette …",
+  excerpt: "Med fokus på brukeropplevelse og levende webdesign har scrolling med animasjoner blitt et essensielt verktøy for å engasjere besøkende på nettstedet.",
   image: "/posts/gjor-scrolling-til-noe-mer-spennende/featured.jpg",
   imageAlt: "Levende webdesign med animert scrolling",
   contentHtml: `<p>Med fokus på brukeropplevelse og levende webdesign har scrolling med animasjoner blitt et essensielt verktøy for å engasjere besøkende på nettstedet. Dette dynamiske elementet tilfører liv og bevegelse til hjemmesiden, og inviterer brukeren til å utforske innholdet på en mer interaktiv måte.</p>

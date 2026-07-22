@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "9. september 2025",
   dateISO: "2025-09-09",
-  excerpt: "Bakgrunner gjør mer enn å fylle tomrom. De former hierarki, styrer oppmerksomhet og setter stemningen på siden. Når de brukes bevisst, løfter de helheten og gjør …",
+  excerpt: "Bakgrunner gjør mer enn å fylle tomrom. De former hierarki, styrer oppmerksomhet og setter stemningen på siden.",
   image: "/posts/bruk-av-bakgrunner-pa-nettsider/featured.jpg",
   imageAlt: "Bruk av bakgrunn på nettside",
   contentHtml: `<p>Bakgrunner gjør mer enn å fylle tomrom. De former hierarki, styrer oppmerksomhet og setter stemningen på siden. Når de brukes bevisst, løfter de helheten og gjør grensesnittet mer minneverdig. Derfor er de en aktiv del av designet, ikke bare et lag bak innholdet.</p>

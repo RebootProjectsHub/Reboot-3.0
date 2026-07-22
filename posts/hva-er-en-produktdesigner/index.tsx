@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "2. januar 2025",
   dateISO: "2025-01-02",
-  excerpt: "I det vi går inn i 2025 ser vi en stadig utvikling i rollen til en produktdesigner, der kreativitet smelter sammen med teknologi. Disse innovatørene står i …",
+  excerpt: "I det vi går inn i 2025 ser vi en stadig utvikling i rollen til en produktdesigner, der kreativitet smelter sammen med teknologi.",
   image: "/posts/hva-er-en-produktdesigner/featured.jpg",
   imageAlt: "Hva er en produktdesigner?",
   contentHtml: `<p>I det vi går inn i 2025 ser vi en stadig utvikling i rollen til en produktdesigner, der kreativitet smelter sammen med teknologi. Disse innovatørene står i skjæringspunktet mellom kunst og ingeniørvitenskap og skaper banebrytende produkter.</p>

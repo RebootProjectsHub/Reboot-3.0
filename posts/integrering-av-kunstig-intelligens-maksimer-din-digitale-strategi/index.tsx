@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Integrering av kunstig intelligens",
   date: "26. oktober 2023",
   dateISO: "2023-10-26",
-  excerpt: "Implementering av kunstig intelligens (AI) er et steg inn i fremtidens digitale strategi, hvor intelligente systemer og automatiserte prosesser skaper verdi …",
+  excerpt: "Implementering av kunstig intelligens (AI) er et steg inn i fremtidens digitale strategi, hvor intelligente systemer og automatiserte prosesser skaper verdi.",
   image: "/posts/integrering-av-kunstig-intelligens-maksimer-din-digitale-strategi/featured.jpg",
   imageAlt: "Integrering av kunstig intelligens: Maksimer din digitale strategi",
   contentHtml: `<p>Implementering av kunstig intelligens (AI) er et steg inn i fremtidens digitale strategi, hvor intelligente systemer og automatiserte prosesser skaper verdi, effektivitet og innovative brukeropplevelser. Denne artikkelen viser hvordan du kan gå frem for integrering av kunstig intelligens.</p>

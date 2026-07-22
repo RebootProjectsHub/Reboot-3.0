@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "15. oktober 2024",
   dateISO: "2024-10-15",
-  excerpt: "Få et teknisk innblikk i hvordan responsivt webdesign tilpasser nettsiden din for optimal visning på alle enheter. Finn ut hvorfor det er avgjørende for å lage …",
+  excerpt: "Få et teknisk innblikk i hvordan responsivt webdesign tilpasser nettsiden din for optimal visning på alle enheter.",
   image: "/posts/responsivt-webdesign-hvordan-fungerer-det-og-hvorfor-er-det-sa-viktig/featured.jpg",
   imageAlt: "Responsivt webdesign - Hvordan fungerer det og hvorfor er det så viktig",
   contentHtml: `<p>Få et teknisk innblikk i hvordan responsivt webdesign tilpasser nettsiden din for optimal visning på alle enheter. Finn ut hvorfor det er avgjørende for å lage moderne, brukervennlige nettsider som engasjerer besøkende.</p>

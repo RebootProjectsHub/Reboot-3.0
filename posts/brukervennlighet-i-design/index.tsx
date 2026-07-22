@@ -6,7 +6,7 @@ export const post: Post = {
   category: "UX UI",
   date: "21. desember 2024",
   dateISO: "2024-12-21",
-  excerpt: "Brukervennlighet er hjertet av ethvert godt design. Det handler ikke bare om estetikk, men om å skape løsninger som er enkle å forstå og bruke. Når brukervennlighet …",
+  excerpt: "Brukervennlighet er hjertet av ethvert godt design. Det handler ikke bare om estetikk, men om å skape løsninger som er enkle å forstå og bruke.",
   image: "/posts/brukervennlighet-i-design/featured.jpg",
   imageAlt: "Brukervennlighet i design",
   contentHtml: `<p>Brukervennlighet er hjertet av ethvert godt design. Det handler ikke bare om estetikk, men om å skape løsninger som er enkle å forstå og bruke. Når brukervennlighet prioriteres i designprosessen, øker det ikke bare tilfredsheten blant brukerne, men styrker også produktets kvalitet.</p>

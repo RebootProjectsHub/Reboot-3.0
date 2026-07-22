@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "28. november 2024",
   dateISO: "2024-11-28",
-  excerpt: "Designbyråer spiller en viktig rolle i utviklingen av digitale løsninger som definerer hvordan bedrifter kommuniserer med sine målgrupper. Disse byråene forener …",
+  excerpt: "Designbyråer spiller en viktig rolle i utviklingen av digitale løsninger som definerer hvordan bedrifter kommuniserer med sine målgrupper.",
   image: "/posts/hva-gjor-et-designbyra/featured.jpg",
   imageAlt: "Hva gjør et designbyrå?",
   contentHtml: `<p>Designbyråer spiller en viktig rolle i utviklingen av digitale løsninger som definerer hvordan bedrifter kommuniserer med sine målgrupper. Disse byråene forener kreativitet med teknologi for å skape engasjerende og effektive brukeropplevelser. Her skal vi dykke litt dypere ned i hva et designbyrå faktisk gjør.</p>

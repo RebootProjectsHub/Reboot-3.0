@@ -6,7 +6,7 @@ export const post: Post = {
   category: "UX UI",
   date: "7. november 2024",
   dateISO: "2024-11-07",
-  excerpt: "Lær hvordan du designer intuitiv nettsidenavigasjon som forbedrer brukeropplevelsen og holder besøkende engasjert. Oppdag tips og beste praksiser for å skape en …",
+  excerpt: "Lær hvordan du designer intuitiv nettsidenavigasjon som forbedrer brukeropplevelsen og holder besøkende engasjert.",
   image: "/posts/hvordan-skape-et-intuitivt-og-brukervennlig-nettsted/featured.jpg",
   imageAlt: "Hvordan designe en brukervennlig nettsideside",
   contentHtml: `<p>Lær hvordan du designer intuitiv nettsidenavigasjon som forbedrer brukeropplevelsen og holder besøkende engasjert. Oppdag tips og beste praksiser for å skape en brukervennlig nettstedsstruktur.</p>

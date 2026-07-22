@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Integrering av kunstig intelligens",
   date: "14. oktober 2025",
   dateISO: "2025-10-14",
-  excerpt: "Lovable omtales ofte som en ny generasjon AI-tjeneste som hjelper folk å gå fra idé til fungerende nettside raskere enn tradisjonelle prosesser. Lovable er lett å …",
+  excerpt: "Lovable omtales ofte som en ny generasjon AI-tjeneste som hjelper folk å gå fra idé til fungerende nettside raskere enn tradisjonelle prosesser.",
   image: "/posts/vi-hjelper-deg-med-lovable/featured.jpg",
   imageAlt: "Vi hjelper deg med Lovable",
   contentHtml: `<p>Lovable omtales ofte som en ny generasjon AI-tjeneste som hjelper folk å gå fra idé til fungerende nettside raskere enn tradisjonelle prosesser. Lovable er lett å starte med alene, og nettopp det er poenget i begynnelsen. Etterhvert får du flere behov, innholdet vokser og du vil knytte skjema mot CRM, nyhetsbrev og analyse. Med andre ord, kompleksiteten øker. Nettopp her kommer vi inn. Vi hjelper deg å videreutvikle siden når du støter på utfordringer som mange ikke-tekniske opplever etter å ha brukt Lovable en stund.</p>

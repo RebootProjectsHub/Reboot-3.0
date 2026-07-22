@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Landingssider som konverterer",
   date: "31. oktober 2023",
   dateISO: "2023-10-31",
-  excerpt: "Landingsside som konverterer: Forvandle besøkende til kunder med landingssider som ikke bare fanger oppmerksomhet, men også veileder brukeren smidig mot …",
+  excerpt: "Landingsside som konverterer: Forvandle besøkende til kunder med landingssider som ikke bare fanger oppmerksomhet, men også veileder brukeren smidig mot konvertering.",
   image: "/posts/slik-skaper-du-landingssider-som-konverterer-besokende/featured.jpg",
   imageAlt: "Slik skaper du landingssider som konverterer besøkende",
   contentHtml: `<p>Landingsside som konverterer: Forvandle besøkende til kunder med landingssider som ikke bare fanger oppmerksomhet, men også veileder brukeren smidig mot konvertering. Utforsk hvordan en godt designet landingsside kan bli din mest effektive salgsagent.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Nettbutikk",
   date: "26. desember 2023",
   dateISO: "2023-12-26",
-  excerpt: "Den norske detaljhandelens landskap er i en spennende fase av digital utvikling. Som teknologer og strateger, ser vi denne overgangen som en nødvendighet for å møte …",
+  excerpt: "Den norske detaljhandelens landskap er i en spennende fase av digital utvikling.",
   image: "/posts/digitalisering-av-detaljhandelen-i-norge/featured.webp",
   imageAlt: "Digitalisering av detaljhandelen i Norge",
   contentHtml: `<p>Den norske detaljhandelens landskap er i en spennende fase av digital utvikling. Som teknologer og strateger, ser vi denne overgangen som en nødvendighet for å møte dagens forbrukers forventninger. Det er ikke lenger nok å ha en nettbutikk; det handler om å integrere digital og fysisk handel for å skape en sømløs kundeopplevelse.</p>

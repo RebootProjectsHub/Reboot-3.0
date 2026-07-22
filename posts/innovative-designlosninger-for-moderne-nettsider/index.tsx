@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Moderne webdesign",
   date: "16. november 2023",
   dateISO: "2023-11-16",
-  excerpt: "I en digital verden hvor det er essensielt å skille seg ut, blir innovative designløsninger stadig viktigere for modern nettsider. Å kombinere estetikk med …",
+  excerpt: "I en digital verden hvor det er essensielt å skille seg ut, blir innovative designløsninger stadig viktigere for modern nettsider.",
   image: "/posts/innovative-designlosninger-for-moderne-nettsider/featured.jpg",
   imageAlt: "Moderne webdesign med innovative løsninger",
   contentHtml: `<p>I en digital verden hvor det er essensielt å skille seg ut, blir innovative designløsninger stadig viktigere for modern nettsider. Å kombinere estetikk med funksjonalitet kan være en utfordring for å skape et moderne webdesign. Men med de riktige verktøyene og tilnærmingene kan du oppnå et design som både fanger oppmerksomhet og forbedrer brukeropplevelsen.</p>

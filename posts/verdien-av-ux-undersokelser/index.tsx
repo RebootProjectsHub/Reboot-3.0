@@ -6,7 +6,7 @@ export const post: Post = {
   category: "UX UI",
   date: "6. desember 2024",
   dateISO: "2024-12-06",
-  excerpt: "Forståelse av brukeropplevelse (UX) er avgjørende for å skape digitale løsninger som ikke bare fungerer, men som også engasjerer og begeistrer. Gjennom bruk av …",
+  excerpt: "Forståelse av brukeropplevelse (UX) er avgjørende for å skape digitale løsninger som ikke bare fungerer, men som også engasjerer og begeistrer.",
   image: "/posts/verdien-av-ux-undersokelser/featured.jpg",
   imageAlt: "Verdien av UX-undersøkelser",
   contentHtml: `<p>Forståelse av <a href="https://no.wikipedia.org/wiki/Brukeropplevelse" target="_blank" rel="noopener noreferrer">brukeropplevelse (UX)</a> er avgjørende for å skape digitale løsninger som ikke bare fungerer, men som også engasjerer og begeistrer. Gjennom bruk av UX-undersøkelser kan virksomheter samle verdifull data som danner grunnlaget for å forbedre produkter og tjenester.</p>

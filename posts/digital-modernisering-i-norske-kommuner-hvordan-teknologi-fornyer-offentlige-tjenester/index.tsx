@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Digital modernisering",
   date: "12. desember 2023",
   dateISO: "2023-12-12",
-  excerpt: "Når vi tenker på Norge, forestiller vi oss ofte vidstrakte fjorder, nordlys og rike kulturarvsteder. Men bak denne naturskjønnheten skjer det en revolusjon. Norske …",
+  excerpt: "Når vi tenker på Norge, forestiller vi oss ofte vidstrakte fjorder, nordlys og rike kulturarvsteder. Men bak denne naturskjønnheten skjer det en revolusjon.",
   image: "/posts/digital-modernisering-i-norske-kommuner-hvordan-teknologi-fornyer-offentlige-tjenester/featured.jpg",
   imageAlt: "Teknologi forandrer offentlige tjenester i Norge",
   contentHtml: `<p>Når vi tenker på Norge, forestiller vi oss ofte vidstrakte fjorder, nordlys og rike kulturarvsteder. Men bak denne naturskjønnheten skjer det en revolusjon. Norske kommuner omfavner nemlig teknologi for å fornye og forbedre offentlige tjenester. Fra å gi innbyggerne bedre helsetjenester til å effektivisere byplanlegging med digital transformasjon i norske kommuner, er vi på en reise mot fremtiden.</p>

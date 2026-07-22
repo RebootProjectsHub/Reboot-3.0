@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "3. desember 2024",
   dateISO: "2024-12-03",
-  excerpt: "Nettside-footere spiller en viktig, men ofte undervurdert, rolle i brukeropplevelsen på en nettside. Den er nyttig for å tilrettelegge for navigering og for å …",
+  excerpt: "Nettside-footere spiller en viktig, men ofte undervurdert, rolle i brukeropplevelsen på en nettside.",
   image: "/posts/utforming-av-en-nettside-footer/featured.jpg",
   imageAlt: "Utforming av en nettside-footer",
   contentHtml: `<p>Nettside-footere spiller en viktig, men ofte undervurdert, rolle i brukeropplevelsen på en nettside. Den er nyttig for å tilrettelegge for navigering og for å formidle viktig informasjon til besøkende. Gjennom å forstå hvordan man optimaliserer utformingen av en footer, kan man forbedre både nettstedets funksjonalitet og estetiske appell.</p>

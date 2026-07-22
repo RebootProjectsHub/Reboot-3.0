@@ -6,7 +6,7 @@ export const post: Post = {
   category: "UX UI",
   date: "22. oktober 2025",
   dateISO: "2025-10-22",
-  excerpt: "Brukerpersonas gjør data menneskelig. I stedet for anonyme diagrammer får du historier som er lette å diskutere, og som hjelper teamet å ta bedre valg raskere. Når …",
+  excerpt: "Brukerpersonas gjør data menneskelig. I stedet for anonyme diagrammer får du historier som er lette å diskutere, og som hjelper teamet å ta bedre valg raskere.",
   image: "/posts/brukerpersonas-innen-webdesign/featured.jpg",
   imageAlt: "Brukerpersonas innen webdesign",
   contentHtml: `<p>Brukerpersonas gjør data menneskelig. I stedet for anonyme diagrammer får du historier som er lette å diskutere, og som hjelper teamet å ta bedre valg raskere. Når målet er å skape en nettside som føles relevant fra første sekund, er det verdifullt å vite hvem du egentlig bygger for, hvorfor de kommer, og hva som stopper dem.</p>

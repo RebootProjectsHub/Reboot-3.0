@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Kunstig intelligens",
   date: "22. august 2025",
   dateISO: "2025-08-22",
-  excerpt: "Kunstig intelligens har gått fra å være et forskningsprosjekt til å bli en del av hverdagslogistikken i webdesign. Vi ser det i verktøyene som hjelper oss å …",
+  excerpt: "Kunstig intelligens har gått fra å være et forskningsprosjekt til å bli en del av hverdagslogistikken i webdesign.",
   image: "/posts/hvordan-bruke-ki-i-webdesign/featured.jpg",
   imageAlt: "Hvordan bruke KI i webdesign",
   contentHtml: `<p>Kunstig intelligens har gått fra å være et forskningsprosjekt til å bli en del av hverdagslogistikken i webdesign. Vi ser det i verktøyene som hjelper oss å analysere atferd, i systemene som foreslår layout, og i arbeidsflyten som kutter tid mellom idé og test. Samtidig er det fortsatt mennesker som setter retning, vurderer kvalitet og definerer etikken. Nettopp derfor er 2025 et år der gode <a href="/trender/slik-er-var-designprosess">designprosesser</a> handler like mye om styring og forståelse som om teknologi.</p>

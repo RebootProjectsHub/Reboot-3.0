@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Kunstig intelligens",
   date: "26. september 2025",
   dateISO: "2025-09-26",
-  excerpt: "Har du lurt på hvordan NRK TV treffer med neste programforslag, eller hvordan BankID kjenner igjen ansiktet ditt på to sekunder. Det er ikke magi, det er …",
+  excerpt: "Har du lurt på hvordan NRK TV treffer med neste programforslag, eller hvordan BankID kjenner igjen ansiktet ditt på to sekunder.",
   image: "/posts/hvordan-ki-egentlig-virker/featured.jpg",
   imageAlt: "Hvordan KI egentlig virker",
   contentHtml: `<p>Har du lurt på hvordan NRK TV treffer med neste programforslag, eller hvordan BankID kjenner igjen ansiktet ditt på to sekunder. Det er ikke magi, det er maskinlæring i arbeid. Kunstig intelligens er i ferd med å bli en usynlig infrastruktur i hverdagen, fra kundeservice hos offentlige etater til logistikken hos Posten. Likevel oppleves den ofte som en svart boks. Nettopp derfor er det nyttig å forstå hva som skjer bak kulissene, og hvordan data, algoritmer og trening får maskiner til å lære.</p>

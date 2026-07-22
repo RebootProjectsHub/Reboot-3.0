@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Gamification",
   date: "15. april 2024",
   dateISO: "2024-04-15",
-  excerpt: "Gamification er ikke bare for spill – det har funnet sin plass i webdesign, gjør interaksjoner mer engasjerende og kan forvandle den vanlige nettopplevelsen til noe …",
+  excerpt: "Gamification er ikke bare for spill – det har funnet sin plass i webdesign, gjør interaksjoner mer engasjerende og kan forvandle den vanlige nettopplevelsen til noe…",
   image: "/posts/gamification-i-webdesign/featured.jpg",
   imageAlt: "Webdesign med gamification",
   contentHtml: `<p>Gamification er ikke bare for spill – det har funnet sin plass i webdesign, gjør interaksjoner mer engasjerende og kan forvandle den vanlige nettopplevelsen til noe ekstraordinært. Dette konseptet innebærer å bruke spillmekanikker i ikke-spillkontekster for å motivere og øke brukerens engasjement. Det er særlig nyttig for å holde besøkende på nettstedet ditt lenger og motivere dem til å utforske mer.</p>

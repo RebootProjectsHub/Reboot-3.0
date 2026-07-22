@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Sosiale medier",
   date: "14. mai 2024",
   dateISO: "2024-05-14",
-  excerpt: "Synlighet i sosiale medier er en nøkkel til suksess og en uunnværlig metode for merkevarer å forsterke sitt fotavtrykk i markedet. Sosiale medier tilbyr unike …",
+  excerpt: "Synlighet i sosiale medier er en nøkkel til suksess og en uunnværlig metode for merkevarer å forsterke sitt fotavtrykk i markedet.",
   image: "/posts/sosiale-medier-strategi/featured.jpg",
   imageAlt: "Riktig strategi for anonnsering i sosiale medier",
   contentHtml: `<p>Synlighet i sosiale medier er en nøkkel til suksess og en uunnværlig metode for merkevarer å forsterke sitt fotavtrykk i markedet. Sosiale medier tilbyr unike muligheter for å engasjere seg med et publikum, men det kan også være utfordrende å navigere i mylderet av trender, som hashtags og virale utfordringer, uten å miste retningen.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Big data",
   date: "13. februar 2024",
   dateISO: "2024-02-13",
-  excerpt: "I en verden med usikre økonomiske utsikter er det viktigere enn noen gang å treffe gode, informerte beslutninger. Men hvilke verktøy er best for å navigere i denne …",
+  excerpt: "I en verden med usikre økonomiske utsikter er det viktigere enn noen gang å treffe gode, informerte beslutninger.",
   image: "/posts/riktige-beslutninger-basert-pa-data/featured.jpg",
   imageAlt: "Riktige beslutninger basert på data",
   contentHtml: `<p>I en verden med usikre økonomiske utsikter er det viktigere enn noen gang å treffe gode, informerte beslutninger. Men hvilke verktøy er best for å navigere i denne komplekse virkeligheten? Kan vi stole på den dataen vi bruker, eller bygger vi beslutninger på ustabilt grunnlag? Enhver beslutning kan ha stor påvirkning, og nøyaktigheten av dataene vi bruker er avgjørende for suksess.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Digital modernisering",
   date: "27. februar 2024",
   dateISO: "2024-02-27",
-  excerpt: "Digitaliseringen av offentlig sektor var ment å revolusjonere hvordan vi interagerer med myndigheter og tjenester. Imidlertid har det vist seg at veien mot full …",
+  excerpt: "Digitaliseringen av offentlig sektor var ment å revolusjonere hvordan vi interagerer med myndigheter og tjenester.",
   image: "/posts/digitaliseringens-dilemma-i-offentlig-sektor/featured.jpg",
   imageAlt: "Digitalisering i offentlig sektor",
   contentHtml: `<p>Digitaliseringen av offentlig sektor var ment å revolusjonere hvordan vi interagerer med myndigheter og tjenester. Imidlertid har det vist seg at veien mot full digital integrasjon er mer kompleks enn først antatt. Til tross for regjeringens lovnad om et taktskifte i digitaliseringen, har tilliten til offentlige digitale løsninger nådd et bunnivå. Dette reiser spørsmål om hvordan offentlig sektor kan forbedre og tilpasse sine digitale strategier for å møte samfunnets behov​<a href="https://ikt-norge.no/meninger/it-i-praksis-2023-taktskiftet-i-digitaliseringen-av-offentlig-sektor-gar-i-feil-retning/#:~:text=Unders%C3%B8kelsen%20IT%20i%20praksis%202023,arbeidet%20med%20offentlig%20digital%20innovasjon" target="_blank" rel="noopener noreferrer"></a>​. For dybdeinnsikt, utforsk våre <a href="/tjenester/#brandguide">brandguide-tjenester</a> og ta kontakt med oss.</p>

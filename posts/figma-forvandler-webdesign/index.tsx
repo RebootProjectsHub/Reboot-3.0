@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "1. april 2024",
   dateISO: "2024-04-01",
-  excerpt: "Med stadige fremskritt innen design og teknologi, har Figma raskt etablert seg som et foretrukket verktøy blant webdesignere. Dette nettbaserte designverktøyet …",
+  excerpt: "Med stadige fremskritt innen design og teknologi, har Figma raskt etablert seg som et foretrukket verktøy blant webdesignere.",
   image: "/posts/figma-forvandler-webdesign/featured.jpg",
   imageAlt: "Figma forvandler webdesign",
   contentHtml: `<p>Med stadige fremskritt innen design og teknologi, har Figma raskt etablert seg som et foretrukket verktøy blant webdesignere. Dette nettbaserte designverktøyet transformerer den tradisjonelle designprosessen til en lekende, samarbeidende og utforskende opplevelse. Figma skiller seg ut ved å gjøre designprosessen mer tilgjengelig og innovativ gjennom avansert funksjonalitet og en rekke nyttige plugins​<a href="https://www.mediaveien.no/trender/webdesign-med-figma-en-knallstart-pa-designfasen" target="_blank" rel="noopener noreferrer"></a>​.</p>

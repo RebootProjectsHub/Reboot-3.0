@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Digital markedsføring",
   date: "28. november 2023",
   dateISO: "2023-11-28",
-  excerpt: "Hvordan kunstig intelligens forvandler digital markedsføring",
+  excerpt: "Hvordan kunstig intelligens forvandler digital markedsføring Kunstig intelligens (AI) er ikke bare et buzzword i teknologiverdenen.",
   image: "/posts/kunstig-intelligens-forvandler-digital-markedsforing/featured.jpg",
   imageAlt: "Kunstig intelligens forvandler digital markedsføring",
   contentHtml: `<p><strong>Hvordan kunstig intelligens forvandler digital markedsføring</strong></p>

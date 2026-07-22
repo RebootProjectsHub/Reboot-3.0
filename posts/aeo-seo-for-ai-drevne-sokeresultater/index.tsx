@@ -9,8 +9,7 @@ export const post: Post = {
   category: "SEO",
   date: "29. desember 2025",
   dateISO: "2025-12-29",
-  excerpt:
-    "AEO står for Answer Engine Optimization, og handler om å gjøre innholdet ditt forståelig nok til at AI-baserte søkemotorer velger det som svar.",
+  excerpt: "AEO står for Answer Engine Optimization, og handler om å gjøre innholdet ditt forståelig nok til at AI-baserte søkemotorer og assistenter velger det som svar.",
   image: `${IMG}/featured.jpg`,
   imageAlt: "AEO vs SEO for AI-drevne søkeresultater",
   content: (

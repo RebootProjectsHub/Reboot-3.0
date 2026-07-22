@@ -6,7 +6,7 @@ export const post: Post = {
   category: "UX UI",
   date: "23. november 2023",
   dateISO: "2023-11-23",
-  excerpt: "Når man navigerer i den digitale verden, høres ofte begrepene brukeropplevelse (UX) vs brukergrensesnitt (UI). Men hva betyr de egentlig, og hvorfor er de viktige …",
+  excerpt: "Brukeropplevelse (UX) vs. Brukergrensesnitt (UI): Hva skiller dem?",
   image: "/posts/brukeropplevelse-ux-vs-brukergrensesnitt-ui-forsta-forskjellene/featured.jpg",
   imageAlt: "Brukeropplevelse (UX) vs. Brukergrensesnitt (UI): Hva skiller dem?",
   contentHtml: `<h2>Brukeropplevelse (UX) vs. Brukergrensesnitt (UI): Hva skiller dem?</h2>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "UX UI",
   date: "22. september 2025",
   dateISO: "2025-09-22",
-  excerpt: "Tenk deg at du åpner en side der ingenting henger sammen. Blikket hopper, menyene forklarer lite, og du forlater siden før du har begynt. Sammenlign det med en side …",
+  excerpt: "Tenk deg at du åpner en side der ingenting henger sammen. Blikket hopper, menyene forklarer lite, og du forlater siden før du har begynt.",
   image: "/posts/nettside-layout-som-fungerer/featured.jpg",
   imageAlt: "Nettside-layout som fungerer",
   contentHtml: `<p>Tenk deg at du åpner en side der ingenting henger sammen. Blikket hopper, menyene forklarer lite, og du forlater siden før du har begynt. Sammenlign det med en side som leder deg trygt mot det du faktisk trenger. Den er klar, enkel å lese og gir et godt inntrykk som varer. Forskjellen ligger i hvordan layouten er strukturert. En god forside og en gjennomtenkt struktur legger grunnmuren for hele opplevelsen, og de påvirker både hva brukeren gjør og hvordan virksomheten presterer. Nettopp derfor er layout ikke pynt, men arkitektur for handling, og det begynner med bevisste valg om hierarki, navigasjon og responsivitet.</p>

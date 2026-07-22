@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Nettside priser",
   date: "21. november 2023",
   dateISO: "2023-11-21",
-  excerpt: "Når man skal investere i en ny nettside, er det viktig å vite hva man får for pengene. Hos oss, får du ikke bare en nettside; du får en løsning som gjenspeiler din …",
+  excerpt: "Når man skal investere i en ny nettside, er det viktig å vite hva man får for pengene.",
   image: "/posts/hvordan-priser-pa-nettsider-reflekterer-kvalitet-og-verdiskaping/featured.jpeg",
   imageAlt: "Nettside priser: Kvalitet og verdiskaping til riktige pris",
   contentHtml: `<p>Når man skal investere i en ny nettside, er det viktig å vite hva man får for pengene. Hos oss, får du ikke bare en nettside; du får en løsning som gjenspeiler din bedrifts identitet, er brukervennlig og ser moderne ut. Alt til faste, lave nettside-priser.</p>

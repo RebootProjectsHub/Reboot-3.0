@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Proff nettside",
   date: "25. mars 2024",
   dateISO: "2024-03-25",
-  excerpt: "For små bedrifter i 2024, er en velutformet hjemmeside mer enn bare et digitalt visittkort; det er en kritisk driver for suksess. En effektiv hjemmeside kan …",
+  excerpt: "For små bedrifter i 2024, er en velutformet hjemmeside mer enn bare et digitalt visittkort; det er en kritisk driver for suksess.",
   image: "/posts/hjemmeside-guide-for-sma-bedrifter/featured.jpg",
   imageAlt: "Hjemmeside-guide for små bedrifter",
   contentHtml: `<p>For små bedrifter i 2024, er en velutformet hjemmeside mer enn bare et digitalt visittkort; det er en kritisk driver for suksess. En effektiv hjemmeside kan tiltrekke nye kunder, øke merkevarebevisstheten og styrke salget. Men hva gjør en hjemmeside effektiv? La oss dykke inn i nøkkelkomponentene som små bedrifter bør vurdere​<a href="https://sveumdesign.no/nyheter/#:~:text=Hjemmeside%20for%20sm%C3%A5%20bedrifter" target="_blank" rel="noopener noreferrer"></a>​.</p>

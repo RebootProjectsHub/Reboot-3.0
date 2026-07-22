@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Kunstig intelligens",
   date: "30. januar 2024",
   dateISO: "2024-01-30",
-  excerpt: "KI er ikke lenger en adskilt spiller i digitale innovasjoner; det er en kraftfull partner som arbeider side om side med kreative menneskelige sinn for å forme …",
+  excerpt: "KI er ikke lenger en adskilt spiller i digitale innovasjoner; det er en kraftfull partner som arbeider side om side med kreative menneskelige sinn for å forme…",
   image: "/posts/ai-som-et-verktoy-i-webdesign/featured.jpg",
   imageAlt: "KI som et verktøy i webdesign",
   contentHtml: `<p>KI er ikke lenger en adskilt spiller i digitale innovasjoner; det er en kraftfull partner som arbeider side om side med kreative menneskelige sinn for å forme fremtidens nettdesign.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "24. oktober 2024",
   dateISO: "2024-10-24",
-  excerpt: "La oss utforske interaksjonsdesign ved å se på definisjon, viktige prinsipper og anbefalte fremgangsmåter. Lær hvordan du kan designe engasjerende og intuitive …",
+  excerpt: "La oss utforske interaksjonsdesign ved å se på definisjon, viktige prinsipper og anbefalte fremgangsmåter.",
   image: "/posts/en-introduksjon-til-interaksjonsdesign/featured.jpg",
   imageAlt: "En introduksjon til interaksjonsdesign",
   contentHtml: `<p>La oss utforske interaksjonsdesign ved å se på definisjon, viktige prinsipper og anbefalte fremgangsmåter. Lær hvordan du kan designe engasjerende og intuitive interaksjoner for brukerne.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "UX UI",
   date: "20. november 2024",
   dateISO: "2024-11-20",
-  excerpt: "I webdesign er effektiv bruk av luft, ofte kalt hvitt rom, ikke bare et estetisk valg, men en kritisk i utformingen av brukervennlige nettsider. Dette …",
+  excerpt: "I webdesign er effektiv bruk av luft, ofte kalt hvitt rom, ikke bare et estetisk valg, men en kritisk i utformingen av brukervennlige nettsider.",
   image: "/posts/en-luftig-nettside/featured.jpg",
   imageAlt: "En luftig nettside",
   contentHtml: `<p>I webdesign er effektiv bruk av luft, ofte kalt hvitt rom, ikke bare et estetisk valg, men en kritisk i utformingen av brukervennlige nettsider. Dette designelementet hjelper både med å fange brukerens oppmerksomhet og å skape visuell harmoni ved å forbedre den generelle layouten til en nettside.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Nettbutikk",
   date: "2. januar 2024",
   dateISO: "2024-01-02",
-  excerpt: "Woocommerce og Shopify har lenge vært på toppen av e-handelsplattformmarkedet, men de tjener ulike typer bedrifter og behov. Shopify, kjent for sin …",
+  excerpt: "Woocommerce og Shopify har lenge vært på toppen av e-handelsplattformmarkedet, men de tjener ulike typer bedrifter og behov.",
   image: "/posts/shopify-vs-woocommerce-i-2024/featured.jpg",
   imageAlt: "Shopify vs. WooCommerce i 2024",
   contentHtml: `<p>Woocommerce og Shopify har lenge vært på toppen av e-handelsplattformmarkedet, men de tjener ulike typer bedrifter og behov. Shopify, kjent for sin brukervennlighet, tilbyr en alt-i-ett-løsning, mens WooCommerce er kjent for sin tilpasningsevne og integrasjon med <a href="/tjenester/wordpress">WordPress</a>.</p>

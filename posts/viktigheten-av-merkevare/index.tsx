@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Digital markedsføring",
   date: "17. september 2025",
   dateISO: "2025-09-17",
-  excerpt: "En sterk merkevare er ikke pynt. Den er et aktivum som bygger seg opp over tid og som kan påvirke både marginer, lojalitet og rekruttering. Derfor bør merkevaren …",
+  excerpt: "En sterk merkevare er ikke pynt. Den er et aktivum som bygger seg opp over tid og som kan påvirke både marginer, lojalitet og rekruttering.",
   image: "/posts/viktigheten-av-merkevare/featured.jpg",
   imageAlt: "Viktigheten av merkevare",
   contentHtml: `<p>En sterk merkevare er ikke pynt. Den er et aktivum som bygger seg opp over tid og som kan påvirke både marginer, lojalitet og rekruttering. Derfor bør merkevaren behandles som en investering med forrentning, ikke som en kampanjeutgift som forsvinner ved kvartalsslutt. Når ledelsen forstår denne logikken, blir merkevarearbeidet en del av strategien, ikke et vedlegg til markedsplanen. Resultatet er bedre beslutninger, tydeligere prioriteringer og mindre sløsing i grenselandet mellom kommunikasjon, produkt og kundeopplevelse.</p>

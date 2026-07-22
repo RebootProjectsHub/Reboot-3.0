@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Nettside engasjement",
   date: "14. november 2023",
   dateISO: "2023-11-14",
-  excerpt: "I en tid der teknologi styrer kommunikasjon, er evnen til å skape engasjerende innhold gull verdt. Men hvordan fanger man oppmerksomheten i denne digitale æraen? Vi …",
+  excerpt: "I en tid der teknologi styrer kommunikasjon, er evnen til å skape engasjerende innhold gull verdt. Men hvordan fanger man oppmerksomheten i denne digitale æraen?",
   image: "/posts/skape-engasjerende-innhold-i-en-digital-aera/featured.jpg",
   imageAlt: "Skape engasjerende innhold på nettsider",
   contentHtml: `<p>I en tid der teknologi styrer kommunikasjon, er evnen til å skape engasjerende innhold gull verdt. Men hvordan fanger man oppmerksomheten i denne digitale æraen? Vi gir deg våre tips for å skape engasjerende innhold på din nettside.</p>

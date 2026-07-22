@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Digital markedsføring",
   date: "10. desember 2024",
   dateISO: "2024-12-10",
-  excerpt: "Merkevarestyrke er mer enn bare gjenkjennelse – det er båndet som skapes mellom en merkevare og dens kunder. Dette båndet bidrar til lojalitet, økt salg og en sterk …",
+  excerpt: "Merkevarestyrke er mer enn bare gjenkjennelse – det er båndet som skapes mellom en merkevare og dens kunder.",
   image: "/posts/slik-skaper-du-varig-merkevarestyrke/featured.jpg",
   imageAlt: "Slik skaper du varig merkevarestyrke",
   contentHtml: `<p>Merkevarestyrke er mer enn bare gjenkjennelse – det er båndet som skapes mellom en merkevare og dens kunder. Dette båndet bidrar til lojalitet, økt salg og en sterk posisjon i markedet.</p>

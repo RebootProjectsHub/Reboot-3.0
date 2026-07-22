@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webutvikling",
   date: "1. juli 2024",
   dateISO: "2024-07-01",
-  excerpt: "En prototyp er en tidlig utgave av et produkt som brukes til å demonstrere eller teste konsepter før den endelige produksjonen starter. Dette verktøyet er …",
+  excerpt: "Hva er en prototyp? En prototyp er en tidlig utgave av et produkt som brukes til å demonstrere eller teste konsepter før den endelige produksjonen starter.",
   image: "/posts/prototypingens-rolle-i-webutvikling/featured.jpg",
   imageAlt: "Prototypingens rolle i webutvikling",
   contentHtml: `<h2>Hva er en prototyp?</h2>

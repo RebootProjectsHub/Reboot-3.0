@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Bærekraftig webhosting",
   date: "5. desember 2023",
   dateISO: "2023-12-05",
-  excerpt: "Bærekraft har blitt et nøkkelord i mange sektorer, og digitalt design er intet unntak. Grønn IT og miljøvennlig webdesign er ikke bare etiske valg; de har en …",
+  excerpt: "Bærekraft har blitt et nøkkelord i mange sektorer, og digitalt design er intet unntak.",
   image: "/posts/baerekraft-i-digitalt-design-hvordan-gronn-it-og-miljovennlig-webdesign-pavirker-merkevaren-din/featured.jpg",
   imageAlt: "Bærekraft og digitalt design: Merkevarens grønne fremtid",
   contentHtml: `<p>Bærekraft har blitt et nøkkelord i mange sektorer, og digitalt design er intet unntak. Grønn IT og miljøvennlig webdesign er ikke bare etiske valg; de har en direkte innvirkning på merkevarens omdømme. Men hvordan påvirker det merkevaren din, og hvorfor skal du bry deg?</p>

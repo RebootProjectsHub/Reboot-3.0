@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Søkemotoroptimalisering",
   date: "9. april 2024",
   dateISO: "2024-04-09",
-  excerpt: "Etterhvert som den digitale verden utvikler seg videre i 2024, er det viktigere enn noensinne å mestre kunsten av søkemotoroptimalisering (SEO). Med stadig …",
+  excerpt: "Etterhvert som den digitale verden utvikler seg videre i 2024, er det viktigere enn noensinne å mestre kunsten av søkemotoroptimalisering (SEO).",
   image: "/posts/effektive-seo-strategier-for-2024/featured.jpg",
   imageAlt: "Effektive SEO Strategier for 2024",
   contentHtml: `<p>Etterhvert som den digitale verden utvikler seg videre i 2024, er det viktigere enn noensinne å mestre kunsten av søkemotoroptimalisering (SEO). Med stadig skiftende algoritmer og nye teknologier, er det essensielt for bedrifter å holde seg oppdatert og tilpasse sine strategier. Dette innlegget, inspirert av Sveum Designs artikkel «Hvordan komme høyt opp i søk 2024», utforsker vi nøkkelstrategier for å optimalisere din hjemmeside og øke synligheten online​<a href="https://sveumdesign.no/nyheter/#:~:text=Hvordan%20komme%20h%C3%B8yt%20opp%20i,s%C3%B8k%202024" target="_blank" rel="noopener noreferrer"></a>​.</p>

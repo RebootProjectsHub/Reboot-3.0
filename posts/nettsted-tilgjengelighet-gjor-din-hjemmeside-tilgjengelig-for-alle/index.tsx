@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Nettsted tilgjengelighet",
   date: "19. oktober 2023",
   dateISO: "2023-10-19",
-  excerpt: "Tilgjengelighet på nett er vitalt for å sikre at alle brukere, uavhengig av evner, kan aksessere og bruke nettstedet ditt effektivt. Ikke bare er det et lovkrav i …",
+  excerpt: "Tilgjengelighet på nett er vitalt for å sikre at alle brukere, uavhengig av evner, kan aksessere og bruke nettstedet ditt effektivt.",
   image: "/posts/nettsted-tilgjengelighet-gjor-din-hjemmeside-tilgjengelig-for-alle/featured.jpg",
   imageAlt: "Nettsted tilgjengelighet: Gjør din hjemmeside tilgjengelig for alle",
   contentHtml: `<p>Tilgjengelighet på nett er vitalt for å sikre at alle brukere, uavhengig av evner, kan aksessere og bruke nettstedet ditt effektivt. Ikke bare er det et lovkrav i mange land, men det forbedrer også brukeropplevelsen og kan utvide kundebasen din. Her er noen nøkkelområder og tips for å forbedre optimal nettsted tilgjengelighet.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "6. februar 2024",
   dateISO: "2024-02-06",
-  excerpt: "Dieter Rams sa en gang at «godt design er så lite design som mulig». Maksimalisme utfordrer dette ved å omfavne en «mer-er-mer» tilnærming. Denne dristige stilen …",
+  excerpt: "Dieter Rams sa en gang at «godt design er så lite design som mulig». Maksimalisme utfordrer dette ved å omfavne en «mer-er-mer» tilnærming.",
   image: "/posts/maksimalisme-nar-mer-er-mer/featured.jpg",
   imageAlt: "Maksimalisme - Når mer er mer",
   contentHtml: `<p>Dieter Rams sa en gang at «godt design er så lite design som mulig». Maksimalisme utfordrer dette ved å omfavne en «mer-er-mer» tilnærming. Denne dristige stilen, preget av høye grafikker, dopaminfarger og eksplosiv typografi, har blitt en overordnet trend på internett og ser ikke ut til å avta. For å se hvordan din bedrift kan implementere denne trenden, sjekk ut våre <a href="/tjenester/#nettsider">tjenester</a>​<a href="https://www.wix.com/studio/blog/web-design-trends" target="_blank" rel="noopener noreferrer"></a>​.</p>

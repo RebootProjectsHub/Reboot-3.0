@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Brukervennlig nettbutikk",
   date: "14. oktober 2023",
   dateISO: "2023-10-14",
-  excerpt: "Å skape en brukervennlig nettbutikk er essensielt i en digital verden der brukeropplevelse kan være avgjørende for kundens kjøpsbeslutning. La oss dykke ned i …",
+  excerpt: "Å skape en brukervennlig nettbutikk er essensielt i en digital verden der brukeropplevelse kan være avgjørende for kundens kjøpsbeslutning.",
   image: "/posts/a-bygge-en-brukervennlig-nettbutikk-med-woocommerce/featured.jpg",
   imageAlt: "Å bygge en brukervennlig nettbutikk med Woocommerce",
   contentHtml: `<p>Å skape en <strong>brukervennlig nettbutikk</strong> er essensielt i en digital verden der brukeropplevelse kan være avgjørende for kundens kjøpsbeslutning. La oss dykke ned i hvordan du kan utnytte <a href="/tjenester/woocommerce">Woocommerce</a> for å konstruere en online butikk som ikke bare ser bra ut, men også leverer en feilfri, kundeorientert handleopplevelse.</p>

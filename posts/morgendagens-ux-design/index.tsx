@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Aktuelt",
   date: "6. oktober 2025",
   dateISO: "2025-10-06",
-  excerpt: "UX-design beveger seg fra å være reaktivt til å bli forutseende, nesten som en digital medpilot. Det handler ikke lenger bare om å reagere på brukeratferd, men å …",
+  excerpt: "UX-design beveger seg fra å være reaktivt til å bli forutseende, nesten som en digital medpilot.",
   image: "/posts/morgendagens-ux-design/featured.jpg",
   imageAlt: "Morgendagens UX-design",
   contentHtml: `<p>UX-design beveger seg fra å være reaktivt til å bli forutseende, nesten som en digital medpilot. Det handler ikke lenger bare om å reagere på brukeratferd, men å <strong>forutse behov før de oppstår</strong>. Den neste generasjonen brukeropplevelser blir mer intuitiv, menneskesentrert og intelligent.</p>

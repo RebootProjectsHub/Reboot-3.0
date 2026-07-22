@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "7. desember 2023",
   dateISO: "2023-12-07",
-  excerpt: "Webdesign utvikler seg konstant for å møte brukernes skiftende behov, og 2024 er intet unntak. Fra innovative animasjoner til bærekraftige løsninger, her er hva du …",
+  excerpt: "Webdesign utvikler seg konstant for å møte brukernes skiftende behov, og 2024 er intet unntak.",
   image: "/posts/trender-i-webdesign-for-2024-hva-du-kan-forvente-og-hvordan-forberede-deg/featured.jpg",
   imageAlt: "Webdesign trender for 2024 - Forbered deg på nyskapning!",
   contentHtml: `<p>Webdesign utvikler seg konstant for å møte brukernes skiftende behov, og 2024 er intet unntak. Fra innovative animasjoner til bærekraftige løsninger, her er hva du kan forvente det innen webdesign-trender 2024.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "7. oktober 2024",
   dateISO: "2024-10-07",
-  excerpt: "Oppdag hvordan minimalistisk webdesign ikke bare forbedrer estetikk, men også brukervennlighet og konverteringer. Lær hvordan du kan skape en elegant og funksjonell …",
+  excerpt: "Oppdag hvordan minimalistisk webdesign ikke bare forbedrer estetikk, men også brukervennlighet og konverteringer.",
   image: "/posts/minimalistisk-webdesign-enkelt-design-med-stor-effekt/featured.jpg",
   imageAlt: "Minimalistisk webdesign – enkelt design med stor effekt",
   contentHtml: `<p>Oppdag hvordan minimalistisk webdesign ikke bare forbedrer estetikk, men også brukervennlighet og konverteringer. Lær hvordan du kan skape en elegant og funksjonell nettside ved å kutte ned på det overflødige.</p>

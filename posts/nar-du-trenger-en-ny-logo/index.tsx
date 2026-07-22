@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Logo design",
   date: "22. november 2024",
   dateISO: "2024-11-22",
-  excerpt: "En logo er mer enn bare et symbol; den er budbringeren av din merkevares identitet! Store ord, men man kommer ikke bort fra at førsteinntrykk er avgjørende, og her …",
+  excerpt: "En logo er mer enn bare et symbol; den er budbringeren av din merkevares identitet!",
   image: "/posts/nar-du-trenger-en-ny-logo/featured.jpg",
   imageAlt: "Når du trenger en ny logo",
   contentHtml: `<p>En logo er mer enn bare et symbol; den er budbringeren av din merkevares identitet! Store ord, men man kommer ikke bort fra at førsteinntrykk er avgjørende, og her kan en godt designet logo være forskjellen mellom suksess og fiasko. Her gir vi deg noen praktiske tips for å raskt heve kvaliteten på din logo.</p>

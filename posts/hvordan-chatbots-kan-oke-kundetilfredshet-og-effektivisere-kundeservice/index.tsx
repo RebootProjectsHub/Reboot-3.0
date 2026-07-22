@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Chatbot",
   date: "14. oktober 2023",
   dateISO: "2023-10-14",
-  excerpt: "Chatbots i kundeservice transformerer måten bedrifter kommuniserer med kunder på, tilbyr umiddelbar hjelp og frigjør tid for ansatte. Men hvordan påvirker de …",
+  excerpt: "Chatbots i kundeservice transformerer måten bedrifter kommuniserer med kunder på, tilbyr umiddelbar hjelp og frigjør tid for ansatte.",
   image: "/posts/hvordan-chatbots-kan-oke-kundetilfredshet-og-effektivisere-kundeservice/featured.jpg",
   imageAlt: "Chatbots i kundeservice gir økt kundetilfredshet",
   contentHtml: `<p>Chatbots i kundeservice transformerer måten bedrifter kommuniserer med kunder på, tilbyr umiddelbar hjelp og frigjør tid for ansatte. Men hvordan påvirker de faktisk kundetilfredshet og intern effektivitet?</p>
