@@ -18,8 +18,9 @@ export async function generateMetadata({
   if (!post) return {}
   const path = `/trender/${post.slug}`
   const image = post.image || "/og-image.png"
+  const metaTitle = post.metaTitle || post.title
   return {
-    title: post.title,
+    title: metaTitle,
     description: post.excerpt,
     alternates: { canonical: path },
     openGraph: {
@@ -27,14 +28,14 @@ export async function generateMetadata({
       locale: "nb_NO",
       siteName: "Reboot",
       url: path,
-      title: `${post.title} | Reboot`,
+      title: `${metaTitle} | Reboot`,
       description: post.excerpt,
       publishedTime: post.dateISO,
       images: [{ url: image, alt: post.imageAlt || post.title }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} | Reboot`,
+      title: `${metaTitle} | Reboot`,
       description: post.excerpt,
       images: [image],
     },

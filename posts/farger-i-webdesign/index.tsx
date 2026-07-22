@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign farger",
   date: "29. mai 2024",
   dateISO: "2024-05-29",
-  excerpt: "Når vi dykker inn i fargenes verden, blir det raskt klart hvor viktig den er for webdesign.",
+  excerpt: "Farger vekker følelser og styrer oppmerksomhet. Slik bruker du fargeteori strategisk i webdesign for å styrke både opplevelsen og uttrykket.",
   image: "/posts/farger-i-webdesign/featured.jpg",
   imageAlt: "Farger i webdesign: Hvordan bruke farger strategisk",
   contentHtml: `<p>Når vi dykker inn i fargenes verden, blir det raskt klart hvor viktig den er for webdesign. Å forstå hvordan man kan bruke farger til å forbedre brukeropplevelsen og den visuelle tiltrekningen på et nettsted er avgjørende.</p>

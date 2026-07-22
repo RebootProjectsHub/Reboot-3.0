@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "30. mars 2025",
   dateISO: "2025-03-30",
-  excerpt: "Design har alltid vært i utvikling, men i 2025 merker vi endringene dypere.",
+  excerpt: "KI, automatisering og sanntidstilpasning har endret hvordan vi jobber. Slik ser designprosessen vår ut, fra innsikt til ferdig grensesnitt.",
   image: "/posts/slik-er-var-designprosess/featured.jpg",
   imageAlt: "Slik er vår designprosess",
   contentHtml: `<p>Design har alltid vært i utvikling, men i 2025 merker vi endringene dypere. Kunstig intelligens, automatisering og grensesnitt som tilpasses brukeren i sanntid, har forvandlet hvordan vi skaper og tenker brukergrensesnitt. For å lykkes i en designprosess må både designere og beslutningstakere forstå de nye mekanismene, verktøyene og metodene som nå driver utviklingen fremover.</p>

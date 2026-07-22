@@ -3,6 +3,7 @@ import type { Post } from "@/posts/types"
 export const post: Post = {
   slug: "nettsted-tilgjengelighet-gjor-din-hjemmeside-tilgjengelig-for-alle",
   title: "Nettsted tilgjengelighet: Gjør din hjemmeside tilgjengelig for alle",
+  metaTitle: "Tilgjengelig nettside for alle brukere",
   category: "Nettsted tilgjengelighet",
   date: "19. oktober 2023",
   dateISO: "2023-10-19",

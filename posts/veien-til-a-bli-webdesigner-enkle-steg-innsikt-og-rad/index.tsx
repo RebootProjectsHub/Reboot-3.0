@@ -3,10 +3,11 @@ import type { Post } from "@/posts/types"
 export const post: Post = {
   slug: "veien-til-a-bli-webdesigner-enkle-steg-innsikt-og-rad",
   title: "Veien til å bli webdesigner: Enkle steg, innsikt og råd",
+  metaTitle: "Veien til å bli webdesigner: steg og råd",
   category: "Webdesign",
   date: "28. oktober 2024",
   dateISO: "2024-10-28",
-  excerpt: "Hvordan blir man webdesigner?",
+  excerpt: "Hvordan blir man webdesigner? Veiledningen gir deg stegene, innsikten og de praktiske rådene du trenger for å starte en karriere innen webdesign.",
   image: "/posts/veien-til-a-bli-webdesigner-enkle-steg-innsikt-og-rad/featured.jpg",
   imageAlt: "Veien til å bli webdesigner: Enkle steg, innsikt og råd",
   contentHtml: `<p>Hvordan blir man webdesigner? Finn ut her hvilke steg du kan ta med denne veiledningen som gir verdifull innsikt, tips og det du trenger for å sparke i gang din karriere innen webdesign. Lese videre om du drømmer om å bli webdesigner!</p>

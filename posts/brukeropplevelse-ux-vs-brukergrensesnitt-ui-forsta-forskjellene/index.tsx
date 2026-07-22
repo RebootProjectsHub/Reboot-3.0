@@ -3,10 +3,11 @@ import type { Post } from "@/posts/types"
 export const post: Post = {
   slug: "brukeropplevelse-ux-vs-brukergrensesnitt-ui-forsta-forskjellene",
   title: "Brukeropplevelse (UX) vs. Brukergrensesnitt (UI): Hva skiller dem?",
+  metaTitle: "UX vs. UI – hva er forskjellen?",
   category: "UX UI",
   date: "23. november 2023",
   dateISO: "2023-11-23",
-  excerpt: "Brukeropplevelse (UX) vs. Brukergrensesnitt (UI): Hva skiller dem?",
+  excerpt: "Hva er egentlig forskjellen på UX og UI? Vi forklarer hvordan brukeropplevelse og brukergrensesnitt henger sammen, og hvorfor begge betyr noe.",
   image: "/posts/brukeropplevelse-ux-vs-brukergrensesnitt-ui-forsta-forskjellene/featured.jpg",
   imageAlt: "Brukeropplevelse (UX) vs. Brukergrensesnitt (UI): Hva skiller dem?",
   contentHtml: `<h2>Brukeropplevelse (UX) vs. Brukergrensesnitt (UI): Hva skiller dem?</h2>

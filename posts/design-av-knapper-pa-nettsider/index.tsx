@@ -9,7 +9,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "26. juni 2026",
   dateISO: "2026-06-26",
-  excerpt: "Knapper tar liten plass på skjermen, men de styrer nesten alle viktige handlinger på en nettside.",
+  excerpt: "Knapper styrer nesten alle viktige handlinger på en nettside. Godt knappdesign handler om langt mer enn farge og form – det handler om tillit.",
   image: `${IMG}/featured.jpg`,
   imageAlt: "Design av knapper på nettsider",
   content: (

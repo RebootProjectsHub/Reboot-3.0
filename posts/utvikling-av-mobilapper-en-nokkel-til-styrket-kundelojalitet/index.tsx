@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Utvikling av mobilapper",
   date: "24. oktober 2023",
   dateISO: "2023-10-24",
-  excerpt: "Å bygge lojale kunderelasjoner er avgjørende i den digitale verden.",
+  excerpt: "En mobilapp binder brukeropplevelse, funksjonalitet og merkevare sammen i kundens lomme. Slik kan apputvikling styrke kundelojaliteten.",
   image: "/posts/utvikling-av-mobilapper-en-nokkel-til-styrket-kundelojalitet/featured.jpg",
   imageAlt: "Utvikling av mobilapper",
   contentHtml: `<p>Å bygge lojale kunderelasjoner er avgjørende i den digitale verden. Utvikling av mobilapper tilbyr en unik sjanse til å oppnå dette ved å binde brukeropplevelse, funksjonalitet, og merkevareverdi sammen i brukerens lomme.</p>

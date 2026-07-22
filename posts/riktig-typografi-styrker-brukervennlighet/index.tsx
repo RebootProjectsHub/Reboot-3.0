@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Typografi",
   date: "18. juli 2024",
   dateISO: "2024-07-18",
-  excerpt: "Videreutvikling av god typografi krever forståelse for balansen mellom form og funksjon.",
+  excerpt: "God webtypografi balanserer form og funksjon. Slik påvirker skriftstørrelse, linjeavstand og tekstjustering lesbarhet og tilgjengelighet.",
   image: "/posts/riktig-typografi-styrker-brukervennlighet/featured.jpg",
   imageAlt: "Webtypografi for bedre brukervennlighet",
   contentHtml: `<p>Videreutvikling av god typografi krever forståelse for balansen mellom form og funksjon. Mens estetikk spiller en stor rolle, må designere også vurdere hvordan typografiske valg påvirker sidens generelle navigerbarhet og tilgjengelighet. Dette inkluderer bruk av riktig skriftstørrelse og linjeavstand, som begge er avgjørende for å forhindre visuell tretthet hos leserne. I tillegg kan implementering av riktig tekstjustering og orddeling forbedre tekstflyten og gjøre informasjonen mer tilgjengelig for alle brukere.</p>

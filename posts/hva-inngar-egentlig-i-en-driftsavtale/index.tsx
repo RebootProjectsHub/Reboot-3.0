@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Nettsted tilgjengelighet",
   date: "5. august 2025",
   dateISO: "2025-08-05",
-  excerpt: "En nettside er aldri ferdig. Den må vedlikeholdes, oppdateres og følges opp.",
+  excerpt: "En nettside er aldri ferdig. Vi går gjennom hva en driftsavtale faktisk inneholder: oppdateringer, backup, overvåking, support og endringer.",
   image: "/posts/hva-inngar-egentlig-i-en-driftsavtale/featured.jpg",
   imageAlt: "Hva inngår egentlig i en driftsavtale?",
   contentHtml: `<p>En nettside er aldri ferdig. Den må vedlikeholdes, oppdateres og følges opp. En driftsavtale gjør det mulig å tenke langsiktig, og gir deg både trygghet og forutsigbarhet i det daglige.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Automatiseringsteknikker",
   date: "7. november 2023",
   dateISO: "2023-11-07",
-  excerpt: "Smarte automatiseringsteknikker blir stadig viktigere i den digitale tidsalderen.",
+  excerpt: "Automatisering kan effektivisere alt fra kundedialog til interne prosesser. Her er teknikkene som gir mest effekt – og fallgruvene du bør unngå.",
   image: "/posts/smarte-automatiseringsteknikker-for-din-bedrift/featured.jpg",
   imageAlt: "Smarte automatiserings-teknikker for din bedrift",
   contentHtml: `<p>Smarte automatiseringsteknikker blir stadig viktigere i den digitale tidsalderen. Disse teknikkene kan fungere som en game-changer for mange virksomheter ved å optimalisere alt fra kundeinteraksjoner til intern prosessforbedring. I denne guiden dykker vi dypere inn i hvordan din bedrift kan dra nytte av automatisering for å drive effektivitet og innovasjon.</p>

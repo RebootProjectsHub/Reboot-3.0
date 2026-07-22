@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "6. januar 2025",
   dateISO: "2025-01-06",
-  excerpt: "Vi utforsker visuell kommunikasjon gjennom å dykke ned i forskjellene mellom grafisk design og webdesign, og avdekker deres unike roller i digitale og trykte landskap.",
+  excerpt: "Vi dykker ned i forskjellene mellom grafisk design og webdesign, og hvilke unike roller de spiller i digitale og trykte flater.",
   image: "/posts/forskjellen-mellom-webdesign-og-grafisk-design/featured.jpg",
   imageAlt: "Forskjellen mellom webdesign og grafisk design",
   contentHtml: `<p>Vi utforsker visuell kommunikasjon gjennom å dykke ned i forskjellene mellom grafisk design og webdesign, og avdekker deres unike roller i digitale og trykte landskap.</p>

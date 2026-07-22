@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Skrive innhold",
   date: "14. oktober 2023",
   dateISO: "2023-10-14",
-  excerpt: "Å skape innhold som virkelig taler til dine besøkende er en kunst. Men ikke bare det – det skal også oppfordre dem til handling og idealisk konvertere dem til kunder.",
+  excerpt: "Å skape innhold som taler til de besøkende er en kunst. Det skal også oppfordre til handling og helst konvertere leserne til kunder.",
   image: "/posts/effektivt-innhold-skrive-tekster-som-konverterer-besokende-til-kunder/featured.jpg",
   imageAlt: "Konverterende innhold: fra besøkende til kunder",
   contentHtml: `<p>Å skape innhold som virkelig taler til dine besøkende er en kunst. Men ikke bare det – det skal også oppfordre dem til handling og idealisk konvertere dem til kunder. Men hvordan skriver man tekster som ikke bare informerer, men også overbeviser? La oss dykke ned i verden av konverterende innhold og utforske hvordan vi kan gjøre ord til ditt sterkeste verktøy.</p>

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webdesign",
   date: "23. januar 2024",
   dateISO: "2024-01-23",
-  excerpt: "I takt med den raske teknologiske utviklingen, fortsetter webdesign trender å utvikle seg.",
+  excerpt: "KI, maskinlæring og personalisering preger webdesign i 2024. Her er tipsene og trendene som former hvordan folk opplever nettsider i år.",
   image: "/posts/webdesign-tips-for-2024/featured.jpg",
   imageAlt: "Webdesign tips for 2024",
   contentHtml: `<p>I takt med den raske teknologiske utviklingen, fortsetter webdesign trender å utvikle seg. For 2024 har vi flere spennende endringer som vil forme hvordan man opplever og interagerer med nettsider.</p>

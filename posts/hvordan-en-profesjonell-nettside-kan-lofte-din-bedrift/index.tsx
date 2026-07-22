@@ -3,10 +3,11 @@ import type { Post } from "@/posts/types"
 export const post: Post = {
   slug: "hvordan-en-profesjonell-nettside-kan-lofte-din-bedrift",
   title: "Hvordan en profesjonell nettside kan løfte din bedrift",
+  metaTitle: "Slik løfter en profesjonell nettside bedriften",
   category: "Proff nettside",
   date: "14. oktober 2023",
   dateISO: "2023-10-14",
-  excerpt: "Det er et kjent faktum at bedriftens online tilstedeværelse er kritisk i vår digitaliserte verden.",
+  excerpt: "Nettsiden er ofte det første møtet en kunde har med bedriften din. Slik kan en profesjonell nettside styrke førsteinntrykk, tillit og salg.",
   image: "/posts/hvordan-en-profesjonell-nettside-kan-lofte-din-bedrift/featured.jpeg",
   imageAlt: "Hvordan en profesjonell nettside kan løfte din bedrift",
   contentHtml: `<p>Det er et kjent faktum at bedriftens online tilstedeværelse er kritisk i vår digitaliserte verden. En profesjonell nettside er ofte den første interaksjonen en potensiell kunde har med din bedrift, og førsteinntrykket teller. La oss dykke dypere inn i hvordan en flott nettside kan være et betydelig aktivum for din bedrift.</p>

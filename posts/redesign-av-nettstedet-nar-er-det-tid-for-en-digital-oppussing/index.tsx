@@ -3,10 +3,11 @@ import type { Post } from "@/posts/types"
 export const post: Post = {
   slug: "redesign-av-nettstedet-nar-er-det-tid-for-en-digital-oppussing",
   title: "Redesign av nettstedet: Når er det tid for en digital oppussing?",
+  metaTitle: "Redesign: når er det tid for ny nettside?",
   category: "Digital oppussing",
   date: "17. oktober 2023",
   dateISO: "2023-10-17",
-  excerpt: "Hvordan vet du at det er tid for en «digital oppussing» av nettstedet ditt?",
+  excerpt: "Hvordan vet du at nettstedet trenger en digital oppussing? Vi går gjennom tegnene på at det er tid for redesign, og hva du oppnår med det.",
   image: "/posts/redesign-av-nettstedet-nar-er-det-tid-for-en-digital-oppussing/featured.jpg",
   imageAlt: "Redesign av nettstedet: Når er det tid for en digital oppussing?",
   contentHtml: `<p>Hvordan vet du at det er tid for en «digital oppussing» av nettstedet ditt? Oppdaterte nettsted gir et friskt pust til merkevaren din og kan forbedre brukeropplevelsen dramatisk. Med kontinuerlig teknologisk utvikling, endringer i estetiske trender og oppdateringer av brukervennlighetsstandarder, blir et nettsideredesign ofte en nødvendighet.</p>

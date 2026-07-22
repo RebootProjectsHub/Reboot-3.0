@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Digital modernisering",
   date: "2. november 2023",
   dateISO: "2023-11-02",
-  excerpt: "Navigering gjennom digital transformasjon kan ofte føles som en krevende sjøreise for små bedrifter.",
+  excerpt: "Digital modernisering kan virke uoverkommelig for små bedrifter. Her er praktiske steg for å sette en klar strategi og komme trygt i gang.",
   image: "/posts/navigering-gjennom-digital-modernisering-en-guide-for-sma-bedrifter/featured.jpg",
   imageAlt: "Digital modernisering for små bedrifter",
   contentHtml: `<p>Navigering gjennom digital transformasjon kan ofte føles som en krevende sjøreise for små bedrifter. Med den rette guiden i hånden, kan prosessen bli glatt og belønnende, noe som gir økt verdi til virksomheten din. La oss dykke ned i et hav av praktiske steg for vellykket digital transformasjon for små bedrifter.</p>

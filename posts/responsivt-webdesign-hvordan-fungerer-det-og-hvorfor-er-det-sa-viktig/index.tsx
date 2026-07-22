@@ -3,6 +3,7 @@ import type { Post } from "@/posts/types"
 export const post: Post = {
   slug: "responsivt-webdesign-hvordan-fungerer-det-og-hvorfor-er-det-sa-viktig",
   title: "Responsivt webdesign - Hvordan fungerer det og hvorfor er det så viktig",
+  metaTitle: "Responsivt webdesign: slik fungerer det",
   category: "Webdesign",
   date: "15. oktober 2024",
   dateISO: "2024-10-15",

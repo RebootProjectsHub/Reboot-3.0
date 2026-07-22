@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Aktuelt",
   date: "11. november 2024",
   dateISO: "2024-11-11",
-  excerpt: "Temaet webdesign har faktisk en del myter som man skal være obs på. Disse fastlåste oppfatningene kan utfordre både designernes kreativitet og prosjektets suksess.",
+  excerpt: "Webdesign har en del seiglivede myter. Disse fastlåste oppfatningene kan utfordre både designerens kreativitet og prosjektets suksess.",
   image: "/posts/myter-innen-webdesign/featured.jpg",
   imageAlt: "Myter innen webdesign",
   contentHtml: `<p>Temaet webdesign har faktisk en del myter som man skal være obs på. Disse fastlåste oppfatningene kan utfordre både designernes kreativitet og prosjektets suksess. Det er viktig for designere å identifisere og korrigere disse mytene, slik at man ikke ukritisk følger misforståelser som kan hemme innovasjon og funksjonalitet.</p>

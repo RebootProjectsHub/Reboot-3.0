@@ -6,7 +6,7 @@ export const post: Post = {
   category: "SEO",
   date: "6. september 2025",
   dateISO: "2025-09-06",
-  excerpt: "En god sitemap (nettstedkart) er som et oversiktskart ved inngangen til et bibliotek.",
+  excerpt: "En god sitemap gir struktur for brukeren og forteller søkemotorene hva som betyr mest. Slik lager du et nettstedkart som gir færre blindveier.",
   image: "/posts/sitemap-som-hjelper-brukere-og-sokemotorer/featured.jpg",
   imageAlt: "Slik lager du en god sitemap",
   contentHtml: `<p>En god sitemap (nettstedkart) er som et oversiktskart ved inngangen til et bibliotek. Uten kart blir det tilfeldig vandring mellom hyller og rom, med kart finner du raskt riktig seksjon og riktig bok. Slik er det også på nett. En tydelig sitemap gir struktur for brukeren og et signal til søkemotorene om hva som betyr mest. Resultatet er færre blindveier, bedre flyt og en side som blir forstått både av mennesker og maskiner.</p>

@@ -3,6 +3,7 @@ import type { Post } from "@/posts/types"
 export const post: Post = {
   slug: "minimalistisk-webdesign-enkelt-design-med-stor-effekt",
   title: "Minimalistisk webdesign – enkelt design med stor effekt",
+  metaTitle: "Minimalistisk webdesign med stor effekt",
   category: "Webdesign",
   date: "7. oktober 2024",
   dateISO: "2024-10-07",

@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Webutvikling",
   date: "13. september 2025",
   dateISO: "2025-09-13",
-  excerpt: "En nettside er ikke lenger et visittkort du legger fra deg og glemmer.",
+  excerpt: "Valg av webbyrå handler om mer enn en pen portefølje. Slik finner du en partner som forstår forretningen og leder prosjektet trygt i havn.",
   image: "/posts/hvordan-velge-riktig-webbyra/featured.jpg",
   imageAlt: "Hvordan velge riktig webbyrå",
   contentHtml: `<p>En nettside er ikke lenger et visittkort du legger fra deg og glemmer. Den er håndtrykket som møter nye kunder, butikken som alltid er åpen, og stedet der førsteinntrykket enten bygges eller brytes. Derfor bør valget av webbyrå handle om mer enn skjermbilder i en portefølje. Du trenger en partner som forstår forretningen din, som kan lede prosjektet trygt fra idé til lansering, og som har en arbeidsform som tåler endringer uten å miste retning.</p>

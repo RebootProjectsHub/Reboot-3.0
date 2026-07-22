@@ -6,7 +6,7 @@ export const post: Post = {
   category: "UX UI",
   date: "10. mai 2024",
   dateISO: "2024-05-10",
-  excerpt: "Skeuomorfisme, et designkonsept som mange trodde var på vei ut, gjør en overraskende retur i webdesign.",
+  excerpt: "Skeuomorfisme gjør comeback i webdesign. Slik kan digitale elementer som etterligner den fysiske verden gjøre grensesnitt mer gjenkjennelige.",
   image: "/posts/skeuomorfisme-i-webdesign/featured.jpg",
   imageAlt: "Skeuomorfisme blander virkelighet og design",
   contentHtml: `<p>Skeuomorfisme, et designkonsept som mange trodde var på vei ut, gjør en overraskende retur i webdesign. Dette designprinsippet innebærer å skape digitale elementer som etterligner utseendet og følelsen av deres virkelige motstykker. Den grunnleggende ideen er å gjøre den digitale verden mer gjenkjennelig og intuitiv ved å låne visuelle cues fra den fysiske verden. Ved å bruke denne metoden gjør man digitale produkter lettere å forstå og bruke.</p>

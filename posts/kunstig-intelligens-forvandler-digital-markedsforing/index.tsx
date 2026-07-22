@@ -3,6 +3,7 @@ import type { Post } from "@/posts/types"
 export const post: Post = {
   slug: "kunstig-intelligens-forvandler-digital-markedsforing",
   title: "Kunstig intelligens forvandler digital markedsføring",
+  metaTitle: "KI forvandler digital markedsføring",
   category: "Digital markedsføring",
   date: "28. november 2023",
   dateISO: "2023-11-28",

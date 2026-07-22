@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Nettside priser",
   date: "27. januar 2025",
   dateISO: "2025-01-27",
-  excerpt: "Denne guiden tar for seg hva du kan forvente av kostnader når du skal få utviklet en ny nettside.",
+  excerpt: "Hva koster en ny nettside i 2025? Guiden går gjennom prisnivåer, hva som påvirker prisen, og forskjellen på byrå, frilanser og nettsidebyggere.",
   image: "/posts/hvor-mye-koster-en-ny-nettside-i-2025/featured.jpg",
   imageAlt: "Hvor mye koster en ny nettside i 2025",
   contentHtml: `<p>Denne guiden tar for seg hva du kan forvente av kostnader når du skal få utviklet en ny nettside. Den ser også på hvilke faktorer som påvirker prisen, ulike typer prosjekter og hva du kan få ut av budsjettet ditt.</p>

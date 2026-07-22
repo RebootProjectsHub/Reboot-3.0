@@ -6,7 +6,7 @@ export const post: Post = {
   category: "SEO",
   date: "13. desember 2024",
   dateISO: "2024-12-13",
-  excerpt: "Mestring av SEO og webdesign er nøkkelen til synlighet på nett.",
+  excerpt: "SEO og webdesign henger tett sammen. Slik påvirker ytelse, innhold, kode og visuelt uttrykk om kundene finner nettsiden din – og om de blir.",
   image: "/posts/seo-og-webdesign/featured.jpg",
   imageAlt: "SEO og webdesign",
   contentHtml: `<p>Mestring av SEO og webdesign er nøkkelen til synlighet på nett. En nettside er ofte første møtepunkt mellom en bedrift og dens kunder, og hvordan den presterer, både teknisk og estetisk, kan avgjøre om kundene finner siden din og om de faktisk blir værende på den.</p>

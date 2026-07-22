@@ -3,10 +3,11 @@ import type { Post } from "@/posts/types"
 export const post: Post = {
   slug: "lokal-seo-hvordan-optimalisere-din-nettbutikk-for-lokale-sok",
   title: "Lokal SEO: Hvordan optimalisere din nettbutikk for lokale søk",
+  metaTitle: "Lokal SEO: slik optimaliserer du nettbutikken",
   category: "Lokal SEO",
   date: "14. oktober 2023",
   dateISO: "2023-10-14",
-  excerpt: "Å starte en nettbutikk er blitt mer aktuelt enn noensinne.",
+  excerpt: "Slik optimaliserer du nettbutikken for lokale søk: Google Bedriftsprofil, design og brukervennlighet som gjør at kundene i nærområdet finner deg.",
   image: "/posts/lokal-seo-hvordan-optimalisere-din-nettbutikk-for-lokale-sok/featured.jpg",
   imageAlt: "Lokal SEO: Hvordan optimalisere din nettbutikk for lokale søk",
   contentHtml: `<p><strong>Å starte en nettbutikk er blitt mer aktuelt enn noensinne. Med Woocommerce, en populær e-handelsløsning for WordPress, kan du skape en skreddersydd og <a href="/tjenester/#digitale-tjenester">brukervennlig nettbutikk</a> som møter både bedriftens og kundenes behov. La oss utforske de kritiske stegene i byggeprosessen og hvordan du kan maksimere din omsetningen med en velutviklet nettbutikk.</strong></p>

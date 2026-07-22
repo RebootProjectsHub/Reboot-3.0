@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Kjøpsreise",
   date: "30. november 2023",
   dateISO: "2023-11-30",
-  excerpt: "I dagens digitale landskap foretas kjøpsbeslutninger i løpet av sekunder.",
+  excerpt: "Kjøpsbeslutninger tas på sekunder. Slik fanger du oppmerksomheten i mikromomentene – de korte, avgjørende øyeblikkene i kundens kjøpsreise.",
   image: "/posts/mikromomenter-i-forbrukerens-kjopsreise-hvordan-fange-oppmerksomheten-i-en-oppdelt-digital-verden/featured.jpg",
   imageAlt: "Mikromomenter: Fange oppmerksomhet i kjøpsreise",
   contentHtml: `<p>I dagens digitale landskap foretas kjøpsbeslutninger i løpet av sekunder. Disse kritiske øyeblikkene, kjent som mikromomenter, er avgjørende for merker som ønsker å påvirke forbrukerens valg. Men hvordan kan din bedrift effektivt fange oppmerksomheten i disse kortvarige vinduene? Her får du oversikt over mikromomenter i kjøpsreise.</p>

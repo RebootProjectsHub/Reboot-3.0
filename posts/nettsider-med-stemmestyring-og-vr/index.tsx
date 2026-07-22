@@ -6,7 +6,7 @@ export const post: Post = {
   category: "Fremtidens webdesign",
   date: "30. april 2024",
   dateISO: "2024-04-30",
-  excerpt: "Med teknologiens stadige fremskritt har stemmestyrt grensesnitt blitt en revolusjonerende kraft i webdesign.",
+  excerpt: "Stemmestyring og VR endrer hvordan vi bruker nettsider. Slik kan teknologiene gi bedre tilgjengelighet og mer engasjerende brukeropplevelser.",
   image: "/posts/nettsider-med-stemmestyring-og-vr/featured.jpg",
   imageAlt: "Fremtidens nett: Stemmestyring og VR",
   contentHtml: `<p>Med teknologiens stadige fremskritt har stemmestyrt grensesnitt blitt en revolusjonerende kraft i webdesign. Dette interaktive verktøyet tillater brukere å navigere, søke og interagere med nettstedet ved bruk av stemmekommandoer – en perfekt løsning for økende tilgjengelighet og brukervennlighet. Ved å integrere stemmestyring, kan bedrifter tilby en mer sømløs og engasjerende brukeropplevelse, spesielt på plattformer der hendene kanskje er opptatt med andre oppgaver. Utforsk mer om integrering av stemmestyring ved å <a href="/kontakt">kontakte oss</a>.</p>

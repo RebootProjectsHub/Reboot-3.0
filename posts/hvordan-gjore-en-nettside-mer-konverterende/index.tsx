@@ -9,7 +9,7 @@ export const post: Post = {
   category: "Kjøpsreise",
   date: "12. februar 2026",
   dateISO: "2026-02-12",
-  excerpt: "Flere besøk betyr ikke nødvendigvis flere kunder.",
+  excerpt: "Flere besøk betyr ikke flere kunder. Slik finner du hvor nettsiden lekker salg, og hva som skal til for å få flere besøkende til å konvertere.",
   image: `${IMG}/featured.jpg`,
   imageAlt: "Hvordan gjøre en nettside mer konverterende",
   content: (
