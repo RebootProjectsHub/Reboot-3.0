@@ -8,7 +8,7 @@ import { FaqList } from "@/components/faq-list"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
-  title: "Shopify-ekspterter i Oslo",
+  title: "Shopify-eksperter i Oslo",
   description:
     "Reboot er et Shopify-byrå i Nydalen, Oslo. Vi designer, bygger og drifter Shopify-nettbutikker med Vipps, BankID og integrasjoner. Fastpris og norsk support.",
   path: "/tjenester/shopify",

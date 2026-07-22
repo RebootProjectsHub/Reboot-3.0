@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
-  title: "Referanser",
+  title: "Referanser – kundecaser og nettsider vi har levert",
   description:
     "Se hva vi har levert for kunder som OBOS, NAF, Höegh Evi og Ditt Apotek. Nettsider, nettbutikker og digitale løsninger som skaper resultater.",
   path: "/referanser",

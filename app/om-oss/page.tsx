@@ -7,7 +7,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
-  title: "Om oss",
+  title: "Om oss – lite webbyrå i Nydalen, Oslo",
   description:
     "Møt teamet bak Reboot. Vi er et lite webbyrå i Nydalen, Oslo, der du snakker direkte med de som designer, utvikler og drifter nettsiden din.",
   path: "/om-oss",

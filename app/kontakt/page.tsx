@@ -5,9 +5,9 @@ import { SiteFooter } from "@/components/site-footer"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
-  title: "Kontakt oss",
+  title: "Kontakt oss – få et uforpliktende tilbud",
   description:
-    "Trenger du en ny nettside eller redesign av den gamle? Vi vil gjerne høre fra deg – ta kontakt for en uforpliktende prat.",
+    "Trenger du ny nettside, nettbutikk eller hjelp med drift? Ta kontakt med Reboot i Nydalen, Oslo for en uforpliktende prat – vi svarer i løpet av dagen.",
   path: "/kontakt",
 })
 

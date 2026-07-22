@@ -5,9 +5,9 @@ import { SiteFooter } from "@/components/site-footer"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
-  title: "Aktuelt",
+  title: "Aktuelt – innsikt om webdesign, SEO og AI",
   description:
-    "Artikler og innsikt fra teamet i Reboot om webdesign, SEO og AI. Les hva som skjer hos oss i Nydalen.",
+    "Artikler og innsikt fra teamet i Reboot om webdesign, SEO, AI og nettbutikk – praktiske råd og erfaringer fra et lite webbyrå i Nydalen i Oslo.",
   path: "/trender",
 })
 
