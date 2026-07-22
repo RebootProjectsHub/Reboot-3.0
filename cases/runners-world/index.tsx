@@ -6,6 +6,9 @@ export const caseStudy: CaseStudy = {
   slug: "runners-world",
   name: "Runner's World",
   tagline: "Utvikling og oppsett av ny nettside",
+  metaTitle: "Runner's World – medlemskap og abonnement på nett",
+  metaDescription:
+    "Nettside for Runner's World Norge med WooCommerce Memberships og Subscriptions, som håndterer kontoer, tilganger og fornyelser automatisk.",
   services: ["WordPress", "Woocommerce", "Woocommerce Memberships", "Woocommerce Subscriptions"],
   image: `${IMG}/hero.jpg`,
   imageAlt: "Runner's World Norge",

@@ -18,23 +18,25 @@ export async function generateMetadata({
   if (!caseStudy) return {}
   const path = `/ny-nettside/${caseStudy.slug}`
   const image = caseStudy.image || "/og-image.png"
+  const title = caseStudy.metaTitle || caseStudy.name
+  const description = caseStudy.metaDescription || caseStudy.tagline
   return {
-    title: caseStudy.name,
-    description: caseStudy.tagline,
+    title,
+    description,
     alternates: { canonical: path },
     openGraph: {
       type: "article",
       locale: "nb_NO",
       siteName: "Reboot",
       url: path,
-      title: `${caseStudy.name} | Reboot`,
-      description: caseStudy.tagline,
+      title: `${title} | Reboot`,
+      description,
       images: [{ url: image, alt: caseStudy.imageAlt || caseStudy.name }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${caseStudy.name} | Reboot`,
-      description: caseStudy.tagline,
+      title: `${title} | Reboot`,
+      description,
       images: [image],
     },
   }

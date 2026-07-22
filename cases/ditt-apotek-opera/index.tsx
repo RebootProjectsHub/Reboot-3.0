@@ -6,6 +6,9 @@ export const caseStudy: CaseStudy = {
   slug: "ditt-apotek-opera",
   name: "Ditt Apotek",
   tagline: "Nettbutikk bygget for et stort produktvolum",
+  metaTitle: "Ditt Apotek – nettbutikk i Shopify med Vipps",
+  metaDescription:
+    "Vi bygde en Shopify-nettbutikk for Ditt Apotek ved Operaen, med Vipps, BankID og et stort produktvolum. Resultatet ble økt salg og enklere drift.",
   services: ["Webdesign", "Shopify", "BankID", "Vipps"],
   image: `${IMG}/hero.jpg`,
   imageAlt: "Ditt Apotek sin fysiske butikk ved Operaen i Bjørvika",

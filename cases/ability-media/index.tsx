@@ -6,6 +6,9 @@ export const caseStudy: CaseStudy = {
   slug: "ability-media",
   name: "Ability Media",
   tagline: "Nettside for konseptet Oppdragstorget",
+  metaTitle: "Ability Media – nettside for Oppdragstorget",
+  metaDescription:
+    "Visuell profil og ny nettside for Ability Medias tjeneste Oppdragstorget – en responsiv og intuitiv løsning som gjør tjenestene enkle å navigere.",
   image: `${IMG}/hero.jpg`,
   imageAlt: "Håndverker på jobb",
   quote: {

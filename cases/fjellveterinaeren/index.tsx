@@ -7,6 +7,9 @@ export const caseStudy: CaseStudy = {
   slug: "fjellveterinaeren",
   name: "Fjellveterinæren",
   tagline: "Ny visuell profil og nettside for veterinærklinikk",
+  metaTitle: "Fjellveterinæren – ny visuell profil og nettside",
+  metaDescription:
+    "Ny visuell profil og responsiv nettside for Fjellveterinæren, med designmanual, logo og typografi – og enkel timebestilling på alle enheter.",
   url: "https://fjellveterinæren.no",
   services: [
     "Visuell profil",

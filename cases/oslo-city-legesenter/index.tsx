@@ -7,6 +7,9 @@ export const caseStudy: CaseStudy = {
   slug: "oslo-city-legesenter",
   name: "Oslo City Legesenter",
   tagline: "Implementering av ny nettside for legesenter",
+  metaTitle: "Oslo City Legesenter – mer brukervennlig nettside",
+  metaDescription:
+    "Ny nettside for Oslo City Legesenter med ryddigere struktur og tydelig informasjonsflyt, tilpasset mobil så pasientene raskt finner frem.",
   url: "https://www.oslocitylegesenter.no/",
   services: [
     "Tydelig struktur og enkel navigasjon",

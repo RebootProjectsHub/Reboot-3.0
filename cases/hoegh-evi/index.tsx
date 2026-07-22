@@ -6,6 +6,9 @@ export const caseStudy: CaseStudy = {
   slug: "hoegh-evi",
   name: "Höegh Evi",
   tagline: "Utvikling av teknisk arkitektur for ny nettside",
+  metaTitle: "Höegh Evi – nettside, teknisk arkitektur og drift",
+  metaDescription:
+    "Vi utviklet den tekniske arkitekturen bak Höegh Evis nye nettside, og står for hosting og løpende drift. Bygget i WordPress for enkel redigering.",
   url: "https://hoeghevi.com/",
   services: [
     "Sikkerhetsarkitektur",

@@ -6,6 +6,9 @@ export const caseStudy: CaseStudy = {
   slug: "mad-goats",
   name: "Mad Goats",
   tagline: "Friskere og mer moderne design, med forbedret Google-rangering",
+  metaTitle: "Mad Goats – redesign med bedre ytelse og SEO",
+  metaDescription:
+    "Friskere og mer moderne design for Mad Goats, med raskere lastetid, forbedret Google-rangering og en nettside de enkelt oppdaterer selv.",
   url: "https://madgoats.no",
   services: ["WordPress", "Moderne redesign", "Økt ytelse", "SEO", "Enkel redigering av innhold"],
   image: `${IMG}/hero.jpg`,

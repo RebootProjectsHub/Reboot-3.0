@@ -6,6 +6,9 @@ export const caseStudy: CaseStudy = {
   slug: "ved-pa-dora",
   name: "Ved På Døra",
   tagline: "Design og oppsett av nettside med nettbutikk",
+  metaTitle: "Ved På Døra – nettbutikk med Vipps og integrasjoner",
+  metaDescription:
+    "Nettbutikk for Ved På Døra med Vipps, Google Shopping, Prisjakt og Mailchimp. Vi har vært partneren deres siden 2019 med design, drift og utvikling.",
   url: "https://vedpadora.no",
   services: ["WordPress", "WooCommerce", "Webdesign", "Integrasjoner"],
   image: `${IMG}/hero.jpg`,

@@ -6,6 +6,9 @@ export const caseStudy: CaseStudy = {
   slug: "messecup",
   name: "Messecup",
   tagline: "Ny nettside for Tønsberg Turns håndballturnering",
+  metaTitle: "Messecup – nettside med påmeldingssystem",
+  metaDescription:
+    "Ny nettside for Tønsberg Turns håndballturnering Messecup, med integrert påmeldingssystem som gjør registrering enkelt for lag og arrangør.",
   image: `${IMG}/hero.jpg`,
   imageAlt: "Håndballturnering",
   quote: {
