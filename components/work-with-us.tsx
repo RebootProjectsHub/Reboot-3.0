@@ -33,7 +33,7 @@ export function WorkWithUs() {
           <p className="mt-6 text-pretty text-lg leading-relaxed text-foreground/80">
             Vi holder til i Nydalen og tar gjerne en prat, uansett om du har et konkret prosjekt eller bare en idé.
           </p>
-        <div className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
+        <div className="mt-9 flex flex-wrap gap-3.5">
             <a
               href="#kontakt"
               className="inline-flex items-center rounded-full bg-ink px-7 py-3.5 text-base font-normal text-ink-foreground transition-opacity hover:opacity-85"
