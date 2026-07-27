@@ -3,9 +3,9 @@ import Image from "next/image"
 export function WorkWithUs() {
   return (
     <section id="eventer" className="px-4 py-12 sm:px-6 lg:px-10 lg:py-16">
-      <div className="mx-auto grid max-w-[1280px] items-center gap-8 lg:grid-cols-2">
-        <div className="relative">
-          <div className="overflow-hidden rounded-[var(--radius)] border border-border">
+      <div className="mx-auto grid max-w-[1280px] items-center gap-8 lg:grid-cols-3">
+          <div className="relative lg:col-span-2">
+                <div className="overflow-hidden rounded-[var(--radius)] border border-border">
             <Image
               src="/Felles5.webp"
               alt="Teamet i Reboot i et møte rundt et bord"
@@ -39,13 +39,6 @@ export function WorkWithUs() {
             >
               Send melding
             </a>
-          <a
-            href="tel:+4797675848"
-            className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
-          >
-            97 67 58 48
-            <ArrowUpRight className="size-4" aria-hidden />
-          </a>
           </div>
         </div>
       </div>
