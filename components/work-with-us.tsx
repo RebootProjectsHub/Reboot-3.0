@@ -56,7 +56,7 @@ export function WorkWithUs() {
             Sving innom for en kaffe
           </h2>
           <p className="mt-6 text-pretty text-lg leading-relaxed text-foreground/80">
-            Vi holder til i Nydalen og tar gjerne en prat, uansett om du har et konkret prosjekt eller bare en idé.
+            Kom gjerne innom våre lokaler i Nydalen for en uforpliktende prat, uansett om du har et konkret prosjekt eller bare en idé.
           </p>
         <div className="mt-9 flex flex-wrap gap-3.5">
             <a
