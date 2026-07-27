@@ -27,7 +27,7 @@ export function WorkWithUs() {
 <svg
   aria-hidden="true"
   viewBox="0 0 40 44"
-  className="h-8 w-7 text-brand"
+  className="h-9 w-8 text-brand"
   fill="none"
   stroke="currentColor"
   strokeWidth="2"
