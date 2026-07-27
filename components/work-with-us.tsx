@@ -37,7 +37,7 @@ export function WorkWithUs() {
               href="#kontakt"
               className="inline-flex items-center rounded-full bg-ink px-7 py-3.5 text-base font-normal text-ink-foreground transition-opacity hover:opacity-85"
             >
-              Ta kontakt
+              Send melding
             </a>
           </div>
         </div>
