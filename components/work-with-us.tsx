@@ -24,9 +24,22 @@ export function WorkWithUs() {
         </div>
 
         <div className="max-w-xl lg:pl-8">
-          <p className="font-heading text-sm font-medium uppercase tracking-[0.18em] text-brand">
-            Velkommen
-          </p>
+           <svg
+    aria-hidden="true"
+    viewBox="0 0 40 44"
+    className="mb-4 h-10 w-9 text-brand"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M15 11 C12 8, 18 6, 15 3" strokeWidth="1.75" />
+    <path d="M23 11 C20 8, 26 6, 23 3" strokeWidth="1.75" />
+    <path d="M7 17 H31 V27 C31 32, 27 35, 22 35 H16 C11 35, 7 32, 7 27 Z" />
+    <path d="M31 20 H34 C37 20, 37 27, 34 27 H31" />
+    <path d="M5 40 H33" />
+  </svg>
           <h2 className="mt-4 text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
             Sving innom for en kaffe
           </h2>
