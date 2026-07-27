@@ -56,7 +56,7 @@ export function Testimonials() {
             Dette sier kundene våre
           </h2>
           <div className="flex items-center gap-2">
-            <div className="flex" aria-hidden="true">
+            <div className="hidden sm:flex" aria-hidden="true">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="size-5 fill-brand text-brand" />
               ))}
