@@ -36,13 +36,13 @@ export function WorkWithUs() {
         <div className="mt-9 flex flex-wrap gap-3.5">
             <a
               href="#kontakt"
-              className="inline-flex items-center rounded-full bg-ink px-7 py-3.5 text-base font-normal text-ink-foreground transition-opacity hover:opacity-85"
+              className="inline-flex items-center rounded-full bg-brand px-7 py-3.5 text-base font-normal text-ink-foreground transition-opacity hover:opacity-85"
             >
               Send melding
             </a>
                     <a
             href="tel:+4797675848"
-            className="inline-flex items-center gap-2 text-base font-medium text-ink transition-[gap] duration-200 hover:gap-3.5"
+            className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
           >
             97 67 58 48
             <ArrowUpRight className="size-4" aria-hidden />
