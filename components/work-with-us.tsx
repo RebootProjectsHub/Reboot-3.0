@@ -24,16 +24,13 @@ export function WorkWithUs() {
 
         <div className="max-w-xl lg:pl-8">
           <p className="font-heading text-sm font-medium uppercase tracking-[0.18em] text-brand">
-            Fastpris
+            Velkommen
           </p>
           <h2 className="mt-4 text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
-            Hva koster en nettside?
+            Sving innom for en kaffe
           </h2>
           <p className="mt-6 text-pretty text-lg leading-relaxed text-foreground/80">
-            Vi mener prising skal være enkelt og forutsigbart. Våre skreddersydde og SEO-optimaliserte nettsider har en fastpris på <strong>29 900,-</strong> og de fleste som tar kontakt med oss havner nettopp der. Har du enklere eller mer omfattende behov, tilpasser vi løsningen og prisen deretter.
-          </p>
-          <p className="mt-4 text-pretty text-lg leading-relaxed text-foreground/80">
-            Ta kontakt, så finner vi riktig løsning for deg.
+            Vi holder til i Nydalen og tar gjerne en prat, uansett om du har et konkret prosjekt eller bare en idé.
           </p>
           <div className="mt-8">
             <a
