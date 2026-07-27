@@ -3,8 +3,8 @@ import Image from "next/image"
 export function WorkWithUs() {
   return (
     <section id="eventer" className="px-4 py-12 sm:px-6 lg:px-10 lg:py-16">
-      <div className="mx-auto grid max-w-[1280px] items-center gap-8 lg:grid-cols-3">
-          <div className="relative lg:col-span-2">
+      <div className="mx-auto grid max-w-[1280px] items-center gap-8 lg:grid-cols-2">
+        <div className="relative">
                 <div className="overflow-hidden rounded-[var(--radius)] border border-border">
             <Image
               src="/Felles5.webp"
