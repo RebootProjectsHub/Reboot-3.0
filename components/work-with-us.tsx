@@ -42,7 +42,7 @@ export function WorkWithUs() {
             </a>
                     <a
             href="tel:+4797675848"
-            className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
+            className="inline-flex items-center gap-2 text-base font-medium text-ink transition-[gap] duration-200 hover:gap-3.5"
           >
             97 67 58 48
             <ArrowUpRight className="size-4" aria-hidden />
