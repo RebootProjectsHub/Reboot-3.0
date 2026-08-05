@@ -173,16 +173,9 @@ export default function SkreddersyddNettsidePage() {
       </section>
 
       {/* What you get */}
-      <section className="px-4 pb-14 sm:px-6 lg:px-10">
+      <section className="px-4 pb-14 pt-4 sm:px-6 sm:pb-16 sm:pt-6 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
-          <span className="block font-mono text-xs uppercase tracking-[0.1em] text-brand">
-            Hva du får
-          </span>
-          <h2 className="mt-3 max-w-[520px] text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
-            En nettside som jobber for deg
-          </h2>
-
-          <div className="mt-8 grid gap-5 lg:grid-cols-2">
+          <div className="grid gap-5 lg:grid-cols-2">
             {/* Image */}
             <div className="relative min-h-[320px] overflow-hidden rounded-[26px] lg:row-span-2">
               <Image
@@ -249,8 +242,8 @@ export default function SkreddersyddNettsidePage() {
                 Bygget for å konvertere
               </h3>
               <p className="mt-2.5 text-[15px] leading-[1.6] text-foreground/70">
-                Gjennomtenkt struktur og tekst som leder besøkende dit du vil
-                ha dem, på en side du enkelt oppdaterer selv.
+                Struktur og tekst som leder besøkende dit du vil ha dem, på
+                en side du oppdaterer selv.
               </p>
             </div>
 
@@ -297,8 +290,22 @@ export default function SkreddersyddNettsidePage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="px-6 pb-16 pt-14 sm:pt-16">
+        <div className="mx-auto max-w-[700px]">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
+            Ofte stilte spørsmål om skreddersydde nettsider
+          </h2>
+          <div className="mt-8">
+            <FaqList
+              items={faqItems.map(({ question, answer }) => ({ question, answer }))}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Case band: Höegh Evi */}
-      <section className="px-4 mt-7 py-6 sm:px-6 lg:px-10">
+      <section className="px-4 pb-6 pt-14 sm:px-6 sm:pb-8 sm:pt-16 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
           <div className="relative overflow-hidden rounded-[var(--radius)] bg-ink text-ink-foreground">
             <div className="relative grid lg:grid-cols-2 lg:items-stretch">
@@ -320,12 +327,10 @@ export default function SkreddersyddNettsidePage() {
                   Nettside for Höegh Evi
                 </h2>
                 <p className="mt-5 text-[17px] leading-[1.65] text-ink-foreground/80">
-                  For Höegh Evi, som leverer energiløsninger i et
-                  internasjonalt marked, designet, bygde og drifter vi en
-                  nettside i WordPress som presenterer et komplekst fagfelt på
-                  en ryddig og profesjonell måte. Vi står for design,
-                  utvikling, hosting og løpende drift, slik at teamet deres
-                  kan konsentrere seg om innholdet mens vi holder siden rask,
+                  For Höegh Evi, som leverer energiløsninger internasjonalt,
+                  designet og bygde vi en nettside i WordPress som gjør et
+                  komplekst fagfelt ryddig og tydelig. Vi står for design,
+                  utvikling og løpende drift, slik at siden holder seg rask,
                   sikker og oppdatert.
                 </p>
                 <ul className="mt-6 flex flex-wrap gap-2">
@@ -357,20 +362,6 @@ export default function SkreddersyddNettsidePage() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="px-6 pt-7 pb-16">
-        <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
-            Ofte stilte spørsmål om skreddersydde nettsider
-          </h2>
-          <div className="mt-8">
-            <FaqList
-              items={faqItems.map(({ question, answer }) => ({ question, answer }))}
-            />
           </div>
         </div>
       </section>
