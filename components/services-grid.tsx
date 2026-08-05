@@ -29,6 +29,7 @@ const services = [
       },
     ],
     cta: "Kom i gang",
+    href: "/tjenester/skreddersydd-nettside",
   },
   {
     id: "seo-og-ai-svar",
@@ -203,7 +204,7 @@ export function ServicesGrid() {
               )}
               <div className="min-h-7 flex-1" />
               <a
-                href="/kontakt"
+                href={item.href ?? "/kontakt"}
                 className="mt-6 inline-flex w-fit items-center gap-2 self-end text-base font-semibold text-brand transition-[gap] duration-200 hover:gap-3.5"
               >
                 {item.cta}

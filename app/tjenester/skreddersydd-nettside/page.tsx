@@ -1,0 +1,333 @@
+import Image from "next/image"
+import Link from "next/link"
+import { ArrowRight, ArrowUpRight, Check } from "lucide-react"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
+import { ServicesCta } from "@/components/services-cta"
+import { FaqList } from "@/components/faq-list"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata({
+  title: "Skreddersydd nettside i Oslo",
+  description:
+    "Reboot designer og bygger skreddersydde nettsider for norske bedrifter i Nydalen, Oslo. Raske, moderne sider bygget for å konvertere, med fastpris og norsk support.",
+  path: "/tjenester/skreddersydd-nettside",
+})
+
+const deliverables = [
+  {
+    title: "Ny nettside fra bunnen",
+    body: "En komplett nettside designet rundt merkevaren, budskapet og kundene dine. Vi bygger alt fra grunnen, så du sitter igjen med en side som er din, ikke en mal alle andre også bruker.",
+  },
+  {
+    title: "Redesign av dagens side",
+    body: "Har du en side som funker, men ser datert ut eller er tung å drifte? Vi fornyer den fra kildekoden i bunn til det visuelle på toppen, så den blir rask, responsiv og enkel å vedlikeholde igjen.",
+  },
+  {
+    title: "Design som konverterer",
+    body: "En pen side er ikke nok. Vi bygger struktur, tekst og knapper som leder besøkende dit du vil ha dem, enten målet er henvendelser, salg eller påmeldinger.",
+  },
+  {
+    title: "Rask, sikker og moderne",
+    body: "Sidene lastes raskt, tåler trafikk og fungerer like godt på mobil som på skjerm. Bygget på moderne teknologi som holder seg oppdatert over tid.",
+  },
+  {
+    title: "Du styrer innholdet selv",
+    body: "Du får redigeringstilgang og kan oppdatere tekst, bilder og nyheter selv, uten å gå via oss for hver lille endring. Vil du heller at vi tar det, ordner vi det også.",
+  },
+  {
+    title: "Synlig fra dag én",
+    body: "Vi bygger siden SEO-optimalisert fra bunnen, så dere blir funnet på Google og i AI-søk som ChatGPT, Claude og Gemini, ikke som et tillegg vi skrur på i etterkant.",
+  },
+]
+
+const faqItems = [
+  {
+    question: "Hva koster en ny nettside?",
+    answer: (
+      <p>
+        Det avhenger av omfang, antall sider og funksjonaliteten dere trenger.
+        Vi jobber alltid med fastpris, så du vet nøyaktig hva det koster før vi
+        starter. De skreddersydde nettsidene våre har en fastpris fra 29 900.
+        Ta <a href="/kontakt">kontakt</a> for et konkret tilbud, eller se{" "}
+        <a href="/nettside-priser">prisene våre</a> for en pekepinn.
+      </p>
+    ),
+    plainAnswer:
+      "Det avhenger av omfang, antall sider og funksjonaliteten dere trenger. Vi jobber alltid med fastpris, så du vet nøyaktig hva det koster før vi starter. De skreddersydde nettsidene våre har en fastpris fra 29 900. Ta kontakt for et konkret tilbud.",
+  },
+  {
+    question: "Hvor lang tid tar det å lage en nettside?",
+    answer: (
+      <p>
+        De fleste prosjektene er ferdige i løpet av noen uker, avhengig av
+        omfang og hvor raskt vi får innhold og tilbakemeldinger fra dere. Vi
+        avtaler en tidsplan før vi starter, så du vet hva du kan forvente.
+      </p>
+    ),
+    plainAnswer:
+      "De fleste prosjektene er ferdige i løpet av noen uker, avhengig av omfang og hvor raskt vi får innhold og tilbakemeldinger fra dere. Vi avtaler en tidsplan før vi starter, så du vet hva du kan forvente.",
+  },
+  {
+    question: "Kan dere redesigne den eksisterende siden i stedet for å bygge ny?",
+    answer: (
+      <p>
+        Ja. Har du en side som funker, men ser datert ut eller er tung å
+        drifte, fornyer vi den fra kildekoden i bunn til det visuelle på
+        toppen. Ofte beholder vi det som fungerer og bygger om resten, så du
+        slipper å starte helt på nytt.
+      </p>
+    ),
+    plainAnswer:
+      "Ja. Har du en side som funker, men ser datert ut eller er tung å drifte, fornyer vi den fra kildekoden i bunn til det visuelle på toppen. Ofte beholder vi det som fungerer og bygger om resten, så du slipper å starte helt på nytt.",
+  },
+  {
+    question: "Hvilke plattformer bygger dere på?",
+    answer: (
+      <p>
+        Vi bygger skreddersydde nettsider i moderne kode, og jobber også med{" "}
+        <Link href="/tjenester/wordpress">WordPress</Link> og{" "}
+        <Link href="/tjenester/shopify">Shopify</Link> når det passer bedre
+        for behovet deres. Vi hjelper dere å velge riktig plattform før vi
+        starter.
+      </p>
+    ),
+    plainAnswer:
+      "Vi bygger skreddersydde nettsider i moderne kode, og jobber også med WordPress og Shopify når det passer bedre for behovet deres. Vi hjelper dere å velge riktig plattform før vi starter.",
+  },
+  {
+    question: "Kan jeg oppdatere innholdet selv etterpå?",
+    answer: (
+      <p>
+        Ja. Du får redigeringstilgang og kan endre tekst, bilder og nyheter
+        selv, uten å gå via oss for hver lille justering. Vil du heller at vi
+        tar oss av det, ordner vi det gjennom en støtteavtale.
+      </p>
+    ),
+    plainAnswer:
+      "Ja. Du får redigeringstilgang og kan endre tekst, bilder og nyheter selv, uten å gå via oss for hver lille justering. Vil du heller at vi tar oss av det, ordner vi det gjennom en støtteavtale.",
+  },
+  {
+    question: "Hjelper dere med drift etter lansering?",
+    answer: (
+      <p>
+        Ja, de fleste kundene våre fortsetter med en{" "}
+        <a href="/tjenester#vedlikehold-og-support">støtteavtale</a> fra 990
+        per måned. Da tar vi oss av oppdateringer, backup, overvåking og
+        småjusteringer, og du havner først i køen når du trenger hjelp.
+      </p>
+    ),
+    plainAnswer:
+      "Ja, de fleste kundene våre fortsetter med en støtteavtale fra 990 per måned. Da tar vi oss av oppdateringer, backup, overvåking og småjusteringer, og du havner først i køen når du trenger hjelp.",
+  },
+  {
+    question: "Blir siden synlig på Google og i AI-søk?",
+    answer: (
+      <p>
+        Ja. Vi bygger siden SEO-optimalisert fra bunnen, med teknisk struktur
+        og tekster som gjør at dere blir funnet både på Google og i AI-søk som
+        ChatGPT, Claude og Gemini. Vil dere satse tyngre på synlighet, hjelper
+        vi med det som{" "}
+        <a href="/tjenester#seo-og-ai-svar">en egen tjeneste</a>.
+      </p>
+    ),
+    plainAnswer:
+      "Ja. Vi bygger siden SEO-optimalisert fra bunnen, med teknisk struktur og tekster som gjør at dere blir funnet både på Google og i AI-søk som ChatGPT, Claude og Gemini. Vil dere satse tyngre på synlighet, hjelper vi med det som en egen tjeneste.",
+  },
+]
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.plainAnswer },
+  })),
+}
+
+export default function SkreddersyddNettsidePage() {
+  return (
+    <main className="min-h-screen bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <SiteHeader />
+
+      {/* Hero */}
+      <section className="relative mx-auto max-w-[820px] px-6 pb-14 pt-16 text-center sm:pb-16 sm:pt-24">
+        <span
+          aria-hidden
+          className="absolute left-[6%] top-10 hidden text-[26px] leading-none text-brand/45 md:block"
+        >
+          ✳
+        </span>
+        <span
+          aria-hidden
+          className="absolute right-[6%] top-14 hidden text-[20px] leading-none text-foreground/35 md:block"
+        >
+          ✦
+        </span>
+
+        <span className="inline-flex items-center rounded-full bg-secondary px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-foreground">
+          Ny nettside &amp; redesign
+        </span>
+
+        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
+          Skreddersydd nettside i Oslo
+        </h1>
+
+        <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
+          Vi designer og bygger nettsider som gjør besøkende til kunder.
+          Raske, moderne og enkle å oppdatere selv, enten du starter fra
+          bunnen eller vil friske opp en side du allerede har.
+        </p>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
+          <a
+            href="/kontakt"
+            className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
+          >
+            Få et uforpliktende tilbud
+          </a>
+        </div>
+      </section>
+
+      {/* What we deliver */}
+      <section className="px-4 pb-14 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1280px]">
+          <div className="grid gap-[22px] sm:grid-cols-2 lg:grid-cols-3">
+            {deliverables.map((item) => (
+              <article
+                key={item.title}
+                className="flex flex-col rounded-[26px] bg-card px-7 pb-8 pt-7"
+              >
+                <h2 className="font-heading text-[21px] font-normal leading-[1.2] text-foreground">
+                  {item.title}
+                </h2>
+                <div className="mt-3.5 mb-4 flex items-center gap-[2px]">
+                  <div className="h-1 w-[28px] rounded-full bg-brand" />
+                  <div className="h-1 w-[16px] rounded-full bg-brand/25" />
+                </div>
+                <p className="text-[15.5px] leading-[1.6] text-foreground/70">
+                  {item.body}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Case band: Höegh Evi */}
+      <section className="px-4 mt-7 py-6 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1280px]">
+          <div className="relative overflow-hidden rounded-[var(--radius)] bg-ink text-ink-foreground">
+            <div className="relative grid lg:grid-cols-2 lg:items-stretch">
+              <div className="relative min-h-[260px] lg:min-h-[420px]">
+                <Image
+                  src="/ny-nettside/hoegh-evi/hero.webp"
+                  alt="Nettsiden til Höegh Evi på ulike enheter"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+
+              <div className="flex min-w-0 flex-col justify-center px-8 py-10 sm:px-14 sm:py-12 lg:py-20 lg:pl-16 lg:pr-20">
+                <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
+                  Kundecase · Skreddersydd nettside
+                </span>
+                <h2 className="mt-5 text-balance font-heading text-[clamp(28px,3.2vw,40px)] font-normal leading-[1.12] tracking-[-0.02em]">
+                  Nettside for Höegh Evi
+                </h2>
+                <p className="mt-5 text-[17px] leading-[1.65] text-ink-foreground/80">
+                  For Höegh Evi, som leverer energiløsninger i et
+                  internasjonalt marked, designet, bygde og drifter vi en
+                  nettside i WordPress som presenterer et komplekst fagfelt på
+                  en ryddig og profesjonell måte. Vi står for design,
+                  utvikling, hosting og løpende drift, slik at teamet deres
+                  kan konsentrere seg om innholdet mens vi holder siden rask,
+                  sikker og oppdatert.
+                </p>
+                <ul className="mt-6 flex flex-wrap gap-2">
+                  {["WordPress", "Webdesign", "Hosting & drift"].map((chip) => (
+                    <li
+                      key={chip}
+                      className="rounded-full bg-ink-foreground/10 px-3.5 py-1.5 text-[13.5px] text-ink-foreground/85"
+                    >
+                      {chip}
+                    </li>
+                  ))}
+                </ul>
+                <blockquote className="mt-6 text-[15.5px] italic leading-[1.6] text-ink-foreground/70">
+                  «Takk for utmerket arbeid. Reboot har vært gjennomgående
+                  positive og løsningsorienterte!»
+                  <footer className="mt-2 not-italic text-[13.5px] text-ink-foreground/55">
+                    Per Øystein Feet, Global Operations &amp; Infrastructure,
+                    Höegh Evi
+                  </footer>
+                </blockquote>
+                <div className="mt-8">
+                  <Link
+                    href="/ny-nettside/hoegh-evi"
+                    className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
+                  >
+                    Les hele caset
+                    <ArrowUpRight className="size-4" aria-hidden />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Reboot */}
+      <section className="px-6 py-14 sm:py-16">
+        <div className="mx-auto max-w-[720px]">
+          <h2 className="text-balance text-center font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
+            Hvorfor velge oss?
+          </h2>
+          <ul className="mx-auto mt-8 max-w-[560px] space-y-[14px]">
+            {[
+              "Direkte kontakt med de som designer og bygger siden, ingen mellomledd",
+              "Fastpris avtalt før vi starter",
+              "Rask og sikker side på moderne teknologi",
+              "Du redigerer innholdet selv når du vil",
+              "Drift og support etter lansering, med rask responstid",
+              "Lokalt byrå i Nydalen i Oslo. Stikk innom for en kaffe!",
+            ].map((point) => (
+              <li key={point} className="flex items-start gap-[12px]">
+                <Check
+                  className="mt-[3px] size-[18px] shrink-0 text-brand"
+                  strokeWidth={2.5}
+                />
+                <span className="text-[16.5px] leading-[1.6] text-foreground/80">
+                  {point}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="px-6 pt-7 pb-16">
+        <div className="mx-auto max-w-[700px]">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
+            Ofte stilte spørsmål om skreddersydde nettsider
+          </h2>
+          <div className="mt-8">
+            <FaqList
+              items={faqItems.map(({ question, answer }) => ({ question, answer }))}
+            />
+          </div>
+        </div>
+      </section>
+
+      <ServicesCta />
+      <SiteFooter />
+    </main>
+  )
+}
