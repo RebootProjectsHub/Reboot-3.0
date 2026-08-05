@@ -10,7 +10,7 @@ const services = [
   },
   {
     number: "02",
-    title: "SEO og AI-svar",
+    title: "SEO og AI-søk",
     label: "Synlighet & vekst",
     href: "/tjenester/seo-og-ai-svar",
   },
