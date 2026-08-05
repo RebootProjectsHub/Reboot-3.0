@@ -180,7 +180,7 @@ export default function AiRadgivningPage() {
       </section>
 
       {/* Kjenner du deg igjen? */}
-      <section className="px-4 pb-14 sm:px-6 lg:px-10">
+      <section className="px-4 pb-14 sm:px-6 sm:pb-16 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid gap-12 rounded-[var(--radius)] bg-ink px-8 py-12 text-ink-foreground sm:px-12 sm:py-14 lg:grid-cols-[1fr_1.1fr] lg:gap-16 lg:px-16">
             <div>
@@ -224,7 +224,7 @@ export default function AiRadgivningPage() {
       </section>
 
       {/* Tjenester */}
-      <section className="px-4 pb-14 sm:px-6 lg:px-10">
+      <section className="px-4 pb-14 sm:px-6 sm:pb-16 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
             Praktisk hjelp, ikke buzzwords
@@ -311,7 +311,7 @@ export default function AiRadgivningPage() {
       </section>
 
       {/* CTA */}
-      <section className="px-4 pb-[80px] sm:px-6 lg:px-10 lg:pb-[100px]">
+      <section className="px-4 pb-[80px] pt-16 sm:px-6 lg:px-10 lg:pb-[100px]">
         <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[var(--radius)] border-[1.5px] border-border bg-[#fcf2ec] px-6 py-16 text-center sm:px-12">
           <span
             aria-hidden
