@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ArrowUpRight, Check } from "lucide-react"
+import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { ServicesCta } from "@/components/services-cta"
@@ -14,30 +14,22 @@ export const metadata = pageMetadata({
   path: "/tjenester/skreddersydd-nettside",
 })
 
-const deliverables = [
+const whatYouGet = [
   {
-    title: "Ny nettside fra bunnen",
-    body: "En side bygget rundt merkevaren din, ikke en mal alle andre også bruker.",
+    title: "Ny side eller redesign",
+    body: "Fra bunnen, eller nytt liv til den du har.",
   },
   {
-    title: "Redesign av dagens side",
-    body: "Vi fornyer den gamle siden fra kildekoden til det visuelle. Rask og responsiv igjen.",
-  },
-  {
-    title: "Design som konverterer",
-    body: "Struktur, tekst og knapper som leder besøkende dit du vil ha dem.",
-  },
-  {
-    title: "Rask, sikker og moderne",
-    body: "Laster raskt, tåler trafikk, funker like godt på mobil som skjerm.",
-  },
-  {
-    title: "Du styrer innholdet selv",
-    body: "Rediger tekst og bilder når du vil. Eller la oss ta det.",
+    title: "Bygget for å konvertere",
+    body: "Rask, sikker og enkel å oppdatere selv.",
   },
   {
     title: "Synlig fra dag én",
-    body: "SEO-optimalisert fra bunnen, både på Google og i AI-søk.",
+    body: "På Google og i AI-søk, ikke som et tillegg.",
+  },
+  {
+    title: "Ekte folk bak",
+    body: "Ingen mellomledd. Fastpris. Kaffe i Nydalen.",
   },
 ]
 
@@ -199,26 +191,22 @@ export default function SkreddersyddNettsidePage() {
         </div>
       </section>
 
-      {/* What we deliver */}
-      <section className="px-4 pb-14 sm:px-6 lg:px-10">
-        <div className="mx-auto max-w-[1280px]">
-          <div className="grid gap-[22px] sm:grid-cols-2 lg:grid-cols-3">
-            {deliverables.map((item) => (
-              <article
-                key={item.title}
-                className="flex flex-col rounded-[26px] bg-card px-7 pb-8 pt-7"
-              >
-                <h2 className="font-heading text-[21px] font-normal leading-[1.2] text-foreground">
+      {/* What you get */}
+      <section className="px-6 pb-14 sm:pb-16">
+        <div className="mx-auto max-w-[1040px]">
+          <span className="block text-center font-mono text-xs uppercase tracking-[0.18em] text-foreground/45">
+            Hva du får
+          </span>
+          <div className="mt-8 grid gap-x-10 gap-y-9 text-center sm:grid-cols-2 lg:grid-cols-4">
+            {whatYouGet.map((item) => (
+              <div key={item.title}>
+                <h3 className="font-heading text-[19px] font-normal leading-[1.25] text-foreground">
                   {item.title}
-                </h2>
-                <div className="mt-3.5 mb-4 flex items-center gap-[2px]">
-                  <div className="h-1 w-[28px] rounded-full bg-brand" />
-                  <div className="h-1 w-[16px] rounded-full bg-brand/25" />
-                </div>
-                <p className="text-[15.5px] leading-[1.6] text-foreground/70">
+                </h3>
+                <p className="mt-2 text-[15px] leading-[1.6] text-foreground/65">
                   {item.body}
                 </p>
-              </article>
+              </div>
             ))}
           </div>
         </div>
@@ -285,35 +273,6 @@ export default function SkreddersyddNettsidePage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Why Reboot */}
-      <section className="px-6 py-14 sm:py-16">
-        <div className="mx-auto max-w-[720px]">
-          <h2 className="text-balance text-center font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
-            Hvorfor velge oss?
-          </h2>
-          <ul className="mx-auto mt-8 max-w-[560px] space-y-[14px]">
-            {[
-              "Direkte kontakt med de som designer og bygger siden, ingen mellomledd",
-              "Fastpris avtalt før vi starter",
-              "Rask og sikker side på moderne teknologi",
-              "Du redigerer innholdet selv når du vil",
-              "Drift og support etter lansering, med rask responstid",
-              "Lokalt byrå i Nydalen i Oslo. Stikk innom for en kaffe!",
-            ].map((point) => (
-              <li key={point} className="flex items-start gap-[12px]">
-                <Check
-                  className="mt-[3px] size-[18px] shrink-0 text-brand"
-                  strokeWidth={2.5}
-                />
-                <span className="text-[16.5px] leading-[1.6] text-foreground/80">
-                  {point}
-                </span>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
