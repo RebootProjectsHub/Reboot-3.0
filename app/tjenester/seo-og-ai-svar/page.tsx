@@ -190,50 +190,44 @@ export default function SeoOgAiSvarPage() {
       {/* Editorial intro with stats */}
       <section className="px-4 pt-7 pb-14 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
-          <div className="rounded-[var(--radius)] bg-card px-8 py-12 sm:px-12 sm:py-14 lg:px-16">
+          <div className="relative overflow-hidden rounded-[var(--radius)] bg-ink px-8 py-12 text-ink-foreground sm:px-12 sm:py-14 lg:px-16">
+            <span
+              aria-hidden
+              className="absolute right-8 top-8 hidden text-[30px] leading-none text-ink-foreground/20 lg:block"
+            >
+              ✦
+            </span>
             <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
-              <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
+              <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-ink-foreground">
                 Bli funnet der kundene faktisk leter
               </h2>
               <div>
-                <p className="text-[17px] leading-[1.7] text-foreground/75">
+                <p className="text-[17px] leading-[1.7] text-ink-foreground/80">
                   Søk er i endring. Kundene dine googler fortsatt, men stadig
                   flere spør ChatGPT, Claude eller Gemini rett ut hvem de bør
                   velge.
                 </p>
-                <p className="mt-4 text-[17px] leading-[1.7] text-foreground/75">
+                <p className="mt-4 text-[17px] leading-[1.7] text-ink-foreground/80">
                   Vi jobber med begge deler samtidig: teknisk SEO og innhold
                   som løfter dere i Google, og struktur som gjør at
                   AI-modellene forstår og anbefaler bedriften din.
                 </p>
-                <div className="mt-8 flex flex-wrap gap-10">
-                  <div>
-                    <div className="font-heading text-3xl font-normal leading-none text-foreground">
-                      80+
-                    </div>
-                    <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/60">
-                      Leverte prosjekter
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-baseline gap-1 font-heading text-3xl font-normal leading-none text-foreground">
-                      5/5
-                      <span className="text-base text-brand">★</span>
-                    </div>
-                    <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/60">
-                      På Google
-                    </p>
-                  </div>
-                  <div>
-                    <div className="font-heading text-3xl font-normal leading-none text-foreground">
-                      I dag
-                    </div>
-                    <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/60">
-                      Svar i løpet av dagen
-                    </p>
-                  </div>
-                </div>
               </div>
+            </div>
+            <div className="mt-12 grid gap-8 border-t border-ink-foreground/15 pt-10 sm:grid-cols-3">
+              {whyAiPoints.map((point, i) => (
+                <div key={point.title}>
+                  <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-ink-foreground/45">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <p className="mt-2 font-medium text-ink-foreground">
+                    {point.title}
+                  </p>
+                  <p className="mt-1.5 text-[14.5px] leading-[1.6] text-ink-foreground/70">
+                    {point.body}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -283,46 +277,6 @@ export default function SeoOgAiSvarPage() {
                 </li>
               ))}
             </ol>
-          </div>
-        </div>
-      </section>
-
-      {/* Why AI visibility */}
-      <section className="px-4 py-14 sm:px-6 lg:px-10">
-        <div className="mx-auto max-w-[1120px]">
-          <div className="relative overflow-hidden rounded-[var(--radius)] bg-ink px-6 py-14 text-ink-foreground sm:px-10 lg:px-16 lg:py-16">
-            <span
-              aria-hidden
-              className="absolute right-8 top-8 hidden text-[30px] leading-none text-ink-foreground/20 lg:block"
-            >
-              ✦
-            </span>
-            <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
-              Hvorfor AI-synlighet?
-            </span>
-            <h2 className="mt-4 max-w-[26ch] text-balance font-heading text-[clamp(28px,3.2vw,38px)] font-normal leading-[1.2] tracking-[-0.02em]">
-              Stadig flere spør en AI til råds før de velger leverandør
-            </h2>
-            <p className="mt-5 max-w-[62ch] text-[17px] leading-[1.65] text-ink-foreground/80">
-              Svarene i ChatGPT, Claude og Gemini hentes fra nettsider som er
-              strukturert slik at modellene forstår dem. Er ikke dere der, er
-              det konkurrenten som blir anbefalt.
-            </p>
-            <div className="mt-12 grid gap-8 border-t border-ink-foreground/15 pt-10 sm:grid-cols-3">
-              {whyAiPoints.map((point, i) => (
-                <div key={point.title}>
-                  <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-ink-foreground/45">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <p className="mt-2 font-medium text-ink-foreground">
-                    {point.title}
-                  </p>
-                  <p className="mt-1.5 text-[14.5px] leading-[1.6] text-ink-foreground/70">
-                    {point.body}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
