@@ -274,15 +274,14 @@ export default function AiRadgivningPage() {
               ))}
             </div>
             <blockquote className="mt-4 font-heading text-[21px] font-normal leading-[1.4] text-foreground">
-              «Vi trodde AI var for de store. Etter to workshops med Reboot
-              bruker hele teamet det daglig, og vi sparer timer hver uke.»
+              «Godt samarbeid og vi følte vi fikk veldig mye igjen for alt vi investerte i dette. Kan anbefales til alle.»
             </blockquote>
             <div className="mt-6 flex items-center justify-between gap-4 border-t border-border pt-5">
               <div>
                 <p className="text-[15px] font-medium text-foreground">
-                  Kristine Jørstad Bock
+                  Julian Opedal
                 </p>
-                <p className="mt-0.5 text-[14px] text-foreground/60">OBOS</p>
+                <p className="mt-0.5 text-[14px] text-foreground/60">Smartkjøkken</p>
               </div>
               <Link
                 href="/referanser"
