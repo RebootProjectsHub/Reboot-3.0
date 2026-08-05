@@ -1,0 +1,507 @@
+import Image from "next/image"
+import Link from "next/link"
+import { ArrowUpRight, Check } from "lucide-react"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
+import { FaqList } from "@/components/faq-list"
+import { pageMetadata } from "@/lib/seo"
+
+export const metadata = pageMetadata({
+  title: "SEO og AI-svar i Oslo",
+  description:
+    "Reboot er et SEO-byrå i Nydalen, Oslo. Vi jobber med teknisk SEO og synlighet i AI-søk som ChatGPT og Gemini, i tillegg til Google. Fastpris og norsk support.",
+  path: "/tjenester/seo-og-ai-svar",
+})
+
+const services = [
+  {
+    title: "Teknisk SEO og innholdsoptimalisering",
+    body: "Hastighet, struktur og indeksering i orden, og innhold spisset mot det kundene dine faktisk søker etter.",
+  },
+  {
+    title: "Synlighet i AI-svar og answer engines",
+    body: "Vi strukturerer innholdet slik at ChatGPT, Claude og Gemini finner, forstår og anbefaler bedriften din.",
+  },
+  {
+    title: "Lokal synlighet og Google Bedriftsprofil",
+    body: "Oppsett og vedlikehold av bedriftsprofilen, slik at dere vises på kart og i lokale søk.",
+  },
+  {
+    title: "Måling og rapportering av resultater",
+    body: "En kort månedlig rapport som viser hva som fungerer, og hva vi gjør videre.",
+  },
+]
+
+const whyAiPoints = [
+  {
+    title: "Folk googler mindre og spør mer",
+    body: "Spørsmål som før var ti søk er nå én samtale, med ett anbefalt svar.",
+  },
+  {
+    title: "AI-svar siterer få kilder",
+    body: "Der Google viser ti blå lenker, trekker et AI-svar frem to eller tre. Du vil være én av dem.",
+  },
+  {
+    title: "Godt SEO-arbeid teller dobbelt",
+    body: "Det samme grunnarbeidet løfter dere i både Google-søk og AI-svar.",
+  },
+]
+
+const packages = [
+  {
+    name: "Start",
+    price: "7 900",
+    body: "For deg som vil ha orden på det grunnleggende.",
+    features: ["Teknisk SEO-gjennomgang", "Google Bedriftsprofil", "Månedlig rapport"],
+  },
+  {
+    name: "Vekst",
+    price: "14 900",
+    body: "For deg som vil vokse i både Google og AI-svar.",
+    features: [
+      "Alt i Start",
+      "Innholdsoptimalisering",
+      "Synlighet i AI-svar",
+      "Kvartalsvis strategimøte",
+    ],
+    highlighted: true,
+  },
+  {
+    name: "Partner",
+    price: "24 900",
+    body: "For deg som vil ha en fast partner på synlighet.",
+    features: [
+      "Alt i Vekst",
+      "Løpende innholdsproduksjon",
+      "Dedikert rådgiver",
+      "Svar i løpet av dagen",
+    ],
+  },
+]
+
+const faqItems = [
+  {
+    question: "Hvor raskt ser vi resultater?",
+    answer: (
+      <p>
+        SEO er langsiktig arbeid. De fleste ser tydelig bevegelse etter tre
+        til seks måneder, og lokale søk og bedriftsprofil gir ofte effekt
+        raskere.
+      </p>
+    ),
+    plainAnswer:
+      "SEO er langsiktig arbeid. De fleste ser tydelig bevegelse etter tre til seks måneder, og lokale søk og bedriftsprofil gir ofte effekt raskere.",
+  },
+  {
+    question: "Hva er synlighet i AI-svar?",
+    answer: (
+      <p>
+        Når noen spør ChatGPT, Claude eller Gemini om anbefalinger, henter
+        modellene svar fra nettsider de forstår og stoler på. Vi jobber med
+        struktur, innhold og omtale slik at bedriften din blir en av kildene
+        som trekkes frem.
+      </p>
+    ),
+    plainAnswer:
+      "Når noen spør ChatGPT, Claude eller Gemini om anbefalinger, henter modellene svar fra nettsider de forstår og stoler på. Vi jobber med struktur, innhold og omtale slik at bedriften din blir en av kildene som trekkes frem.",
+  },
+  {
+    question: "Er vi bundet til en lang avtale?",
+    answer: (
+      <p>
+        Nei. Alle pakker er løpende med tre måneders oppsigelse. Vi vil at
+        dere blir fordi det virker, ikke fordi kontrakten sier det.
+      </p>
+    ),
+    plainAnswer:
+      "Nei. Alle pakker er løpende med tre måneders oppsigelse. Vi vil at dere blir fordi det virker, ikke fordi kontrakten sier det.",
+  },
+  {
+    question: "Hva inneholder den gratis synlighetsanalysen?",
+    answer: (
+      <p>
+        Vi sjekker hvordan dere ligger an i Google-søk, lokale søk og
+        AI-svar, og sender en kort rapport med de tre viktigste grepene. Helt
+        uforpliktende.
+      </p>
+    ),
+    plainAnswer:
+      "Vi sjekker hvordan dere ligger an i Google-søk, lokale søk og AI-svar, og sender en kort rapport med de tre viktigste grepene. Helt uforpliktende.",
+  },
+]
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.plainAnswer },
+  })),
+}
+
+export default function SeoOgAiSvarPage() {
+  return (
+    <main className="min-h-screen bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <SiteHeader />
+
+      {/* Hero */}
+      <section className="relative mx-auto max-w-[820px] px-6 pb-14 pt-16 text-center sm:pb-16 sm:pt-24">
+        <span
+          aria-hidden
+          className="absolute left-[6%] top-10 hidden text-[26px] leading-none text-brand/45 md:block"
+        >
+          ✳
+        </span>
+        <span
+          aria-hidden
+          className="absolute right-[6%] top-14 hidden text-[20px] leading-none text-foreground/35 md:block"
+        >
+          ✦
+        </span>
+
+        <span className="inline-flex items-center rounded-full bg-secondary px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-foreground">
+          Synlighet &amp; søk
+        </span>
+
+        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
+          SEO og AI-svar i Oslo
+        </h1>
+
+        <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
+          God rangering på Google er ikke lenger nok. Vi sørger for at dere
+          også dukker opp når folk spør ChatGPT, Claude og Gemini.
+        </p>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
+          <a
+            href="/kontakt"
+            className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
+          >
+            Få gratis synlighetsanalyse
+          </a>
+        </div>
+      </section>
+
+      {/* Editorial intro with stats */}
+      <section className="px-4 pt-7 pb-14 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1280px]">
+          <div className="rounded-[var(--radius)] bg-card px-8 py-12 sm:px-12 sm:py-14 lg:px-16">
+            <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
+              <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
+                Bli funnet der kundene faktisk leter
+              </h2>
+              <div>
+                <p className="text-[17px] leading-[1.7] text-foreground/75">
+                  Søk er i endring. Kundene dine googler fortsatt, men stadig
+                  flere spør ChatGPT, Claude eller Gemini rett ut hvem de bør
+                  velge.
+                </p>
+                <p className="mt-4 text-[17px] leading-[1.7] text-foreground/75">
+                  Vi jobber med begge deler samtidig: teknisk SEO og innhold
+                  som løfter dere i Google, og struktur som gjør at
+                  AI-modellene forstår og anbefaler bedriften din.
+                </p>
+                <div className="mt-8 flex flex-wrap gap-10">
+                  <div>
+                    <div className="font-heading text-3xl font-normal leading-none text-foreground">
+                      80+
+                    </div>
+                    <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/60">
+                      Leverte prosjekter
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-baseline gap-1 font-heading text-3xl font-normal leading-none text-foreground">
+                      5/5
+                      <span className="text-base text-brand">★</span>
+                    </div>
+                    <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/60">
+                      På Google
+                    </p>
+                  </div>
+                  <div>
+                    <div className="font-heading text-3xl font-normal leading-none text-foreground">
+                      I dag
+                    </div>
+                    <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/60">
+                      Svar i løpet av dagen
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Numbered services list */}
+      <section className="px-4 py-6 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1280px]">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:gap-20">
+            <div className="lg:sticky lg:top-24 lg:self-start">
+              <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
+                Spesialister på synlighet
+              </span>
+              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
+                SEO-tjenester fra Reboot
+              </h2>
+              <div className="relative mt-14 aspect-[4/5] overflow-hidden rounded-[var(--radius)]">
+                <Image
+                  src="/team-whiteboard.jpg"
+                  alt="Reboot-teamet planlegger synlighetsarbeid ved et whiteboard"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+                <span
+                  aria-hidden
+                  className="absolute -bottom-3 -right-3 hidden text-[46px] leading-none text-brand md:block"
+                >
+                  ✦
+                </span>
+              </div>
+            </div>
+            <ol className="divide-y divide-border border-y border-border">
+              {services.map((service, i) => (
+                <li key={service.title} className="flex gap-6 py-7 sm:gap-10">
+                  <span className="font-mono text-xl font-normal leading-[1.3] text-brand sm:text-2xl">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <h3 className="font-heading text-[20px] font-normal leading-[1.25] text-foreground sm:text-[22px]">
+                      {service.title}
+                    </h3>
+                    <p className="mt-2.5 text-[15.5px] leading-[1.65] text-foreground/70">
+                      {service.body}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* Why AI visibility */}
+      <section className="px-4 py-14 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1120px]">
+          <div className="relative overflow-hidden rounded-[var(--radius)] bg-ink px-6 py-14 text-ink-foreground sm:px-10 lg:px-16 lg:py-16">
+            <span
+              aria-hidden
+              className="absolute right-8 top-8 hidden text-[30px] leading-none text-ink-foreground/20 lg:block"
+            >
+              ✦
+            </span>
+            <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
+              Hvorfor AI-synlighet?
+            </span>
+            <h2 className="mt-4 max-w-[26ch] text-balance font-heading text-[clamp(28px,3.2vw,38px)] font-normal leading-[1.2] tracking-[-0.02em]">
+              Stadig flere spør en AI til råds før de velger leverandør
+            </h2>
+            <p className="mt-5 max-w-[62ch] text-[17px] leading-[1.65] text-ink-foreground/80">
+              Svarene i ChatGPT, Claude og Gemini hentes fra nettsider som er
+              strukturert slik at modellene forstår dem. Er ikke dere der, er
+              det konkurrenten som blir anbefalt.
+            </p>
+            <div className="mt-12 grid gap-8 border-t border-ink-foreground/15 pt-10 sm:grid-cols-3">
+              {whyAiPoints.map((point, i) => (
+                <div key={point.title}>
+                  <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-ink-foreground/45">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <p className="mt-2 font-medium text-ink-foreground">
+                    {point.title}
+                  </p>
+                  <p className="mt-1.5 text-[14.5px] leading-[1.6] text-ink-foreground/70">
+                    {point.body}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section id="priser" className="scroll-mt-24 px-4 py-14 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1280px]">
+          <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
+            Synlighet &amp; vekst
+          </span>
+          <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
+            Velg pakken som passer dere
+          </h2>
+          <p className="mt-3 max-w-[56ch] text-[17px] leading-[1.6] text-foreground/70">
+            Alle pakker er løpende med tre måneders oppsigelse.
+          </p>
+
+          <div className="mt-10 grid gap-[22px] sm:grid-cols-3">
+            {packages.map((pkg) => (
+              <div
+                key={pkg.name}
+                className={`group relative flex h-full flex-col rounded-[26px] border-[1.5px] bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px] ${
+                  pkg.highlighted ? "border-brand" : "border-border"
+                }`}
+              >
+                {pkg.highlighted && (
+                  <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
+                    Mest valgt
+                  </span>
+                )}
+
+                <span className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-brand">
+                  {pkg.name}
+                </span>
+                <div className="mt-3 flex items-baseline gap-1.5">
+                  <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">
+                    kr
+                  </span>
+                  <span className="whitespace-nowrap font-heading text-[32px] font-normal leading-none text-foreground sm:text-[46px]">
+                    {pkg.price}
+                  </span>
+                  <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">
+                    /mnd
+                  </span>
+                </div>
+                <p className="mt-3 text-[14.5px] leading-[1.5] text-foreground/70">
+                  {pkg.body}
+                </p>
+
+                <ul className="mt-6 space-y-2.5 border-t border-border pt-6 sm:mt-7 sm:space-y-3">
+                  {pkg.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-2.5 sm:gap-3">
+                      <Check
+                        className="size-[15px] shrink-0 text-brand sm:size-[17px]"
+                        strokeWidth={2.5}
+                      />
+                      <span className="text-[13.5px] text-foreground/85 sm:text-[14.5px]">
+                        {feature}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex-1" />
+                <a
+                  href="/kontakt"
+                  className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3.5 text-base font-normal transition-colors duration-200 ${
+                    pkg.highlighted
+                      ? "bg-ink text-ink-foreground hover:bg-brand"
+                      : "border border-border bg-transparent text-foreground group-hover:border-ink group-hover:bg-ink group-hover:text-ink-foreground"
+                  }`}
+                >
+                  Kom i gang
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Referanse */}
+      <section className="px-4 py-14 sm:px-6 lg:px-10">
+        <div className="mx-auto grid max-w-[1180px] gap-12 lg:grid-cols-2 lg:items-center lg:gap-[60px]">
+          <div className="relative">
+            <div className="aspect-[4/3] overflow-hidden rounded-[var(--radius)]">
+              <Image
+                src="/team-meeting.jpg"
+                alt="Reboot-teamet i et møte rundt et bord"
+                width={1200}
+                height={900}
+                className="size-full object-cover"
+              />
+            </div>
+            <span
+              aria-hidden
+              className="absolute -left-2 -top-2 hidden text-[40px] leading-none text-foreground/50 md:block"
+            >
+              ✳
+            </span>
+          </div>
+          <div>
+            <blockquote className="text-balance font-heading text-[clamp(22px,2.6vw,28px)] font-medium leading-[1.35] tracking-[-0.01em] text-foreground">
+              «Etter et halvt år ligger vi øverst på søkene som betyr noe, og
+              nye kunder forteller at de fant oss via ChatGPT.»
+            </blockquote>
+            <p className="mt-6 font-medium text-foreground">
+              Kristine Jørstad Bock
+            </p>
+            <p className="mt-0.5 text-[14.5px] text-foreground/60">OBOS</p>
+            <div className="mt-6">
+              <Link
+                href="/referanser"
+                className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
+              >
+                Se referanser
+                <ArrowUpRight className="size-4" aria-hidden />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="px-6 pt-7 pb-16">
+        <div className="mx-auto max-w-[700px]">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
+            Ofte stilte spørsmål om SEO og AI-svar
+          </h2>
+          <div className="mt-8">
+            <FaqList
+              items={faqItems.map(({ question, answer }) => ({ question, answer }))}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="px-4 pb-[80px] pt-16 sm:px-6 lg:px-10 lg:pb-[100px]">
+        <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[var(--radius)] border-[1.5px] border-border bg-[#fcf2ec] px-6 py-16 text-center sm:px-12">
+          <span
+            aria-hidden
+            className="absolute left-[8%] top-10 hidden text-[38px] leading-none text-brand/40 lg:block"
+          >
+            ✳
+          </span>
+          <span
+            aria-hidden
+            className="absolute bottom-8 right-[8%] hidden text-[30px] leading-none text-foreground/35 lg:block"
+          >
+            ✦
+          </span>
+
+          <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">
+            Klar for å bli mer synlig?
+          </h2>
+          <p className="mx-auto mt-4 max-w-[460px] text-pretty text-lg leading-relaxed text-foreground/70">
+            Send oss en melding, så svarer vi i løpet av dagen. Uforpliktende,
+            selvfølgelig.
+          </p>
+
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
+            <a
+              href="/kontakt"
+              className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
+            >
+              Få gratis synlighetsanalyse
+            </a>
+            <a
+              href="tel:+4797675848"
+              className="inline-flex items-center gap-2 text-base font-medium text-brand transition-[gap] duration-200 hover:gap-3.5"
+            >
+              97 67 58 48
+              <ArrowUpRight className="size-4" aria-hidden />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <SiteFooter />
+    </main>
+  )
+}

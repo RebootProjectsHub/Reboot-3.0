@@ -44,6 +44,7 @@ const services = [
     ],
     variant: "checks" as const,
     cta: "Bli mer synlig",
+    href: "/tjenester/seo-og-ai-svar",
   },
   {
     id: "ai-radgivning",
