@@ -236,29 +236,27 @@ export default function SeoOgAiSvarPage() {
       {/* Numbered services list */}
       <section className="px-4 py-6 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:gap-20">
-            <div className="lg:sticky lg:top-24 lg:self-start">
-              <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
-                Spesialister på synlighet
+          <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
+            Spesialister på synlighet
+          </span>
+          <h2 className="mt-4 max-w-[720px] text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
+            SEO-tjenester fra Reboot
+          </h2>
+          <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:items-center lg:gap-20">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius)] lg:sticky lg:top-24">
+              <Image
+                src="/team-whiteboard.jpg"
+                alt="Reboot-teamet planlegger synlighetsarbeid ved et whiteboard"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 40vw"
+              />
+              <span
+                aria-hidden
+                className="absolute -bottom-3 -right-3 hidden text-[46px] leading-none text-brand md:block"
+              >
+                ✦
               </span>
-              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
-                SEO-tjenester fra Reboot
-              </h2>
-              <div className="relative mt-14 aspect-[4/5] overflow-hidden rounded-[var(--radius)]">
-                <Image
-                  src="/team-whiteboard.jpg"
-                  alt="Reboot-teamet planlegger synlighetsarbeid ved et whiteboard"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                />
-                <span
-                  aria-hidden
-                  className="absolute -bottom-3 -right-3 hidden text-[46px] leading-none text-brand md:block"
-                >
-                  ✦
-                </span>
-              </div>
             </div>
             <ol className="divide-y divide-border border-y border-border">
               {services.map((service, i) => (
@@ -298,9 +296,7 @@ export default function SeoOgAiSvarPage() {
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`group relative flex h-full flex-col rounded-[26px] border-[1.5px] bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px] ${
-                  pkg.highlighted ? "border-brand" : "border-border"
-                }`}
+                className="group relative flex h-full flex-col rounded-[26px] border-[1.5px] border-border bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px]"
               >
                 {pkg.highlighted && (
                   <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
@@ -343,11 +339,7 @@ export default function SeoOgAiSvarPage() {
                 <div className="flex-1" />
                 <a
                   href="/kontakt"
-                  className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3.5 text-base font-normal transition-colors duration-200 ${
-                    pkg.highlighted
-                      ? "bg-ink text-ink-foreground hover:bg-brand"
-                      : "border border-border bg-transparent text-foreground group-hover:border-ink group-hover:bg-ink group-hover:text-ink-foreground"
-                  }`}
+                  className="mt-8 inline-flex items-center justify-center rounded-full border border-border bg-transparent px-6 py-3.5 text-base font-normal text-foreground transition-colors duration-200 group-hover:border-ink group-hover:bg-ink group-hover:text-ink-foreground"
                 >
                   Kom i gang
                 </a>
