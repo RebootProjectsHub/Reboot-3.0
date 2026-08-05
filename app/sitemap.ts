@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tjenester/shopify/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/tjenester/skreddersydd-nettside/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/tjenester/seo-og-ai-svar/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/tjenester/ai-radgivning/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/tjenester/wordpress/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/tjenester/woocommerce/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/nettside-priser/`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
