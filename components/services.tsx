@@ -5,7 +5,7 @@ const services = [
   {
     number: "01",
     title: "Ny nettside / redesign",
-    label: "Ny nettside & redesign",
+    label: "Hjemmeside & webdesign",
     href: "/tjenester/skreddersydd-nettside",
   },
   {
