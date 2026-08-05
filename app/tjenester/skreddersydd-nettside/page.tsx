@@ -326,13 +326,14 @@ export default function SkreddersyddNettsidePage() {
                 <h2 className="mt-5 text-balance font-heading text-[clamp(28px,3.2vw,40px)] font-normal leading-[1.12] tracking-[-0.02em]">
                   Nettside for Höegh Evi
                 </h2>
-                <p className="mt-5 text-[17px] leading-[1.65] text-ink-foreground/80">
-                  For Höegh Evi, som leverer energiløsninger internasjonalt,
-                  designet og bygde vi en nettside i WordPress som gjør et
-                  komplekst fagfelt ryddig og tydelig. Vi står for design,
-                  utvikling og løpende drift, slik at siden holder seg rask,
-                  sikker og oppdatert.
-                </p>
+                                <blockquote className="mt-6 text-[17px] italic leading-[1.6] text-ink-foreground/70">
+                  «Takk for utmerket arbeid. Reboot har vært gjennomgående
+                  positive og løsningsorienterte!»
+                  <footer className="mt-2 not-italic text-[13.5px] text-ink-foreground/55">
+                    Per Øystein Feet, Global Operations &amp; Infrastructure,
+                    Höegh Evi
+                  </footer>
+                </blockquote>
                 <ul className="mt-6 flex flex-wrap gap-2">
                   {["WordPress", "Webdesign", "Hosting & drift"].map((chip) => (
                     <li
@@ -343,14 +344,6 @@ export default function SkreddersyddNettsidePage() {
                     </li>
                   ))}
                 </ul>
-                <blockquote className="mt-6 text-[15.5px] italic leading-[1.6] text-ink-foreground/70">
-                  «Takk for utmerket arbeid. Reboot har vært gjennomgående
-                  positive og løsningsorienterte!»
-                  <footer className="mt-2 not-italic text-[13.5px] text-ink-foreground/55">
-                    Per Øystein Feet, Global Operations &amp; Infrastructure,
-                    Höegh Evi
-                  </footer>
-                </blockquote>
                 <div className="mt-8">
                   <Link
                     href="/ny-nettside/hoegh-evi"
