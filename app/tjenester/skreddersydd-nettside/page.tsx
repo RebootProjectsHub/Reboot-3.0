@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ArrowUpRight } from "lucide-react"
+import { ArrowRight, ArrowUpRight, Star } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { ServicesCta } from "@/components/services-cta"
@@ -13,25 +13,6 @@ export const metadata = pageMetadata({
     "Reboot designer og bygger skreddersydde nettsider for norske bedrifter i Nydalen, Oslo. Raske, moderne sider bygget for å konvertere, med fastpris og norsk support.",
   path: "/tjenester/skreddersydd-nettside",
 })
-
-const whatYouGet = [
-  {
-    title: "Ny side eller redesign",
-    body: "Fra bunnen, eller nytt liv til den du har.",
-  },
-  {
-    title: "Bygget for å konvertere",
-    body: "Rask, sikker og enkel å oppdatere selv.",
-  },
-  {
-    title: "Synlig fra dag én",
-    body: "På Google og i AI-søk, ikke som et tillegg.",
-  },
-  {
-    title: "Ekte folk bak",
-    body: "Ingen mellomledd. Fastpris. Kaffe i Nydalen.",
-  },
-]
 
 const faqItems = [
   {
@@ -192,22 +173,126 @@ export default function SkreddersyddNettsidePage() {
       </section>
 
       {/* What you get */}
-      <section className="px-6 pb-14 sm:pb-16">
-        <div className="mx-auto max-w-[1040px]">
-          <span className="block text-center font-mono text-xs uppercase tracking-[0.18em] text-foreground/45">
+      <section className="px-4 pb-14 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-[1280px]">
+          <span className="block font-mono text-xs uppercase tracking-[0.1em] text-brand">
             Hva du får
           </span>
-          <div className="mt-8 grid gap-x-10 gap-y-9 text-center sm:grid-cols-2 lg:grid-cols-4">
-            {whatYouGet.map((item) => (
-              <div key={item.title}>
-                <h3 className="font-heading text-[19px] font-normal leading-[1.25] text-foreground">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-[15px] leading-[1.6] text-foreground/65">
-                  {item.body}
-                </p>
+          <h2 className="mt-3 max-w-[520px] text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
+            En nettside som jobber for deg
+          </h2>
+
+          <div className="mt-8 grid gap-5 lg:grid-cols-2">
+            {/* Image */}
+            <div className="relative min-h-[320px] overflow-hidden rounded-[26px] lg:row-span-2">
+              <Image
+                src="/sable-flow-o-6GhmpELnw-unsplash2.jpg"
+                alt="Reboot-teamet i en idémyldring rundt en tavle"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 40 44"
+                className="absolute -bottom-3 -right-3 hidden h-11 w-10 text-brand md:block"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M15 11 C12 8, 18 6, 15 3" strokeWidth="1.75" />
+                <path d="M23 11 C20 8, 26 6, 23 3" strokeWidth="1.75" />
+                <path
+                  d="M9 19 H29 V20 C29 22, 24 23, 19 23 C14 23, 9 22, 9 20 Z"
+                  fill="currentColor"
+                  fillOpacity="0.25"
+                  stroke="none"
+                />
+                <path
+                  d="M9 20 C9 22, 14 23, 19 23 C24 23, 29 22, 29 20"
+                  strokeWidth="1.5"
+                />
+                <path d="M7 17 H31 V27 C31 32, 27 35, 22 35 H16 C11 35, 7 32, 7 27 Z" />
+                <path d="M31 20 H34 C37 20, 37 27, 34 27 H31" />
+                <path d="M5 40 H33" />
+              </svg>
+            </div>
+
+            {/* SEO og AI-søk */}
+            <div className="relative overflow-hidden rounded-[26px] bg-ink px-7 py-8 text-ink-foreground sm:px-8">
+              <span
+                aria-hidden
+                className="absolute right-6 top-6 text-[20px] leading-none text-ink-foreground/25"
+              >
+                ✦
+              </span>
+              <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
+                SEO og AI-søk
+              </span>
+              <h3 className="mt-4 font-heading text-[21px] font-normal leading-[1.2]">
+                Synlig fra dag én
+              </h3>
+              <p className="mt-2.5 text-[15px] leading-[1.6] text-ink-foreground/75">
+                Vi bygger inn synlighet fra start, så dere blir funnet både
+                hos Google og når folk spør ChatGPT eller Gemini.
+              </p>
+            </div>
+
+            {/* Bygget for å konvertere */}
+            <div className="rounded-[26px] border border-border bg-card px-7 py-8 sm:px-8">
+              <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
+                Rask og sikker
+              </span>
+              <h3 className="mt-4 font-heading text-[21px] font-normal leading-[1.2] text-foreground">
+                Bygget for å konvertere
+              </h3>
+              <p className="mt-2.5 text-[15px] leading-[1.6] text-foreground/70">
+                Gjennomtenkt struktur og tekst som leder besøkende dit du vil
+                ha dem, på en side du enkelt oppdaterer selv.
+              </p>
+            </div>
+
+            {/* Ny side eller redesign */}
+            <div className="rounded-[26px] border border-border bg-card px-7 py-8 sm:px-8">
+              <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
+                Ny nettside &amp; redesign
+              </span>
+              <h3 className="mt-4 font-heading text-[21px] font-normal leading-[1.2] text-foreground">
+                Ny side eller redesign
+              </h3>
+              <p className="mt-2.5 text-[15px] leading-[1.6] text-foreground/70">
+                Fra bunnen av eller redesign av eksisterende side, leverer vi
+                moderne, raske og skreddersydde nettsider.
+              </p>
+              <a
+                href="/kontakt"
+                className="mt-5 inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
+              >
+                Kontakt oss
+              </a>
+            </div>
+
+            {/* Anmeldelse */}
+            <div className="rounded-[26px] bg-brand/25 px-7 py-8 sm:px-8">
+              <div className="flex" aria-hidden="true">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className="size-4 fill-brand text-brand" />
+                ))}
               </div>
-            ))}
+              <blockquote className="mt-4 text-[15px] leading-[1.6] text-foreground">
+                «Vi er veldig fornøyde med vår nye nettside, anbefales på det
+                varmeste!»
+              </blockquote>
+              <p className="mt-4 text-[14px] font-medium text-foreground">
+                Kristine Jærstad Bock
+              </p>
+              <p className="text-[13px] text-foreground/60">OBOS</p>
+              <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/45">
+                5,0 på Google
+              </p>
+            </div>
           </div>
         </div>
       </section>
