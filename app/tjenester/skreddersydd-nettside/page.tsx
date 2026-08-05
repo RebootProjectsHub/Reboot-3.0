@@ -17,27 +17,27 @@ export const metadata = pageMetadata({
 const deliverables = [
   {
     title: "Ny nettside fra bunnen",
-    body: "En komplett nettside designet rundt merkevaren, budskapet og kundene dine. Vi bygger alt fra grunnen, så du sitter igjen med en side som er din, ikke en mal alle andre også bruker.",
+    body: "En side bygget rundt merkevaren din, ikke en mal alle andre også bruker.",
   },
   {
     title: "Redesign av dagens side",
-    body: "Har du en side som funker, men ser datert ut eller er tung å drifte? Vi fornyer den fra kildekoden i bunn til det visuelle på toppen, så den blir rask, responsiv og enkel å vedlikeholde igjen.",
+    body: "Vi fornyer den gamle siden fra kildekoden til det visuelle. Rask og responsiv igjen.",
   },
   {
     title: "Design som konverterer",
-    body: "En pen side er ikke nok. Vi bygger struktur, tekst og knapper som leder besøkende dit du vil ha dem, enten målet er henvendelser, salg eller påmeldinger.",
+    body: "Struktur, tekst og knapper som leder besøkende dit du vil ha dem.",
   },
   {
     title: "Rask, sikker og moderne",
-    body: "Sidene lastes raskt, tåler trafikk og fungerer like godt på mobil som på skjerm. Bygget på moderne teknologi som holder seg oppdatert over tid.",
+    body: "Laster raskt, tåler trafikk, funker like godt på mobil som skjerm.",
   },
   {
     title: "Du styrer innholdet selv",
-    body: "Du får redigeringstilgang og kan oppdatere tekst, bilder og nyheter selv, uten å gå via oss for hver lille endring. Vil du heller at vi tar det, ordner vi det også.",
+    body: "Rediger tekst og bilder når du vil. Eller la oss ta det.",
   },
   {
     title: "Synlig fra dag én",
-    body: "Vi bygger siden SEO-optimalisert fra bunnen, så dere blir funnet på Google og i AI-søk som ChatGPT, Claude og Gemini, ikke som et tillegg vi skrur på i etterkant.",
+    body: "SEO-optimalisert fra bunnen, både på Google og i AI-søk.",
   },
 ]
 
@@ -179,9 +179,8 @@ export default function SkreddersyddNettsidePage() {
         </h1>
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
-          Vi designer og bygger nettsider som gjør besøkende til kunder.
-          Raske, moderne og enkle å oppdatere selv, enten du starter fra
-          bunnen eller vil friske opp en side du allerede har.
+          Raske, moderne nettsider som gjør besøkende til kunder. Ny side fra
+          bunnen, eller nytt liv til den du har.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -191,6 +190,12 @@ export default function SkreddersyddNettsidePage() {
           >
             Få et uforpliktende tilbud
           </a>
+          <Link
+            href="/nettside-priser"
+            className="inline-flex items-center text-base font-medium text-foreground/70 underline-offset-4 transition-colors duration-200 hover:text-foreground hover:underline"
+          >
+            Se priser
+          </Link>
         </div>
       </section>
 
