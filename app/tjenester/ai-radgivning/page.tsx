@@ -185,7 +185,7 @@ export default function AiRadgivningPage() {
           <div className="grid gap-12 rounded-[var(--radius)] bg-ink px-8 py-12 text-ink-foreground sm:px-12 sm:py-14 lg:grid-cols-[1fr_1.1fr] lg:gap-16 lg:px-16">
             <div>
               <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
-                Kjenner du deg igjen?
+                Vanlige utfordringer
               </span>
               <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.15] tracking-[-0.02em] text-ink-foreground">
                 Kjenner du deg igjen?
