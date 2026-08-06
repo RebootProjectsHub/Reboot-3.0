@@ -15,3 +15,7 @@ For higher-risk changes — component or logic edits, routing, metadata/SEO, bui
 - Verify as normal (type check, local dev server, live confirmation as needed).
 
 If unsure which category a change falls in, treat it as higher-risk and verify.
+
+## Commit message convention
+
+Short, single-line, imperative summary (e.g. "Update SNU reference image to SNU-Reboot.webp", "Remove quote strip from skreddersydd-nettside bento section"). No body text, no bullet lists, no Co-Authored-By trailer — this repo's history is entirely one-liners without it.
