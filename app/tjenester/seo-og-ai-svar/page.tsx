@@ -16,10 +16,10 @@ export const metadata = pageMetadata({
 const services = [
   {
     title: "Teknisk SEO og innholdsoptimalisering",
-    body: "Hastighet, struktur og indeksering i orden, og innhold spisset mot det kundene dine faktisk søker etter.",
+    body: "Hastighet, struktur og indeksering i orden og innhold spisset mot det kundene dine faktisk søker etter.",
   },
   {
-    title: "Synlighet i AI-svar og answer engines",
+    title: "Synlighet i AI-svar og chatbots",
     body: "Vi strukturerer innholdet slik at ChatGPT, Claude og Gemini finner, forstår og anbefaler bedriften din.",
   },
   {
@@ -28,53 +28,53 @@ const services = [
   },
   {
     title: "Måling og rapportering av resultater",
-    body: "En kort månedlig rapport som viser hva som fungerer, og hva vi gjør videre.",
+    body: "En kort månedlig rapport som viser hva som fungerer og hva vi gjør videre.",
   },
 ]
 
 const whyAiPoints = [
   {
     title: "Folk googler mindre og spør mer",
-    body: "Spørsmål som før var ti søk er nå én samtale, med ett anbefalt svar.",
+    body: "Folk skriver ikke lenger søkeord. De stiller spørsmål og stoler på svaret de får.",
   },
   {
     title: "AI-svar siterer få kilder",
-    body: "Der Google viser ti blå lenker, trekker et AI-svar frem to eller tre. Du vil være én av dem.",
+    body: "Der Google viser ti blå lenker, trekker et AI-svar frem to eller tre. Vi hjelper deg å bli én av dem.",
   },
   {
     title: "Godt SEO-arbeid teller dobbelt",
-    body: "Det samme grunnarbeidet løfter dere i både Google-søk og AI-svar.",
+    body: "Riktig grunnarbeid løfter dere i både Google-søk og AI-svar.",
   },
 ]
 
 const packages = [
   {
-    name: "Start",
-    price: "7 900",
-    body: "For deg som vil ha orden på det grunnleggende.",
-    features: ["Teknisk SEO-gjennomgang", "Google Bedriftsprofil", "Månedlig rapport"],
+    name: "Light",
+    price: "4 900",
+    body: "Bli mer synlig i både Google og AI-svar.",
+    features: ["Google Bedriftsprofil", "Månedlig rapport", "Synlighet i AI-svar" "Innholdsproduksjon"],
   },
   {
-    name: "Vekst",
-    price: "14 900",
-    body: "For deg som vil vokse i både Google og AI-svar.",
+    name: "Medium",
+    price: "11 900",
+    body: "Se resultater raskere og bli værende i toppen.",
     features: [
       "Alt i Start",
       "Innholdsoptimalisering",
-      "Synlighet i AI-svar",
-      "Kvartalsvis strategimøte",
+      "Produksjon av artikler og fagstoff",
+      "Nye landingssider",
     ],
     highlighted: true,
   },
   {
-    name: "Partner",
-    price: "24 900",
-    body: "For deg som vil ha en fast partner på synlighet.",
+    name: "Komplett",
+    price: "19 900",
+    body: "Flere veier inn til nettsiden, ikke bare søk.",
     features: [
       "Alt i Vekst",
-      "Løpende innholdsproduksjon",
-      "Dedikert rådgiver",
-      "Svar i løpet av dagen",
+      "Større SEO-team",
+      "Utvidet innholdsproduksjon",
+      "Utvidet nettverk for trafikk",
     ],
   },
 ]
@@ -121,7 +121,7 @@ const faqItems = [
     answer: (
       <p>
         Vi sjekker hvordan dere ligger an i Google-søk, lokale søk og
-        AI-svar, og sender en kort rapport med de tre viktigste grepene. Helt
+        AI-svar og sender en kort rapport med de tre viktigste grepene. Helt
         uforpliktende.
       </p>
     ),
@@ -169,7 +169,7 @@ export default function SeoOgAiSvarPage() {
         </span>
 
         <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
-          SEO og AI-svar i Oslo
+          SEO og AI-søk
         </h1>
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
@@ -209,7 +209,7 @@ export default function SeoOgAiSvarPage() {
                 </p>
                 <p className="mt-4 text-[17px] leading-[1.7] text-ink-foreground/80">
                   Vi jobber med begge deler samtidig: teknisk SEO og innhold
-                  som løfter dere i Google, og struktur som gjør at
+                  som løfter dere på Google, og struktur som gjør at
                   AI-modellene forstår og anbefaler bedriften din.
                 </p>
               </div>
@@ -289,7 +289,7 @@ export default function SeoOgAiSvarPage() {
             Velg pakken som passer dere
           </h2>
           <p className="mt-3 max-w-[56ch] text-[17px] leading-[1.6] text-foreground/70">
-            Alle pakker er løpende med tre måneders oppsigelse.
+            Vi tar oss av synlighet i både Google og AI-svar. Valg av pakke avgjør hvor raskt dere ser resultater og hvor godt posisjonene sitter over tid.
           </p>
 
           <div className="mt-10 grid gap-[22px] sm:grid-cols-3">
@@ -355,7 +355,7 @@ export default function SeoOgAiSvarPage() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden rounded-[var(--radius)]">
               <Image
-                src="/team-meeting.jpg"
+                src="/SEO-Reboot-1.jpg"
                 alt="Reboot-teamet i et møte rundt et bord"
                 width={1200}
                 height={900}
@@ -370,14 +370,14 @@ export default function SeoOgAiSvarPage() {
             </span>
           </div>
           <div>
-            <blockquote className="text-balance font-heading text-[clamp(22px,2.6vw,28px)] font-medium leading-[1.35] tracking-[-0.01em] text-foreground">
-              «Etter et halvt år ligger vi øverst på søkene som betyr noe, og
+            <blockquote className="text-balance font-heading text-[clamp(22px,2.6vw,28px)] leading-[1.35] tracking-[-0.01em] text-foreground">
+              «Vi har nå veldig gode posisjoner på relevante søk og
               nye kunder forteller at de fant oss via ChatGPT.»
             </blockquote>
             <p className="mt-6 font-medium text-foreground">
-              Kristine Jørstad Bock
+              Christina Håland
             </p>
-            <p className="mt-0.5 text-[14.5px] text-foreground/60">OBOS</p>
+            <p className="mt-0.5 text-[14.5px] text-foreground/60">Ved På Døra</p>
             <div className="mt-6">
               <Link
                 href="/referanser"
