@@ -44,9 +44,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          # Pages deployments for this repo slowed from ~3.5min to ~6min over
-          # 2026-08-06 and then started overshooting the action's default
-          # 10-minute timeout, failing four deploys in a row on builds that
-          # were themselves fine. Wait longer rather than abort a good build.
-          timeout: 1800000
