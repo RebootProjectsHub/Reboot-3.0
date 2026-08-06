@@ -148,12 +148,12 @@ export default function SkreddersyddNettsidePage() {
         </span>
 
         <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
-          Skreddersydd nettside i Oslo
+          Skreddersydde nettsider
         </h1>
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
           Raske, moderne nettsider som gjør besøkende til kunder. Ny side fra
-          bunnen, eller nytt liv til den du har.
+          bunnen eller nytt liv til den du har.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -188,7 +188,7 @@ export default function SkreddersyddNettsidePage() {
               <div className="flex flex-col">
                 <div className="pb-7">
                   <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
-                    Ny nettside &amp; redesign
+                    Ny hjemmeside &amp; redesign
                   </span>
                   <h3 className="mt-3 font-heading text-[30px] font-normal leading-[1.14] tracking-[-0.01em]">
                     Ny side eller redesign
@@ -228,7 +228,7 @@ export default function SkreddersyddNettsidePage() {
               <div className="flex flex-col gap-5">
                 <div className="relative min-h-[280px] flex-1 overflow-hidden rounded-[22px] lg:min-h-[380px]">
                   <Image
-                    src="/team-meeting.jpg"
+                    src="/Reboot-Norge-ipad-scaled.jpg"
                     alt="Reboot-teamet i møte"
                     fill
                     className="object-cover"
@@ -251,7 +251,7 @@ export default function SkreddersyddNettsidePage() {
       <section className="px-6 pb-16 pt-14 sm:pt-16">
         <div className="mx-auto max-w-[700px]">
           <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
-            Ofte stilte spørsmål om skreddersydde nettsider
+            Vanlige spørsmål
           </h2>
           <div className="mt-8">
             <FaqList
