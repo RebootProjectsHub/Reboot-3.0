@@ -125,6 +125,6 @@ export const references: Reference[] = [
   {
     name: "Certnor",
     url: "https://certnor.no/",
-    image: "/referanser/Reboot-Certnor.png",
+    image: "/referanser/Certnor-Reboot.webp",
   },
 ]
