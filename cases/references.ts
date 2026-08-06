@@ -117,4 +117,14 @@ export const references: Reference[] = [
     url: "https://www.bekkestuaks.no/",
     image: "/referanser/bekkestua.png",
   },
+  {
+    name: "SNU",
+    url: "https://snuorg.no/",
+    image: "/referanser/Reboot-SNU.png",
+  },
+  {
+    name: "Certnor",
+    url: "https://certnor.no/",
+    image: "/referanser/Reboot-Certnor.png",
+  },
 ]
