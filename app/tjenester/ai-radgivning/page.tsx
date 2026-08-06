@@ -160,7 +160,7 @@ export default function AiRadgivningPage() {
         </span>
 
         <h1 className="mt-4 mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
-          AI-rådgivning for bedrifter i Oslo
+          AI-rådgivning for bedrifter i Norge
         </h1>
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
@@ -188,11 +188,11 @@ export default function AiRadgivningPage() {
                 Kjenner du deg igjen?
               </span>
               <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.15] tracking-[-0.02em] text-ink-foreground">
-                Du trenger ikke bli et AI-selskap for å ha nytte av AI
+                Kjenner du deg igjen?
               </h2>
               <div className="relative mt-6 aspect-[3/2] overflow-hidden rounded-[var(--radius)]">
                 <Image
-                  src="/team-whiteboard.jpg"
+                  src="/Felles5.webp"
                   alt="Reboot-teamet kartlegger AI-muligheter ved et whiteboard"
                   fill
                   className="object-cover"
@@ -299,7 +299,7 @@ export default function AiRadgivningPage() {
       <section className="px-6 pb-16">
         <div className="mx-auto max-w-[700px]">
           <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
-            Ofte stilte spørsmål om AI i bedriften
+            FAQ: Bruk av AI som verktøy
           </h2>
           <div className="mt-8">
             <FaqList
