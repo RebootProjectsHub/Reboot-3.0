@@ -2,7 +2,11 @@
 
 Match verification effort to the risk of the change. Do not run the same live-deploy check on a one-line content edit as on a logic change.
 
-For low-risk changes — swapping an image path, editing copy/text, changing a link target, or any edit to a data/content file (e.g. references.ts, page copy) that doesn't touch logic, components, routing, or build config:
+Low-risk changes fall into two categories:
+- Content/data edits: swapping an image path, editing copy/text, changing a link target, or any edit to a data/content file (e.g. references.ts, page copy).
+- Style-only edits: changing a color, spacing, or other CSS/Tailwind value — even in a component or page file — as long as no logic, props, or markup structure changes.
+
+For these:
 - Make the edit, confirm it with a git diff, commit and push.
 - Then stop. Do not start a dev server, do not inspect network requests, and do not poll or wait for the GitHub Pages deploy to finish.
 - A correct git diff is sufficient proof for these.
