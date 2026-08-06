@@ -185,7 +185,7 @@ export default function SkreddersyddNettsidePage() {
 
             <div className="grid gap-10 lg:grid-cols-[1fr_420px] lg:gap-16">
               {/* Text stack */}
-              <div className="flex flex-col">
+              <div className="order-2 flex flex-col lg:order-1">
                 <div className="pb-7">
                   <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
                     Ny hjemmeside &amp; redesign
@@ -225,7 +225,7 @@ export default function SkreddersyddNettsidePage() {
               </div>
 
               {/* Photo + CTA */}
-              <div className="flex flex-col gap-5">
+              <div className="order-1 flex flex-col gap-5 lg:order-2">
                 <div className="relative min-h-[280px] flex-1 overflow-hidden rounded-[22px] lg:min-h-[380px]">
                   <Image
                     src="/Reboot-Norge-ipad-scaled.jpg"
