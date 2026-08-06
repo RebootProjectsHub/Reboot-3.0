@@ -120,7 +120,7 @@ export const references: Reference[] = [
   {
     name: "SNU",
     url: "https://snuorg.no/",
-    image: "/referanser/Reboot-SNU.png",
+    image: "/referanser/SNU-Reboot.webp",
   },
   {
     name: "Certnor",
