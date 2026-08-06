@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ArrowUpRight, Star } from "lucide-react"
+import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { ServicesCta } from "@/components/services-cta"
@@ -243,41 +243,6 @@ export default function SkreddersyddNettsidePage() {
                 </a>
               </div>
             </div>
-
-            {/* Quote */}
-            <figure className="mt-10 flex flex-col gap-5 border-t border-ink-foreground/20 pt-7 sm:flex-row sm:items-center sm:gap-9 lg:mt-14 lg:pt-9">
-              <div className="flex shrink-0" aria-hidden="true">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="size-4 fill-brand text-brand" />
-                ))}
-              </div>
-              <blockquote className="flex-1 font-heading text-[21px] font-normal leading-[1.4]">
-                «Vi er veldig fornøyde med vår nye nettside og partner for
-                drift og vedlikehold. Profesjonaliteten og oppfølgingen
-                anbefales på det varmeste!»
-              </blockquote>
-              <figcaption className="flex shrink-0 items-center gap-7">
-                <span className="text-[15px] text-ink-foreground">
-                  <span className="font-semibold">Kristine Jørstad Bock</span>
-                  <span className="text-ink-foreground/70"> · OBOS</span>
-                </span>
-                <span
-                  role="img"
-                  aria-label="OBOS"
-                  className="inline-block h-6 w-[68px] bg-ink-foreground opacity-90"
-                  style={{
-                    WebkitMaskImage: "url(/logos/obos.svg)",
-                    maskImage: "url(/logos/obos.svg)",
-                    WebkitMaskRepeat: "no-repeat",
-                    maskRepeat: "no-repeat",
-                    WebkitMaskPosition: "center",
-                    maskPosition: "center",
-                    WebkitMaskSize: "contain",
-                    maskSize: "contain",
-                  }}
-                />
-              </figcaption>
-            </figure>
           </div>
         </div>
       </section>
