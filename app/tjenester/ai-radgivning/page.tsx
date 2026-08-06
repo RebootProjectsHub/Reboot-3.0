@@ -25,31 +25,26 @@ const services = [
     span: "lg:col-span-3",
     num: "01",
     title: "AI-kartlegging av bedriften din",
-    body: "Vi går gjennom hvordan dere jobber i dag og finner oppgavene der AI gir størst gevinst. Dere får en konkret prioritert liste, ikke en generell rapport.",
   },
   {
     span: "lg:col-span-3",
     num: "02",
     title: "Workshop og opplæring for teamet",
-    body: "Praktiske økter der de ansatte lærer å bruke ChatGPT, Claude og Copilot på egne arbeidsoppgaver. Alle går ut døra med noe de kan bruke samme dag.",
   },
   {
     span: "lg:col-span-2",
     num: "03",
     title: "Riktige verktøy og trygt oppsett",
-    body: "Vi hjelper dere å velge verktøy, sette opp kontoer og lage enkle kjøreregler for hva som kan deles med AI, slik at dere er trygge på personvern og datasikkerhet.",
   },
   {
     span: "lg:col-span-2",
     num: "04",
     title: "Automatisering av rutineoppgaver",
-    body: "Gjentakende oppgaver som oppfølging, rapportering og dokumenthåndtering kan ofte automatiseres helt eller delvis. Vi bygger løsningene sammen med dere.",
   },
   {
     span: "lg:col-span-2",
     num: "05",
     title: "Løpende sparring når dere trenger det",
-    body: "AI-verktøyene endrer seg fort. Vi er tilgjengelige for spørsmål og holder dere oppdatert på det som faktisk er relevant for dere.",
   },
 ]
 
@@ -188,7 +183,7 @@ export default function AiRadgivningPage() {
                 Vanlige utfordringer
               </span>
               <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.15] tracking-[-0.02em] text-ink-foreground">
-                Kjenner du deg igjen?
+                De fleste starter akkurat her
               </h2>
               <div className="relative mt-6 aspect-[3/2] overflow-hidden rounded-[var(--radius)]">
                 <Image
@@ -200,7 +195,7 @@ export default function AiRadgivningPage() {
                 />
               </div>
             </div>
-            <div className="flex flex-col pt-1">
+            <div className="flex flex-col justify-center">
               <ul>
                 {pains.map((pain) => (
                   <li
@@ -227,7 +222,7 @@ export default function AiRadgivningPage() {
       <section className="px-4 pb-14 sm:px-6 sm:pb-16 lg:px-10">
         <div className="mx-auto max-w-[1280px]">
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
-            Praktisk hjelp, ikke buzzwords
+            Praktisk hjelp
           </span>
           <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
             AI-rådgivning fra Reboot
@@ -237,18 +232,18 @@ export default function AiRadgivningPage() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className={`flex flex-col rounded-[26px] border-[1.5px] border-transparent bg-[#fcf2ec] px-7 pb-8 pt-7 transition-[transform,border-color] duration-300 hover:-translate-y-1.5 hover:border-brand ${service.span}`}
+                className={`flex flex-col rounded-[26px] bg-card px-7 pb-8 pt-7 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:bg-secondary ${service.span}`}
               >
                 <span className="font-mono text-xs font-bold text-brand">
                   {service.num}
                 </span>
-                <div className="mt-[18px] mb-5 h-1 w-[46px] rounded-full bg-brand" />
+                <div className="mt-[18px] mb-5 flex items-center gap-[2px]">
+                  <div className="h-1 w-[28px] rounded-full bg-brand" />
+                  <div className="h-1 w-[16px] rounded-full bg-brand/25" />
+                </div>
                 <h3 className="font-heading text-[22px] font-normal leading-[1.2] text-foreground">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-[15px] leading-[1.6] text-foreground/70">
-                  {service.body}
-                </p>
               </article>
             ))}
           </div>
