@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: '/Reboot-icon-round.png',
-    apple: '/Reboot-icon-round.png',
+    icon: '/Reboot-favicon-round.png',
+    apple: '/Reboot-favicon-round.png',
   },
   openGraph: {
     type: 'website',
