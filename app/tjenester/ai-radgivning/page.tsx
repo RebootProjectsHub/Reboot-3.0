@@ -160,8 +160,7 @@ export default function AiRadgivningPage() {
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
           Føler du at alle andre har kommet i gang med AI? Vi hjelper små og
-          mellomstore bedrifter å finne ut hvor AI faktisk gir verdi, og å ta
-          verktøyene i bruk i hverdagen.
+          mellomstore bedrifter å finne ut hvor AI faktisk gir verd.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -232,7 +231,7 @@ export default function AiRadgivningPage() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className={`flex flex-col rounded-[26px] bg-card px-7 pb-8 pt-7 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:bg-secondary ${service.span}`}
+                className={`flex flex-col rounded-[26px] bg-card px-7 pb-8 pt-7 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand hover:bg-secondary ${service.span}`}
               >
                 <span className="font-mono text-xs font-bold text-brand">
                   {service.num}
