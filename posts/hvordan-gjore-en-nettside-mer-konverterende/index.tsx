@@ -10,7 +10,7 @@ export const post: Post = {
   date: "12. februar 2026",
   dateISO: "2026-02-12",
   excerpt: "Flere besøk betyr ikke flere kunder. Slik finner du hvor nettsiden lekker salg, og hva som skal til for å få flere besøkende til å konvertere.",
-  image: `${IMG}/featured.jpg`,
+  image: `${IMG}/featured.webp`,
   imageAlt: "Hvordan gjøre en nettside mer konverterende",
   content: (
     <>
@@ -68,7 +68,7 @@ export const post: Post = {
         er alltid det samme: kan en person forstå hva du vil at de skal gjøre på fem
         sekunder. Hvis svaret er nei, har du skapt beslutningstretthet.
       </p>
-      <PostImage src={`${IMG}/1.jpg`} alt="Klar retning på en konverterende nettside" />
+      <PostImage src={`${IMG}/1.webp`} alt="Klar retning på en konverterende nettside" />
 
       <h2>Verdiforslaget må treffe umiddelbart</h2>
       <p>
@@ -119,7 +119,7 @@ export const post: Post = {
         etter grunner til å la være. Din oppgave er å fjerne de vanligste innvendingene
         før de får feste.
       </p>
-      <PostImage src={`${IMG}/2.jpg`} alt="Tillitssignaler i beslutningsøyeblikket" />
+      <PostImage src={`${IMG}/2.webp`} alt="Tillitssignaler i beslutningsøyeblikket" />
 
       <h3>Sosiale signaler og trygghet i øyeblikket</h3>
       <p>
@@ -208,7 +208,7 @@ export const post: Post = {
         ut fra ett spørsmål: hjelper dette steget brukeren nærmere første gevinst. Hvis
         ikke, kan det forenkles eller fjernes.
       </p>
-      <PostImage src={`${IMG}/3.jpg`} alt="Kort vei fra interesse til første verdi" />
+      <PostImage src={`${IMG}/3.webp`} alt="Kort vei fra interesse til første verdi" />
 
       <h2>Design for tomler, ikke mus</h2>
       <p>

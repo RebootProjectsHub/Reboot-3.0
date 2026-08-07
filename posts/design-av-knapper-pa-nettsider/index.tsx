@@ -10,7 +10,7 @@ export const post: Post = {
   date: "26. juni 2026",
   dateISO: "2026-06-26",
   excerpt: "Knapper styrer nesten alle viktige handlinger på en nettside. Godt knappdesign handler om langt mer enn farge og form – det handler om tillit.",
-  image: `${IMG}/featured.jpg`,
+  image: `${IMG}/featured.webp`,
   imageAlt: "Design av knapper på nettsider",
   content: (
     <>
@@ -42,7 +42,7 @@ export const post: Post = {
         tydeligere enn «OK», mens «Send forespørsel» gir mer mening enn «Send inn».
         Språket bør være kort, men det kan ikke være så kort at hensikten forsvinner.
       </p>
-      <PostImage src={`${IMG}/1.jpg`} alt="Knapp med tydelig visuelt uttrykk" />
+      <PostImage src={`${IMG}/1.webp`} alt="Knapp med tydelig visuelt uttrykk" />
       <p>
         Samtidig bør én beslutning ha én tydelig hovedknapp. Når flere{" "}
         <a
@@ -98,7 +98,7 @@ export const post: Post = {
         erstatter dette med egenbygde løsninger, må de også gjenskape
         funksjonaliteten som nettleseren ellers hadde levert automatisk.
       </p>
-      <PostImage src={`${IMG}/2.jpg`} alt="Skille mellom knapp og lenke i grensesnittet" />
+      <PostImage src={`${IMG}/2.webp`} alt="Skille mellom knapp og lenke i grensesnittet" />
       <p>
         Forutsigbarhet er en undervurdert form for kvalitet. Brukeren skal kunne
         forstå hva som skjer før handlingen gjennomføres. Hvis en knapp plutselig
@@ -166,7 +166,7 @@ export const post: Post = {
         gjennom små, konsistente erfaringer. Det er slik et lite grensesnittelement
         får stor betydning for hele nettsiden.
       </p>
-      <PostImage src={`${IMG}/3.jpg`} alt="Visuelt hierarki mellom primære og sekundære handlinger" />
+      <PostImage src={`${IMG}/3.webp`} alt="Visuelt hierarki mellom primære og sekundære handlinger" />
 
       <h2>Plassering som følger brukerens tankeprosess</h2>
       <p>
@@ -219,7 +219,7 @@ export const post: Post = {
         samme som god flyt. Når knappene får pusterom, blir hierarkiet klarere og
         handlingene tryggere.
       </p>
-      <PostImage src={`${IMG}/4.jpg`} alt="God plassering og avstand mellom knapper" />
+      <PostImage src={`${IMG}/4.webp`} alt="God plassering og avstand mellom knapper" />
 
       <h2>Tilgjengelighet som del av grunnarbeidet</h2>
       <p>
@@ -277,7 +277,7 @@ export const post: Post = {
         fungerer sammen, blir knappene enklere å bruke for alle, ikke bare for dem
         som er avhengige av spesifikke hjelpemidler.
       </p>
-      <PostImage src={`${IMG}/5.jpg`} alt="Tilgjengelige knapper som del av grunnarbeidet" />
+      <PostImage src={`${IMG}/5.webp`} alt="Tilgjengelige knapper som del av grunnarbeidet" />
 
       <h2>Små knapper med stor betydning</h2>
       <p>

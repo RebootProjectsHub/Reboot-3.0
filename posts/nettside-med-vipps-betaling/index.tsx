@@ -10,7 +10,7 @@ export const post: Post = {
   date: "9. juli 2025",
   dateISO: "2025-07-09",
   excerpt: "Enkel betaling gir flere salg. Med Vipps som betalingsløsning på nettsiden gjør du det enklere å si ja, for både kunden og bedriften.",
-  image: `${IMG}/featured.jpg`,
+  image: `${IMG}/featured.webp`,
   imageAlt: "Nettside med Vipps-betaling",
   content: (
     <>

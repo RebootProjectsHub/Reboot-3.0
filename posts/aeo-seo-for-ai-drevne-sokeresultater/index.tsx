@@ -10,7 +10,7 @@ export const post: Post = {
   date: "29. desember 2025",
   dateISO: "2025-12-29",
   excerpt: "AEO står for Answer Engine Optimization, og handler om å gjøre innholdet ditt forståelig nok til at AI-baserte søkemotorer og assistenter velger det som svar.",
-  image: `${IMG}/featured.jpg`,
+  image: `${IMG}/featured.webp`,
   imageAlt: "AEO vs SEO for AI-drevne søkeresultater",
   content: (
     <>
@@ -31,7 +31,7 @@ export const post: Post = {
         deg i selve svaret, mens mennesket velger å klikke videre fordi siden faktisk
         gir mer enn overskriften lover.
       </p>
-      <PostImage src={`${IMG}/1.jpg`} alt="AI-drevet søkeopplevelse" />
+      <PostImage src={`${IMG}/1.webp`} alt="AI-drevet søkeopplevelse" />
 
       <h2>Hva AEO betyr i Googles AI-søkeresultater</h2>
       <p>
@@ -84,7 +84,7 @@ export const post: Post = {
         uttrykket betyr det samme overalt, blir vurderingen enklere for både maskin og
         leser.
       </p>
-      <PostImage src={`${IMG}/2.jpg`} alt="Strukturert innhold for svargeneratorer" />
+      <PostImage src={`${IMG}/2.webp`} alt="Strukturert innhold for svargeneratorer" />
 
       <h3>Strukturér kunnskapen for maskiner, skriv for mennesker</h3>
       <p>
@@ -130,7 +130,7 @@ export const post: Post = {
         faktisk rekkefølge. Autoritet oppstår når leseren forstår hvorfor påstanden
         stemmer, ikke bare at den hevdes.
       </p>
-      <PostImage src={`${IMG}/3.jpg`} alt="Dokumentert metode bygger autoritet" />
+      <PostImage src={`${IMG}/3.webp`} alt="Dokumentert metode bygger autoritet" />
 
       <h2>Teknikk som gjør AI sitt arbeid enklere</h2>
       <p>
