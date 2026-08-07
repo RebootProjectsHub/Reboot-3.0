@@ -88,7 +88,7 @@ function SeoPackageCard({ pkg }: { pkg: Package }) {
     <div className="group relative flex h-full flex-col rounded-[26px] border-[1.5px] border-border bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px]">
       {pkg.highlighted && (
         <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
-          Mest valgt
+          Anbefalt
         </span>
       )}
 
