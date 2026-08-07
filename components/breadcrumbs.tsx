@@ -19,7 +19,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
         return (
           <Fragment key={crumb.label}>
             {isLast || !crumb.href ? (
-              <span aria-current={isLast ? "page" : undefined} className="opacity-65">
+              <span aria-current={isLast ? "page" : undefined} className="text-muted-foreground">
                 {crumb.label}
               </span>
             ) : (
