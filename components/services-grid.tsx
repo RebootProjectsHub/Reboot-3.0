@@ -61,7 +61,7 @@ function ArrowCircle({ ink }: { ink?: boolean }) {
 export function ServicesGrid() {
   return (
     <section className="px-4 pb-14 pt-0 sm:px-6 sm:pt-14 lg:px-10">
-      <div className="mx-auto grid max-w-[1280px] gap-[22px]">
+      <div className="mx-auto max-w-[1280px]">
         <div className="grid gap-[22px] sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <a
@@ -81,7 +81,7 @@ export function ServicesGrid() {
 
         <div
           id="digitale-tjenester"
-          className="grid scroll-mt-24 gap-[22px] rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-[34px] pt-9 sm:grid-cols-2 lg:gap-x-11"
+          className="mt-14 grid scroll-mt-24 gap-[22px] rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-[34px] pt-9 sm:grid-cols-2 lg:gap-x-11"
         >
           <div className="flex flex-col">
             <span className={kickerClass}>Skreddersydd utvikling</span>
@@ -91,30 +91,25 @@ export function ServicesGrid() {
             </p>
           </div>
 
-          <div className="flex flex-col justify-between gap-[22px]">
-            <ul className="flex flex-wrap gap-2.5">
-              {digitalTech.map((tech) => {
-                const href = techPages[tech]
-                return (
-                  <li key={tech}>
-                    {href ? (
-                      <a
-                        href={href}
-                        className={`${chipClass} border-brand transition-colors duration-200 hover:bg-brand hover:text-white`}
-                      >
-                        {tech}
-                      </a>
-                    ) : (
-                      <span className={`${chipClass} border-transparent`}>{tech}</span>
-                    )}
-                  </li>
-                )
-              })}
-            </ul>
-            <a href="/kontakt" className="group flex flex-col">
-              <ArrowCircle />
-            </a>
-          </div>
+          <ul className="flex flex-wrap content-start gap-2.5">
+            {digitalTech.map((tech) => {
+              const href = techPages[tech]
+              return (
+                <li key={tech}>
+                  {href ? (
+                    <a
+                      href={href}
+                      className={`${chipClass} border-brand transition-colors duration-200 hover:bg-brand hover:text-white`}
+                    >
+                      {tech}
+                    </a>
+                  ) : (
+                    <span className={`${chipClass} border-transparent`}>{tech}</span>
+                  )}
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </div>
     </section>
