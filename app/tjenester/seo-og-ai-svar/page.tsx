@@ -54,7 +54,7 @@ const packages = [
     name: "Light",
     price: "4 900",
     body: "Bli mer synlig i både Google og AI-svar.",
-    features: ["Google Bedriftsprofil", "Månedlig rapport", "Synlighet i AI-svar", "Innholdsproduksjon"],
+    features: ["Google Bedriftsprofil", "Månedlig rapport", "Synlighet i AI-svar", "Innholdsoptimalisering"],
   },
   {
     name: "Medium",
@@ -62,7 +62,7 @@ const packages = [
     body: "Se resultater raskere og bli værende i toppen.",
     features: [
       "Alt i Light",
-      "Innholdsoptimalisering",
+      "Innholdsproduksjon",
       "Produksjon av artikler og fagstoff",
       "Nye landingssider",
     ],
@@ -99,7 +99,7 @@ function SeoPackageCard({
     >
       {pkg.highlighted && (
         <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
-          Mest valgt
+          Anbefalt
         </span>
       )}
 
@@ -391,8 +391,7 @@ export default function SeoOgAiSvarPage() {
           </div>
           <div>
             <blockquote className="text-balance font-heading text-[clamp(22px,2.6vw,28px)] leading-[1.35] tracking-[-0.01em] text-foreground">
-              «Vi har nå veldig gode posisjoner på relevante søk og
-              nye kunder forteller at de fant oss via ChatGPT.»
+              «Vi dukker opp der vi skal nå og et par nye kunder har sagt at de fant oss via ChatGPT.»
             </blockquote>
             <p className="mt-6 font-medium text-foreground">
               Christina Håland
