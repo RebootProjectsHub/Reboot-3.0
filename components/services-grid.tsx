@@ -60,7 +60,7 @@ function ArrowCircle({ ink }: { ink?: boolean }) {
 
 export function ServicesGrid() {
   return (
-    <section className="px-4 pb-14 pt-0 sm:px-6 sm:pt-14 lg:px-10">
+    <section className="px-4 pb-6 pt-0 sm:px-6 sm:pb-4 sm:pt-14 lg:px-10 lg:pb-2">
       <div className="mx-auto max-w-[1280px]">
         <div className="grid gap-[22px] sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
@@ -81,7 +81,7 @@ export function ServicesGrid() {
 
         <div
           id="digitale-tjenester"
-          className="mt-14 grid scroll-mt-24 gap-[22px] rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-11 pt-11 sm:grid-cols-2 lg:gap-x-11"
+          className="mt-14 grid scroll-mt-24 gap-[22px] rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-16 pt-16 sm:grid-cols-2 lg:gap-x-11"
         >
           <div className="flex flex-col">
             <span className={kickerClass}>Skreddersydd utvikling</span>

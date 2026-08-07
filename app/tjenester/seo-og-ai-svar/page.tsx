@@ -60,7 +60,7 @@ const packages = [
     price: "11 900",
     body: "Se resultater raskere og bli værende i toppen.",
     features: [
-      "Alt i Start",
+      "Alt i Light",
       "Innholdsoptimalisering",
       "Produksjon av artikler og fagstoff",
       "Nye landingssider",
@@ -72,7 +72,7 @@ const packages = [
     price: "19 900",
     body: "Flere veier inn til nettsiden, ikke bare søk.",
     features: [
-      "Alt i Vekst",
+      "Alt i Medium",
       "Større SEO-team",
       "Utvidet innholdsproduksjon",
       "Utvidet nettverk for trafikk",
