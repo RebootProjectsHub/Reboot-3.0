@@ -63,7 +63,7 @@ const packages = [
     features: [
       "Alt i Light",
       "Innholdsproduksjon",
-      "Produksjon av artikler og fagstoff",
+      "Tekstforfatter: artikler og fagstoff",
       "Nye landingssider",
     ],
     highlighted: true,
