@@ -36,7 +36,7 @@ const digitalTech = [
 const kickerClass = "font-mono text-xs uppercase tracking-[0.12em] text-brand"
 const titleClass = "mt-3 font-heading text-[29px] font-normal leading-[1.14]"
 const chipClass =
-  "inline-flex rounded-full border bg-foreground/5 px-[18px] py-[9px] text-[14.5px] font-semibold text-foreground/85"
+  "inline-flex rounded-full border px-[18px] py-[9px] text-[14.5px] font-semibold text-foreground/85"
 
 /** The two-segment Reboot line used on cards across the site. */
 function RebootLine() {
@@ -99,12 +99,12 @@ export function ServicesGrid() {
                   {href ? (
                     <a
                       href={href}
-                      className={`${chipClass} border-brand transition-colors duration-200 hover:bg-brand hover:text-white`}
+                      className={`${chipClass} border-brand bg-foreground/10 transition-colors duration-200 hover:bg-brand hover:text-white`}
                     >
                       {tech}
                     </a>
                   ) : (
-                    <span className={`${chipClass} border-transparent`}>{tech}</span>
+                    <span className={`${chipClass} border-transparent bg-foreground/5`}>{tech}</span>
                   )}
                 </li>
               )
