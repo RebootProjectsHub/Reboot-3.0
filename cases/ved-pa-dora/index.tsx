@@ -11,17 +11,17 @@ export const caseStudy: CaseStudy = {
     "Nettbutikk for Ved På Døra med Vipps, Google Shopping, Prisjakt og Mailchimp. Vi har vært partneren deres siden 2019 med design, drift og utvikling.",
   url: "https://vedpadora.no",
   services: ["WordPress", "WooCommerce", "Webdesign", "Integrasjoner"],
-  image: `${IMG}/hero.jpg`,
+  image: `${IMG}/hero.webp`,
   imageAlt: "Bjørkeved stablet til tørking",
   quote: {
     text: "Anbefales på det sterkeste! Ved på Døra har samarbeidet tett med Reboot siden 2019, og de har de virkelig løftet nettsiden vår til nye høyder. Nettsiden er nå 100% responsiv, med smarte verktøy og systemer som virkelig gir resultater.",
     author: "Christina Håland, Ved På Døra",
   },
   gallery: [
-    { src: `${IMG}/skjerm-2.png`, alt: "Kjøp ved — produktside" },
-    { src: `${IMG}/skjerm-1.jpg`, alt: "Forsiden til vedpadora.no", portrait: true },
+    { src: `${IMG}/skjerm-2.webp`, alt: "Kjøp ved — produktside" },
+    { src: `${IMG}/skjerm-1.webp`, alt: "Forsiden til vedpadora.no", portrait: true },
     { src: `${IMG}/skjerm-3.jpg`, alt: "Prisside på vedpadora.no", portrait: true },
-    { src: `${IMG}/skjerm-4.jpg`, alt: "Inspirasjonsside på vedpadora.no" },
+    { src: `${IMG}/skjerm-4.webp`, alt: "Inspirasjonsside på vedpadora.no" },
   ],
   content: (
     <>

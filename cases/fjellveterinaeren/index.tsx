@@ -17,13 +17,13 @@ export const caseStudy: CaseStudy = {
     "SEO-optimalisering",
     "Facebook-integrasjon",
   ],
-  image: `${IMG}/hero.jpg`,
+  image: `${IMG}/hero.webp`,
   imageAlt: "Fjellveterinæren",
   gallery: [
-    { src: `${IMG}/skjerm-1.jpg`, alt: "Demo av nye fjellveterinæren.no", portrait: true },
-    { src: `${IMG}/skjerm-2.jpg`, alt: "Demo av nye fjellveterinæren.no, forside", portrait: true },
-    { src: `${IMG}/skjerm-3.jpg`, alt: "Hvem er Fjellveterinæren-siden", portrait: true },
-    { src: `${IMG}/brandguide.jpg`, alt: "Fjellveterinærens brand guide" },
+    { src: `${IMG}/skjerm-1.webp`, alt: "Demo av nye fjellveterinæren.no", portrait: true },
+    { src: `${IMG}/skjerm-2.webp`, alt: "Demo av nye fjellveterinæren.no, forside", portrait: true },
+    { src: `${IMG}/skjerm-3.webp`, alt: "Hvem er Fjellveterinæren-siden", portrait: true },
+    { src: `${IMG}/brandguide.webp`, alt: "Fjellveterinærens brand guide" },
   ],
   content: (
     <>
@@ -43,8 +43,8 @@ export const caseStudy: CaseStudy = {
 
       <h3>Se før og etter</h3>
       <BeforeAfterSlider
-        before={`${IMG}/for.jpg`}
-        after={`${IMG}/etter.jpg`}
+        before={`${IMG}/for.webp`}
+        after={`${IMG}/etter.webp`}
         beforeAlt="Gamle fjellveterinæren.no"
         afterAlt="Nye fjellveterinæren.no"
       />

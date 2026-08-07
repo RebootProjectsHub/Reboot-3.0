@@ -15,7 +15,7 @@ const team = [
     email: "maria@reboot.no",
     phone: "99 59 35 06",
     tel: "+4799593506",
-    photo: "/Maria-3.png",
+    photo: "/Maria-3.webp",
   },
   {
     name: "Evgeniia Zhavoronkova",
@@ -23,7 +23,7 @@ const team = [
     email: "evgeniia@reboot.no",
     phone: "48 63 09 05",
     tel: "+4748630905",
-    photo: "/Evgeniia-dev1.png",
+    photo: "/Evgeniia-dev1.webp",
   },
   {
     name: "Silje Walmann",

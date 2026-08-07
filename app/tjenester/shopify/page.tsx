@@ -205,7 +205,7 @@ export default function ShopifyPage() {
             <div className="relative grid lg:grid-cols-2 lg:items-stretch">
               <div className="relative min-h-[260px] lg:min-h-[420px]">
                 <Image
-                  src="/ny-nettside/ditt-apotek-opera/hero.jpg"
+                  src="/ny-nettside/ditt-apotek-opera/hero.webp"
                   alt="Ditt Apotek sin fysiske butikk ved Operaen i Bjørvika"
                   fill
                   className="object-cover"

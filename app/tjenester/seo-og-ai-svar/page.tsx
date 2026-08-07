@@ -375,7 +375,7 @@ export default function SeoOgAiSvarPage() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden rounded-[var(--radius)]">
               <Image
-                src="/SEO-Reboot-1.jpg"
+                src="/SEO-Reboot-1.webp"
                 alt="Reboot-teamet i et møte rundt et bord"
                 width={1200}
                 height={900}

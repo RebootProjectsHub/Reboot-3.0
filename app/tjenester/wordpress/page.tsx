@@ -46,25 +46,25 @@ const projects = [
   {
     kicker: "OBOS",
     title: "Bookingportal med WooCommerce og Vipps Hurtigkasse",
-    image: "/work-obos.png",
+    image: "/work-obos.webp",
     href: "/ny-nettside/obos",
   },
   {
     kicker: "Runner's World",
     title: "Medlemssider med WooCommerce Memberships og abonnement",
-    image: "/ny-nettside/runners-world/hero.jpg",
+    image: "/ny-nettside/runners-world/hero.webp",
     href: "/ny-nettside/runners-world",
   },
   {
     kicker: "Ved På Døra",
     title: "Nettbutikk med skreddersydde integrasjoner",
-    image: "/ny-nettside/ved-pa-dora/hero.jpg",
+    image: "/ny-nettside/ved-pa-dora/hero.webp",
     href: "/ny-nettside/ved-pa-dora",
   },
   {
     kicker: "Höegh EVI",
     title: "Teknisk arkitektur, hosting og drift",
-    image: "/work-hoegh.png",
+    image: "/work-hoegh.webp",
     href: "/ny-nettside/hoegh-evi",
   },
 ]
@@ -266,7 +266,7 @@ export default function WordPressPage() {
               </h2>
               <div className="relative mt-14 aspect-[1500/1091] overflow-hidden rounded-[var(--radius)]">
                 <Image
-                  src="/Reboot-Norge-ipad-scaled.jpg"
+                  src="/Reboot-Norge-ipad-scaled.webp"
                   alt="WordPress-administrasjonspanel"
                   fill
                   className="object-cover"

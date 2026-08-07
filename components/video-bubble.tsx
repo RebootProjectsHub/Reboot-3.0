@@ -6,10 +6,24 @@ import { ArrowRight, Pause, Play, Volume2, VolumeX, X } from "lucide-react"
 export function VideoBubble() {
   const [open, setOpen] = useState(false)
   const [dismissed, setDismissed] = useState(false)
+  const [ready, setReady] = useState(false)
   const [playing, setPlaying] = useState(true)
   const [muted, setMuted] = useState(false)
   const [progress, setProgress] = useState(0)
   const videoRef = useRef<HTMLVideoElement>(null)
+
+  // The bubble autoplays a clip that the browser starts downloading as soon as
+  // the element mounts, competing with the images above the fold. Waiting for
+  // load keeps it off the critical path — the bubble is bottom-right anyway.
+  useEffect(() => {
+    if (document.readyState === "complete") {
+      setReady(true)
+      return
+    }
+    const onLoad = () => setReady(true)
+    window.addEventListener("load", onLoad)
+    return () => window.removeEventListener("load", onLoad)
+  }, [])
 
   useEffect(() => {
     if (!open) return
@@ -20,7 +34,7 @@ export function VideoBubble() {
     return () => window.removeEventListener("keydown", onKeyDown)
   }, [open])
 
-  if (dismissed) return null
+  if (dismissed || !ready) return null
 
   function togglePlay() {
     const v = videoRef.current

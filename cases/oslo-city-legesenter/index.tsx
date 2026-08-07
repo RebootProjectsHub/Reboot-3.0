@@ -17,14 +17,14 @@ export const caseStudy: CaseStudy = {
     "Klart og forståelig innhold",
     "Enkel administrasjon av innhold",
   ],
-  image: `${IMG}/banner.jpg`,
+  image: `${IMG}/banner.webp`,
   imageAlt: "Oslo City Legesenter",
   gallery: [
-    { src: `${IMG}/skjerm-1.png`, alt: "Forsiden til nye oslocitylegesenter.no" },
+    { src: `${IMG}/skjerm-1.webp`, alt: "Forsiden til nye oslocitylegesenter.no" },
     { src: `${IMG}/skjerm-2.png`, alt: "Om oss-siden på mobil", portrait: true },
     { src: `${IMG}/skjerm-3.png`, alt: "Om oss-siden på mobil, alternativ visning", portrait: true },
     { src: `${IMG}/skjerm-4.png`, alt: "Smakirurgi-siden på mobil", portrait: true },
-    { src: `${IMG}/footer.jpg`, alt: "Oslo City Legesenter" },
+    { src: `${IMG}/footer.webp`, alt: "Oslo City Legesenter" },
   ],
   content: (
     <>
@@ -51,8 +51,8 @@ export const caseStudy: CaseStudy = {
 
       <h3>Se før og etter</h3>
       <BeforeAfterSlider
-        before={`${IMG}/for.png`}
-        after={`${IMG}/etter.png`}
+        before={`${IMG}/for.webp`}
+        after={`${IMG}/etter.webp`}
         beforeAlt="Gamle oslocitylegesenter.no"
         afterAlt="Nye oslocitylegesenter.no"
       />

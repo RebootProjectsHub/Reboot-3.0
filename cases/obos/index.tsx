@@ -10,14 +10,14 @@ export const caseStudy: CaseStudy = {
   metaDescription:
     "Bookingportal for OBOS der beboere reserverer og betaler gjesteleiligheter selv, bygget med WooCommerce Bookings og Vipps Hurtigkasse.",
   services: ["WordPress", "Bookingsystem", "WooCommerce", "Vipps"],
-  image: `${IMG}/hero.jpg`,
+  image: `${IMG}/hero.webp`,
   imageAlt: "OBOS-bygg sett nedenfra",
   quote: {
     text: "Hele prosessen med oppsett og administrasjon har vært en effektiv og produktiv opplevelse, og vi er veldig fornøyde med samarbeidet med vår driftspartner.",
     author: "Kristine Jørstad Bock, OBOS Nyegaardskvartalet",
   },
   gallery: [
-    { src: `${IMG}/skjerm-1.jpg`, alt: "Bookingoversikt for administratorer" },
+    { src: `${IMG}/skjerm-1.webp`, alt: "Bookingoversikt for administratorer" },
     { src: `${IMG}/skjerm-2.jpg`, alt: "Gjesteleilighet — produktside", portrait: true },
     { src: `${IMG}/skjerm-3.jpg`, alt: "Checkout med Vipps", portrait: true },
     { src: `${IMG}/skjerm-4.jpg`, alt: "Min konto — oversikt over reservasjoner", portrait: true },

@@ -10,18 +10,18 @@ export const caseStudy: CaseStudy = {
   metaDescription:
     "Nettside for Runner's World Norge med WooCommerce Memberships og Subscriptions, som håndterer kontoer, tilganger og fornyelser automatisk.",
   services: ["WordPress", "Woocommerce", "Woocommerce Memberships", "Woocommerce Subscriptions"],
-  image: `${IMG}/hero.jpg`,
+  image: `${IMG}/hero.webp`,
   imageAlt: "Runner's World Norge",
   quote: {
     text: "Det er supert å samarbeide med Reboot - de er løsningsorienterte og utrolig kjapt på ballen.",
     author: "Sara Skarabot Pedersen, Runner's World Norge",
   },
   gallery: [
-    { src: `${IMG}/skjerm-1.jpg`, alt: "Runner's World Norge" },
-    { src: `${IMG}/skjerm-2.jpg`, alt: "Forsiden til runnersworld.no" },
-    { src: `${IMG}/skjerm-3.jpg`, alt: "Runnersworld.no på mobil", portrait: true },
+    { src: `${IMG}/skjerm-1.webp`, alt: "Runner's World Norge" },
+    { src: `${IMG}/skjerm-2.webp`, alt: "Forsiden til runnersworld.no" },
+    { src: `${IMG}/skjerm-3.webp`, alt: "Runnersworld.no på mobil", portrait: true },
     { src: `${IMG}/skjerm-4.jpg`, alt: "Runner's World Norge-magasinet i Issuu", portrait: true },
-    { src: `${IMG}/skjerm-5.jpg`, alt: "Artikkelside på runnersworld.no", portrait: true },
+    { src: `${IMG}/skjerm-5.webp`, alt: "Artikkelside på runnersworld.no", portrait: true },
   ],
   content: (
     <>

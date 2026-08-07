@@ -10,10 +10,10 @@ export const caseStudy: CaseStudy = {
   metaDescription:
     "Vi bygde en Shopify-nettbutikk for Ditt Apotek ved Operaen, med Vipps, BankID og et stort produktvolum. Resultatet ble økt salg og enklere drift.",
   services: ["Webdesign", "Shopify", "BankID", "Vipps"],
-  image: `${IMG}/hero.jpg`,
+  image: `${IMG}/hero.webp`,
   imageAlt: "Ditt Apotek sin fysiske butikk ved Operaen i Bjørvika",
   gallery: [
-    { src: `${IMG}/skjerm-1.jpg`, alt: "Forsiden til Ditt Apotek sin nettbutikk" },
+    { src: `${IMG}/skjerm-1.webp`, alt: "Forsiden til Ditt Apotek sin nettbutikk" },
     { src: `${IMG}/skjerm-2.jpg`, alt: "Produktvisning på mobil", portrait: true },
     { src: `${IMG}/skjerm-3.jpg`, alt: "Handlekurv på mobil", portrait: true },
     { src: `${IMG}/skjerm-4.jpg`, alt: "Checkout på mobil", portrait: true },

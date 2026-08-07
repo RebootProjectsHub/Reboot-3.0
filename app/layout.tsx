@@ -82,6 +82,11 @@ export default function RootLayout({
   return (
     <html lang="no" className={`${spaceMono.variable} bg-background`}>
       <head>
+        {/* The Typekit stylesheet is render-blocking and pulls the font files
+            from a second origin. Warming both connections up front removes the
+            DNS + TLS round trips from the critical path. */}
+        <link rel="preconnect" href="https://use.typekit.net" crossOrigin="" />
+        <link rel="preconnect" href="https://p.typekit.net" crossOrigin="" />
         <link rel="stylesheet" href="https://use.typekit.net/aah4tvk.css" />
       </head>
       <body className="font-sans antialiased">

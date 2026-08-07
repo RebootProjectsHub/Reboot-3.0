@@ -9,18 +9,18 @@ export const caseStudy: CaseStudy = {
   metaTitle: "Messecup – nettside med påmeldingssystem",
   metaDescription:
     "Ny nettside for Tønsberg Turns håndballturnering Messecup, med integrert påmeldingssystem som gjør registrering enkelt for lag og arrangør.",
-  image: `${IMG}/hero.jpg`,
+  image: `${IMG}/hero.webp`,
   imageAlt: "Håndballturnering",
   quote: {
     text: "Veldig fornøyd, nettsiden de satt opp for oss ble kjempe bra! De forstod kjapt hva vi så for oss. Kjapp respons og god service!",
     author: "Tina Madeleine Akerholdt, Tønsberg Turn",
   },
   gallery: [
-    { src: `${IMG}/skjerm-1.jpg`, alt: "Forsiden til Messecup" },
-    { src: `${IMG}/skjerm-2.jpg`, alt: "Messecup på mobil", portrait: true },
+    { src: `${IMG}/skjerm-1.webp`, alt: "Forsiden til Messecup" },
+    { src: `${IMG}/skjerm-2.webp`, alt: "Messecup på mobil", portrait: true },
     { src: `${IMG}/skjerm-3.jpg`, alt: "Messecup på mobil, alternativ side", portrait: true },
     { src: `${IMG}/skjerm-4.jpg`, alt: "Messecup på mobil, påmelding", portrait: true },
-    { src: `${IMG}/skjerm-5.jpeg`, alt: "Håndballhall" },
+    { src: `${IMG}/skjerm-5.webp`, alt: "Håndballhall" },
   ],
   content: (
     <>

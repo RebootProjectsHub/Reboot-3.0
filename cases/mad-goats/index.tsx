@@ -11,14 +11,14 @@ export const caseStudy: CaseStudy = {
     "Friskere og mer moderne design for Mad Goats, med raskere lastetid, forbedret Google-rangering og en nettside de enkelt oppdaterer selv.",
   url: "https://madgoats.no",
   services: ["WordPress", "Moderne redesign", "Økt ytelse", "SEO", "Enkel redigering av innhold"],
-  image: `${IMG}/hero.jpg`,
+  image: `${IMG}/hero.webp`,
   imageAlt: "Mad Goats",
   gallery: [
-    { src: `${IMG}/skjerm-2.jpg`, alt: "Forsiden til madgoats.no" },
-    { src: `${IMG}/skjerm-3.jpg`, alt: "Madgoats.no på mobil", portrait: true },
-    { src: `${IMG}/skjerm-4.jpg`, alt: "Madgoats.no på mobil, alternativ side", portrait: true },
-    { src: `${IMG}/skjerm-5.jpg`, alt: "Madgoats.no på mobil, produktside", portrait: true },
-    { src: `${IMG}/skjerm-6.jpg`, alt: "Mad Goats" },
+    { src: `${IMG}/skjerm-2.webp`, alt: "Forsiden til madgoats.no" },
+    { src: `${IMG}/skjerm-3.webp`, alt: "Madgoats.no på mobil", portrait: true },
+    { src: `${IMG}/skjerm-4.webp`, alt: "Madgoats.no på mobil, alternativ side", portrait: true },
+    { src: `${IMG}/skjerm-5.webp`, alt: "Madgoats.no på mobil, produktside", portrait: true },
+    { src: `${IMG}/skjerm-6.webp`, alt: "Mad Goats" },
   ],
   content: (
     <>

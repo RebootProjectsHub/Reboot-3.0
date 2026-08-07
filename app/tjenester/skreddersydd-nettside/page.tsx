@@ -230,7 +230,7 @@ export default function SkreddersyddNettsidePage() {
               <div className="order-1 flex flex-col gap-5 lg:order-2">
                 <div className="relative min-h-[280px] flex-1 overflow-hidden rounded-[22px] lg:min-h-[380px]">
                   <Image
-                    src="/Reboot-Norge-ipad-scaled.jpg"
+                    src="/Reboot-Norge-ipad-scaled.webp"
                     alt="Reboot-teamet i møte"
                     fill
                     className="object-cover"

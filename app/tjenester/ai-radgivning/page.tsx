@@ -274,7 +274,7 @@ export default function AiRadgivningPage() {
         <div className="relative mx-auto max-w-[1280px]">
           <div className="relative h-[360px] overflow-hidden rounded-[var(--radius)] sm:h-[460px] lg:h-[520px]">
             <Image
-              src="/team-meeting.jpg"
+              src="/team-meeting.webp"
               alt="Reboot-teamet i et møte rundt et bord"
               fill
               className="object-cover"

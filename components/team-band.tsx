@@ -7,10 +7,14 @@ export function TeamBand() {
       <div className="relative mx-auto max-w-[1360px]">
         <div className="aspect-[1966/1002] overflow-hidden rounded-[28px] sm:aspect-auto sm:h-[clamp(420px,42vw,620px)]">
           <Image
-            src="/team-band.jpg"
+            src="/team-band.webp"
             alt="Reboot-teamet i et møte"
             width={1966}
             height={1002}
+            // First image on the homepage and the mobile LCP element. Without
+            // priority it is lazy-loaded, so the browser only discovers it
+            // after the page has laid out.
+            priority
             className="size-full object-cover"
           />
         </div>

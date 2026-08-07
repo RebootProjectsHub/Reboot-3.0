@@ -156,8 +156,8 @@ burgundy `#4A1220` band.
   | Name | Role | Email | Phone | Photo file |
   |---|---|---|---|---|
   | Henrik Moberg | Utvikler / daglig leder | henrik@reboot.no | 97 67 58 48 | `assets/henrik-dev3.jpg` |
-  | Maria Reinlie | Rådgiver / koordinator | maria@reboot.no | 99 59 35 06 | `assets/Maria-2.png` |
-  | Evgeniia Zhavoronkova | Utvikler | evgeniia@reboot.no | 48 63 09 05 | `assets/Evgeniia-dev1.png` |
+  | Maria Reinlie | Rådgiver / koordinator | maria@reboot.no | 99 59 35 06 | `assets/Maria-2.webp` |
+  | Evgeniia Zhavoronkova | Utvikler | evgeniia@reboot.no | 48 63 09 05 | `assets/Evgeniia-dev1.webp` |
   | Silje Walmann | Designer | silje@reboot.no | 46 95 06 27 | `assets/silje-design4.jpg` |
   - `mailto:` and `tel:` (with +47 country code) links on email/phone.
 

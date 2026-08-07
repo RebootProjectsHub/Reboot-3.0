@@ -52,7 +52,7 @@ export function PricingNewSite() {
 
           <div className="relative aspect-[4/3] overflow-hidden rounded-[20px]">
             <Image
-              src="/nettside-priser-laptop.jpg"
+              src="/nettside-priser-laptop.webp"
               alt="Utvikler som jobber med kode på en bærbar datamaskin"
               fill
               className="object-cover"

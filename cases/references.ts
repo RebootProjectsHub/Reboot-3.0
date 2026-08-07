@@ -9,7 +9,7 @@ export const references: Reference[] = [
   {
     name: "OBOS",
     caseSlug: "obos",
-    image: "/referanser/obos.jpg",
+    image: "/referanser/obos.webp",
   },
   {
     name: "Höegh Evi",
@@ -24,7 +24,7 @@ export const references: Reference[] = [
   {
     name: "Runner's World",
     caseSlug: "runners-world",
-    image: "/referanser/runners-world.jpg",
+    image: "/referanser/runners-world.webp",
   },
   {
     name: "Ved På Døra",
@@ -34,17 +34,17 @@ export const references: Reference[] = [
   {
     name: "Oslo City Legesenter",
     caseSlug: "oslo-city-legesenter",
-    image: "/referanser/oslo-city-legesenter.png",
+    image: "/referanser/oslo-city-legesenter.webp",
   },
   {
     name: "Mad Goats",
     caseSlug: "mad-goats",
-    image: "/referanser/mad-goats.jpg",
+    image: "/referanser/mad-goats.webp",
   },
   {
     name: "Ditt Apotek",
     caseSlug: "ditt-apotek-opera",
-    image: "/referanser/ditt-apotek.jpg",
+    image: "/referanser/ditt-apotek.webp",
   },
   {
     name: "VBKU Studio",
@@ -55,7 +55,7 @@ export const references: Reference[] = [
     name: "Romerikes Råeste",
     url: "https://xn--romerikesreste-uib.no/",
     urlLabel: "romerikesræste.no",
-    image: "/referanser/romerikes-raeste.png",
+    image: "/referanser/romerikes-raeste.webp",
   },
   {
     name: "FAM",
@@ -65,42 +65,42 @@ export const references: Reference[] = [
   {
     name: "Ability Media",
     caseSlug: "ability-media",
-    image: "/referanser/ability-media.jpg",
+    image: "/referanser/ability-media.webp",
   },
   {
     name: "Insignis",
     url: "https://insignis.no/",
-    image: "/referanser/insignis.png",
+    image: "/referanser/insignis.webp",
   },
   {
     name: "Messecup",
     caseSlug: "messecup",
-    image: "/referanser/messecup.jpg",
+    image: "/referanser/messecup.webp",
   },
   {
     name: "OG Smil",
     url: "https://ogsmil.no/",
-    image: "/referanser/ogsmil.png",
+    image: "/referanser/ogsmil.webp",
   },
   {
     name: "Crazy Race",
     url: "https://crazyrace.no/",
-    image: "/referanser/crazy-race.png",
+    image: "/referanser/crazy-race.webp",
   },
   {
     name: "Fjellveterinæren",
     caseSlug: "fjellveterinaeren",
-    image: "/referanser/fjellveterinaeren.png",
+    image: "/referanser/fjellveterinaeren.webp",
   },
   {
     name: "Økern Bilpleie",
     url: "https://okernbilpleie.no/",
-    image: "/referanser/okern-bilpleie.png",
+    image: "/referanser/okern-bilpleie.webp",
   },
   {
     name: "Tannkunsten",
     url: "https://tannkunsten.no/",
-    image: "/referanser/tannkunsten.png",
+    image: "/referanser/tannkunsten.webp",
   },
   {
     name: "Vikapsykologene",
@@ -110,12 +110,12 @@ export const references: Reference[] = [
   {
     name: "TekPartner",
     url: "https://tekpartner.org/",
-    image: "/referanser/tekpartner.png",
+    image: "/referanser/tekpartner.webp",
   },
   {
     name: "Bekkestua Kjøkkenstudio",
     url: "https://www.bekkestuaks.no/",
-    image: "/referanser/bekkestua.png",
+    image: "/referanser/bekkestua.webp",
   },
   {
     name: "SNU",

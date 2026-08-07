@@ -9,18 +9,18 @@ export const caseStudy: CaseStudy = {
   metaTitle: "Ability Media – nettside for Oppdragstorget",
   metaDescription:
     "Visuell profil og ny nettside for Ability Medias tjeneste Oppdragstorget – en responsiv og intuitiv løsning som gjør tjenestene enkle å navigere.",
-  image: `${IMG}/hero.jpg`,
+  image: `${IMG}/hero.webp`,
   imageAlt: "Håndverker på jobb",
   quote: {
     text: "Reboot bygget nettsiden vår, med alt fra implementering og teknisk oppsett til brand guide og visuell profil. Vi er fornøyde med deres evne til å lytte til våre behov og visjoner og skape et produkt vi er stolte av.",
     author: "Arild Ramberg, Ability Media",
   },
   gallery: [
-    { src: `${IMG}/skjerm-1.jpg`, alt: "Forsiden til Oppdragstorget" },
-    { src: `${IMG}/skjerm-2.jpg`, alt: "Oppdragstorget på mobil", portrait: true },
+    { src: `${IMG}/skjerm-1.webp`, alt: "Forsiden til Oppdragstorget" },
+    { src: `${IMG}/skjerm-2.webp`, alt: "Oppdragstorget på mobil", portrait: true },
     { src: `${IMG}/skjerm-3.jpg`, alt: "Oppdragstorget på mobil, alternativ side", portrait: true },
     { src: `${IMG}/skjerm-4.jpg`, alt: "Oppdragstorget på mobil, tjenesteoversikt", portrait: true },
-    { src: `${IMG}/skjerm-5.jpg`, alt: "Nettportalen til Oppdragstorget" },
+    { src: `${IMG}/skjerm-5.webp`, alt: "Nettportalen til Oppdragstorget" },
   ],
   content: (
     <>

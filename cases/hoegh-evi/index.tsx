@@ -25,7 +25,7 @@ export const caseStudy: CaseStudy = {
   gallery: [
     { src: `${IMG}/promo.mp4`, alt: "Promovideo for hoeghevi.com", video: true },
     { src: `${IMG}/skjerm-1.jpg`, alt: "Forsiden til hoeghevi.com" },
-    { src: `${IMG}/skjerm-2.jpg`, alt: "Nettsiden til Höegh Evi", portrait: true },
+    { src: `${IMG}/skjerm-2.webp`, alt: "Nettsiden til Höegh Evi", portrait: true },
     { src: `${IMG}/skjerm-3.jpg`, alt: "Undersider på hoeghevi.com", portrait: true },
     { src: `${IMG}/skjerm-4.jpg`, alt: "Innholdssider på hoeghevi.com", portrait: true },
   ],
