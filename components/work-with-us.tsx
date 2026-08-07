@@ -19,7 +19,7 @@ export function WorkWithUs() {
             aria-hidden
             className="absolute -bottom-3 -right-3 hidden text-[46px] leading-none text-brand md:block"
           >
-            ✦
+            ✦︎
           </span>
         </div>
 

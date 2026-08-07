@@ -156,13 +156,13 @@ export default function WooCommercePage() {
           aria-hidden
           className="absolute left-[6%] top-10 hidden text-[26px] leading-none text-brand/45 md:block"
         >
-          ✳
+          ✳︎
         </span>
         <span
           aria-hidden
           className="absolute right-[6%] top-14 hidden text-[20px] leading-none text-foreground/35 md:block"
         >
-          ✦
+          ✦︎
         </span>
 
         <span className="inline-flex items-center rounded-full bg-secondary px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-foreground">
@@ -277,7 +277,7 @@ export default function WooCommercePage() {
             aria-hidden
             className="absolute right-[6%] top-8 hidden text-[30px] leading-none text-ink-foreground/20 lg:block"
           >
-            ✦
+            ✦︎
           </span>
           <div className="mx-auto max-w-[720px] text-center">
             <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em]">

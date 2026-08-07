@@ -9,13 +9,13 @@ export function WhoWeAre() {
             aria-hidden
             className="absolute left-10 top-[110px] hidden text-[34px] leading-none text-brand-foreground/20 lg:block"
           >
-            ✳
+            ✳︎
           </span>
           <span
             aria-hidden
             className="absolute left-10 top-[160px] hidden text-[30px] leading-none text-brand-foreground/20 lg:block"
           >
-            ✦
+            ✦︎
           </span>
           <span
             aria-hidden

@@ -8,13 +8,13 @@ export function ServicesCta() {
           aria-hidden
           className="absolute left-[8%] top-10 hidden text-[38px] leading-none text-brand/40 lg:block"
         >
-          ✳
+          ✳︎
         </span>
         <span
           aria-hidden
           className="absolute bottom-8 right-[8%] hidden text-[30px] leading-none text-foreground/35 lg:block"
         >
-          ✦
+          ✦︎
         </span>
 
         <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">

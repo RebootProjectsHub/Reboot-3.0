@@ -18,7 +18,7 @@ export function ServicesTeamBand() {
           aria-hidden
           className="absolute -bottom-3 -left-2 hidden text-[46px] leading-none text-foreground/70 md:block"
         >
-          ✦
+          ✦︎
         </span>
         <span
           aria-hidden

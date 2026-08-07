@@ -8,7 +8,7 @@ export function Cta() {
         aria-hidden
         className="absolute right-[8%] top-16 hidden text-[42px] leading-none text-foreground/20 lg:block"
       >
-        ✳
+        ✳︎
       </span>
 
       <div className="mx-auto grid max-w-[1280px] items-start gap-10 lg:grid-cols-2 lg:gap-16">

@@ -9,7 +9,7 @@ export function Hero() {
           aria-hidden
           className="absolute left-[11%] top-[19%] hidden text-[44px] leading-none text-foreground/45 md:block"
         >
-          ✳
+          ✳︎
         </span>
         <span
           aria-hidden
@@ -21,7 +21,7 @@ export function Hero() {
           aria-hidden
           className="absolute bottom-[30%] left-[18%] hidden text-[38px] leading-none text-foreground/30 md:block"
         >
-          ✦
+          ✦︎
         </span>
         <span
           aria-hidden

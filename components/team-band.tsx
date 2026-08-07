@@ -19,7 +19,7 @@ export function TeamBand() {
           aria-hidden
           className="absolute -left-2 -top-2 hidden text-[54px] leading-none text-foreground md:block"
         >
-          ✳
+          ✳︎
         </span>
         <span
           aria-hidden

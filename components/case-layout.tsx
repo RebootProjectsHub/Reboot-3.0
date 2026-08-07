@@ -13,13 +13,13 @@ export function CaseLayout({ caseStudy }: { caseStudy: CaseStudy }) {
           aria-hidden
           className="absolute left-[4%] top-10 hidden text-[26px] leading-none text-brand/40 md:block"
         >
-          ✳
+          ✳︎
         </span>
         <span
           aria-hidden
           className="absolute right-[4%] top-14 hidden text-[20px] leading-none text-foreground/35 md:block"
         >
-          ✦
+          ✦︎
         </span>
 
         <span className="inline-flex items-center rounded-full bg-secondary px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-foreground">
@@ -99,7 +99,7 @@ export function CaseLayout({ caseStudy }: { caseStudy: CaseStudy }) {
               aria-hidden
               className="absolute left-[6%] top-8 hidden text-[30px] leading-none text-ink-foreground/20 lg:block"
             >
-              ✳
+              ✳︎
             </span>
             <blockquote className="mx-auto max-w-[720px] text-balance font-heading text-[clamp(22px,2.6vw,32px)] font-normal leading-[1.3] tracking-[-0.01em]">
               «{caseStudy.quote.text}»

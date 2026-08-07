@@ -201,13 +201,13 @@ export default function SeoOgAiSvarPage() {
           aria-hidden
           className="absolute left-[6%] top-10 hidden text-[26px] leading-none text-brand/45 md:block"
         >
-          ✳
+          ✳︎
         </span>
         <span
           aria-hidden
           className="absolute right-[6%] top-14 hidden text-[20px] leading-none text-foreground/35 md:block"
         >
-          ✦
+          ✦︎
         </span>
 
         <span className="inline-flex items-center rounded-full bg-secondary px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-foreground">
@@ -241,7 +241,7 @@ export default function SeoOgAiSvarPage() {
               aria-hidden
               className="absolute right-8 top-8 hidden text-[30px] leading-none text-ink-foreground/20 lg:block"
             >
-              ✦
+              ✦︎
             </span>
             <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
               <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-ink-foreground">
@@ -301,7 +301,7 @@ export default function SeoOgAiSvarPage() {
                 aria-hidden
                 className="absolute -bottom-3 -right-3 hidden text-[46px] leading-none text-brand md:block"
               >
-                ✦
+                ✦︎
               </span>
             </div>
             <ol className="divide-y divide-border border-y border-border">
@@ -375,7 +375,7 @@ export default function SeoOgAiSvarPage() {
               aria-hidden
               className="absolute -left-2 -top-2 hidden text-[40px] leading-none text-foreground/50 md:block"
             >
-              ✳
+              ✳︎
             </span>
           </div>
           <div>
@@ -421,13 +421,13 @@ export default function SeoOgAiSvarPage() {
             aria-hidden
             className="absolute left-[8%] top-10 hidden text-[38px] leading-none text-brand/40 lg:block"
           >
-            ✳
+            ✳︎
           </span>
           <span
             aria-hidden
             className="absolute bottom-8 right-[8%] hidden text-[30px] leading-none text-foreground/35 lg:block"
           >
-            ✦
+            ✦︎
           </span>
 
           <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">

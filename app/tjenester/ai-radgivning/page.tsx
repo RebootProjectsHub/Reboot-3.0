@@ -137,13 +137,13 @@ export default function AiRadgivningPage() {
           aria-hidden
           className="absolute left-[8%] top-10 hidden text-[28px] leading-none text-brand/35 md:block"
         >
-          ✳
+          ✳︎
         </span>
         <span
           aria-hidden
           className="absolute right-[10%] top-20 hidden text-[22px] leading-none text-brand/30 md:block"
         >
-          ✦
+          ✦︎
         </span>
         <span
           aria-hidden
@@ -204,7 +204,7 @@ export default function AiRadgivningPage() {
                     className="flex items-baseline gap-4 border-b border-ink-foreground/15 py-[22px] font-heading text-[22px] font-normal leading-[1.35] text-ink-foreground first:pt-0"
                   >
                     <span aria-hidden className="shrink-0 text-brand">
-                      ✳
+                      ✳︎
                     </span>
                     {pain}
                   </li>
@@ -312,13 +312,13 @@ export default function AiRadgivningPage() {
             aria-hidden
             className="absolute left-[8%] top-10 hidden text-[38px] leading-none text-brand/40 lg:block"
           >
-            ✳
+            ✳︎
           </span>
           <span
             aria-hidden
             className="absolute bottom-8 right-[8%] hidden text-[30px] leading-none text-foreground/35 lg:block"
           >
-            ✦
+            ✦︎
           </span>
 
           <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">

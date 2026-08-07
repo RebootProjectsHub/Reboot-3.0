@@ -70,7 +70,7 @@ export function SiteHeader() {
               className="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-normal text-ink-foreground transition-opacity hover:opacity-85"
             >
               <span aria-hidden="true" className="doodle-sparkle text-brand">
-                <span className="doodle-star">✦</span>
+                <span className="doodle-star">✦︎</span>
                 <span className="doodle-dot doodle-dot-1" />
                 <span className="doodle-dot doodle-dot-2" />
               </span>

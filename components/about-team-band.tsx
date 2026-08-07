@@ -15,13 +15,13 @@ export function AboutTeamBand() {
             aria-hidden
             className="absolute left-8 top-8 hidden text-[34px] leading-none text-ink-foreground/20 lg:block"
           >
-            ✦
+            ✦︎
           </span>
           <span
             aria-hidden
             className="absolute bottom-10 right-10 hidden text-[30px] leading-none text-ink-foreground/20 lg:block"
           >
-            ✳
+            ✳︎
           </span>
 
           <div className="relative grid gap-8 lg:grid-cols-2 lg:gap-0 lg:items-stretch">
