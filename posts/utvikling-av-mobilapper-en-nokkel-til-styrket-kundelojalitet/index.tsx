@@ -7,7 +7,7 @@ export const post: Post = {
   date: "24. oktober 2023",
   dateISO: "2023-10-24",
   excerpt: "En mobilapp binder brukeropplevelse, funksjonalitet og merkevare sammen i kundens lomme. Slik kan apputvikling styrke kundelojaliteten.",
-  image: "/posts/utvikling-av-mobilapper-en-nokkel-til-styrket-kundelojalitet/featured.jpg",
+  image: "/posts/utvikling-av-mobilapper-en-nokkel-til-styrket-kundelojalitet/featured.webp",
   imageAlt: "Utvikling av mobilapper",
   contentHtml: `<p>Å bygge lojale kunderelasjoner er avgjørende i den digitale verden. Utvikling av mobilapper tilbyr en unik sjanse til å oppnå dette ved å binde brukeropplevelse, funksjonalitet, og merkevareverdi sammen i brukerens lomme.</p>
 <h2>Hvordan mobilapper fremmer kundelojalitet</h2>
@@ -20,7 +20,7 @@ export const post: Post = {
 <p>Mobilapper gir muligheten til å kommunisere direkte og personlig med brukerne dine gjennom push-varsler og in-app-meldinger. Forsikre deg om at kommunikasjonen er relevant, tidsriktig og personlig tilpasset hver enkelt brukers interesser og kjøpshistorikk for å maksimere engasjementet og verdiopplevelsen.</p>
 <h3>Kobling av online og offline verden</h3>
 <p>Bruk appen din som en bro mellom digitale og fysiske verdener. Implementer funksjoner som «click and collect», digital lojalitetskort, og augmented reality-opplevelser som forbedrer kundeopplevelsen både online og i fysiske butikker.</p>
-<figure><img src="/posts/utvikling-av-mobilapper-en-nokkel-til-styrket-kundelojalitet/1.jpg" alt="Utvikling av mobilapper" loading="lazy" /></figure>
+<figure><img src="/posts/utvikling-av-mobilapper-en-nokkel-til-styrket-kundelojalitet/1.webp" alt="Utvikling av mobilapper" loading="lazy" /></figure>
 <h3>Måling av kundetilfredshet og tilbakemelding</h3>
 <p>Implementer feedback-mekanismer i appen, slik at kundene enkelt kan dele sine meninger og tilbakemeldinger. Gjennom å måle og forstå deres tilfredshet, kan du raskt tilpasse og forbedre tilbud, funksjoner, og opplevelser basert på direkte innsikt fra målgruppen.</p>
 <h3>Tilpasning og personalisering</h3>

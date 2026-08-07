@@ -7,14 +7,14 @@ export const post: Post = {
   date: "14. oktober 2023",
   dateISO: "2023-10-14",
   excerpt: "Chatbots i kundeservice transformerer måten bedrifter kommuniserer med kunder på, tilbyr umiddelbar hjelp og frigjør tid for ansatte.",
-  image: "/posts/hvordan-chatbots-kan-oke-kundetilfredshet-og-effektivisere-kundeservice/featured.jpg",
+  image: "/posts/hvordan-chatbots-kan-oke-kundetilfredshet-og-effektivisere-kundeservice/featured.webp",
   imageAlt: "Chatbots i kundeservice gir økt kundetilfredshet",
   contentHtml: `<p>Chatbots i kundeservice transformerer måten bedrifter kommuniserer med kunder på, tilbyr umiddelbar hjelp og frigjør tid for ansatte. Men hvordan påvirker de faktisk kundetilfredshet og intern effektivitet?</p>
 <h2>Hvordan fungerer chatbots i kundeservice</h2>
 <p>Chatbots, som ChatGPT, bruker kunstig intelligens og maskinlæring for å tolke og svare på brukerhenvendelser i sanntid. I kundeserviceinstillinger kan de raskt svare på ofte stilte spørsmål, hjelpe brukere gjennom feilsøkingsprosesser eller guide dem til riktig avdeling eller ressurs for ytterligere assistanse.</p>
 <h3>Fordeler for kundene: Øyeblikkelig respons og hjelp</h3>
 <p>Kunder forventer raske svar. Chatbots møter dette behovet ved å tilby øyeblikkelig støtte og informasjon, noe som kan forbedre brukeropplevelsen og fremme positivt kundeengasjement. Dette kan igjen resultere i forbedret kundelojalitet og økt kundetilfredshet. Lær mer om forbrukeratferd og kundeengasjement fra <a href="https://www.forbrukerradet.no/" target="_blank" rel="noopener noreferrer">Forbrukerrådet</a>.</p>
-<figure><img src="/posts/hvordan-chatbots-kan-oke-kundetilfredshet-og-effektivisere-kundeservice/1.jpg" alt="Chatbots i kundeservice gir økt kundetilfredshet" loading="lazy" /></figure>
+<figure><img src="/posts/hvordan-chatbots-kan-oke-kundetilfredshet-og-effektivisere-kundeservice/1.webp" alt="Chatbots i kundeservice gir økt kundetilfredshet" loading="lazy" /></figure>
 <h3>Fordeler for bedriften: frigjøring av menneskelige ressurser</h3>
 <p>Ved å la chatbots håndtere gjentagende og enkle henvendelser, kan bedrifter frigjøre tid for kundeservicemedarbeidere til å håndtere mer komplekse spørsmål og oppgaver. Dette kan ikke bare redusere belastningen på kundeserviceteamet, men også øke effektiviteten og produktiviteten i teamet.</p>
 <h3>Å implementere chatbot på din nettside</h3>

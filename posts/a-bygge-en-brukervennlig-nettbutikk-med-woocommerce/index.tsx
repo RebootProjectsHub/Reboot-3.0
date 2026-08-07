@@ -7,7 +7,7 @@ export const post: Post = {
   date: "14. oktober 2023",
   dateISO: "2023-10-14",
   excerpt: "Å skape en brukervennlig nettbutikk er essensielt i en digital verden der brukeropplevelse kan være avgjørende for kundens kjøpsbeslutning.",
-  image: "/posts/a-bygge-en-brukervennlig-nettbutikk-med-woocommerce/featured.jpg",
+  image: "/posts/a-bygge-en-brukervennlig-nettbutikk-med-woocommerce/featured.webp",
   imageAlt: "Å bygge en brukervennlig nettbutikk med Woocommerce",
   contentHtml: `<p>Å skape en <strong>brukervennlig nettbutikk</strong> er essensielt i en digital verden der brukeropplevelse kan være avgjørende for kundens kjøpsbeslutning. La oss dykke ned i hvordan du kan utnytte <a href="/tjenester/woocommerce">Woocommerce</a> for å konstruere en online butikk som ikke bare ser bra ut, men også leverer en feilfri, kundeorientert handleopplevelse.</p>
 <p>Hvis det er én ting e-handelsvirksomheter bør ha som en prioritet, så er det uten tvil brukervennlighet. I et hav av online plattformer, er Woocommerce et populært valg blant mange på grunn av dets fleksibilitet og brukervennlige grensesnitt. La oss se på hvordan vi kan bygge en imponerende nettbutikk med Woocommerce.</p>

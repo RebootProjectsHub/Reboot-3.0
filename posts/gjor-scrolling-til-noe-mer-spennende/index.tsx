@@ -7,12 +7,12 @@ export const post: Post = {
   date: "25. april 2024",
   dateISO: "2024-04-25",
   excerpt: "Med fokus på brukeropplevelse og levende webdesign har scrolling med animasjoner blitt et essensielt verktøy for å engasjere besøkende på nettstedet.",
-  image: "/posts/gjor-scrolling-til-noe-mer-spennende/featured.jpg",
+  image: "/posts/gjor-scrolling-til-noe-mer-spennende/featured.webp",
   imageAlt: "Levende webdesign med animert scrolling",
   contentHtml: `<p>Med fokus på brukeropplevelse og levende webdesign har scrolling med animasjoner blitt et essensielt verktøy for å engasjere besøkende på nettstedet. Dette dynamiske elementet tilfører liv og bevegelse til hjemmesiden, og inviterer brukeren til å utforske innholdet på en mer interaktiv måte.</p>
 <h3>Hvorfor bruke animert scrolling?</h3>
 <p>Bruk av bevegelser ved scrolling kan dramatisk forbedre brukerens interaksjon med hjemmesiden din. Det handler ikke bare om estetikk; det er om å skape en flyt som leder brukeren gjennom innholdet ditt på en intuitiv og engasjerende måte. Disse animasjonene kan hjelpe med å fremheve viktige seksjoner, veilede øynene, og til og med forklare komplekse ideer på en enkel visuell måte. For en dypere forståelse, se på <a href="/tjenester/#nettsider">Reboots tjenester</a> for hvordan de kan integreres på din hjemmeside.</p>
-<figure><img src="/posts/gjor-scrolling-til-noe-mer-spennende/1.jpg" alt="Levende webdesign med animert scrolling" loading="lazy" /></figure>
+<figure><img src="/posts/gjor-scrolling-til-noe-mer-spennende/1.webp" alt="Levende webdesign med animert scrolling" loading="lazy" /></figure>
 <h3>Beste praksiser for animasjoner ved scrolling</h3>
 <p>Selv om scrolling med animasjon kan være svært effektive, er nøkkelen til suksess å bruke dem med måte. For mange animasjoner kan virke distraherende eller til og med overveldende. Fokuser på jevn, subtil bevegelse som komplimenterer innholdet i stedet for å dominere det. Sørg også for at animasjonene dine er optimalisert for rask lasting, da brukere er kjent for å miste interessen hvis en side tar for lang tid å laste.</p>
 <h3>Eksempler på vellykket implementering</h3>

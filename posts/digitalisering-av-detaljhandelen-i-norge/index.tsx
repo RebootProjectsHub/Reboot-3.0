@@ -13,7 +13,7 @@ export const post: Post = {
 <h2>Skreddersy kjøpsopplevelsen</h2>
 <p>E-handelens vekst i Norge har akselerert, og med det følger en rekke muligheter for personalisering og kundeinnsikt. Gjennom avanserte dataanalyseverktøy kan detaljhandlere nå forstå kundenes kjøpsatferd på et dyptgående nivå. Dette muliggjør skreddersydd markedsføring og en mer personlig shoppingopplevelse – både online og i butikk.</p>
 <p>Men det stopper ikke der. Vi tror nøkkelen til suksess i den digitale æraen ligger i å harmonisere teknologi med menneskelig berøring. For eksempel, å bruke teknologi til å forbedre kundeservicen, samtidig som man beholder personlige relasjoner og tillit, som har vært kjernen i norsk handel.</p>
-<figure><img src="/posts/digitalisering-av-detaljhandelen-i-norge/1.jpg" alt="Digitalisering av detaljhandelen i Norge" loading="lazy" /></figure>
+<figure><img src="/posts/digitalisering-av-detaljhandelen-i-norge/1.webp" alt="Digitalisering av detaljhandelen i Norge" loading="lazy" /></figure>
 <p>Videre, i en tid der bærekraft står i fokus, spiller digitalisering en nøkkelrolle. Ved å benytte miljøvennlige digitale løsninger, kan detaljhandelen ikke bare redusere sitt økologiske fotavtrykk, men også appellere til den miljøbevisste forbrukeren.</p>
 <p>Når vi går fremover, er det avgjørende for norske detaljhandlere å være strategiske i sin tilnærming til digitalisering. Ved å forstå og utnytte teknologiens potensial, kan vi ikke bare forbedre kundeopplevelsen, men også drive <a href="https://ecommerce-platforms.com/no/ecommerce-selling-advice/5-new-and-upcoming-waves-of-innovation-in-ecommerce" target="_blank" rel="noopener noreferrer">innovasjon og vekst i ecommerce-sektoren</a>.</p>
 <h2>Detaljhandel med kunder over hele verden</h2>

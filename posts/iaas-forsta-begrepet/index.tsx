@@ -7,12 +7,12 @@ export const post: Post = {
   date: "4. juni 2024",
   dateISO: "2024-06-04",
   excerpt: "Infrastructure as a Service (IaaS) er blitt en bærebjelke i moderne IT. Vi forklarer hva IaaS er, og hvorfor bedrifter velger skyinfrastruktur.",
-  image: "/posts/iaas-forsta-begrepet/featured.jpg",
+  image: "/posts/iaas-forsta-begrepet/featured.webp",
   imageAlt: "IaaS former fremtidens IT-infrastruktur",
   contentHtml: `<p>Infrastructure as a Service (IaaS) er raskt blitt en bærebjelke i moderne IT-strategier. Som en av de fundamentale kategoriene innen cloud computing, tilbyr IaaS bedrifter fleksibiliteten til å skalere og tilpasse sin IT-infrastruktur uten de tunge investeringene som tradisjonelt er assosiert med fysisk maskinvare.</p>
 <h3>Hvorfor velge IaaS?</h3>
 <p>Overgangen til IaaS er drevet av behovet for større skalerbarhet, reduserte kostnader og økt effektivitet. Ved å leie IT-infrastruktur som en tjeneste, kan bedrifter raskt tilpasse seg skiftende markedskrav uten å bekymre seg for vedlikehold eller fornyelse av maskinvare. Dette er særlig verdifullt i dagens dynamiske forretningslandskap hvor hastigheten til å implementere og tilpasse teknologiske løsninger kan være avgjørende for suksess. <a href="/kontakt" target="_blank" rel="noopener noreferrer">Kontakt oss</a> her i Reboot for å høre hvordan vi implementerer IaaS-løsninger for å styrke bedrifter.</p>
-<figure><img src="/posts/iaas-forsta-begrepet/1.jpg" alt="IaaS former fremtidens IT-infrastruktur" loading="lazy" /></figure>
+<figure><img src="/posts/iaas-forsta-begrepet/1.webp" alt="IaaS former fremtidens IT-infrastruktur" loading="lazy" /></figure>
 <h3>Utfordringer med implementering av IaaS</h3>
 <p>Selv om overgangen til IaaS tilbyr mange fordeler, kommer den ikke uten utfordringer. Når bedrifter flytter infrastrukturen sin til skyen møter de utfordringer so sikkerhet og datahåndtering. Det er avgjørende å velge en pålitelig IaaS-leverandør som kan tilby robuste sikkerhetsløsninger og compliance-støtte for å beskytte sensitive data og systemer.</p>
 <h3>Framtiden for IaaS</h3>

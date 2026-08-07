@@ -8,14 +8,14 @@ export const post: Post = {
   date: "19. oktober 2023",
   dateISO: "2023-10-19",
   excerpt: "Tilgjengelighet på nett er vitalt for å sikre at alle brukere, uavhengig av evner, kan aksessere og bruke nettstedet ditt effektivt.",
-  image: "/posts/nettsted-tilgjengelighet-gjor-din-hjemmeside-tilgjengelig-for-alle/featured.jpg",
+  image: "/posts/nettsted-tilgjengelighet-gjor-din-hjemmeside-tilgjengelig-for-alle/featured.webp",
   imageAlt: "Nettsted tilgjengelighet: Gjør din hjemmeside tilgjengelig for alle",
   contentHtml: `<p>Tilgjengelighet på nett er vitalt for å sikre at alle brukere, uavhengig av evner, kan aksessere og bruke nettstedet ditt effektivt. Ikke bare er det et lovkrav i mange land, men det forbedrer også brukeropplevelsen og kan utvide kundebasen din. Her er noen nøkkelområder og tips for å forbedre optimal nettsted tilgjengelighet.</p>
 <h3>Farge og kontrast</h3>
 <p>Enkelte brukere, spesielt de med synsproblemer, kan ha vanskeligheter med å tolke innholdet ditt hvis det er lav kontrast mellom tekst og bakgrunnsfarger.</p>
 <h3>Tekst og skrifttyper</h3>
 <p>Hvordan tekst er presentert kan sterkt påvirke lesebarheten og tilgjengeligheten til et nettsted.</p>
-<figure><img src="/posts/nettsted-tilgjengelighet-gjor-din-hjemmeside-tilgjengelig-for-alle/1.jpg" alt="Nettsted tilgjengelighet: Gjør din hjemmeside tilgjengelig for alle" loading="lazy" /></figure>
+<figure><img src="/posts/nettsted-tilgjengelighet-gjor-din-hjemmeside-tilgjengelig-for-alle/1.webp" alt="Nettsted tilgjengelighet: Gjør din hjemmeside tilgjengelig for alle" loading="lazy" /></figure>
 <h3>Navigasjon og struktur</h3>
 <p>Effektiv og intuitiv navigasjon er kritisk for brukervennlighet og nettsted tilgjengelighet.</p>
 <h3>Bilder og multimedieinnhold</h3>

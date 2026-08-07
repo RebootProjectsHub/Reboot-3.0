@@ -7,7 +7,7 @@ export const post: Post = {
   date: "6. januar 2025",
   dateISO: "2025-01-06",
   excerpt: "Vi dykker ned i forskjellene mellom grafisk design og webdesign, og hvilke unike roller de spiller i digitale og trykte flater.",
-  image: "/posts/forskjellen-mellom-webdesign-og-grafisk-design/featured.jpg",
+  image: "/posts/forskjellen-mellom-webdesign-og-grafisk-design/featured.webp",
   imageAlt: "Forskjellen mellom webdesign og grafisk design",
   contentHtml: `<p>Vi utforsker visuell kommunikasjon gjennom å dykke ned i forskjellene mellom grafisk design og webdesign, og avdekker deres unike roller i digitale og trykte landskap.</p>
 <h2>Hva er webdesign?</h2>
@@ -15,7 +15,7 @@ export const post: Post = {
 <p>Vårt prosjekt for den norske nettbutikken 'Nordisk Flora' viser en sømløs integrering av webdesign og utvikling for å skape en elegant e-handelsopplevelse. Nettstedet benytter luftige oppsett, subtile animasjoner og en strømlinjeformet kjøpsflyt for å tilby en sofistikert og intuitiv brukeropplevelse.</p>
 <p>Dette tilnærmingen gjenspeiles i ulike webapplikasjoner, fra landingssider til e-handelssider, som demonstrerer effektiviteten av å kombinere designestetikk med teknisk funksjonalitet for å skape en polert og brukervennlig online tilstedeværelse.</p>
 <p>Noen komponenter i webdesign inkluderer HTML, CSS, JavaScript og andre programmeringsspråk. Videre utføres det også ved hjelp av visuelle elementer som bilder, typografi, fargepaletter eller oppsett, noe som gjør det tiltalende for brukerne. Dessuten krever det nøye overveielse av tilgjengelighet og brukervennlighet, og sikrer enkel navigasjon på nettsiden eller en webapplikasjon.</p>
-<figure><img src="/posts/forskjellen-mellom-webdesign-og-grafisk-design/1.jpg" alt="Forskjellen mellom webdesign og grafisk design" loading="lazy" /></figure>
+<figure><img src="/posts/forskjellen-mellom-webdesign-og-grafisk-design/1.webp" alt="Forskjellen mellom webdesign og grafisk design" loading="lazy" /></figure>
 <h3>Detaljer om hva en webdesigner gjør</h3>
 <p>Webdesign krever både kreative ferdigheter og teknisk ekspertise. En vellykket webutvikler/designer må kombinere begge deler for å utvikle flotte nettsteder og apper som brukerne enkelt kan navigere.</p>
 <p>En webdesigner bør ha kunnskap om HTML, CSS, JavaScript, tilgjengelighetsstandarder og prinsipper for brukervennlighet, samt kompetanse i programvarebruk som Photoshop osv. I tillegg må utviklere og designere være gode kommunikatører, i stand til å håndtere problemer diplomatisk samtidig som de opprettholder grundighet når de jobber med prosjekter og sikrer at kvaliteten forblir på sitt beste i stedet for å forsømme noen del av sitt arbeid.</p>
@@ -27,7 +27,7 @@ export const post: Post = {
 <h3>Den perfekte grafiske designer</h3>
 <p>Nødvendige ferdigheter for en grafisk kunstner inkluderer kjennskap til typografiske regler, forståelse av prinsipper for fargekomposisjon, evnen til å se proporsjoner i et bilde. I tillegg må de ha layoutferdigheter og evnen til å bruke programvareapplikasjoner. Eksempler på slike vertkøy er <a href="https://www.adobe.com/no/creativecloud.html" target="_blank" rel="noopener noreferrer">Adobe Creative Suite</a> og <a href="https://www.coreldraw.com/en/product/coreldraw" target="_blank" rel="noopener noreferrer">Corel Draw</a>. Videre sier kunstnere at de trenger gode problemløsningsferdigheter og oppmerksomhet på detaljer for å sikre arbeid av høy kvalitet.</p>
 <p>I tillegg kreves sterke verbale evner ettersom de fleste designere arbeider tett med andre profesjonelle som kan være involvert i markedsføring av deres merke eller i å skrive markedsføringsmaterialer. Alle disse grunnleggende ferdighetene kan forbedres av enhver grafisk designer. Slik kan de bli en reell ressurs for enhver enhet som trenger å gjøre et visuelt inntrykk.</p>
-<figure><img src="/posts/forskjellen-mellom-webdesign-og-grafisk-design/2.jpg" alt="Forskjellen mellom webdesign og grafisk design" loading="lazy" /></figure>
+<figure><img src="/posts/forskjellen-mellom-webdesign-og-grafisk-design/2.webp" alt="Forskjellen mellom webdesign og grafisk design" loading="lazy" /></figure>
 <h2>Forskjellene mellom grafisk design og webdesign</h2>
 <p>Selv om både grafisk design og webdesign handler om å arbeide med visuelle bilder for å skape tiltalende design for kommunikasjonsformål, finnes det noen forskjeller:</p>
 <p>Webdesign genererer hovedsakelig interaktive elementer, mens grafisk design fokuserer på å skape statiske visuelle. Trykkmateriell utgjør flertallet av grafisk designprosjekter. I motsetning er webdesign primært brukt for digitale produkter. Webdesign involverer mer komplekse kodingspråk enn grafisk design, som har færre komponenter. Et budskap eller en idé kan formidles gjennom grafisk design; men webdesign er ment å være brukervennlige grensesnitt som gir gode opplevelser.</p>

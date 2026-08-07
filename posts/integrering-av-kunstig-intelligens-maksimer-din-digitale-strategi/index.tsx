@@ -8,7 +8,7 @@ export const post: Post = {
   date: "26. oktober 2023",
   dateISO: "2023-10-26",
   excerpt: "Implementering av kunstig intelligens (AI) er et steg inn i fremtidens digitale strategi, hvor intelligente systemer og automatiserte prosesser skaper verdi.",
-  image: "/posts/integrering-av-kunstig-intelligens-maksimer-din-digitale-strategi/featured.jpg",
+  image: "/posts/integrering-av-kunstig-intelligens-maksimer-din-digitale-strategi/featured.webp",
   imageAlt: "Integrering av kunstig intelligens: Maksimer din digitale strategi",
   contentHtml: `<p>Implementering av kunstig intelligens (AI) er et steg inn i fremtidens digitale strategi, hvor intelligente systemer og automatiserte prosesser skaper verdi, effektivitet og innovative brukeropplevelser. Denne artikkelen viser hvordan du kan gå frem for integrering av kunstig intelligens.</p>
 <h2>Navigering gjennom kunstig intelligens i digital strategi</h2>
@@ -19,7 +19,7 @@ export const post: Post = {
 <p>Ved hjelp av maskinlæring, en underkategori av AI, kan systemer lære av data og forutsi fremtidige mønstre og atferd. Dermed blir personalisering en integrert del av brukeropplevelsen, fra målrettet markedsføring til skreddersydde brukerinteraksjoner, økende engasjement og tilfredshet.</p>
 <h3>Kundeservice og brukerengasjement med chatbots</h3>
 <p>Chatbots, drevet av AI, tilbyr en ny dimensjon av kundeservice og engasjement, ved å tilby raske, konsistente, og tilgjengelige svar på brukerspørsmål og forespørsler. De kan forbedre brukeropplevelsen ved å gi umiddelbar støtte og bidra til å bygge et positivt forhold mellom merkevaren og kunden.</p>
-<figure><img src="/posts/integrering-av-kunstig-intelligens-maksimer-din-digitale-strategi/1.jpg" alt="Integrering av kunstig intelligens: Maksimer din digitale strategi" loading="lazy" /></figure>
+<figure><img src="/posts/integrering-av-kunstig-intelligens-maksimer-din-digitale-strategi/1.webp" alt="Integrering av kunstig intelligens: Maksimer din digitale strategi" loading="lazy" /></figure>
 <h3>Automatiserte arbeidsflyter for effektivitet</h3>
 <p>AI kan også spille en viktig rolle i å automatisere arbeidsflyter og prosesser innad i organisasjonen. Fra automatisert e-postmarkedsføring til kundestøtte og dataanalyse, fjerner automatiseringen den menneskelige byrden og lar team fokusere på mer strategiske oppgaver.</p>
 <h3>Integrering av kunstig intelligens: Analytisk innsikt</h3>

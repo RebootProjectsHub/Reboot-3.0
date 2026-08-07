@@ -7,7 +7,7 @@ export const post: Post = {
   date: "15. august 2024",
   dateISO: "2024-08-15",
   excerpt: "Drømmer du om å bli en UI/UX-designer og gjøre det til din karriere? Da har du flaks! Denne guiden er spesielt laget for deg som har design som lidenskap.",
-  image: "/posts/hvordan-bli-en-dyktig-ui-ux-designer/featured.jpg",
+  image: "/posts/hvordan-bli-en-dyktig-ui-ux-designer/featured.webp",
   imageAlt: "Hvordan bli en UI/UX-designer",
   contentHtml: `<p>Drømmer du om å bli en UI/UX-designer og gjøre det til din karriere? Da har du flaks! Denne guiden er spesielt laget for deg som har design som lidenskap.</p>
 <h3>Økende etterspørsel etter UI/UX-designere</h3>
@@ -17,7 +17,7 @@ export const post: Post = {
 <p>I tillegg til dette skiftet i tankesett, bruker mange organisasjoner nå UX-design for å øke kundelojalitet og øke salget.</p>
 <p>Videre har programvare- og webutvikling blitt så komplekst at det krever mer spesialiserte ferdigheter enn noen gang før. Selskaper over hele verden stoler sterkt på disse designerne i håp om at de kan skape intuitive opplevelser. Samtidig navigerer brukerne gjennom systemene deres, noe som kan bli kompliser.</p>
 <p>Så hvis du lette etter enda et tegn som forteller deg, «Dette er din vei,» trenger du ikke lete lenger. Etterhvert som etterspørselen etter UI/UX-designere fortsetter å øke, øker også behovet for flere dyktige individer. Spesielt personer som kan skape unike design som brukerne vil elske. Med din dedikasjon og litt motivasjon fra oss, er vi sikre på at du vil kunne få det til allerede nå!</p>
-<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/1.jpg" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
+<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/1.webp" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
 <h2>UX-designere trenger et solid fundament</h2>
 <p>Før vi går inn i detaljene om hvilke steg du må ta for å bli en suksessfull designer innen 2024, la oss først snakke om å bygge en sterk grunnmur. Du må ha alle ferdighetene dine på plass for å forberede deg på et konkurransepreget jobbmarked.</p>
 <h3>Lær deg designprinsippene</h3>
@@ -27,7 +27,7 @@ export const post: Post = {
 <p><strong>Layout og komposisjon</strong>Layout og komposisjon er kritiske elementer i UI/UX-design som skaper en intuitiv brukeropplevelse. Den rette layouten lar designere organisere informasjon tydelig, slik at brukerne enkelt kan navigere i grensesnittet. Det skaper også visuelle hierarkier mellom elementer som informerer brukerne om hvordan grensesnittet fungerer. Å vite hvordan man bruker layout og komposisjon er essensielt for enhver ambisiøs designer.</p>
 <p>For å virkelig mestre disse grunnleggende prinsippene, kan du se eksempler på vellykkede designprosjekter som <a href="/ny-nettside/obos" target="_blank" rel="noopener noreferrer">OBOS-prosjektet</a> og <a href="/ny-nettside/runners-world" target="_blank" rel="noopener noreferrer">Runners World-prosjektet</a>.</p>
 <p>Ved å forstå og anvende disse konseptene vil du være godt rustet til å skape nettsider som både ser fantastiske ut og gir en optimal brukeropplevelse.</p>
-<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/2.jpg" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
+<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/2.webp" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
 <h2>Lag en portefølje for UI/UX-design</h2>
 <h3>Prosjekter og designprosess</h3>
 <p>Å ha de riktige designferdighetene er viktig, men ikke alt for å lande en jobb i et seriøst selskap. En imponerende portefølje som viser frem ferdighetene dine er like viktig når du søker på UI/UX-designerstillinger. Å bygge prosjekter viser din evne til å anvende disse ferdighetene praktisk.</p>
@@ -38,20 +38,20 @@ export const post: Post = {
 <p>Ved å bruke disse metodene når du søker på jobber som UI/UX-designer øker du sjansene for å bli ansatt! Arbeidsgivere ser etter folk som vet hva de driver med. Å ha dokumentasjon som beviser det vil skille deg ut fra andre søkere.</p>
 <p>For mer inspirasjon og eksempler, sjekk ut arbeidet vi har utført. Se f.eks. <a href="/ny-nettside/messecup" target="_blank" rel="noopener noreferrer">Messecup</a> og <a href="/ny-nettside/ability-media" target="_blank" rel="noopener noreferrer">Ability Media</a> for hvordan vi har utført prosjekter og skapt en profesjonell portefølje.</p>
 <p>Med riktig presentasjon og dokumentasjon av din prosess og dine ferdigheter, vil du være godt posisjonert. Du kan nå imponere potensielle arbeidsgivere og lande drømmejobben som UI/UX-designer.</p>
-<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/3.jpg" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
+<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/3.webp" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
 <h2>Personlige prosjekter og casestudier</h2>
 <h3>Viktigheten av prosjekter</h3>
 <p>Kursarbeid kan bare ta studenter et stykke på vei før personlige prosjekter blir nødvendige for å vokse som designere. Personlige prosjekter gir dem muligheten til å eksperimentere med nye teknikker og tilnærminger. Ved å anvende kreativitet og UX-prinsipper kan de være mer åpne for nye ideer enn det klientarbeid tillater.</p>
 <p>Eksempler på personlige prosjekter kan inkludere å designe applikasjoner eller nettsider fra bunnen av. Også å redesigne eksisterende løsninger, eller eksperimentere med forskjellige brukergrensesnitt. Ved å ta på seg personlige prosjekter kan designere utvikle seg i sitt eget tempo og lære nye verktøy som hjelper dem med å skape bedre design mye raskere.</p>
 <p><strong>Verdi av casestudier</strong>Casestudier er også verdifulle for en designer. Det er en ting å si at du har produsert et vellykket grensesnittsdesign – en annen å bevise det. Ved å analysere suksesser og feil fra tidligere prosjekter, kan andre profesjonelle lære av dine feil og forbedre sine egne ferdigheter betydelig. Når du lager casestudier, forklar brukerforskning, kundetilbakemeldinger, resultater fra brukertesting, prototypingmetoder og beslutninger tatt under designprosessen.</p>
-<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/4.jpg" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
+<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/4.webp" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
 <h2>Freelance-arbeid og internships</h2>
 <p>For yngre designere som ønsker å tjene penger på ferdighetene sine eller de som ønsker en praksisplass hos et anerkjent selskap, er en portefølje full av personlig arbeid sannsynligvis en av de viktigste tingene de kan ha akkurat nå. Den viser potensielle arbeidsgivere hvor dyktig du er og hva som går gjennom hodet ditt når du designer intuitive grensesnitt for dem!</p>
 <p><strong>Erfaring gjennom freelance og internships</strong>Freelance og internships er flotte måter for UI/UX-designere å få erfaring på. Freelance gir unge designere muligheten til å jobbe på kortere prosjekter for å bygge porteføljen sin uten å binde seg til jobber eller utfordrende langsiktige prosjekter. På den andre siden gir internships designere muligheten til å lære mer om bransjen, få praktisk erfaring og jobbe med erfarne fagfolk som kan veilede dem.</p>
 <p>Freelance tilbyr også en fleksibel arbeidsplan som mange verdsetter. Man kan jobbe som freelancer fra hvor som helst i verden og fortsatt ha kontroll over når de jobber. I tillegg, ved ikke å måtte binde seg til langsiktige kontrakter, får UI/UX-designere sjansen til å diversifisere erfaringene sine gjennom klienter fra forskjellige bransjer.</p>
 <p><strong>Bli med i designmiljøer</strong>Å bli med i designmiljøer og organisasjoner er et smart trekk for de som er ivrige etter å fortsette å lære selv etter å ha fått en internship eller freelance-gig. Disse miljøene lar designere knytte kontakt med andre i feltet og lære fra profesjonelle som har vært der før dem. For mer innsikt, se eksempler på vellykkede prosjekter som OBOS-prosjektet og Ability Media-prosjektet.</p>
 <p>Ved å ta på seg personlige prosjekter, lage detaljerte casestudier og utnytte mulighetene innen freelancing og internships, kan unge designere bygge en sterk portefølje og utvikle ferdighetene som kreves for å lykkes i UI/UX-designverdenen.</p>
-<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/5.jpg" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
+<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/5.webp" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
 <h2>Nettverksbygging og profesjonell utvikling</h2>
 <h3>Bli med i designmiljøer og organisasjoner</h3>
 <p>Designere kan finne jobbannonser, mentorprogrammer, workshops, konferanser, konkurranser og mer ved å være en del av disse nettverkene. Å engasjere seg i slike organisasjoner gir håpefulle profesjonelle muligheten til å møte likesinnede personer de kan samarbeide med på fremtidige jobber eller prosjekter.</p>
@@ -62,7 +62,7 @@ export const post: Post = {
 <p>Det er mange måter for håpefulle UI/UX-designere å lære mer om bransjen og forberede seg på en vellykket karriere. En av de mest effektive metodene er å delta på <a href="https://www.drb.no/" target="_blank" rel="noopener noreferrer">designkonferanser og workshops</a> som fokuserer på spesifikke områder innen design. Ved å delta på slike arrangementer kan designere få verdifull innsikt, lære om nye verktøy og teknikker, og utvide sitt profesjonelle nettverk.</p>
 <p>Gjennom aktiv deltakelse i designmiljøer, kontinuerlig læring og engasjement i profesjonelle nettverk, kan UI/UX-designere styrke sin posisjon i bransjen. Ved å ta i bruk ressurser som kurs, sertifiseringer og tilbakemeldinger fra jevnaldrende, kan de ikke bare bygge imponerende porteføljer, men også utvikle ferdighetene som trengs for å lykkes.</p>
 <p>For inspirasjon og eksempler på hvordan nettverksbygging og profesjonell utvikling kan bidra til suksess, se <a href="/referanser">referanser fra våre kunder</a>.</p>
-<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/6.jpg" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
+<figure><img src="/posts/hvordan-bli-en-dyktig-ui-ux-designer/6.webp" alt="Hvordan bli en UI/UX-designer" loading="lazy" /></figure>
 <h2>Jobbsøking og karriere</h2>
 <h3>Bruk tid på en god CV</h3>
 <p>For å få en jobb som UI/UX-designer, trenger du to viktige ting: en knallsterk CV og en portefølje. En CV må vise en forståelse for brukeropplevelsesdesign sammen med relevant ferdighetssett og erfaring. Det er viktig å være kortfattet, men også grundig. Porteføljer bør gi arbeidsgivere eksempler på kandidatens arbeid, og bevise deres evne til å løse designutfordringer.</p>

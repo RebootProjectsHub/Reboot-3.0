@@ -7,7 +7,7 @@ export const post: Post = {
   date: "2. januar 2024",
   dateISO: "2024-01-02",
   excerpt: "Woocommerce og Shopify har lenge vært på toppen av e-handelsplattformmarkedet, men de tjener ulike typer bedrifter og behov.",
-  image: "/posts/shopify-vs-woocommerce-i-2024/featured.jpg",
+  image: "/posts/shopify-vs-woocommerce-i-2024/featured.webp",
   imageAlt: "Shopify vs. WooCommerce i 2024",
   contentHtml: `<p>Woocommerce og Shopify har lenge vært på toppen av e-handelsplattformmarkedet, men de tjener ulike typer bedrifter og behov. Shopify, kjent for sin brukervennlighet, tilbyr en alt-i-ett-løsning, mens WooCommerce er kjent for sin tilpasningsevne og integrasjon med <a href="/tjenester/wordpress">WordPress</a>.</p>
 <p><strong>Shopify: En komplett og brukervennlig løsning</strong></p>
@@ -16,7 +16,7 @@ export const post: Post = {
 <h3>WooCommerce: Tilpasningsmuligheter og full kontroll</h3>
 <p><a href="/tjenester/woocommerce">WooCommerce</a> er et fleksibelt, åpent kildekode-plugin for WordPress, som gir deg full kontroll over hvert aspekt av din nettbutikk. Det er en ideell løsning for de som allerede er kjent med WordPress, eller for de som trenger en høyere grad av tilpasning enn det Shopify tilbyr. Keep Smiling har en guide for <a href="https://www.keepsmiling.no/legge-til-og-administrere-produkter-i-woocommerce/" target="_blank" rel="noopener noreferrer">produkthåndtering i Woocommerce</a>.</p>
 <h2>Fordeler med WooCommerce:</h2>
-<figure><img src="/posts/shopify-vs-woocommerce-i-2024/1.jpeg" alt="Shopify vs. WooCommerce i 2024" loading="lazy" /></figure>
+<figure><img src="/posts/shopify-vs-woocommerce-i-2024/1.webp" alt="Shopify vs. WooCommerce i 2024" loading="lazy" /></figure>
 <h2>Shopify vs. WooCommerce: Hvilken er best</h2>
 <p>Når du bestemmer deg mellom Shopify og WooCommerce, er det flere viktige faktorer å vurdere:</p>
 <p>Å velge mellom Shopify og WooCommerce i 2024 avhenger av dine forretningsbehov, tekniske ferdigheter og vekstambisjoner. Shopify tilbyr en brukervennlig og omfattende e-handelsløsning, mens WooCommerce gir mer fleksibilitet og tilpasning til en potensielt lavere kostnad.</p>

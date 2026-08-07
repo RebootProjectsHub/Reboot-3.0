@@ -7,18 +7,18 @@ export const post: Post = {
   date: "13. desember 2024",
   dateISO: "2024-12-13",
   excerpt: "SEO og webdesign henger tett sammen. Slik påvirker ytelse, innhold, kode og visuelt uttrykk om kundene finner nettsiden din – og om de blir.",
-  image: "/posts/seo-og-webdesign/featured.jpg",
+  image: "/posts/seo-og-webdesign/featured.webp",
   imageAlt: "SEO og webdesign",
   contentHtml: `<p>Mestring av SEO og webdesign er nøkkelen til synlighet på nett. En nettside er ofte første møtepunkt mellom en bedrift og dens kunder, og hvordan den presterer, både teknisk og estetisk, kan avgjøre om kundene finner siden din og om de faktisk blir værende på den.</p>
 <p>Søkemotoroptimalisering (SEO) handler ikke bare om nøkkelord og lenker. Det inkluderer alt fra nettsidens ytelse, innhold og kode til dens visuelle uttrykk. For eksempel er en nettsides design avgjørende for brukeropplevelsen. Hvis brukerne forlater en nettside raskt, registrerer søkemotorer dette som et tegn på at siden er irrelevant eller dårlig utformet. Resultatet? Lavere rangeringer og redusert synlighet.</p>
 <p>Et konkret eksempel på dette er når en nettbutikk som selger sportsutstyr, for eksempel <a href="https://xxl.no/" target="_blank" rel="noopener noreferrer">xxl.no</a>, ikke laster raskt nok, eller når menyene er vanskelige å navigere. Brukerne mister tålmodigheten, og siden faller i rangeringer. For å unngå dette må bedrifter fokusere på det grunnleggende: rask lastehastighet, mobilvennlighet og strukturert innhold.</p>
-<figure><img src="/posts/seo-og-webdesign/1.jpg" alt="SEO og webdesign" loading="lazy" /></figure>
+<figure><img src="/posts/seo-og-webdesign/1.webp" alt="SEO og webdesign" loading="lazy" /></figure>
 <h2>Hvordan design og SEO jobber sammen</h2>
 <p>En nettsides design er ikke bare en estetisk vurdering – det påvirker direkte hvordan søkemotorer rangerer siden. Søkemotorer som Google og Bing vurderer elementer som nettstedets responsivitet, metabeskrivelser, overskrifter og interne lenker. Samtidig er en teknisk velfungerende nettside viktig. For eksempel kan bruk av Google Search Console bidra til å analysere ytelsen til individuelle sider og gi innsikt i hvilke forbedringer som kreves.</p>
 <p>For norske bedrifter, som for eksempel en liten nisjebedrift som selger håndlaget keramikk, kan en SEO-optimalisert nettside være avgjørende for å konkurrere med større aktører. Ved å bruke riktig kode og struktur, kan disse sidene oppnå høyere rangeringer og få flere besøkende.</p>
-<figure><img src="/posts/seo-og-webdesign/2.jpg" alt="SEO og webdesign" loading="lazy" /></figure>
+<figure><img src="/posts/seo-og-webdesign/2.webp" alt="SEO og webdesign" loading="lazy" /></figure>
 <h2>Ti steg mot en SEO-optimalisert nettside</h2>
-<figure><img src="/posts/seo-og-webdesign/3.jpg" alt="SEO og webdesign" loading="lazy" /></figure>
+<figure><img src="/posts/seo-og-webdesign/3.webp" alt="SEO og webdesign" loading="lazy" /></figure>
 <h2>Hvorfor enkelt design er bra for SEO</h2>
 <p>Et godt webdesign handler ikke bare om estetikk – det handler om å skape en struktur som er enkel, brukervennlig og optimalisert for både brukere og søkemotorer. En ren layout gir et positivt førsteinntrykk, holder brukerne engasjert og styrker nettstedets ytelse. La oss utforske hvorfor dette er avgjørende.</p>
 <h3>Førsteinntrykk betyr alt</h3>
@@ -27,7 +27,7 @@ export const post: Post = {
 <p>Mennesker trekkes mot det intuitive. Et design med få distraksjoner hjelper brukerne med å finne informasjon raskt og effektivt. Ved å prioritere enkelhet kan du fokusere på det som virkelig betyr noe – innholdet. For eksempel har nettsteder med god typografi og strategisk bruk av hvitt rom høyere sannsynlighet for å holde brukerne engasjert, uavhengig av enhet.</p>
 <h3>SEO-fordelene med enkelhet</h3>
 <p>Søkemotorer rangerer nettsteder basert på brukernes opplevelser. En nettside med enkel design har vanligvis lavere fluktfrekvens og høyere tidsbruk per side – to faktorer som forbedrer SEO. I tillegg er en oversiktlig lenkestruktur og en brukervennlig navigasjon viktig for både søkemotorer og brukere. Norske selskaper som Finn.no har utnyttet dette prinsippet for å bygge en struktur som både er lett å forstå og SEO-optimalisert.</p>
-<figure><img src="/posts/seo-og-webdesign/4.jpg" alt="SEO og webdesign" loading="lazy" /></figure>
+<figure><img src="/posts/seo-og-webdesign/4.webp" alt="SEO og webdesign" loading="lazy" /></figure>
 <h2>SEO på mobil</h2>
 <p>Den mest populære enheten for internettbruk er definitivt mobilen. Derfor må nettstedet ditt være designet med mobilen som utgangspunkt. Å ignorere mobilvennlighet er som å stenge døren for halve kundegrunnlaget ditt.</p>
 <p>Statistikk viser at over halvparten av alle nettsøk i Norge gjøres via mobil. Hvis nettsiden din ikke er optimalisert for mindre skjermer, mister du en betydelig andel av potensielle kunder. Tenk for eksempel på en lokal restaurant som tilbyr takeaway: En dårlig mobilopplevelse kan koste dem verdifulle bestillinger.</p>
@@ -40,7 +40,7 @@ export const post: Post = {
 <h3>Raskere lastetid og bedre rangering</h3>
 <p>Med færre elementer og enklere kode reduseres lastetiden – en avgjørende faktor for både brukervennlighet og SEO. En rask nettside forbedrer brukeropplevelsen og reduserer risikoen for at besøkende forlater siden før innholdet er lastet.</p>
 <p>Minimalisme gir rom for brukervennlige løsninger som gjør det enkelt å navigere, lese og forstå innholdet. Ved å bruke tydelig typografi og nok hvitt rom kan nettsiden tilpasses alle brukergrupper, inkludert de med synshemninger eller spesielle behov.</p>
-<figure><img src="/posts/seo-og-webdesign/5.jpg" alt="SEO og webdesign" loading="lazy" /></figure>
+<figure><img src="/posts/seo-og-webdesign/5.webp" alt="SEO og webdesign" loading="lazy" /></figure>
 <h2>Teknisk SEO optimalisering</h2>
 <p>Akkurat som et velholdt byggfasade kan tiltrekke seg oppmerksomhet, bidrar teknisk SEO optimalisering til raskere nettsidelasting og en bedre brukeropplevelse. Dette er essensielt for både brukertilfredshet og SEO.</p>
 <h3>Reduser filstørrelse og last raskere</h3>
@@ -54,7 +54,7 @@ export const post: Post = {
 <h3>Fjern ødelagte lenker for bedre SEO</h3>
 <p>Ødelagte lenker er som veiskilt som ikke fører noe sted – de frustrerer brukerne og skader nettstedets troverdighet. Regelmessig overvåking og fjerning av disse lenkene er avgjørende. Pass på at nettsiden din ikke har noen 404-sider.</p>
 <p>Når brukere klikker på en lenke som ikke fungerer, opplever de det som et tegn på dårlig vedlikehold. For eksempel kan en norsk reiselivsbedrift miste kunder hvis viktige lenker til bookingssider ikke fungerer.</p>
-<figure><img src="/posts/seo-og-webdesign/6.jpg" alt="SEO og webdesign" loading="lazy" /></figure>
+<figure><img src="/posts/seo-og-webdesign/6.webp" alt="SEO og webdesign" loading="lazy" /></figure>
 <h3>Forbedre søkemotorindeksering</h3>
 <p>Søkemotorer bruker lenker for å finne og indeksere innhold. Ødelagte lenker hindrer denne prosessen, noe som kan føre til lavere rangeringer. Ved å bruke verktøy som Screaming Frog kan man identifisere og rette opp i problematiske lenker.</p>
 <p>Selv med grundige kontroller kan ødelagte lenker forekomme. En brukervennlig 404-side med navigasjonsalternativer og en søkefunksjon kan redusere frustrasjonen og veilede brukeren tilbake til relevant innhold.</p>
@@ -66,7 +66,7 @@ export const post: Post = {
 <p>Alt-tekst er som en stemme for bildene dine, som hjelper søkemotorer og brukere med nedsatt syn å forstå innholdet.</p>
 <p>Ved å inkludere relevante nøkkelord i alt-teksten kan bildene dine rangeres høyere i Googles bildesøk. Dette er en verdifull trafikkilde, spesielt for visuelle bransjer som mote og interiør.</p>
 <p>Alt-tekst gjør nettsiden mer inkluderende ved å gi skjermlesere mulighet til å forklare bilder for brukere med synshemminger. Dette er et viktig skritt mot universell utforming.</p>
-<figure><img src="/posts/seo-og-webdesign/7.jpg" alt="SEO og webdesign" loading="lazy" /></figure>
+<figure><img src="/posts/seo-og-webdesign/7.webp" alt="SEO og webdesign" loading="lazy" /></figure>
 <h2>Webdesign og SEO oppsummert</h2>
 <p>Webdesign og SEO er to sider av samme mynt som sammen legger grunnlaget for en vellykket nettside. Gjennom hele dette blogginnlegget har vi utforsket hvordan estetikk og funksjonalitet kan forenes for å skape nettsider som ikke bare ser bra ut, men også presterer godt på søkemotorene. Fra enkelhet i design og mobilvennlighet til optimalisering av CSS, JavaScript og URL-strukturer, viser det seg at små tekniske grep kan gi store resultater.</p>
 <p>Den moderne nettbrukeren forventer sømløse opplevelser. Samtidig vurderer søkemotorene hvordan nettstedene dine presterer for brukerne. Denne dobbelte vurderingen betyr at vi må tenke helhetlig. Et nettsidedesign som balanserer brukervennlighet, rask lastetid og SEO-strategier, vil ikke bare tiltrekke flere besøkende, men også holde dem engasjert lenger.</p>

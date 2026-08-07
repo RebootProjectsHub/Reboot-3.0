@@ -7,13 +7,13 @@ export const post: Post = {
   date: "2. januar 2025",
   dateISO: "2025-01-02",
   excerpt: "I det vi går inn i 2025 ser vi en stadig utvikling i rollen til en produktdesigner, der kreativitet smelter sammen med teknologi.",
-  image: "/posts/hva-er-en-produktdesigner/featured.jpg",
+  image: "/posts/hva-er-en-produktdesigner/featured.webp",
   imageAlt: "Hva er en produktdesigner?",
   contentHtml: `<p>I det vi går inn i 2025 ser vi en stadig utvikling i rollen til en produktdesigner, der kreativitet smelter sammen med teknologi. Disse innovatørene står i skjæringspunktet mellom kunst og ingeniørvitenskap og skaper banebrytende produkter.</p>
 <p>Produktdesignere spiller en kritisk rolle i både vellykkede forretninger og i brukeropplevelsesdesign. De er nøkkelpersonene bak innovative produkter som møter kundenes behov.</p>
 <p>Dette krever en dyp forståelse av kundenes ønsker, tilgjengelig teknologi og konkurrentenes aktiviteter. Deres kunnskap om å kombinere designprinsipper med ingeniørkunst er essensiell for å utvikle produkter som ikke bare skiller seg ut, men som også har en merkbar innvirkning på brukerne.</p>
 <p>I en tid der teknologi er lett tilgjengelig, er det logisk at produktdesignere omsetter ideer til virkelighet raskere enn noensinne. Dette gjør dem til uvurderlige medlemmer i enhver virksomhet som ønsker å ligge i forkant.</p>
-<figure><img src="/posts/hva-er-en-produktdesigner/1.jpg" alt="Hva er en produktdesigner?" loading="lazy" /></figure>
+<figure><img src="/posts/hva-er-en-produktdesigner/1.webp" alt="Hva er en produktdesigner?" loading="lazy" /></figure>
 <h2>Hva innebærer produktdesign?</h2>
 <p>Å designe et produkt er langt fra en enkel oppgave. Mye arbeid og forskning ligger bak skapelsen av det perfekte produktet som alle ønsker eller trenger. Uansett om det handler om å utvikle apper, programvare, møbler eller elektronikk, står grundig forskning sentralt – det handler om å forstå menneskers behov og hvordan de opplever ting.</p>
 <p>I de senere årene har det vært en økende fokus på skapelsen av digitale produkter for å definere hva dette studiefeltet virkelig innebærer. Industriell design omfatter sammensetningen av produserte varer, noe som fortsatt er høyt verdsatt.</p>
@@ -25,7 +25,7 @@ export const post: Post = {
 <p>Designet ditt må også være brukervennlige i sin kjerne. Inkorporer prinsipper for brukeropplevelse (UX) i ditt daglige arbeid slik at alt er intuitivt og enkelt for sluttbrukeren å interagere med.</p>
 <p>Å lage produkter er en ting, men du må sørge for at dine er bedre enn andres. Hold deg oppdatert på bransjetrender og samarbeid med andre eksperter som ingeniører, markedsførere og UX-forskere. Sjekk ut DOGA for <a href="https://doga.no/" target="_blank" rel="noopener noreferrer">bransetrender innen design og arkitektur</a>.</p>
 <p>Delta i brukertesting for å få ekte tilbakemeldinger fra mennesker som engasjerer seg i designet ditt, møt frister konsekvent og lever høykvalitetsprodukter i rekordfart. Det er mye arbeid, men det holder bedrifter i forkant — som er grunnen til at de betaler deg de store summene.</p>
-<figure><img src="/posts/hva-er-en-produktdesigner/2.jpg" alt="Hva er en produktdesigner?" loading="lazy" /></figure>
+<figure><img src="/posts/hva-er-en-produktdesigner/2.webp" alt="Hva er en produktdesigner?" loading="lazy" /></figure>
 <h3>Produktdesigner vs UX-designer</h3>
 <p>Produktdesignere og UX-designere er to forskjellige roller med mye til felles. Begge fokuserer på lignende aspekter, men med ulike egenskaper. Produktdesignere gjør akkurat det navnet antyder: de designer produkter.</p>
 <p>De håndterer planlegging, forskning og utvikling fra start til slutt. De lærer om kundenes ønsker og behov, samt om teknologi og designprinsipper for å skape unike produkter som selger. Selv om det kan høres ut som en produktleder, er det en helt annen jobb.</p>

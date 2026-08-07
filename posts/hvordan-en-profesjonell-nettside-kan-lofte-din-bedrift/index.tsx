@@ -8,14 +8,14 @@ export const post: Post = {
   date: "14. oktober 2023",
   dateISO: "2023-10-14",
   excerpt: "Nettsiden er ofte det første møtet en kunde har med bedriften din. Slik kan en profesjonell nettside styrke førsteinntrykk, tillit og salg.",
-  image: "/posts/hvordan-en-profesjonell-nettside-kan-lofte-din-bedrift/featured.jpeg",
+  image: "/posts/hvordan-en-profesjonell-nettside-kan-lofte-din-bedrift/featured.webp",
   imageAlt: "Hvordan en profesjonell nettside kan løfte din bedrift",
   contentHtml: `<p>Det er et kjent faktum at bedriftens online tilstedeværelse er kritisk i vår digitaliserte verden. En profesjonell nettside er ofte den første interaksjonen en potensiell kunde har med din bedrift, og førsteinntrykket teller. La oss dykke dypere inn i hvordan en flott nettside kan være et betydelig aktivum for din bedrift.</p>
 <h3>Hvorfor en profesjonell nettside er uvurderlig</h3>
 <p>En veldesignet nettside er ikke bare et “vindu” for bedriften din, men også et verktøy som kan forbedre den samlede drifts- og salgseffektiviteten. Gjennom <a href="/tjenester/#nettsider">søkemotoroptimalisering (SEO)</a>, kan din nettside tiltrekke seg relevant trafikk og dermed potensielle kunder. Førsteinntrykket er vitalt, og et nettsted som er visuelt tiltalende og brukervennlig, kan øke sjansene for konverteringer og salg.</p>
 <h3>Essensielle elementer i en profesjonell nettside</h3>
 <p>En optimal nettside kombinerer estetikk med funksjonalitet. Dette inkluderer et attraktivt design, intuitiv navigasjon, klart og presist innhold, og raske lastetider. Med tilgang til relevant informasjon og en enkel kjøpsprosess, tilbyr du en optimal kundeopplevelse. I tillegg vil en mobilresponsiv nettside sikre at alle brukere, uavhengig av enhet, har tilgang til ditt digitale rom.</p>
-<figure><img src="/posts/hvordan-en-profesjonell-nettside-kan-lofte-din-bedrift/1.jpeg" alt="Hvordan en profesjonell nettside kan løfte din bedrift" loading="lazy" /></figure>
+<figure><img src="/posts/hvordan-en-profesjonell-nettside-kan-lofte-din-bedrift/1.webp" alt="Hvordan en profesjonell nettside kan løfte din bedrift" loading="lazy" /></figure>
 <h3>Brukeropplevelse og konverteringsoptimalisering</h3>
 <p>En professionell nettside handler også om å skape en sømløs og positiv brukeropplevelse (UX). Gjennom analyse og tilbakemeldinger kan nettsiden videreutvikles for å øke konverteringsratene. Dette inkluderer å perfeksjonere kundereisen, fra første klikk til endelig kjøp, samt å optimalisere alle kontaktpunkter og interaksjoner brukerne har med siden din.</p>
 <h3>Kvalitet og tillit</h3>

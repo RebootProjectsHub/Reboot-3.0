@@ -7,7 +7,7 @@ export const post: Post = {
   date: "30. mars 2025",
   dateISO: "2025-03-30",
   excerpt: "KI, automatisering og sanntidstilpasning har endret hvordan vi jobber. Slik ser designprosessen vår ut, fra innsikt til ferdig grensesnitt.",
-  image: "/posts/slik-er-var-designprosess/featured.jpg",
+  image: "/posts/slik-er-var-designprosess/featured.webp",
   imageAlt: "Slik er vår designprosess",
   contentHtml: `<p>Design har alltid vært i utvikling, men i 2025 merker vi endringene dypere. Kunstig intelligens, automatisering og grensesnitt som tilpasses brukeren i sanntid, har forvandlet hvordan vi skaper og tenker brukergrensesnitt. For å lykkes i en designprosess må både designere og beslutningstakere forstå de nye mekanismene, verktøyene og metodene som nå driver utviklingen fremover.</p>
 <p>Der design tidligere handlet om estetikk og struktur, handler det nå like mye om adferdsanalyse, dataflyt og teknologisk tilpasning. Designprosessen har blitt mer kompleks – men også mer kraftfull.</p>
@@ -20,7 +20,7 @@ export const post: Post = {
 <p>En av de vanligste årsakene til at digitale prosjekter feiler, er at målet aldri ble tydelig nok. Å definere prosjektets omfang – hva som skal lages, hvorfor det skal lages og hvordan man måler om det fungerer – er derfor det aller første som må på plass.</p>
 <p>Dersom teamet mangler en felles forståelse, blir det fort misforståelser, dobbeltarbeid og feilprioriteringer. For å unngå det trengs tydelig kommunikasjon, gode møteplasser og ikke minst verktøy som hjelper oss å fordele ressursene riktig. Her har AI vist seg nyttig i en designprosess, blant annet for å forutsi flaskehalser og justere tidslinjer løpende.</p>
 <p>En gjennomtenkt strategi, kombinert med moderne teknologi og strukturert samhandling, øker sjansen for å levere riktig løsning – til rett tid og til rett budsjett.</p>
-<figure><img src="/posts/slik-er-var-designprosess/2.jpg" alt="Slik er vår designprosess" loading="lazy" /></figure>
+<figure><img src="/posts/slik-er-var-designprosess/2.webp" alt="Slik er vår designprosess" loading="lazy" /></figure>
 <h2>Idé og prototype</h2>
 <p>Å lage wireframes og prototyper er ikke bare en teknisk oppgave – det er her design begynner å puste. Tidligere brukte vi dager på å tegne opp skjermbilder og klikke dem sammen, som del av vår designprosess. Nå finnes det verktøy som lar oss lage fungerende prototyper på minutter. I tillegg foreslår de automatisk layoutendringer basert på bruksmønstre og visuell balanse.</p>
 <p>Gjenbrukbare komponenter gir konsistens og gjør det enklere å samarbeide på tvers av team og tidssoner. Et designsystem er ikke lenger en luksus – det er en nødvendighet for å sikre kvalitet og tempo.</p>
@@ -31,7 +31,7 @@ export const post: Post = {
 <p>Samtidig har mikrointeraksjoner og animasjon fått en mer sentral rolle. Små bevegelser og tilbakemeldinger gir brukeren trygghet, og reduserer friksjon. Det er disse detaljene som får en app eller <a href="/tjenester">nettside</a> til å føles intuitiv, selv når innholdet er komplekst.</p>
 <p>Og så er det AI. Der vi før satt med fem versjoner av en knapp, kan vi nå generere hundre – og velge den som gir best resultat, basert på faktisk brukerdata. Kunstig intelligens overtar ikke designrollen, men frigjør tid og åpner rom for nytenkning.</p>
 <p>I kombinasjon med IoT – internet of things – må designere i dag også tenke fysisk. Hvordan reagerer grensesnittet på at brukeren forlater rommet? Hvordan endres visningen når en sensor registrerer bevegelse? Slike spørsmål blir stadig vanligere – og mer spennende.</p>
-<figure><img src="/posts/slik-er-var-designprosess/3.jpg" alt="Slik er vår designprosess" loading="lazy" /></figure>
+<figure><img src="/posts/slik-er-var-designprosess/3.webp" alt="Slik er vår designprosess" loading="lazy" /></figure>
 <h2>Kvalitet i praksis</h2>
 <p>Ingen god løsning blir til uten grundig testing, som er en viktig del av vår designprosess. Uansett om vi bygger en app, en nettbutikk eller en intern plattform, må vi vite at det faktisk fungerer for dem det gjelder.</p>
 <p>Testing handler ikke bare om å finne feil – det handler om å forstå. <a href="https://www.nngroup.com/articles/usability-testing-101" target="_blank" rel="noopener noreferrer">Usability testing</a> lar oss se hvordan mennesker faktisk bruker løsningen, og hva som forstyrrer, frustrerer eller overrasker. Og med verktøy som fanger opp klikk, bevegelse og øyefokus i sanntid, får vi innsikt vi ikke kunne drømt om for bare få år siden.</p>
@@ -43,7 +43,7 @@ export const post: Post = {
 <p>Ved å bruke felles verktøy og språk – enten det er gjennom design tokens, versjonskontroll eller automatiserte overleveringsverktøy – reduseres risikoen for feil og misforståelser.</p>
 <p>Samtidig må prosessen være dokumentert og strukturert. Hva skjer hvis teamet endres midt i prosjektet? Hvordan sikrer vi at løsningen kan videreutvikles ett år fra nå?</p>
 <p>Her er ikke teknologien nok i seg selv. Det handler like mye om kultur. Team som jobber tett og åpent, leverer bedre. Det er ikke bare en hypotese – det er dokumentert.</p>
-<figure><img src="/posts/slik-er-var-designprosess/4.jpg" alt="Slik er vår designprosess" loading="lazy" /></figure>
+<figure><img src="/posts/slik-er-var-designprosess/4.webp" alt="Slik er vår designprosess" loading="lazy" /></figure>
 <h2>Helheten skaper verdien</h2>
 <p>En designprosess handler ikke lenger om å finne den peneste løsningen – den handler om å skape mening. Teknologien gir oss nye verktøy, men det er forståelsen for menneskelig atferd som avgjør hva som treffer. Derfor må design være like mye lyttende som skapende.</p>
 <p>Gjennom innsiktsarbeid, tydelig rammesetting, smart prototyping og godt samarbeid på tvers av fagfelt, kan vi utvikle løsninger som ikke bare fungerer – men som faktisk forandrer noe.</p>

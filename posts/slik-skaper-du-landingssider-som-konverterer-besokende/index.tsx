@@ -8,7 +8,7 @@ export const post: Post = {
   date: "31. oktober 2023",
   dateISO: "2023-10-31",
   excerpt: "Slik lager du landingssider som ikke bare fanger oppmerksomhet, men også veileder den besøkende smidig videre mot konvertering.",
-  image: "/posts/slik-skaper-du-landingssider-som-konverterer-besokende/featured.jpg",
+  image: "/posts/slik-skaper-du-landingssider-som-konverterer-besokende/featured.webp",
   imageAlt: "Slik skaper du landingssider som konverterer besøkende",
   contentHtml: `<p>Landingsside som konverterer: Forvandle besøkende til kunder med landingssider som ikke bare fanger oppmerksomhet, men også veileder brukeren smidig mot konvertering. Utforsk hvordan en godt designet landingsside kan bli din mest effektive salgsagent.</p>
 <h2>Grunnsteinen for effektive landingssider</h2>
@@ -17,7 +17,7 @@ export const post: Post = {
 <p>Å skape et sterkt førsteinntrykk starter med et klart og engasjerende design. Visuell appell, kombinert med en tydelig verdiutsagn, fanger umiddelbart besøkendes oppmerksomhet og holder dem på siden. Sopra Steria fremhever hvordan et <a href="https://www.soprasteria.no/vi-mener/details/datadrevet-design-konverteringsoptimalisering-hva-er-det-og-hvorfor-er-det-nyttig" target="_blank" rel="noopener noreferrer">datadrevet design kan påvirke konverteringsratene</a> positivt.</p>
 <h3>En klar og konsis melding</h3>
 <p>Det er essensielt at besøkende raskt forstår hva du tilbyr og hvilken verdi det gir dem. Benytt kort og presis tekst, fremhev fordeler og bruk punktlister eller infografikker for å forenkle kompleks informasjon.</p>
-<figure><img src="/posts/slik-skaper-du-landingssider-som-konverterer-besokende/1.jpg" alt="Slik skaper du landingssider som konverterer besøkende" loading="lazy" /></figure>
+<figure><img src="/posts/slik-skaper-du-landingssider-som-konverterer-besokende/1.webp" alt="Slik skaper du landingssider som konverterer besøkende" loading="lazy" /></figure>
 <p><strong>Sterke handlingsoppfordringer (CTA)</strong></p>
 <p>CTA-ene dine bør være umulige å ignorere. Velg farger som skiller seg ut fra bakgrunnen, og bruk klare og oppfordrende ord som motiverer til handling.</p>
 <p>For å fange opp all trafikk, må landingssiden være optimalisert for alle enheter. En mobiloptimalisert side sikrer at brukeropplevelsen er konsekvent uavhengig av enhetens størrelse og type.</p>

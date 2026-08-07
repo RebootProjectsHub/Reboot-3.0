@@ -7,7 +7,7 @@ export const post: Post = {
   date: "28. april 2026",
   dateISO: "2026-04-28",
   excerpt: "Animasjoner kan gjøre nettsiden tydeligere og mer intuitiv – eller bli ren distraksjon. Slik bruker du bevegelse med tydelig hensikt.",
-  image: "/posts/animasjoner-pa-nettsider/featured.jpg",
+  image: "/posts/animasjoner-pa-nettsider/featured.webp",
   imageAlt: "Animasjoner på nettsider",
   contentHtml: `<p>Animasjoner har fått en naturlig plass i moderne nettsider, men effekten avhenger helt av hvordan de brukes. Når bevegelse støtter det brukeren prøver å oppnå, kan den gjøre opplevelsen tydeligere og mer intuitiv. Samtidig kan den fort bli en distraksjon hvis den brukes uten tydelig hensikt. Derfor handler ikke animasjon først og fremst om estetikk. Det handler om å forsterke forståelse, bygge rytme i opplevelsen og redusere usikkerhet i små øyeblikk der brukeren ellers kunne blitt stående fast.</p>
 <h2>Hva animasjoner egentlig gjør</h2>
@@ -25,7 +25,7 @@ export const post: Post = {
 <h3>Når grensesnittet reagerer på handling</h3>
 <p>Når en bruker trykker på en knapp, forventer de en umiddelbar reaksjon. En liten visuell bekreftelse er ofte nok til å skape trygghet. På samme måte hjelper animasjoner som forklarer endringer brukeren å forstå hva som nettopp skjedde. En meny som glir inn i stedet for å dukke opp, gir en følelse av sammenheng.</p>
 <p>I tillegg kan bevegelse brukes til å peke fremover. Hvis neste steg i en prosess antydes visuelt, blir det lettere å følge flyten. Dette gjelder spesielt i skjemaer og kjøpsprosesser, der usikkerhet ofte stopper fremdriften. Samtidig er det viktig å holde igjen. Når alt beveger seg, mister bevegelsen sin verdi. Derfor bør du velge noen få steder der effekten er størst, og la resten av siden være rolig.</p>
-<figure><img src="/posts/animasjoner-pa-nettsider/2.jpg" alt="Animasjoner på nettsider" loading="lazy" /></figure>
+<figure><img src="/posts/animasjoner-pa-nettsider/2.webp" alt="Animasjoner på nettsider" loading="lazy" /></figure>
 <p>Moderne verktøy gjør det enkelt å teste slike løsninger raskt. Likevel er det ikke verktøyet som avgjør resultatet. Det er evnen til å forstå hva brukeren trenger i det øyeblikket de er i. Når animasjon brukes som et svar på det behovet, blir den en naturlig del av opplevelsen, ikke et lag som er lagt oppå.</p>
 <h2>Når animasjoner former opplevelsen</h2>
 <p>Bakgrunn og lastemønstre er ofte det første brukeren merker, selv om de sjelden tenker over det. De setter tempoet, skaper stemning og påvirker hvordan resten av siden oppleves. Derfor er det avgjørende at denne typen animasjon ikke tar over, men heller legger et rolig lag som støtter innholdet. En svak bevegelse i bakgrunnen kan gi dybde og gjøre siden mer levende. Samtidig kan en tydelig lastindikator redusere frustrasjon fordi den viser at noe faktisk skjer.</p>
@@ -37,7 +37,7 @@ export const post: Post = {
 <h3>Når fargeoverganger blir en del av språket</h3>
 <p>Flytende farger kan brukes til å bygge en sammenhengende opplevelse der ulike deler av siden føles knyttet sammen. Samtidig kan de understøtte merkevaren ved å gi et gjenkjennelig uttrykk som går igjen i flere flater. En rolig overgang mellom farger kan også hjelpe brukeren å fokusere på viktige områder uten at det føles som en aktiv styring.</p>
 <p>Likevel må denne typen bevegelse brukes med presisjon. Hvis kontrastene er for sterke eller tempoet for høyt, kan det bli slitsomt å se på. Derfor bør intensiteten tilpasses innholdet. En informativ side krever roligere bevegelser enn en kampanjeside der oppmerksomhet er hovedmålet. Når farge og bevegelse jobber sammen, kan de forsterke budskapet uten å ta oppmerksomhet bort fra det.</p>
-<figure><img src="/posts/animasjoner-pa-nettsider/3.jpg" alt="Animasjoner på nettsider" loading="lazy" /></figure>
+<figure><img src="/posts/animasjoner-pa-nettsider/3.webp" alt="Animasjoner på nettsider" loading="lazy" /></figure>
 <h2>Førsteinntrykket setter retningen</h2>
 <p>Den første skjermen en bruker møter, legger premissene for resten av opplevelsen. Derfor er det naturlig at animasjon ofte brukes nettopp her. En gjennomtenkt introduksjon kan gjøre at siden oppleves mer levende og mer relevant fra første sekund.</p>
 <h3>Animasjoner som presenterer budskap</h3>
