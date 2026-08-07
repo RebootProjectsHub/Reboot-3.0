@@ -99,7 +99,7 @@ export function ServicesGrid() {
                   {href ? (
                     <a
                       href={href}
-                      className={`${chipClass} border-foreground/35 transition-colors duration-200 hover:bg-brand hover:text-white`}
+                      className={`${chipClass} border-foreground/20 transition-colors duration-200 hover:bg-brand hover:text-white`}
                     >
                       {tech}
                     </a>
