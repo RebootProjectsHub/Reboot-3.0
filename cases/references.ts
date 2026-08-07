@@ -127,4 +127,9 @@ export const references: Reference[] = [
     url: "https://certnor.no/",
     image: "/referanser/Certnor-Reboot.webp",
   },
+  {
+    name: "NAF",
+    url: "https://jobb.naf.no/",
+    image: "/referanser/NAF-ledige-stillinger.webp",
+  },
 ]
