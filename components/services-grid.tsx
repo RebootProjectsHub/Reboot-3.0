@@ -37,7 +37,7 @@ const kickerClass = "font-mono text-xs uppercase tracking-[0.12em] text-brand"
 const titleClass =
   "mt-3 font-heading text-[29px] font-normal leading-[1.14] text-foreground"
 const chipClass =
-  "inline-flex rounded-full border border-transparent bg-secondary px-[18px] py-[9px] text-[14.5px] font-semibold text-foreground"
+  "inline-flex rounded-full border bg-foreground/5 px-[18px] py-[9px] text-[14.5px] font-semibold text-foreground/85"
 
 /** The two-segment Reboot line used on cards across the site. */
 function RebootLine() {
@@ -67,7 +67,7 @@ export function ServicesGrid() {
               key={service.id}
               id={service.id}
               href={service.href}
-              className="group flex min-h-[200px] scroll-mt-24 flex-col rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-[34px] pt-9 transition-[transform,border-color,box-shadow] duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:-translate-y-1.5 hover:border-brand hover:shadow-[0_26px_46px_-26px_rgba(69,16,30,0.4)]"
+              className="group flex min-h-[200px] scroll-mt-24 flex-col rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-[34px] pt-9 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand"
             >
               <span className={kickerClass}>{service.kicker}</span>
               <h3 className={titleClass}>{service.title}</h3>
@@ -99,12 +99,12 @@ export function ServicesGrid() {
                     {href ? (
                       <a
                         href={href}
-                        className={`${chipClass} transition-colors duration-200 hover:border-brand hover:text-brand`}
+                        className={`${chipClass} border-brand transition-colors duration-200 hover:bg-brand hover:text-white`}
                       >
                         {tech}
                       </a>
                     ) : (
-                      <span className={chipClass}>{tech}</span>
+                      <span className={`${chipClass} border-transparent`}>{tech}</span>
                     )}
                   </li>
                 )
