@@ -231,7 +231,7 @@ export default function AiRadgivningPage() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className={`flex flex-col rounded-[26px] border-[1.5px] border-border bg-card px-7 pb-8 pt-7 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand hover:bg-secondary ${service.span}`}
+                className={`flex flex-col rounded-[26px] border-[1.5px] border-border bg-card px-7 pb-8 pt-7 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand ${service.span}`}
               >
                 <span className="font-mono text-xs font-bold text-brand">
                   {service.num}
