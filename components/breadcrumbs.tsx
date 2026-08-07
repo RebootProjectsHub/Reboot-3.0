@@ -19,7 +19,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
         return (
           <Fragment key={crumb.label}>
             {isLast || !crumb.href ? (
-              <span aria-current={isLast ? "page" : undefined} className="font-semibold text-foreground">
+              <span aria-current={isLast ? "page" : undefined} className="opacity-65">
                 {crumb.label}
               </span>
             ) : (
@@ -31,7 +31,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
               </Link>
             )}
             {!isLast && (
-              <span aria-hidden className="text-border">
+              <span aria-hidden className="text-foreground">
                 /
               </span>
             )}
