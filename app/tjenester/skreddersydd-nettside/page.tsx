@@ -239,7 +239,7 @@ export default function SkreddersyddNettsidePage() {
                 </div>
                 <a
                   href="/kontakt"
-                  className="inline-flex hidden md:block items-center justify-center rounded-full bg-[#ffffff21] px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
+                  className="inline-flex items-center justify-center rounded-full bg-[#ffffff21] px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
                 >
                   Kontakt oss
                 </a>
