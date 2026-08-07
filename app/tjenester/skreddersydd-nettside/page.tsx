@@ -161,7 +161,7 @@ export default function SkreddersyddNettsidePage() {
             href="/kontakt"
             className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
           >
-            Få et uforpliktende tilbud
+            Få et tilbud
           </a>
           <Link
             href="/nettside-priser"
