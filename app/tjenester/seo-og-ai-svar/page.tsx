@@ -83,9 +83,20 @@ const packages = [
 
 type Package = (typeof packages)[number]
 
-function SeoPackageCard({ pkg }: { pkg: Package }) {
+function SeoPackageCard({
+  pkg,
+  borderColor,
+}: {
+  pkg: Package
+  /** Overrides the resting border color class. Defaults to the ordinary
+   *  border; the mobile slider passes its own constant brand color instead. */
+  borderColor?: string
+}) {
+  const border = borderColor ?? "border-border"
   return (
-    <div className="group relative flex h-full flex-col rounded-[26px] border-[1.5px] border-border bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px]">
+    <div
+      className={`group relative flex h-full flex-col rounded-[26px] border-[1.5px] bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px] ${border}`}
+    >
       {pkg.highlighted && (
         <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
           Mest valgt
@@ -346,7 +357,7 @@ export default function SeoOgAiSvarPage() {
               )}
               cards={packages.map((pkg) => ({
                 key: pkg.name,
-                node: <SeoPackageCard pkg={pkg} />,
+                node: <SeoPackageCard pkg={pkg} borderColor="border-brand" />,
               }))}
             />
             <div className="hidden gap-[22px] sm:grid sm:grid-cols-3">
