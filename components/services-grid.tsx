@@ -34,8 +34,7 @@ const digitalTech = [
 ]
 
 const kickerClass = "font-mono text-xs uppercase tracking-[0.12em] text-brand"
-const titleClass =
-  "mt-3 font-heading text-[29px] font-normal leading-[1.14] text-foreground"
+const titleClass = "mt-3 font-heading text-[29px] font-normal leading-[1.14]"
 const chipClass =
   "inline-flex rounded-full border bg-foreground/5 px-[18px] py-[9px] text-[14.5px] font-semibold text-foreground/85"
 
@@ -49,9 +48,11 @@ function RebootLine() {
   )
 }
 
-function ArrowCircle() {
+function ArrowCircle({ ink }: { ink?: boolean }) {
   return (
-    <span className="inline-flex size-[54px] shrink-0 items-center justify-center self-end rounded-full bg-brand/10 text-foreground transition-colors duration-200 group-hover:bg-brand group-hover:text-white">
+    <span
+      className={`inline-flex size-[54px] shrink-0 items-center justify-center self-end rounded-full bg-brand/10 transition-colors duration-200 group-hover:bg-brand group-hover:text-white ${ink ? "text-ink-foreground" : "text-foreground"}`}
+    >
       <ArrowUpRight className="size-[22px]" aria-hidden />
     </span>
   )
@@ -67,13 +68,13 @@ export function ServicesGrid() {
               key={service.id}
               id={service.id}
               href={service.href}
-              className="group flex min-h-[200px] scroll-mt-24 flex-col rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-[34px] pt-9 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand"
+              className="group flex min-h-[200px] scroll-mt-24 flex-col rounded-[26px] border-[1.5px] border-transparent bg-ink px-[34px] pb-[34px] pt-9 text-ink-foreground transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand"
             >
               <span className={kickerClass}>{service.kicker}</span>
               <h3 className={titleClass}>{service.title}</h3>
               <RebootLine />
               <div className="min-h-10 flex-1" />
-              <ArrowCircle />
+              <ArrowCircle ink />
             </a>
           ))}
         </div>
@@ -84,7 +85,7 @@ export function ServicesGrid() {
         >
           <div className="flex flex-col">
             <span className={kickerClass}>Skreddersydd utvikling</span>
-            <h3 className={titleClass}>Digitale tjenester</h3>
+            <h3 className={`${titleClass} text-foreground`}>Digitale tjenester</h3>
             <p className="mt-4 text-[16.5px] leading-[1.6] text-foreground/70">
               Bred erfaring med integrasjoner og tekniske løsninger.
             </p>
