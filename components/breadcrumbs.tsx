@@ -12,7 +12,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
     <nav
       aria-label="Brødsmulesti"
-      className="mx-auto flex max-w-[1280px] items-center gap-2.5 px-4 pt-8 text-[14.5px] font-medium sm:px-6 lg:px-10"
+      className="mx-auto flex max-w-[1440px] items-center gap-2.5 px-4 pt-8 text-[14px] font-medium sm:px-6 lg:px-10"
     >
       {crumbs.map((crumb, i) => {
         const isLast = i === crumbs.length - 1
