@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site-header"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { SiteFooter } from "@/components/site-footer"
 import { FaqList } from "@/components/faq-list"
+import { PricingCarousel } from "@/components/pricing-carousel"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
@@ -48,6 +49,29 @@ const services = [
     title: "Løpende sparring når dere trenger det",
   },
 ]
+
+function ServiceCard({
+  service,
+  className = "",
+}: {
+  service: (typeof services)[number]
+  className?: string
+}) {
+  return (
+    <article
+      className={`flex flex-col rounded-[26px] border-[1.5px] border-border bg-card px-7 pb-8 pt-7 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand ${className}`}
+    >
+      <span className="font-mono text-xs font-bold text-brand">{service.num}</span>
+      <div className="mt-[18px] mb-5 flex items-center gap-[2px]">
+        <div className="h-1 w-[28px] rounded-full bg-brand" />
+        <div className="h-1 w-[16px] rounded-full bg-brand/25" />
+      </div>
+      <h3 className="font-heading text-[22px] font-normal leading-[1.2] text-foreground">
+        {service.title}
+      </h3>
+    </article>
+  )
+}
 
 const faqItems = [
   {
@@ -229,24 +253,18 @@ export default function AiRadgivningPage() {
             AI-rådgivning fra Reboot
           </h2>
 
-          <div className="mt-10 grid gap-[22px] sm:grid-cols-2 lg:grid-cols-6">
-            {services.map((service) => (
-              <article
-                key={service.title}
-                className={`flex flex-col rounded-[26px] border-[1.5px] border-border bg-card px-7 pb-8 pt-7 transition-colors duration-[280ms] ease-[cubic-bezier(0.2,0.7,0.2,1)] hover:border-brand ${service.span}`}
-              >
-                <span className="font-mono text-xs font-bold text-brand">
-                  {service.num}
-                </span>
-                <div className="mt-[18px] mb-5 flex items-center gap-[2px]">
-                  <div className="h-1 w-[28px] rounded-full bg-brand" />
-                  <div className="h-1 w-[16px] rounded-full bg-brand/25" />
-                </div>
-                <h3 className="font-heading text-[22px] font-normal leading-[1.2] text-foreground">
-                  {service.title}
-                </h3>
-              </article>
-            ))}
+          <div className="mt-10">
+            <PricingCarousel
+              cards={services.map((service) => ({
+                key: service.title,
+                node: <ServiceCard service={service} />,
+              }))}
+            />
+            <div className="hidden gap-[22px] sm:grid sm:grid-cols-2 lg:grid-cols-6">
+              {services.map((service) => (
+                <ServiceCard key={service.title} service={service} className={service.span} />
+              ))}
+            </div>
           </div>
         </div>
       </section>
