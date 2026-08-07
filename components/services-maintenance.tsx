@@ -1,7 +1,8 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import { Check, Minus, Plus } from "lucide-react"
+import { PricingCarousel } from "@/components/pricing-carousel"
 
 const features = [
   {
@@ -124,116 +125,10 @@ function PackageCard({
 
       <a
         href="/kontakt"
-        className="mt-8 inline-flex items-center justify-center rounded-full border border-border bg-transparent px-6 py-3.5 text-base font-normal text-foreground transition-colors duration-200 group-hover:border-ink group-hover:bg-ink group-hover:text-ink-foreground"
+        className="mt-8 inline-flex items-center justify-center rounded-full border border-border bg-foreground/5 px-6 py-3.5 text-base font-normal text-foreground transition-colors duration-200 group-hover:border-ink group-hover:bg-ink group-hover:text-ink-foreground"
       >
         Kom i gang
       </a>
-    </div>
-  )
-}
-
-// Mobile carousel: horizontal scroll-snap with the centered card shown at
-// full size and its neighbors scaled down, so whichever package is centered
-// (not necessarily the "highlighted" one) always reads as the focal card.
-function PricingSlider() {
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([])
-  const initialIndex = Math.max(
-    packages.findIndex((p) => p.highlighted),
-    0,
-  )
-  const [centerIndex, setCenterIndex] = useState(initialIndex)
-
-  useEffect(() => {
-    const container = scrollRef.current
-    const card = cardRefs.current[initialIndex]
-    if (!container || !card) return
-    container.scrollLeft = card.offsetLeft - (container.clientWidth - card.clientWidth) / 2
-    // Run once on mount only.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  useEffect(() => {
-    const container = scrollRef.current
-    if (!container) return
-    let raf = 0
-    const handleScroll = () => {
-      cancelAnimationFrame(raf)
-      raf = requestAnimationFrame(() => {
-        const containerCenter = container.scrollLeft + container.clientWidth / 2
-        let closest = 0
-        let closestDist = Infinity
-        cardRefs.current.forEach((card, i) => {
-          if (!card) return
-          const cardCenter = card.offsetLeft + card.offsetWidth / 2
-          const dist = Math.abs(cardCenter - containerCenter)
-          if (dist < closestDist) {
-            closestDist = dist
-            closest = i
-          }
-        })
-        setCenterIndex(closest)
-      })
-    }
-    container.addEventListener("scroll", handleScroll, { passive: true })
-    return () => {
-      container.removeEventListener("scroll", handleScroll)
-      cancelAnimationFrame(raf)
-    }
-  }, [])
-
-  function scrollToIndex(i: number) {
-    const container = scrollRef.current
-    const card = cardRefs.current[i]
-    if (!container || !card) return
-    container.scrollTo({
-      left: card.offsetLeft - (container.clientWidth - card.clientWidth) / 2,
-      behavior: "smooth",
-    })
-  }
-
-  return (
-    <div className="sm:hidden">
-      <div
-        ref={scrollRef}
-        className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-[8%] pb-2 pt-5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-      >
-        {packages.map((pkg, i) => (
-          <div
-            key={pkg.name}
-            ref={(el) => {
-              cardRefs.current[i] = el
-            }}
-            className="w-[84%] shrink-0 snap-center"
-          >
-            <div
-              className={`origin-center transition-transform duration-300 ${
-                i === centerIndex ? "scale-100" : "scale-90"
-              }`}
-            >
-              <PackageCard pkg={pkg} borderColor="border-brand" />
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Indicator pills echo the logo's underline (Progress.svg): a long
-          solid brand bar for the active card, shorter faded bars for the
-          rest, animating between the two states. */}
-      <div className="mt-5 flex items-center justify-center gap-[3px]">
-        {packages.map((pkg, i) => (
-          <button
-            key={pkg.name}
-            type="button"
-            onClick={() => scrollToIndex(i)}
-            aria-label={`Vis ${pkg.name}`}
-            aria-current={i === centerIndex}
-            className={`h-1.5 rounded-full transition-[width,background-color] duration-300 ease-out ${
-              i === centerIndex ? "w-8 bg-brand" : "w-4 bg-brand/25"
-            }`}
-          />
-        ))}
-      </div>
     </div>
   )
 }
@@ -301,7 +196,16 @@ export function ServicesMaintenance() {
         </div>
 
         <div className="mt-12">
-          <PricingSlider />
+          <PricingCarousel
+            initialIndex={Math.max(
+              packages.findIndex((p) => p.highlighted),
+              0,
+            )}
+            cards={packages.map((pkg) => ({
+              key: pkg.name,
+              node: <PackageCard pkg={pkg} borderColor="border-brand" />,
+            }))}
+          />
           <div className="mx-auto hidden max-w-[1060px] gap-[22px] sm:grid sm:grid-cols-3">
             {packages.map((pkg) => (
               <PackageCard key={pkg.name} pkg={pkg} />

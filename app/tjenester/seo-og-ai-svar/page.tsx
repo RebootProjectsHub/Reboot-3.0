@@ -4,6 +4,7 @@ import { ArrowUpRight, Check } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { FaqList } from "@/components/faq-list"
+import { PricingCarousel } from "@/components/pricing-carousel"
 import { pageMetadata } from "@/lib/seo"
 
 export const metadata = pageMetadata({
@@ -78,6 +79,49 @@ const packages = [
     ],
   },
 ]
+
+type Package = (typeof packages)[number]
+
+function SeoPackageCard({ pkg }: { pkg: Package }) {
+  return (
+    <div className="group relative flex h-full flex-col rounded-[26px] border-[1.5px] border-border bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px]">
+      {pkg.highlighted && (
+        <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
+          Mest valgt
+        </span>
+      )}
+
+      <span className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-brand">
+        {pkg.name}
+      </span>
+      <div className="mt-3 flex items-baseline gap-1.5">
+        <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">kr</span>
+        <span className="whitespace-nowrap font-heading text-[32px] font-normal leading-none text-foreground sm:text-[46px]">
+          {pkg.price}
+        </span>
+        <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">/mnd</span>
+      </div>
+      <p className="mt-3 text-[14.5px] leading-[1.5] text-foreground/70">{pkg.body}</p>
+
+      <ul className="mt-6 space-y-2.5 border-t border-border pt-6 sm:mt-7 sm:space-y-3">
+        {pkg.features.map((feature) => (
+          <li key={feature} className="flex items-center gap-2.5 sm:gap-3">
+            <Check className="size-[15px] shrink-0 text-brand sm:size-[17px]" strokeWidth={2.5} />
+            <span className="text-[13.5px] text-foreground/85 sm:text-[14.5px]">{feature}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div className="flex-1" />
+      <a
+        href="/kontakt"
+        className="mt-8 inline-flex items-center justify-center rounded-full border border-border bg-foreground/5 px-6 py-3.5 text-base font-normal text-foreground transition-colors duration-200 group-hover:border-ink group-hover:bg-ink group-hover:text-ink-foreground"
+      >
+        Kom i gang
+      </a>
+    </div>
+  )
+}
 
 const faqItems = [
   {
@@ -292,59 +336,22 @@ export default function SeoOgAiSvarPage() {
             Vi tar oss av synlighet i både Google og AI-svar. Valg av pakke avgjør hvor raskt dere ser resultater og hvor godt posisjonene sitter over tid.
           </p>
 
-          <div className="mt-10 grid gap-[22px] sm:grid-cols-3">
-            {packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className="group relative flex h-full flex-col rounded-[26px] border-[1.5px] border-border bg-card px-6 pb-8 pt-[28px] transition-colors duration-200 hover:border-brand sm:px-8 sm:pt-[34px]"
-              >
-                {pkg.highlighted && (
-                  <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-brand px-4 py-1.5 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-white">
-                    Mest valgt
-                  </span>
-                )}
-
-                <span className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-brand">
-                  {pkg.name}
-                </span>
-                <div className="mt-3 flex items-baseline gap-1.5">
-                  <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">
-                    kr
-                  </span>
-                  <span className="whitespace-nowrap font-heading text-[32px] font-normal leading-none text-foreground sm:text-[46px]">
-                    {pkg.price}
-                  </span>
-                  <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">
-                    /mnd
-                  </span>
-                </div>
-                <p className="mt-3 text-[14.5px] leading-[1.5] text-foreground/70">
-                  {pkg.body}
-                </p>
-
-                <ul className="mt-6 space-y-2.5 border-t border-border pt-6 sm:mt-7 sm:space-y-3">
-                  {pkg.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2.5 sm:gap-3">
-                      <Check
-                        className="size-[15px] shrink-0 text-brand sm:size-[17px]"
-                        strokeWidth={2.5}
-                      />
-                      <span className="text-[13.5px] text-foreground/85 sm:text-[14.5px]">
-                        {feature}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="flex-1" />
-                <a
-                  href="/kontakt"
-                  className="mt-8 inline-flex items-center justify-center rounded-full border border-border bg-transparent px-6 py-3.5 text-base font-normal text-foreground transition-colors duration-200 group-hover:border-ink group-hover:bg-ink group-hover:text-ink-foreground"
-                >
-                  Kom i gang
-                </a>
-              </div>
-            ))}
+          <div className="mt-10">
+            <PricingCarousel
+              initialIndex={Math.max(
+                packages.findIndex((p) => p.highlighted),
+                0,
+              )}
+              cards={packages.map((pkg) => ({
+                key: pkg.name,
+                node: <SeoPackageCard pkg={pkg} />,
+              }))}
+            />
+            <div className="hidden gap-[22px] sm:grid sm:grid-cols-3">
+              {packages.map((pkg) => (
+                <SeoPackageCard key={pkg.name} pkg={pkg} />
+              ))}
+            </div>
           </div>
         </div>
       </section>

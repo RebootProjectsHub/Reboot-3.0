@@ -81,7 +81,7 @@ export function ServicesGrid() {
 
         <div
           id="digitale-tjenester"
-          className="mt-14 grid scroll-mt-24 gap-[22px] rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-[34px] pt-9 sm:grid-cols-2 lg:gap-x-11"
+          className="mt-14 grid scroll-mt-24 gap-[22px] rounded-[26px] border-[1.5px] border-transparent bg-card px-[34px] pb-11 pt-11 sm:grid-cols-2 lg:gap-x-11"
         >
           <div className="flex flex-col">
             <span className={kickerClass}>Skreddersydd utvikling</span>
