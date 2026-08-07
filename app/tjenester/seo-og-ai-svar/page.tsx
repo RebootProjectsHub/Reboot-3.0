@@ -54,7 +54,7 @@ const packages = [
     name: "Light",
     price: "4 900",
     body: "Bli mer synlig i både Google og AI-svar.",
-    features: ["Google Bedriftsprofil", "Månedlig rapport", "Synlighet i AI-svar", "Innholdsproduksjon"],
+    features: ["Google Bedriftsprofil", "Månedlig rapport", "Synlighet i AI-svar", "Innholdsoptimalisering"],
   },
   {
     name: "Medium",
@@ -62,7 +62,7 @@ const packages = [
     body: "Se resultater raskere og bli værende i toppen.",
     features: [
       "Alt i Light",
-      "Innholdsoptimalisering",
+      "Innholdsproduksjon",
       "Produksjon av artikler og fagstoff",
       "Nye landingssider",
     ],
