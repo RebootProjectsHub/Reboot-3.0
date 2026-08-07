@@ -391,7 +391,7 @@ export default function SeoOgAiSvarPage() {
           </div>
           <div>
             <blockquote className="text-balance font-heading text-[clamp(22px,2.6vw,28px)] leading-[1.35] tracking-[-0.01em] text-foreground">
-              «Vi dukker opp der vi skal nå og et par nye kunder har sagt at de fant oss via ChatGPT.»
+              «Vi dukker opp der vi skal nå og flere nye kunder har sagt at de fant oss via ChatGPT.»
             </blockquote>
             <p className="mt-6 font-medium text-foreground">
               Christina Håland
