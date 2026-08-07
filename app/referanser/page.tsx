@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/site-header"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { ReferencesHero } from "@/components/references-hero"
 import { ReferencesGrid, ReferencesMoreProjects } from "@/components/references-grid"
 import { ReferencesTestimonials } from "@/components/references-testimonials"
@@ -16,6 +17,7 @@ export default function ReferanserPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
+      <Breadcrumbs items={[{ label: "Kundecaser" }]} />
       <ReferencesHero />
       <ReferencesGrid />
       <ReferencesTestimonials />

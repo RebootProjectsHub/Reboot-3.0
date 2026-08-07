@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/site-header"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { ServicesHero } from "@/components/services-hero"
 import { ServicesGrid } from "@/components/services-grid"
 import { ServicesTeamBand } from "@/components/services-team-band"
@@ -20,6 +21,7 @@ export default function TjenesterPage() {
     <main className="min-h-screen bg-background text-foreground">
       <AnchorHighlight />
       <SiteHeader />
+      <Breadcrumbs items={[{ label: "Tjenester" }]} />
       <ServicesHero />
       <ServicesGrid />
       <ServicesTeamBand />

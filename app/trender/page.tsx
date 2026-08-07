@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/site-header"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { ArticlesHero } from "@/components/articles-hero"
 import { ArticlesList } from "@/components/articles-list"
 import { SiteFooter } from "@/components/site-footer"
@@ -15,6 +16,7 @@ export default function AktueltPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
+      <Breadcrumbs items={[{ label: "Aktuelt" }]} />
       <ArticlesHero />
       <ArticlesList page={1} />
       <SiteFooter />

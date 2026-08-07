@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/site-header"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { ContactHero } from "@/components/contact-hero"
 import { ContactSection } from "@/components/contact-section"
 import { SiteFooter } from "@/components/site-footer"
@@ -15,6 +16,7 @@ export default function KontaktPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
+      <Breadcrumbs items={[{ label: "Kontakt" }]} />
       <ContactHero />
       <ContactSection />
       <SiteFooter />

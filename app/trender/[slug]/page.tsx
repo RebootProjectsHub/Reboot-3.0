@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation"
 import { SiteHeader } from "@/components/site-header"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { PostLayout } from "@/components/post-layout"
 import { SiteFooter } from "@/components/site-footer"
 import { getPost, posts } from "@/posts"
@@ -54,6 +55,7 @@ export default async function PostPage({
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
+      <Breadcrumbs items={[{ label: "Aktuelt", href: "/trender" }, { label: post.title }]} />
       <PostLayout post={post} />
       <SiteFooter />
     </main>

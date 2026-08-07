@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight, Star } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { SiteFooter } from "@/components/site-footer"
 import { FaqList } from "@/components/faq-list"
 import { pageMetadata } from "@/lib/seo"
@@ -128,6 +129,7 @@ export default function AiRadgivningPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <SiteHeader />
+      <Breadcrumbs items={[{ label: "Tjenester", href: "/tjenester" }, { label: "AI-rådgivning" }]} />
 
       {/* Hero */}
       <section className="relative mx-auto max-w-[860px] px-6 pb-14 pt-16 text-center sm:pb-16 sm:pt-24">

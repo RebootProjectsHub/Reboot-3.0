@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/site-header"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { PricingHero } from "@/components/pricing-hero"
 import { PricingNewSite } from "@/components/pricing-new-site"
 import { ServicesMaintenance } from "@/components/services-maintenance"
@@ -20,6 +21,7 @@ export default function NettsidePriserPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
+      <Breadcrumbs items={[{ label: "Priser" }]} />
       <PricingHero />
       <PricingNewSite />
       <ServicesMaintenance />

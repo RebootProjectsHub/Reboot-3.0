@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/site-header"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { AboutHero } from "@/components/about-hero"
 import { AboutTeamBand } from "@/components/about-team-band"
 import { AboutTeamGrid } from "@/components/about-team-grid"
@@ -17,6 +18,7 @@ export default function OmOssPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
+      <Breadcrumbs items={[{ label: "Om oss" }]} />
       <AboutHero />
       <AboutTeamBand />
       <AboutTeamGrid />

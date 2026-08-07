@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, ArrowUpRight, Check } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 import { SiteFooter } from "@/components/site-footer"
 import { ServicesCta } from "@/components/services-cta"
 import { FaqList } from "@/components/faq-list"
@@ -132,6 +133,7 @@ export default function ShopifyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <SiteHeader />
+      <Breadcrumbs items={[{ label: "Tjenester", href: "/tjenester" }, { label: "Shopify" }]} />
 
       {/* Hero */}
       <section className="relative mx-auto max-w-[820px] px-6 pb-14 pt-16 text-center sm:pb-16 sm:pt-24">
