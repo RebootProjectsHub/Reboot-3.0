@@ -82,11 +82,13 @@ export default function RootLayout({
   return (
     <html lang="no" className={`${spaceMono.variable} bg-background`}>
       <head>
-        {/* The Typekit stylesheet is render-blocking and pulls the font files
-            from a second origin. Warming both connections up front removes the
-            DNS + TLS round trips from the critical path. */}
+        {/* use.typekit.net serves both the render-blocking stylesheet and the
+            font files it references. Those use different fetch modes, and a
+            preconnect is only reused by a request in the matching mode — hence
+            two tags: the plain one warms the connection for the stylesheet,
+            the anonymous one for the woff2 files. */}
+        <link rel="preconnect" href="https://use.typekit.net" />
         <link rel="preconnect" href="https://use.typekit.net" crossOrigin="" />
-        <link rel="preconnect" href="https://p.typekit.net" crossOrigin="" />
         <link rel="stylesheet" href="https://use.typekit.net/aah4tvk.css" />
       </head>
       <body className="font-sans antialiased">
