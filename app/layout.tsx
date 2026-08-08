@@ -85,9 +85,14 @@ export default function RootLayout({
             font files it references. Those use different fetch modes, and a
             preconnect is only reused by a request in the matching mode — hence
             two tags: the plain one warms the connection for the stylesheet,
-            the anonymous one for the woff2 files. */}
+            the anonymous one for the woff2 files.
+            The kit CSS then @imports a second blocking stylesheet from
+            p.typekit.net, which the browser cannot discover until the first one
+            lands — so warming that origin up front overlaps its handshake with
+            the first request instead of paying for it serially. */}
         <link rel="preconnect" href="https://use.typekit.net" />
         <link rel="preconnect" href="https://use.typekit.net" crossOrigin="" />
+        <link rel="preconnect" href="https://p.typekit.net" />
         <link rel="stylesheet" href="https://use.typekit.net/aah4tvk.css" />
       </head>
       <body className="font-sans antialiased">
