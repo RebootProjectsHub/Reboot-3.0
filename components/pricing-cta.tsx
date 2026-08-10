@@ -1,22 +1,16 @@
 import { ArrowUpRight } from "lucide-react"
 
-export function ServicesCta() {
+/**
+ * Flat variant of ServicesCta used only on /nettside-priser. It sits directly
+ * under the dark PricingVisibilityCta panel, so it drops the cream panel,
+ * border and doodles and steps the button down to an outline — two stacked
+ * bordered panels competed with each other, and the page already has its
+ * emphasis in the dark block above.
+ */
+export function PricingCta() {
   return (
     <section className="px-4 pb-[80px] pt-16 sm:px-6 lg:px-10 lg:pb-[100px]">
-      <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[var(--radius)] border-[1.5px] border-border bg-[#fcf2ec] px-6 py-16 text-center sm:px-12">
-        <span
-          aria-hidden
-          className="absolute left-[8%] top-10 hidden text-[38px] leading-none text-brand/40 lg:block"
-        >
-          ✳︎
-        </span>
-        <span
-          aria-hidden
-          className="absolute bottom-8 right-[8%] hidden text-[30px] leading-none text-foreground/35 lg:block"
-        >
-          ✦︎
-        </span>
-
+      <div className="mx-auto max-w-[1280px] px-6 py-16 text-center sm:px-12">
         <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">
           Klar for å komme i gang?
         </h2>
@@ -25,13 +19,12 @@ export function ServicesCta() {
           selvfølgelig.
         </p>
 
-        {/* Repeated across /tjenester and its four service subpages — the bare
-            phone number is exactly the kind of text Google was harvesting for
-            snippets instead of each page's meta description. */}
+        {/* The bare phone number here was the source of the /nettside-priser
+            search snippet ("…Send oss en melding97 67 58 48"). */}
         <div data-nosnippet className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
           <a
             href="/kontakt"
-            className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
+            className="inline-flex items-center rounded-full border border-foreground/20 px-[30px] py-4 text-base font-normal text-foreground transition-colors duration-200 hover:bg-secondary"
           >
             Send oss en melding
           </a>
