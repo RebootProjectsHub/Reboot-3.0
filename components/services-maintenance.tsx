@@ -43,7 +43,7 @@ const features = [
   {
     label: "Søkemotoroptimalisering (SEO)",
     description:
-      "Vi sikrer det tekniske fundamentet for SEO ved å løpende optimalisere sidehastighet, mobiltilpasning og sikkerhet, og sikrer korrekt indeksering slik at Google, ChatGPT, Copilot og Claude feilfritt kan lese og rangere siden deres.",
+      "God synlighet krever at det tekniske fungerer. Vi følger opp sidehastighet, mobilvisning, sikkerhet og indeksering slik at både Google og AI-tjenester som Gemini og ChatGPT kan lese og forstå sidene deres.",
   },
 ]
 
