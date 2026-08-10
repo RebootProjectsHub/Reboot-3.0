@@ -83,18 +83,20 @@ export function SiteHeader() {
                     />
                   </a>
 
-                  <div className="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 translate-y-1 pt-3 opacity-0 transition-[opacity,transform] duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
-                    <div className="min-w-[264px] rounded-2xl border border-border bg-background p-2 shadow-[0_24px_54px_-28px_rgba(74,18,32,0.5)]">
+                  <div className="invisible absolute left-0 top-full z-50 translate-y-1 pt-3 opacity-0 transition-[opacity,transform] duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                    {/* Flat per brand guide: hairline border, no shadow, small
+                        (--radius-xs) corners, laid out as a horizontal row. */}
+                    <div className="flex items-center gap-1 rounded-xs border border-border bg-[#fcf2ec] p-1">
                       {link.children.map((child) => (
                         <a
                           key={child.href}
                           href={child.href}
-                          className="group/item flex items-center gap-3.5 rounded-xl px-3 py-2.5 transition-colors hover:bg-secondary"
+                          className="group/item flex items-center gap-2.5 rounded-[8px] px-3.5 py-2 transition-colors hover:bg-secondary"
                         >
-                          <span className="w-5 shrink-0 font-mono text-[0.72rem] font-bold text-muted-foreground">
+                          <span className="shrink-0 font-mono text-[0.72rem] font-bold text-muted-foreground">
                             {child.number}
                           </span>
-                          <span className="text-[0.95rem] font-medium text-foreground transition-colors group-hover/item:text-brand">
+                          <span className="whitespace-nowrap text-[0.95rem] font-medium text-foreground transition-colors group-hover/item:text-brand">
                             {child.label}
                           </span>
                         </a>
@@ -183,7 +185,7 @@ export function SiteHeader() {
                             key={child.href}
                             href={child.href}
                             onClick={() => setOpen(false)}
-                            className="flex items-center gap-3.5 rounded-xl px-4 py-2.5 transition-colors hover:bg-secondary"
+                            className="flex items-center gap-3.5 rounded-[8px] px-4 py-2.5 transition-colors hover:bg-secondary"
                           >
                             <span className="w-5 shrink-0 font-mono text-[0.72rem] font-bold text-muted-foreground">
                               {child.number}
