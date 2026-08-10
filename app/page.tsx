@@ -18,7 +18,7 @@ export const metadata = {
   ...pageMetadata({
     title: "Én partner for alt innen nettsider",
     description:
-      "Reboot er et lite webbyrå i Nydalen, Oslo. Vi designer, utvikler og drifter nettsider som synes på Google og i AI‑søk. Fastpris og direkte kontakt med teamet.",
+      "Reboot er et lite webbyrå i Nydalen, Oslo. Vi designer, utvikler og drifter nettsider som synes på Google og i AI-søk. Fastpris og direkte kontakt med teamet.",
     path: "/",
   }),
   // Keep the brand-first wording on the homepage instead of the "%s | Reboot" template.

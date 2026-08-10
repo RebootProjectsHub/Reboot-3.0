@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/seo"
 export const metadata = pageMetadata({
   title: "Moderne nettsider, design og digitale tjenester",
   description:
-    "Nettsider, SEO og AI‑rådgivning fra et lite team i Oslo. Vi bygger raske, moderne nettsider og sørger for at dere blir funnet, både på Google og i AI‑søk.",
+    "Nettsider, SEO og AI-rådgivning fra et lite team i Oslo. Vi bygger raske, moderne nettsider og sørger for at dere blir funnet, både på Google og i AI-søk.",
   path: "/tjenester",
 })
 
