@@ -234,7 +234,7 @@ export default function AiRadgivningPage() {
                 ))}
               </ul>
               <p className="pt-[22px] text-[15.5px] leading-[1.6] text-ink-foreground/75">
-                Da er du i godt selskap. Dette er de vanligste
+                Kjenner du deg igjen? Da er du i godt selskap. Dette er de vanligste
                 utgangspunktene hos kundene våre.
               </p>
             </div>
