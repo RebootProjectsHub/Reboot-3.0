@@ -9,8 +9,10 @@ import { ArrowUpRight } from "lucide-react"
  */
 export function PricingCta() {
   return (
-    <section className="px-4 pb-[80px] pt-16 sm:px-6 lg:px-10 lg:pb-[100px]">
-      <div className="mx-auto max-w-[1280px] px-6 py-16 text-center sm:px-12">
+    <section className="px-4 pb-[80px] pt-8 sm:px-6 lg:px-10 lg:pb-[100px] lg:pt-[90px]">
+      {/* The inner py-16 that ServicesCta needs to inset its panel background
+          is dead air here — this variant has no panel. */}
+      <div className="mx-auto max-w-[1280px] px-6 text-center sm:px-12">
         <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">
           Klar for å komme i gang?
         </h2>

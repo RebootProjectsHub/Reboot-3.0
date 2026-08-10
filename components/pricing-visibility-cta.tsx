@@ -1,6 +1,9 @@
+// Both neighbours already carry ~90px of their own vertical padding, so this
+// section stays tight (matching PricingNewSite) rather than adding a third
+// block of air between them.
 export function PricingVisibilityCta() {
   return (
-    <section className="px-4 py-16 sm:px-6 lg:px-10 lg:py-[90px]">
+    <section className="px-4 py-6 sm:px-6 lg:px-10">
       <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[var(--radius)] bg-ink px-6 py-12 text-ink-foreground sm:px-12 lg:px-[76px] lg:py-[72px]">
         <span
           aria-hidden
@@ -35,7 +38,7 @@ export function PricingVisibilityCta() {
               href="/tjenester/seo-og-ai-svar#priser"
               className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
             >
-              Velg pakken som passer dere
+              Se SEO-priser
             </a>
           </div>
         </div>

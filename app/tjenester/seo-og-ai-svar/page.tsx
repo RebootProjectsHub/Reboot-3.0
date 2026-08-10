@@ -343,7 +343,7 @@ export default function SeoOgAiSvarPage() {
             Synlighet &amp; vekst
           </span>
           <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
-            Velg pakken som passer dere
+            Velg SEO-pakken som passer dere
           </h2>
           <p className="mt-3 max-w-[56ch] text-[17px] leading-[1.6] text-foreground/70">
             Vi tar oss av synlighet i både Google og AI-svar. Valg av pakke avgjør hvor raskt dere ser resultater og hvor godt posisjonene sitter over tid.
