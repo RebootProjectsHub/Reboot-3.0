@@ -18,7 +18,6 @@ export const metadata = pageMetadata({
 const pains = [
   "«Konkurrentene våre snakker om AI, men vi har ikke kommet i gang.»",
   "«Vi har prøvd ChatGPT, men bruker det ikke til noe nyttig.»",
-  "«Vi er usikre på hva vi kan dele med AI-verktøyene.»",
   "«Ingen hos oss har tid til å følge med på utviklingen.»",
 ]
 
