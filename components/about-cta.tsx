@@ -28,7 +28,8 @@ export function AboutCta() {
           svarer vi i løpet av dagen.
         </p>
 
-        <div className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
+        {/* Same bare phone number as ServicesCta — keep it out of snippets. */}
+        <div data-nosnippet className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
           <a
             href="/kontakt"
             className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"

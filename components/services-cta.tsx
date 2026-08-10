@@ -25,7 +25,9 @@ export function ServicesCta() {
           selvfølgelig.
         </p>
 
-        <div className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
+        {/* Repeated on six pages, and the bare phone number was ending up in
+            the /nettside-priser snippet ("…Send oss en melding97 67 58 48"). */}
+        <div data-nosnippet className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
           <a
             href="/kontakt"
             className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"

@@ -19,7 +19,12 @@ export function Cta() {
           <p className="mt-6 text-pretty text-lg leading-relaxed text-foreground/80">
             Vi har lang erfaring med alt fra små bedrifter til store organisasjoner. Send oss en melding, så svarer vi i løpet av dagen. 
           </p>
-          <div className="mt-8 text-foreground/80">
+          {/* Snippet-ineligible for the same reason as the footer: with the
+              footer excluded this list is the next contact blob Google would
+              harvest for the homepage snippet. The heading and the paragraph
+              above stay eligible — they read like a description if Google does
+              fall back to page text. */}
+          <div data-nosnippet className="mt-8 text-foreground/80">
             <dl className="space-y-3 text-lg">
               <div className="flex gap-2">
                 <dt className="font-semibold text-foreground">E-post:</dt>

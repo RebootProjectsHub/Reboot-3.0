@@ -58,7 +58,9 @@ export function WorkWithUs() {
           <p className="mt-6 text-pretty text-lg leading-relaxed text-foreground/80">
             Kom gjerne innom våre lokaler i Nydalen for en uforpliktende prat, uansett om du har et konkret prosjekt eller bare en idé.
           </p>
-        <div className="mt-9 flex flex-wrap gap-3.5">
+        {/* Same bare phone number as the other CTAs — keep it out of snippets.
+            "Sving innom for en kaffe" and the paragraph stay eligible. */}
+        <div data-nosnippet className="mt-9 flex flex-wrap gap-3.5">
             <a
               href="#kontakt"
               className="inline-flex items-center rounded-full bg-brand px-7 py-3.5 text-base font-normal text-ink-foreground transition-opacity hover:opacity-85"

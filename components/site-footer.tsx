@@ -24,15 +24,16 @@ const columns = [
 export function SiteFooter() {
   return (
     <footer className="bg-ink text-ink-foreground">
-      <div className="mx-auto max-w-[1280px] px-4 py-14 sm:px-6 lg:px-10 lg:pt-28">
-        {/* Google was building search snippets out of this block instead of the
-            page's meta description — the tagline, email, phone and nav labels
-            ran together into "…AI-søk. hallo@reboot.no+47 97 67 58 48. Våre
-            tjenester. Ny nettside · AI-rådgivning · SEO og AI-…". data-nosnippet
-            takes it out of the snippet pool without hiding it from indexing.
-            The bottom bar below is left eligible so the company name, address
-            and org.nr can still surface for local and entity queries. */}
-        <div data-nosnippet className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
+      {/* Google was building search snippets out of the footer instead of each
+          page's meta description — tagline, email, phone and nav labels ran
+          together into "…AI-søk. hallo@reboot.no+47 97 67 58 48. Våre tjenester.
+          Ny nettside · AI-rådgivning · SEO og AI-…", and the same tagline showed
+          up under every subpage. data-nosnippet takes the text out of the
+          snippet pool without hiding it from indexing or ranking. The address
+          and org.nr go too: the entity signals Google needs for those are in the
+          Organization JSON-LD in app/layout.tsx, not in this markup. */}
+      <div data-nosnippet className="mx-auto max-w-[1280px] px-4 py-14 sm:px-6 lg:px-10 lg:pt-28">
+        <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
           <div>
             <Image
               src="/Reboot-cream.svg"
