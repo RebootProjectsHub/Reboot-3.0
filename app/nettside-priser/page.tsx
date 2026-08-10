@@ -3,6 +3,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs"
 import { PricingHero } from "@/components/pricing-hero"
 import { PricingNewSite } from "@/components/pricing-new-site"
 import { ServicesMaintenance } from "@/components/services-maintenance"
+import { PricingVisibilityCta } from "@/components/pricing-visibility-cta"
 import { ServicesCta } from "@/components/services-cta"
 import { SiteFooter } from "@/components/site-footer"
 import { pageMetadata } from "@/lib/seo"
@@ -25,6 +26,7 @@ export default function NettsidePriserPage() {
       <PricingHero />
       <PricingNewSite />
       <ServicesMaintenance />
+      <PricingVisibilityCta />
       <ServicesCta />
       <SiteFooter />
     </main>
