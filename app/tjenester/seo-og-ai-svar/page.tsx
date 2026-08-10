@@ -71,7 +71,7 @@ const packages = [
   {
     name: "Komplett",
     price: "19 900",
-    body: "For bedrifter som ønsker markedsledende posisjon nasjonalt.",
+    body: "For bedrifter som ønsker ledende posisjon nasjonalt.",
     features: [
       "Alt i Medium",
       "Større SEO-team",
