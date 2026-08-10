@@ -59,7 +59,7 @@ const packages = [
   {
     name: "Medium",
     price: "11 900",
-    body: "Se resultater raskere og bli værende i toppen.",
+    body: "For bedrifter som ønsker ledende posisjon lokalt.",
     features: [
       "Alt i Light",
       "Innholdsproduksjon",
@@ -71,7 +71,7 @@ const packages = [
   {
     name: "Komplett",
     price: "19 900",
-    body: "Flere veier inn til nettsiden, ikke bare søk.",
+    body: "For bedrifter som ønsker markedsledende posisjon nasjonalt.",
     features: [
       "Alt i Medium",
       "Større SEO-team",
