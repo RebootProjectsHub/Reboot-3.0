@@ -108,7 +108,12 @@ export const references: Reference[] = [
     image: "/referanser/vikapsykologene.webp",
   },
   {
-    name: "TekPartner",
+    name: "CK Bygg Nor",
+    url: "https://byggsoker.no/",
+    image: "/referanser/Reboot-CKBN.png",
+  },
+  {
+    name: "Tekpartner",
     url: "https://tekpartner.org/",
     image: "/referanser/tekpartner.webp",
   },
