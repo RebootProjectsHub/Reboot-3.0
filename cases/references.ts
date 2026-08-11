@@ -118,14 +118,14 @@ export const references: Reference[] = [
     image: "/referanser/tekpartner.webp",
   },
   {
-    name: "Bekkestua Kjøkkenstudio",
-    url: "https://www.bekkestuaks.no/",
-    image: "/referanser/bekkestua.webp",
-  },
-  {
     name: "SNU",
     url: "https://snuorg.no/",
     image: "/referanser/SNU-Reboot.webp",
+  },
+  {
+    name: "Bekkestua Kjøkkenstudio",
+    url: "https://www.bekkestuaks.no/",
+    image: "/referanser/Reboot-BKS.webp",
   },
   {
     name: "Certnor",
