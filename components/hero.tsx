@@ -44,7 +44,7 @@ export function Hero() {
 
         <div className="flex flex-wrap items-center justify-center gap-[26px]">
           <a
-            href="#tjenester"
+            href="/tjenester"
             className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
           >
             Se våre tjenester
