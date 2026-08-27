@@ -3,7 +3,7 @@ import Image from "next/image"
 const team = [
   {
     name: "Henrik Moberg",
-    role: "Utvikler / daglig leder",
+    role: "Utvikler",
     email: "henrik@reboot.no",
     phone: "97 67 58 48",
     tel: "+4797675848",
