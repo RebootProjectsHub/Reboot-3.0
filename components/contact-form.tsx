@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 
+import { trackOpenAiPixelEvent } from "@/components/openai-pixel"
+
 // Web3Forms access key — get a free one at https://web3forms.com (just enter
 // hallo@reboot.no). It is public by design (it ships in the page), so it's fine
 // to commit. Can also be provided via NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY.
@@ -69,6 +71,7 @@ export function ContactForm() {
       })
       const data = await res.json()
       if (data.success) {
+        trackOpenAiPixelEvent("lead_created")
         // Redirect to the confirmation page (keep the button in its
         // submitting state until the navigation completes).
         router.push("/takk-for-meldingen/")
