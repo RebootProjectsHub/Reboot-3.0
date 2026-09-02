@@ -9,33 +9,40 @@ declare global {
   }
 }
 
-/** Event names the oaiq SDK accepts. */
-export type OpenAiPixelEvent =
-  | "appointment_scheduled"
-  | "checkout_started"
-  | "contents_viewed"
-  | "items_added"
-  | "lead_created"
-  | "order_created"
-  | "page_viewed"
-  | "registration_completed"
-  | "subscription_created"
-  | "trial_started"
+/**
+ * The events the oaiq SDK documents, each mapped to the data object type it
+ * requires. The SDK validates `data.type` against this exact mapping and
+ * silently drops the event on a mismatch, so keep the pairs together.
+ */
+const EVENT_TYPES = {
+  appointment_scheduled: "customer_action",
+  checkout_started: "contents",
+  contents_viewed: "contents",
+  items_added: "contents",
+  lead_created: "customer_action",
+  order_created: "contents",
+  page_viewed: "contents",
+  registration_completed: "customer_action",
+  subscription_created: "plan_enrollment",
+  trial_started: "plan_enrollment",
+} as const
 
-export function trackOpenAiPixelEvent(event: OpenAiPixelEvent) {
+export type OpenAiPixelEvent = keyof typeof EVENT_TYPES
+
+export function measureOpenAiPixelEvent(event: OpenAiPixelEvent) {
   // Undefined in dev, where the init script is not rendered.
-  window.oaiq?.("event", event)
+  window.oaiq?.("measure", event, { type: EVENT_TYPES[event] })
 }
 
 /**
- * The oaiq SDK does not track page views by itself — "init" only sets up the
- * queue — so each route change has to be reported explicitly.
+ * The SDK does not track page views by itself — "init" only sets up the
+ * queue — so each route change has to be measured explicitly.
  */
 export function OpenAiPixelPageViews() {
   const pathname = usePathname()
 
   useEffect(() => {
-    trackOpenAiPixelEvent("page_viewed")
+    measureOpenAiPixelEvent("page_viewed")
   }, [pathname])
 
   return null
