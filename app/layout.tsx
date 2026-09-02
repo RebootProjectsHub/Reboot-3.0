@@ -4,6 +4,7 @@ import { Space_Mono } from 'next/font/google'
 import './globals.css'
 
 const GA_ID = 'G-MXHZHBQVMB'
+const OPENAI_PIXEL_ID = 'XW21DTQw698Emg3CaaF6P7'
 
 const spaceMono = Space_Mono({
   variable: '--font-space-mono',
@@ -79,6 +80,15 @@ export default function RootLayout({
   return (
     <html lang="no" className={`${spaceMono.variable} bg-background`}>
       <head>
+        {/* OpenAI Ads conversion pixel. Loads its SDK async, so it does not
+            block the render-critical font CSS below. */}
+        {process.env.NODE_ENV === 'production' && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"${OPENAI_PIXEL_ID}",debug:true});`,
+            }}
+          />
+        )}
         {/* use.typekit.net serves both the render-blocking stylesheet and the
             font files it references. Those use different fetch modes, and a
             preconnect is only reused by a request in the matching mode — hence
