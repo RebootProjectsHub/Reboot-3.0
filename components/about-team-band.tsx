@@ -7,7 +7,7 @@ const stats: { value: string; suffix?: string; label: string; href?: string }[] 
     label: "På Google",
     href: "https://www.google.com/maps/place/Reboot/@59.9518411,10.764818,17z/data=!4m16!1m9!3m8!1s0x46416fc89415ba1d:0xecc903e104a3ec0c!2sReboot!8m2!3d59.9518411!4d10.7673929!9m1!1b1!16s%2Fg%2F11tfnf4p8w!3m5!1s0x46416fc89415ba1d:0xecc903e104a3ec0c!8m2!3d59.9518411!4d10.7673929!16s%2Fg%2F11tfnf4p8w?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
   },
-  { value: "80+", label: "Leverte prosjekter" },
+  { value: "80+", label: "Leverte prosjekter", href: "/referanser" },
   { value: "1:1", label: "Kundeoppfølging" },
 ]
 
@@ -66,8 +66,10 @@ Vi bruker moderne teknologi der det faktisk gir mening, men det personlige tar v
                     <a
                       key={stat.label}
                       href={stat.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      {...(stat.href.startsWith("http") && {
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      })}
                       className={`${className} transition-colors hover:bg-ink-foreground/5`}
                     >
                       {content}
