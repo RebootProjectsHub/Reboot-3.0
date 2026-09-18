@@ -30,7 +30,7 @@ export function AboutTeamBand() {
                 Hvem er vi i Reboot?
               </span>
               <h2 className="mt-5 text-balance font-heading text-[clamp(30px,3.6vw,44px)] font-normal leading-[1.1] tracking-[-0.02em]">
-                Ekte folk, ekte kontakt. 
+                Et lite team i Nydalen 
               </h2>
               <p className="mt-6 text-[17px] leading-[1.65] text-ink-foreground/80">
                 Hos oss får du direkte kontakt med de som lager og drifter nettsiden din. Ingen mellomledd, ingen chatbot, ingen kø.
