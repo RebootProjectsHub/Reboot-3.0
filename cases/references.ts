@@ -17,6 +17,11 @@ export const references: Reference[] = [
     video: "/referanser/hoegh-evi.mp4",
   },
   {
+    name: "Vitalis Apotek",
+    url: "https://vitalisapotek.no/",
+    image: "/referanser/vitalis-apotek.webp",
+  },
+  {
     name: "Akademikerne Pluss",
     url: "https://akademikernepluss.no/",
     image: "/referanser/getty-images-OVHhgc0Y8nU-unsplash-scaled.jpg",
