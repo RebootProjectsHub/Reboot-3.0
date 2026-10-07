@@ -7,8 +7,6 @@ const ACCESS_KEY =
   process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ||
   "ce2a0da5-a6a0-4eaf-a24b-ee0b678235db"
 
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-
 const CATEGORIES = [
   "Noe fungerer ikke",
   "Endring eller oppdatering",
@@ -22,8 +20,6 @@ const PRIORITIES = [
   { value: "Haster", label: "Haster – nettsiden er nede eller kritisk feil" },
 ]
 
-type Errors = { name?: string; email?: string; website?: string; message?: string }
-
 const inputClass =
   "w-full rounded-xs border border-border bg-background px-4 py-3 text-foreground outline-none transition-colors placeholder:text-foreground/40 focus:border-brand"
 
@@ -34,7 +30,6 @@ export function SupportForm() {
   const [category, setCategory] = useState(CATEGORIES[0])
   const [priority, setPriority] = useState("Normal")
   const [message, setMessage] = useState("")
-  const [errors, setErrors] = useState<Errors>({})
   const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle")
   const [formError, setFormError] = useState<string>("")
 
@@ -48,19 +43,6 @@ export function SupportForm() {
     ) as HTMLInputElement | null)
     if (botField?.checked) return
 
-    const nextErrors: Errors = {}
-    if (!name.trim()) nextErrors.name = "Vennligst fyll inn navn."
-    if (!email.trim()) nextErrors.email = "Vennligst fyll inn e-post."
-    else if (!EMAIL_RE.test(email.trim()))
-      nextErrors.email = "Ugyldig e-postadresse."
-    if (!website.trim())
-      nextErrors.website = "Fyll inn bedrift eller nettside det gjelder."
-    if (message.trim().length < 10)
-      nextErrors.message = "Beskriv saken litt nærmere (minst 10 tegn)."
-
-    setErrors(nextErrors)
-    if (Object.keys(nextErrors).length > 0) return
-
     setStatus("submitting")
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -68,7 +50,7 @@ export function SupportForm() {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: ACCESS_KEY,
-          subject: `[Support${priority === "Haster" ? " – HASTER" : ""}] ${category} – ${website.trim()}`,
+          subject: `[Support${priority === "Haster" ? " – HASTER" : ""}] ${category}${website.trim() ? ` – ${website.trim()}` : ""}`,
           from_name: "Reboot support",
           name: name.trim(),
           email: email.trim(),
@@ -106,8 +88,8 @@ export function SupportForm() {
           Takk, vi er på saken
         </h2>
         <p className="mx-auto max-w-[440px] text-pretty text-[17px] leading-[1.6] text-foreground/70">
-          Vi har mottatt henvendelsen din og svarer til {email.trim()} så snart
-          vi kan – vanligvis innen én arbeidsdag.
+          Vi har mottatt henvendelsen din og svarer så snart vi kan – vanligvis
+          innen én arbeidsdag.
         </p>
       </div>
     )
@@ -142,14 +124,11 @@ export function SupportForm() {
               name="name"
               type="text"
               autoComplete="name"
-              required
               value={name}
               onChange={(e) => setName(e.target.value)}
-              aria-invalid={errors.name ? true : undefined}
               className={inputClass}
               placeholder="Ditt navn"
             />
-            {errors.name && <p className="text-sm text-brand">{errors.name}</p>}
           </div>
 
           <div className="grid gap-2">
@@ -161,14 +140,11 @@ export function SupportForm() {
               name="email"
               type="email"
               autoComplete="email"
-              required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              aria-invalid={errors.email ? true : undefined}
               className={inputClass}
               placeholder="navn@epost.no"
             />
-            {errors.email && <p className="text-sm text-brand">{errors.email}</p>}
           </div>
         </div>
 
@@ -181,14 +157,11 @@ export function SupportForm() {
             name="website"
             type="text"
             autoComplete="organization"
-            required
             value={website}
             onChange={(e) => setWebsite(e.target.value)}
-            aria-invalid={errors.website ? true : undefined}
             className={inputClass}
             placeholder="F.eks. dinbedrift.no"
           />
-          {errors.website && <p className="text-sm text-brand">{errors.website}</p>}
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2">
@@ -239,20 +212,15 @@ export function SupportForm() {
             id="message"
             name="message"
             rows={6}
-            required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            aria-invalid={errors.message ? true : undefined}
             className={`${inputClass} resize-y`}
-            placeholder="Beskriv hva som skjer, hvor på siden det gjelder, og gjerne lenke til siden."
+            placeholder="Beskriv saken"
           />
-          {errors.message && (
-            <p className="text-sm text-brand">{errors.message}</p>
-          )}
         </div>
 
         {formError && (
-          <p className="text-sm text-brand" role="alert">
+          <p className="text-sm text-foreground/70" role="alert">
             {formError}
           </p>
         )}
