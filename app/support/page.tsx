@@ -28,7 +28,7 @@ export default function SupportPage() {
         </h1>
 
         <p className="mx-auto max-w-[560px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
-          Feil, endringer eller spørsmål om nettsiden din?
+          Meld inn feil, endringer eller spørsmål om nettsiden din.
         </p>
       </section>
 
