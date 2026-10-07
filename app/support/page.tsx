@@ -24,25 +24,17 @@ export default function SupportPage() {
         </span>
 
         <h1 className="mt-[18px] mb-6 text-balance font-heading text-[clamp(40px,5vw,64px)] font-normal leading-[1.04] tracking-[-0.02em] text-foreground">
-          Hvordan kan vi hjelpe?
+          Meld inn en supportsak
         </h1>
 
         <p className="mx-auto max-w-[560px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
-          Meld inn feil, ønskede endringer eller spørsmål om nettsiden din. Jo mer
-          detaljer du gir oss, jo raskere kan vi løse saken.
+          Feil, endringer eller spørsmål om nettsiden din? Send oss en sak her.
         </p>
       </section>
 
       <section className="px-4 py-12 sm:px-6 lg:px-10 lg:pb-24">
         <div className="mx-auto max-w-[760px]">
           <SupportForm />
-          <p className="mt-6 text-center text-[15px] text-foreground/60">
-            Er nettsiden nede og det haster? Ring oss på{" "}
-            <a href="tel:+4797675848" className="text-foreground hover:text-brand">
-              97 67 58 48
-            </a>
-            .
-          </p>
         </div>
       </section>
 
