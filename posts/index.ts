@@ -1,4 +1,5 @@
 import type { Post } from "@/posts/types"
+import { post as synlighetIAiSvar } from "@/posts/synlighet-i-ai-svar"
 import { post as designAvKnapper } from "@/posts/design-av-knapper-pa-nettsider"
 import { post as animasjonerPaNettsider } from "@/posts/animasjoner-pa-nettsider"
 import { post as hvordanKonverterende } from "@/posts/hvordan-gjore-en-nettside-mer-konverterende"
@@ -89,6 +90,7 @@ import { post as byggeBrukervennligNettbutikkWoocommerce } from "@/posts/a-bygge
  * (newest first) automatically below.
  */
 const allPosts: Post[] = [
+  synlighetIAiSvar,
   designAvKnapper,
   animasjonerPaNettsider,
   hvordanKonverterende,
