@@ -93,6 +93,8 @@ export const post: Post = {
         både modellen og mennesket som leser.
       </p>
 
+      <PostImage src={`${IMG}/2.webp`} alt="Bærbar PC på en benk i et lyst rom" />
+
       <h3>Steg 3: Vi rydder den tekniske grunnmuren</h3>
       <p>
         En AI-modell kan bare anbefale det den klarer å lese. Vi sørger for at
@@ -104,8 +106,6 @@ export const post: Post = {
         <a href="/trender/seo-og-webdesign">SEO</a> bygger på, og derfor teller det
         dobbelt.
       </p>
-
-      <PostImage src={`${IMG}/2.webp`} alt="Bærbar PC på en benk i et lyst rom" />
 
       <h3>Steg 4: Vi skriver innhold som kan siteres</h3>
       <p>
@@ -127,6 +127,8 @@ export const post: Post = {
         det er å være kunde hos deg.
       </p>
 
+      <PostImage src={`${IMG}/3.webp`} alt="Utsikt over Oslo sentrum en sommerdag" />
+
       <h3>Steg 6: Vi måler, rapporterer og justerer</h3>
       <p>
         Synlighet i AI-svar er ikke et engangsløp. Modellene oppdateres, konkurrentene
@@ -136,8 +138,6 @@ export const post: Post = {
         fungerer, og hva vi gjør videre. De fleste ser tydelig bevegelse etter tre til
         seks måneder, mens lokale søk og bedriftsprofil ofte gir effekt raskere.
       </p>
-
-      <PostImage src={`${IMG}/3.webp`} alt="Utsikt over Oslo sentrum en sommerdag" />
 
       <h2>Hva det betyr i praksis</h2>
       <p>
