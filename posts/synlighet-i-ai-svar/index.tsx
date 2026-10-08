@@ -105,6 +105,8 @@ export const post: Post = {
         dobbelt.
       </p>
 
+      <PostImage src={`${IMG}/2.webp`} alt="Bærbar PC på en benk i et lyst rom" />
+
       <h3>Steg 4: Vi skriver innhold som kan siteres</h3>
       <p>
         Modellene foretrekker innhold som svarer tydelig, tidlig og presist. Vi
@@ -114,7 +116,6 @@ export const post: Post = {
         slik at det samme uttrykket betyr det samme overalt, og vi binder sidene sammen
         med interne lenker som viser at du har bredde og dybde i faget ditt.
       </p>
-      <PostImage src={`${IMG}/2.webp`} alt="Bærbar PC på en benk i et lyst rom" />
 
       <h3>Steg 5: Vi styrker signalene utenfor nettsiden</h3>
       <p>
@@ -135,6 +136,8 @@ export const post: Post = {
         fungerer, og hva vi gjør videre. De fleste ser tydelig bevegelse etter tre til
         seks måneder, mens lokale søk og bedriftsprofil ofte gir effekt raskere.
       </p>
+
+      <PostImage src={`${IMG}/3.webp`} alt="Utsikt over Oslo sentrum en sommerdag" />
 
       <h2>Hva det betyr i praksis</h2>
       <p>
@@ -168,7 +171,13 @@ export const post: Post = {
         kontrakten sier det. Du finner alle detaljene på siden om{" "}
         <a href="/tjenester/seo-og-ai-svar">SEO og AI-søk</a>.
       </p>
-      <PostImage src={`${IMG}/3.webp`} alt="Utsikt over Oslo sentrum en sommerdag" />
+      <PostCta
+        eyebrow="SEO / AI-svar"
+        title="Bli anbefalt når kundene spør AI"
+        text="Se hva som inngår i Light, Medium og Komplett, eller start med en gratis synlighetsanalyse av bedriften din."
+        primary={{ href: "/tjenester/seo-og-ai-svar#priser", label: "Se pakker og priser" }}
+        secondary={{ href: "/kontakt", label: "Få gratis analyse" }}
+      />
       <p>
         Vil du vite hvor du står i dag, starter vi gjerne med en gratis
         synlighetsanalyse. Vi sjekker hvordan bedriften din ligger an i Google-søk,
@@ -178,13 +187,6 @@ export const post: Post = {
         blir anbefalt. <a href="/kontakt">Ta kontakt</a>, så svarer vi i løpet av
         dagen.
       </p>
-      <PostCta
-        eyebrow="SEO / AI-svar"
-        title="Bli anbefalt når kundene spør AI"
-        text="Se hva som inngår i Light, Medium og Komplett, eller start med en gratis synlighetsanalyse av bedriften din."
-        primary={{ href: "/tjenester/seo-og-ai-svar#priser", label: "Se pakker og priser" }}
-        secondary={{ href: "/kontakt", label: "Få gratis analyse" }}
-      />
     </>
   ),
 }
