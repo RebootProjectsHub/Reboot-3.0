@@ -1,5 +1,6 @@
 import type { Post } from "@/posts/types"
 import { PostImage } from "@/components/post-image"
+import { PostCta } from "@/components/post-cta"
 
 const IMG = "/posts/synlighet-i-ai-svar"
 
@@ -177,6 +178,13 @@ export const post: Post = {
         blir anbefalt. <a href="/kontakt">Ta kontakt</a>, så svarer vi i løpet av
         dagen.
       </p>
+      <PostCta
+        eyebrow="SEO / AI-svar"
+        title="Bli anbefalt når kundene spør AI"
+        text="Se hva som inngår i Light, Medium og Komplett, eller start med en gratis synlighetsanalyse av bedriften din."
+        primary={{ href: "/tjenester/seo-og-ai-svar#priser", label: "Se pakker og priser" }}
+        secondary={{ href: "/kontakt", label: "Få gratis analyse" }}
+      />
     </>
   ),
 }
