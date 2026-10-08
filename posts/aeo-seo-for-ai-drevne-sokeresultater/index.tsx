@@ -1,5 +1,6 @@
 import type { Post } from "@/posts/types"
 import { PostImage } from "@/components/post-image"
+import { PostCta } from "@/components/post-cta"
 
 const IMG = "/posts/aeo-seo-for-ai-drevne-sokeresultater"
 
@@ -181,6 +182,13 @@ export const post: Post = {
         ikke som to metoder i konkurranse, men som ett samlet håndverk som gjør
         kunnskapen din lett å finne, lett å forstå og lett å handle på.
       </p>
+      <PostCta
+        eyebrow="SEO / AI-svar"
+        title="Bli anbefalt når kundene spør AI"
+        text="Se hva som inngår i Light, Medium og Komplett, eller start med en gratis synlighetsanalyse av bedriften din."
+        primary={{ href: "/tjenester/seo-og-ai-svar#priser", label: "Se pakker og priser" }}
+        secondary={{ href: "/kontakt", label: "Få gratis analyse" }}
+      />
     </>
   ),
 }
