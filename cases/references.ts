@@ -98,6 +98,11 @@ export const references: Reference[] = [
     image: "/referanser/okern-bilpleie.webp",
   },
   {
+    name: "Vitalis Apotek",
+    url: "https://vitalisapotek.no/",
+    image: "/referanser/vitalis-apotek.webp",
+  },
+  {
     name: "Tannkunsten",
     url: "https://tannkunsten.no/",
     image: "/referanser/tannkunsten.webp",
@@ -136,11 +141,6 @@ export const references: Reference[] = [
     name: "NAF",
     url: "https://jobb.naf.no/",
     image: "/referanser/NAF-ledige-stillinger.webp",
-  },
-  {
-    name: "Vitalis Apotek",
-    url: "https://vitalisapotek.no/",
-    image: "/referanser/vitalis-apotek.webp",
   },
   {
     name: "Kaffehuset",
