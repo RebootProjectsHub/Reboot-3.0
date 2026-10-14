@@ -2,9 +2,9 @@
 
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
-import { ChevronDown, Menu, X } from "lucide-react"
+import { ArrowUpRight, ChevronDown, Menu, X } from "lucide-react"
 
-type NavChild = { number: string; label: string; href: string }
+type NavChild = { number: string; label: string; href: string; image: string; alt: string }
 type NavLink = { label: string; href: string; children?: NavChild[] }
 
 const navLinks: NavLink[] = [
@@ -12,10 +12,29 @@ const navLinks: NavLink[] = [
     label: "Våre tjenester",
     href: "/tjenester",
     // Short labels per the header submenu; hrefs match components/services.tsx.
+    // Images are 512x300 webp crops in public/meny, shown at 256x150 on desktop.
     children: [
-      { number: "01", label: "Ny nettside", href: "/tjenester/skreddersydd-nettside" },
-      { number: "02", label: "SEO & GEO", href: "/tjenester/seo-og-ai-svar" },
-      { number: "03", label: "AI-rådgivning", href: "/tjenester/ai-radgivning" },
+      {
+        number: "01",
+        label: "Ny nettside",
+        href: "/tjenester/skreddersydd-nettside",
+        image: "/meny/ny-nettside.webp",
+        alt: "Laptop på en benk i et lyst rom",
+      },
+      {
+        number: "02",
+        label: "SEO & GEO",
+        href: "/tjenester/seo-og-ai-svar",
+        image: "/meny/seo-geo.webp",
+        alt: "Mobil som viser Reboot i Google-søk",
+      },
+      {
+        number: "03",
+        label: "AI-rådgivning",
+        href: "/tjenester/ai-radgivning",
+        image: "/meny/ai-radgivning.webp",
+        alt: "Kontorlokale med glassvegger og trapp",
+      },
     ],
   },
   { label: "Priser", href: "/nettside-priser" },
@@ -85,22 +104,52 @@ export function SiteHeader() {
 
                   <div className="invisible absolute left-0 top-full z-50 translate-y-1 pt-3 opacity-0 transition-[opacity,transform] duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
                     {/* Flat per brand guide: hairline border, no shadow, small
-                        (--radius-xs) corners, laid out as a horizontal row. */}
-                    <div className="flex items-center gap-1 rounded-xs border border-border bg-[#fcf2ec] p-1">
-                      {link.children.map((child) => (
+                        (--radius-xs) corners. Three image cards in a row plus
+                        a footer strip; narrower below xl so it stays inside
+                        the viewport at 1024px. */}
+                    <div className="flex w-[660px] flex-col rounded-xs border border-border bg-[#fcf2ec] p-2 xl:w-[816px]">
+                      <div className="grid grid-cols-3 gap-2">
+                        {link.children.map((child) => (
+                          <a
+                            key={child.href}
+                            href={child.href}
+                            className="group/item flex flex-col gap-3 rounded-[8px] p-2 transition-colors hover:bg-secondary"
+                          >
+                            <Image
+                              src={child.image}
+                              alt={child.alt}
+                              width={512}
+                              height={300}
+                              className="h-[120px] w-full rounded-[6px] object-cover xl:h-[150px]"
+                            />
+                            <span className="flex items-center justify-between gap-2 px-1 pb-1.5">
+                              <span className="inline-flex items-baseline gap-2.5">
+                                <span className="shrink-0 font-mono text-[0.72rem] font-bold text-muted-foreground">
+                                  {child.number}
+                                </span>
+                                <span className="whitespace-nowrap text-[1.125rem] font-medium text-foreground transition-colors group-hover/item:text-brand">
+                                  {child.label}
+                                </span>
+                              </span>
+                              <ArrowUpRight
+                                aria-hidden
+                                className="size-4 shrink-0 text-foreground transition-colors group-hover/item:text-brand"
+                              />
+                            </span>
+                          </a>
+                        ))}
+                      </div>
+                      <div className="mt-2 flex items-center justify-between border-t border-border px-3 pb-1 pt-2.5">
+                        <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">
+                          Reboot
+                        </span>
                         <a
-                          key={child.href}
-                          href={child.href}
-                          className="group/item flex items-center gap-2.5 rounded-[8px] px-3.5 py-2 transition-colors hover:bg-secondary"
+                          href={link.href}
+                          className="text-sm font-medium text-foreground transition-colors hover:text-brand"
                         >
-                          <span className="shrink-0 font-mono text-[0.72rem] font-bold text-muted-foreground">
-                            {child.number}
-                          </span>
-                          <span className="whitespace-nowrap text-[0.95rem] font-medium text-foreground transition-colors group-hover/item:text-brand">
-                            {child.label}
-                          </span>
+                          Se alle tjenester
                         </a>
-                      ))}
+                      </div>
                     </div>
                   </div>
                 </div>
