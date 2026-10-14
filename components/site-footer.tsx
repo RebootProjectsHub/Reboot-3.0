@@ -6,7 +6,7 @@ const columns = [
     links: [
       { label: "Ny nettside", href: "/tjenester/skreddersydd-nettside" },
       { label: "AI-rådgivning", href: "/tjenester/ai-radgivning" },
-      { label: "SEO og AI-søk", href: "/tjenester/seo-og-ai-svar" },
+      { label: "SEO & GEO", href: "/tjenester/seo-og-ai-svar" },
       { label: "Hosting & support", href: "/tjenester#vedlikehold-og-support" },
     ],
   },

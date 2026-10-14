@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo"
 export const metadata = pageMetadata({
   title: "SEO og AI-svar i Oslo",
   description:
-    "Reboot er et SEO-byrå i Nydalen, Oslo. Vi jobber med teknisk SEO og synlighet i AI-søk som ChatGPT og Gemini, i tillegg til Google. Fastpris og norsk support.",
+    "Reboot er et SEO-byrå i Nydalen, Oslo. Vi jobber med teknisk SEO og GEO: synlighet i AI-søk som ChatGPT og Gemini, i tillegg til Google. Fastpris og norsk support.",
   path: "/tjenester/seo-og-ai-svar",
 })
 
@@ -21,8 +21,8 @@ const services = [
     body: "Hastighet, struktur og indeksering i orden og innhold spisset mot det kundene dine faktisk søker etter.",
   },
   {
-    title: "Synlighet i AI-svar og chatbots",
-    body: "Vi strukturerer innholdet slik at ChatGPT, Claude og Gemini finner, forstår og anbefaler bedriften din.",
+    title: "GEO: synlighet i AI-svar og chatbots",
+    body: "Generativ søkeoptimalisering. Vi strukturerer innholdet slik at ChatGPT, Claude og Gemini finner, forstår og anbefaler bedriften din.",
   },
   {
     title: "Lokal synlighet og Google Bedriftsprofil",
@@ -266,8 +266,9 @@ export default function SeoOgAiSvarPage() {
                 </p>
                 <p className="mt-4 text-[17px] leading-[1.7] text-ink-foreground/80">
                   Vi jobber med begge deler samtidig: teknisk SEO og innhold
-                  som løfter dere på Google, og struktur som gjør at
-                  AI-modellene forstår og anbefaler bedriften din.
+                  som løfter dere på Google, og GEO (generativ
+                  søkeoptimalisering) som gjør at AI-modellene forstår og
+                  anbefaler bedriften din.
                 </p>
               </div>
             </div>
@@ -297,7 +298,7 @@ export default function SeoOgAiSvarPage() {
             Spesialister på synlighet
           </span>
           <h2 className="mt-4 max-w-[720px] text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
-            SEO-tjenester fra Reboot
+            SEO- og GEO-tjenester fra Reboot
           </h2>
           <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:items-center lg:gap-20">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius)] lg:sticky lg:top-24">
