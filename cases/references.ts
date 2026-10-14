@@ -142,4 +142,9 @@ export const references: Reference[] = [
     url: "https://vitalisapotek.no/",
     image: "/referanser/vitalis-apotek.webp",
   },
+  {
+    name: "Kaffehuset",
+    url: "https://www.kaffehusetas.no/",
+    image: "/referanser/kaffehuset.webp",
+  },
 ]
