@@ -14,7 +14,7 @@ const navLinks: NavLink[] = [
     // Short labels per the header submenu; hrefs match components/services.tsx.
     children: [
       { number: "01", label: "Ny nettside", href: "/tjenester/skreddersydd-nettside" },
-      { number: "02", label: "SEO", href: "/tjenester/seo-og-ai-svar" },
+      { number: "02", label: "SEO & GEO", href: "/tjenester/seo-og-ai-svar" },
       { number: "03", label: "AI-rådgivning", href: "/tjenester/ai-radgivning" },
     ],
   },
