@@ -5,8 +5,8 @@
 
 
 @theme inline {
-  --font-heading: gelica, ui-sans-serif, system-ui, sans-serif;
-  --font-sans: gelica, ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-tiro-gurmukhi), ui-serif, Georgia, serif;
+  --font-sans: var(--font-tiro-gurmukhi), ui-serif, Georgia, serif;
   --font-mono: var(--font-space-mono), ui-monospace, monospace;
   --color-brand: var(--brand);
   --color-brand-foreground: var(--brand-foreground);

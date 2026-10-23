@@ -1,6 +1,6 @@
 import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata, Viewport } from 'next'
-import { Space_Mono } from 'next/font/google'
+import { Space_Mono, Tiro_Gurmukhi } from 'next/font/google'
 import { OpenAiPixelPageViews } from '@/components/openai-pixel'
 import './globals.css'
 
@@ -11,6 +11,13 @@ const spaceMono = Space_Mono({
   variable: '--font-space-mono',
   subsets: ['latin'],
   weight: ['400', '700'],
+})
+
+const tiroGurmukhi = Tiro_Gurmukhi({
+  variable: '--font-tiro-gurmukhi',
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
 })
 
 const siteUrl = 'https://reboot.no'
@@ -79,10 +86,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="no" className={`${spaceMono.variable} bg-background`}>
+    <html lang="no" className={`${spaceMono.variable} ${tiroGurmukhi.variable} bg-background`}>
       <head>
         {/* OpenAI Ads conversion pixel. Loads its SDK async, so it does not
-            block the render-critical font CSS below. */}
+            block page rendering. */}
         {process.env.NODE_ENV === 'production' && (
           <script
             dangerouslySetInnerHTML={{
@@ -90,19 +97,6 @@ export default function RootLayout({
             }}
           />
         )}
-        {/* use.typekit.net serves both the render-blocking stylesheet and the
-            font files it references. Those use different fetch modes, and a
-            preconnect is only reused by a request in the matching mode — hence
-            two tags: the plain one warms the connection for the stylesheet,
-            the anonymous one for the woff2 files.
-            The kit CSS then @imports a second blocking stylesheet from
-            p.typekit.net, which the browser cannot discover until the first one
-            lands — so warming that origin up front overlaps its handshake with
-            the first request instead of paying for it serially. */}
-        <link rel="preconnect" href="https://use.typekit.net" />
-        <link rel="preconnect" href="https://use.typekit.net" crossOrigin="" />
-        <link rel="preconnect" href="https://p.typekit.net" />
-        <link rel="stylesheet" href="https://use.typekit.net/aah4tvk.css" />
       </head>
       <body className="font-sans antialiased">
         <script
