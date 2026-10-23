@@ -68,7 +68,7 @@ export function AboutTeamGrid() {
                 <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-brand">
                   {member.role}
                 </span>
-                <h3 className="mb-3 mt-0.5 font-heading text-[19px] font-normal leading-[1.2] tracking-[-0.01em] text-foreground">
+                <h3 className="mb-3 mt-2 font-heading text-[19px] font-normal leading-[1.2] tracking-[-0.01em] text-foreground">
                   {member.name}
                 </h3>
                 <a
