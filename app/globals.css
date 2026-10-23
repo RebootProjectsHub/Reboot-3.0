@@ -1,12 +1,12 @@
-/* Miles-inspired theme */
+/* Miles-inspired theme. Fonts: Idiqlat (self-hosted) + Space Mono */
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
 
 @theme inline {
-  --font-heading: var(--font-tiro-gurmukhi), ui-serif, Georgia, serif;
-  --font-sans: var(--font-tiro-gurmukhi), ui-serif, Georgia, serif;
+  --font-heading: var(--font-idiqlat), ui-serif, Georgia, serif;
+  --font-sans: var(--font-idiqlat), ui-serif, Georgia, serif;
   --font-mono: var(--font-space-mono), ui-monospace, monospace;
   --color-brand: var(--brand);
   --color-brand-foreground: var(--brand-foreground);
