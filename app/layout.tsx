@@ -16,14 +16,15 @@ const spaceMono = Space_Mono({
 
 // Idiqlat only ships 200/300/400, and even its lightest cut is darker than
 // the Gelica 400 it replaces. Map the files as far down the CSS weight scale
-// as they go: the 200 cut carries light and regular text, 300 carries medium,
-// and 400 covers semibold and bold so the browser never fakes a heavier weight.
+// as they go: the 200 cut carries light through medium text, 300 carries
+// semibold and bold, and the 400 cut is kept for anything heavier so the
+// browser never fakes a weight.
 const idiqlat = localFont({
   variable: '--font-idiqlat',
   src: [
-    { path: './fonts/idiqlat-200.woff2', weight: '300 400', style: 'normal' },
-    { path: './fonts/idiqlat-300.woff2', weight: '500', style: 'normal' },
-    { path: './fonts/idiqlat-400.woff2', weight: '600 700', style: 'normal' },
+    { path: './fonts/idiqlat-200.woff2', weight: '300 500', style: 'normal' },
+    { path: './fonts/idiqlat-300.woff2', weight: '600 700', style: 'normal' },
+    { path: './fonts/idiqlat-400.woff2', weight: '800 900', style: 'normal' },
   ],
 })
 

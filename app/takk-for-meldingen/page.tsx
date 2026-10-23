@@ -15,7 +15,7 @@ export default function TakkForMeldingenPage() {
         <span className="font-mono text-sm uppercase tracking-[0.18em] text-brand">
           Takk!
         </span>
-        <h1 className="mt-4 mb-6 text-balance font-heading text-[clamp(36px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
+        <h1 className="mt-4 mb-6 text-balance font-heading text-[clamp(36px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.035em] text-foreground">
           Meldingen er sendt
         </h1>
         <p className="mx-auto mb-9 max-w-[520px] text-pretty text-[19px] leading-[1.6] text-foreground/70">

@@ -13,7 +13,7 @@ export function PricingCta() {
       {/* The inner py-16 that ServicesCta needs to inset its panel background
           is dead air here — this variant has no panel. */}
       <div className="mx-auto max-w-[1280px] px-6 text-center sm:px-12">
-        <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">
+        <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.035em] text-foreground">
           Klar for å komme i gang?
         </h2>
         <p className="mx-auto mt-4 max-w-[460px] text-pretty text-lg leading-relaxed text-foreground/70">

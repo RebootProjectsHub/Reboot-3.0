@@ -18,7 +18,7 @@ export function ServicesHero() {
         Hva vi jobber med
       </span>
 
-      <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(40px,5.5vw,64px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
+      <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(40px,5.5vw,64px)] font-normal leading-[1.05] tracking-[-0.035em] text-foreground">
         Våre tjenester
       </h1>
 

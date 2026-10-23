@@ -43,7 +43,7 @@ export function AboutTeamGrid() {
           <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-brand">
             Møt teamet
           </span>
-          <h2 className="mt-4 text-balance font-heading text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.06] tracking-[-0.02em] text-foreground">
+          <h2 className="mt-4 text-balance font-heading text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.06] tracking-[-0.035em] text-foreground">
             Menneskene bak nettsidene
           </h2>
         </div>
@@ -68,7 +68,7 @@ export function AboutTeamGrid() {
                 <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-brand">
                   {member.role}
                 </span>
-                <h3 className="mb-3 mt-0.5 font-heading text-[19px] font-normal leading-[1.2] tracking-[-0.01em] text-foreground">
+                <h3 className="mb-3 mt-0.5 font-heading text-[19px] font-normal leading-[1.2] tracking-[-0.025em] text-foreground">
                   {member.name}
                 </h3>
                 <a
