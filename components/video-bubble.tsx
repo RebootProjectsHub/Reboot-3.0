@@ -55,6 +55,22 @@ export function VideoBubble() {
     setMuted(v.muted)
   }
 
+  function seekTo(clientX: number, track: HTMLElement) {
+    const v = videoRef.current
+    if (!v || !v.duration) return
+    const rect = track.getBoundingClientRect()
+    const ratio = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width))
+    v.currentTime = ratio * v.duration
+    setProgress(ratio * 100)
+  }
+
+  function seekBy(seconds: number) {
+    const v = videoRef.current
+    if (!v || !v.duration) return
+    v.currentTime = Math.min(v.duration, Math.max(0, v.currentTime + seconds))
+    setProgress((v.currentTime / v.duration) * 100)
+  }
+
   return (
     <>
       {!open && (
@@ -160,11 +176,34 @@ export function VideoBubble() {
                   <Volume2 className="size-4" aria-hidden />
                 )}
               </button>
-              <div className="h-1 flex-1 overflow-hidden rounded-full bg-ink-foreground/20">
-                <div
-                  className="h-full rounded-full bg-brand"
-                  style={{ width: `${progress}%` }}
-                />
+              <div
+                role="slider"
+                tabIndex={0}
+                aria-label="Spol i video"
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-valuenow={Math.round(progress)}
+                onPointerDown={(e) => {
+                  e.currentTarget.setPointerCapture(e.pointerId)
+                  seekTo(e.clientX, e.currentTarget)
+                }}
+                onPointerMove={(e) => {
+                  if (e.buttons & 1) seekTo(e.clientX, e.currentTarget)
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "ArrowRight") seekBy(5)
+                  else if (e.key === "ArrowLeft") seekBy(-5)
+                  else return
+                  e.preventDefault()
+                }}
+                className="group flex flex-1 cursor-pointer touch-none items-center py-3 outline-none"
+              >
+                <div className="h-1 w-full overflow-hidden rounded-full bg-ink-foreground/20 transition-[height] duration-150 group-hover:h-1.5 group-focus-visible:h-1.5">
+                  <div
+                    className="h-full rounded-full bg-brand"
+                    style={{ width: `${progress}%` }}
+                  />
+                </div>
               </div>
             </div>
           </div>
