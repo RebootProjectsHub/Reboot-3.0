@@ -169,7 +169,7 @@ export default function WooCommercePage() {
           Nettbutikk i WordPress
         </span>
 
-        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.035em] text-foreground">
+        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
           WooCommerce-eksperter i Oslo
         </h1>
 
@@ -245,7 +245,7 @@ export default function WooCommercePage() {
                 <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
                   Alt inkludert
                 </span>
-                <h2 className="mt-4 text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.035em] text-foreground">
+                <h2 className="mt-4 text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
                   Nettbutikk med fokus på høy konvertering
                 </h2>
                 <p className="mt-4 text-[16.5px] leading-[1.65] text-foreground/70">
@@ -280,7 +280,7 @@ export default function WooCommercePage() {
             ✦︎
           </span>
           <div className="mx-auto max-w-[720px] text-center">
-            <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.035em]">
+            <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em]">
               Usikker på om WooCommerce er riktig valg?
             </h2>
             <p className="mx-auto mt-4 max-w-[560px] text-[16.5px] leading-[1.65] text-ink-foreground/80">
@@ -318,7 +318,7 @@ export default function WooCommercePage() {
       {/* FAQ */}
       <section className="px-6 py-14 sm:py-16">
         <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.035em] text-foreground">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
             Ofte stilte spørsmål om WooCommerce
           </h2>
           <div className="mt-8">

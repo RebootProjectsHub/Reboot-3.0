@@ -179,7 +179,7 @@ export default function AiRadgivningPage() {
           Rådgivning &amp; kompetanse
         </span>
 
-        <h1 className="mt-4 mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.035em] text-foreground">
+        <h1 className="mt-4 mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
           AI-rådgivning for bedrifter i Norge
         </h1>
 
@@ -206,7 +206,7 @@ export default function AiRadgivningPage() {
               <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
                 Kjenner du deg igjen?
               </span>
-              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.15] tracking-[-0.035em] text-ink-foreground">
+              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.15] tracking-[-0.02em] text-ink-foreground">
                 Vanlige problemstillinger
               </h2>
               <div className="relative mt-6 aspect-[3/2] overflow-hidden rounded-[var(--radius)]">
@@ -248,7 +248,7 @@ export default function AiRadgivningPage() {
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
             Praktisk hjelp
           </span>
-          <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.035em] text-foreground">
+          <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
             AI-rådgivning fra Reboot
           </h2>
 
@@ -311,7 +311,7 @@ export default function AiRadgivningPage() {
       {/* FAQ */}
       <section className="px-6 pb-16">
         <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.035em] text-foreground">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
             FAQ: Bruk av AI som verktøy
           </h2>
           <div className="mt-8">
@@ -338,7 +338,7 @@ export default function AiRadgivningPage() {
             ✦︎
           </span>
 
-          <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.035em] text-foreground">
+          <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">
             Klar for å komme i gang med AI?
           </h2>
           <p className="mx-auto mt-4 max-w-[460px] text-pretty text-lg leading-relaxed text-foreground/70">

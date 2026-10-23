@@ -1,7 +1,6 @@
 import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata, Viewport } from 'next'
-import { Space_Mono } from 'next/font/google'
-import localFont from 'next/font/local'
+import { Space_Mono, Tiro_Gurmukhi } from 'next/font/google'
 import { OpenAiPixelPageViews } from '@/components/openai-pixel'
 import './globals.css'
 
@@ -14,18 +13,11 @@ const spaceMono = Space_Mono({
   weight: ['400', '700'],
 })
 
-// Idiqlat only ships 200/300/400, and even its lightest cut is darker than
-// the Gelica 400 it replaces. Map the files as far down the CSS weight scale
-// as they go: the 200 cut carries light through medium text, 300 carries
-// semibold and bold, and the 400 cut is kept for anything heavier so the
-// browser never fakes a weight.
-const idiqlat = localFont({
-  variable: '--font-idiqlat',
-  src: [
-    { path: './fonts/idiqlat-200.woff2', weight: '300 500', style: 'normal' },
-    { path: './fonts/idiqlat-300.woff2', weight: '600 700', style: 'normal' },
-    { path: './fonts/idiqlat-400.woff2', weight: '800 900', style: 'normal' },
-  ],
+const tiroGurmukhi = Tiro_Gurmukhi({
+  variable: '--font-tiro-gurmukhi',
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
 })
 
 const siteUrl = 'https://reboot.no'
@@ -94,7 +86,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="no" className={`${spaceMono.variable} ${idiqlat.variable} bg-background`}>
+    <html lang="no" className={`${spaceMono.variable} ${tiroGurmukhi.variable} bg-background`}>
       <head>
         {/* OpenAI Ads conversion pixel. Loads its SDK async, so it does not
             block page rendering. */}

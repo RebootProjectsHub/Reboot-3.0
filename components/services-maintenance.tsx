@@ -186,7 +186,7 @@ export function ServicesMaintenance() {
           <span className="font-mono text-xs font-normal uppercase tracking-[0.12em] text-brand">
             Hosting, drift &amp; vedlikehold
           </span>
-          <h2 className="mt-4 text-balance font-heading text-[clamp(32px,3.8vw,48px)] font-normal leading-[1.1] tracking-[-0.035em] text-foreground">
+          <h2 className="mt-4 text-balance font-heading text-[clamp(32px,3.8vw,48px)] font-normal leading-[1.1] tracking-[-0.02em] text-foreground">
             Vedlikehold og support
           </h2>
           <p className="mt-4 text-[16.5px] leading-[1.6] text-foreground/70">

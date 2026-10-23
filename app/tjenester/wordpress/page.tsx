@@ -182,7 +182,7 @@ export default function WordPressPage() {
           Nettsider &amp; nettbutikker
         </span>
 
-        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.035em] text-foreground">
+        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
           WordPress-utvikler i Oslo
         </h1>
 
@@ -207,7 +207,7 @@ export default function WordPressPage() {
         <div className="mx-auto max-w-[1280px]">
           <div className="rounded-[var(--radius)] bg-card px-8 py-12 sm:px-12 sm:py-14 lg:px-16">
             <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
-              <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.035em] text-foreground">
+              <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
                 Vi bruker Wordpress for de fleste av våre leveranser
               </h2>
               <div>
@@ -261,7 +261,7 @@ export default function WordPressPage() {
               <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
                 Spesialister på WordPress
               </span>
-              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.035em] text-foreground">
+              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
                 WordPress-tjenester fra Reboot
               </h2>
               <div className="relative mt-14 aspect-[1500/1091] overflow-hidden rounded-[var(--radius)]">
@@ -360,7 +360,7 @@ export default function WordPressPage() {
           >
             ✳︎
           </span>
-          <blockquote className="mx-auto max-w-[720px] text-balance font-heading text-[clamp(22px,2.6vw,32px)] font-normal leading-[1.3] tracking-[-0.025em]">
+          <blockquote className="mx-auto max-w-[720px] text-balance font-heading text-[clamp(22px,2.6vw,32px)] font-normal leading-[1.3] tracking-[-0.01em]">
             «Hele prosessen med oppsett og administrasjon har vært en effektiv
             og produktiv opplevelse, og vi er veldig fornøyde med samarbeidet
             med vår driftspartner.»
@@ -374,7 +374,7 @@ export default function WordPressPage() {
       {/* FAQ */}
       <section className="px-6 py-14 sm:py-16">
         <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.035em] text-foreground">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
             Ofte stilte spørsmål om WordPress
           </h2>
           <div className="mt-8">

@@ -18,7 +18,7 @@ export function PricingNewSite() {
             <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
               Ny nettside
             </span>
-            <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.15] tracking-[-0.035em] text-foreground">
+            <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
               Har du en hjemmeside som trenger nytt design?
             </h2>
             <p className="mt-5 text-[16.5px] leading-[1.65] text-foreground/70">
