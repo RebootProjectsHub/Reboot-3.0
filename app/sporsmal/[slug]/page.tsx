@@ -22,6 +22,9 @@ export async function generateMetadata({
     title: page.title,
     description: page.description,
     path: `/sporsmal/${page.slug}`,
+    // JPG crop of the hero: some link previewers (LinkedIn, Outlook) skip WebP.
+    image: `/sporsmal/og/${page.slug}.jpg`,
+    imageAlt: page.image.alt,
   })
 }
 

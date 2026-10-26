@@ -11,12 +11,19 @@ export function pageMetadata({
   description,
   path,
   image = "/og-image.png",
+  imageWidth = 1200,
+  imageHeight = 630,
+  imageAlt = "Reboot",
   noIndex = false,
 }: {
   title: string
   description: string
   path: string
   image?: string
+  /** Dimensions and alt of `image`; the defaults describe /og-image.png. */
+  imageWidth?: number
+  imageHeight?: number
+  imageAlt?: string
   /** Set for paginated/duplicate-content routes that shouldn't be indexed. */
   noIndex?: boolean
 }): Metadata {
@@ -33,7 +40,7 @@ export function pageMetadata({
       url: path,
       title: fullTitle,
       description,
-      images: [{ url: image, width: 1200, height: 630, alt: "Reboot" }],
+      images: [{ url: image, width: imageWidth, height: imageHeight, alt: imageAlt }],
     },
     twitter: {
       card: "summary_large_image",
