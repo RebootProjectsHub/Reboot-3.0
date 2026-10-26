@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next"
 import { posts } from "@/posts"
 import { cases } from "@/cases"
+import { qaPages } from "@/sporsmal"
 
 export const dynamic = "force-static"
 
@@ -40,5 +41,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }))
 
-  return [...staticPages, ...casePages, ...articlePages]
+  const qaIndex: MetadataRoute.Sitemap = [
+    { url: `${BASE}/sporsmal/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+  ]
+
+  const qaEntries: MetadataRoute.Sitemap = qaPages.map((p) => ({
+    url: `${BASE}/sporsmal/${p.slug}/`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }))
+
+  return [...staticPages, ...qaIndex, ...qaEntries, ...casePages, ...articlePages]
 }

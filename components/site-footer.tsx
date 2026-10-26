@@ -16,6 +16,7 @@ const columns = [
       { label: "Kundecaser", href: "/referanser" },
       { label: "Om oss", href: "/om-oss" },
       { label: "Aktuelt", href: "/trender" },
+      { label: "Spørsmål og svar", href: "/sporsmal" },
       { label: "Ta kontakt", href: "/kontakt" },
     ],
   },

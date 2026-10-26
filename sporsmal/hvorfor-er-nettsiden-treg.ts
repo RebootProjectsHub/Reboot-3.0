@@ -1,0 +1,22 @@
+import type { QaPage } from "@/sporsmal/types"
+
+export const page: QaPage = {
+  slug: "hvorfor-er-nettsiden-treg",
+  title: "Hvorfor er nettsiden min treg, og hjelper det å bytte hosting?",
+  description: "Lav score på hastighetstest? Som regel er det ikke hostingen som er problemet, men det du har lagt på siden. Her er hva som faktisk gjør nettsider trege.",
+  contentHtml: "<p>Kort svar: Sjelden. Hos de fleste små bedrifter er hostingen god nok. Det som gjør siden treg er det som ligger oppå: innebygde kart, anmeldelser, chat-vinduer, videoer og tunge bilder. Fjern eller erstatt dem, og scoren går opp. Bytt hosting, og du har brukt penger på feil ting.</p>\n<p>Vi får ofte spørsmål fra bedrifter som har kjørt siden sin gjennom Google PageSpeed eller Lighthouse, fått en rød score, og konkludert med at de må bytte leverandør. Nesten hver gang er det noe annet.</p>\n<h2>Hva gjør egentlig en nettside treg?</h2>\n<p>Når noen åpner siden din, må nettleseren hente alt som skal vises. Det går raskt for tekst, bilder og selve siden. Det går sakte for alt som hentes fra andre: Google Maps, Google-anmeldelser, Facebook-feed, chat, bookingvinduer, videoer fra YouTube.</p>\n<p>Hver av disse laster sine egne skript fra sine egne servere, og siden din kan ikke bli raskere enn det tregeste elementet. Du kan ha verdens beste hosting og fortsatt få rød score fordi du har et kart og en anmeldelsesboks på forsiden.</p>\n<h2>De fem vanligste årsakene, i rekkefølge</h2>\n<ol><li><strong>Tredjeparts-widgets.</strong> Kart, anmeldelser, sosiale feeds, chat. Den største synderen, nesten alltid.</li><li><strong>Bilder som ikke er komprimert.</strong> Et bilde rett fra mobilen er 4 til 8 MB. Det bør være under 200 KB på nettsiden.</li><li><strong>For mange utvidelser i WordPress.</strong> Hver utvidelse laster sitt eget. Tjue utvidelser er tjue små bremser.</li><li><strong>Ingen mellomlagring (caching).</strong> Siden bygges fra bunnen for hver besøkende i stedet for å serveres ferdig.</li><li><strong>Hosting.</strong> Nederst på listen. Det gjelder hvis du har en veldig billig delt hosting med mange andre sider, eller en server på feil side av kloden.</li></ol>\n<h2>Hva vi gjør når en kunde har treg side</h2>\n<p>Først måler vi hva som faktisk tar tid. Så fjerner vi det som ikke trenger å være der. Et kart kan være en lenke til Google Maps i stedet for et innebygd kart. Anmeldelser kan være en lenke til Google-profilen i stedet for en boks som laster alt live. Det ser nesten likt ut for kunden og halverer lastetiden.</p>\n<p>Deretter komprimerer vi bilder, rydder i utvidelser og setter opp caching. Hosting ser vi på til slutt, og bare hvis målingene peker dit.</p>\n<h2>Hvor mye betyr scoren egentlig?</h2>\n<p>Mindre enn mange tror, og mer enn null. Google bruker hastighet som ett av mange signaler. Men det kundene merker er om siden føles rask på mobil. En side som laster på to sekunder i stedet for seks beholder flere besøkende. Det er det som betyr noe, ikke tallet.</p>\n<h2>Vanlige spørsmål</h2>\n<h3>Hva er en god score?</h3>\n<p>Over 90 på mobil er bra. 70 til 90 er greit for de fleste små bedrifter. Under 50 bør gjøres noe med.</p>\n<h3>Bør jeg flytte siden til dere for å få den raskere?</h3>\n<p>Ikke for hastighetens skyld alene. Hvis du har driftsavtale hos oss gjør vi uansett den jobben som er beskrevet over som en del av avtalen. Les mer: <a href=\"/sporsmal/trenger-jeg-driftsavtale/\">Trenger du egentlig en driftsavtale for nettsiden?</a></p>\n<h3>Kan jeg beholde kart og anmeldelser på siden?</h3>\n<p>Ja, men legg dem på en egen side (for eksempel kontaktsiden), ikke på forsiden. Da betaler bare de som faktisk vil se kartet for lastetiden.</p>\n<p>Usikker på hva som bremser siden din? <a href=\"/kontakt/\">Ta kontakt</a>, så måler vi det.</p>",
+  faq: [
+    {
+      "question": "Hva er en god score?",
+      "answer": "Over 90 på mobil er bra. 70 til 90 er greit for de fleste små bedrifter. Under 50 bør gjøres noe med."
+    },
+    {
+      "question": "Bør jeg flytte siden til dere for å få den raskere?",
+      "answer": "Ikke for hastighetens skyld alene. Hvis du har driftsavtale hos oss gjør vi uansett den jobben som er beskrevet over som en del av avtalen. Les mer: Trenger du egentlig en driftsavtale for nettsiden?"
+    },
+    {
+      "question": "Kan jeg beholde kart og anmeldelser på siden?",
+      "answer": "Ja, men legg dem på en egen side (for eksempel kontaktsiden), ikke på forsiden. Da betaler bare de som faktisk vil se kartet for lastetiden."
+    }
+  ],
+}

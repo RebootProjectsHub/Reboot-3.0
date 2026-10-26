@@ -1,0 +1,22 @@
+import type { QaPage } from "@/sporsmal/types"
+
+export const page: QaPage = {
+  slug: "kontaktskjema-epost-i-soppelpost",
+  title: "Hvorfor havner e-post fra kontaktskjemaet i søppelpost?",
+  description: "Henvendelser fra nettsiden havner i spam, kommer ikke frem, eller blandes sammen i én tråd? Her er årsaken og hvordan det løses med SMTP, SPF og DKIM.",
+  contentHtml: "<p>Kort svar: Fordi nettsiden sender e-post på en måte mottakerens e-postsystem ikke stoler på. Løsningen er å sende via en egen e-posttjeneste (SMTP) og sette opp SPF og DKIM på domenet ditt. Det tar oss normalt under en time, og problemet forsvinner.</p>\n<p>Dette er et av de vanligste problemene vi ser hos små bedrifter, og et av de dyreste, fordi du ikke merker det. Kunden sender en henvendelse, får ingen svar, og går videre til neste.</p>\n<h2>Hva skjer egentlig?</h2>\n<p>Når noen fyller ut kontaktskjemaet på nettsiden din, prøver nettsiden å sende en e-post til deg. Standardoppsettet i WordPress sender den rett fra webserveren, uten noen form for bevis på hvem som faktisk sender.</p>\n<p>Gmail, Outlook og de andre ser en e-post som påstår å komme fra ditt domene, men som sendes fra en server de ikke kjenner. Da gjør de ett av tre: legger den i søppelpost, avviser den stille, eller leverer den med en advarsel. Du ser bare at henvendelsene blir færre.</p>\n<h2>Tre symptomer på at dette er problemet</h2>\n<ol><li><strong>Henvendelser havner i søppelpost</strong>, hos deg eller hos kunden når du svarer.</li><li><strong>Kunder sier de har tatt kontakt, men du har ikke fått noe.</strong> E-posten ble avvist før den kom frem.</li><li><strong>Flere henvendelser blandes sammen i én tråd</strong> i innboksen din, fordi alle e-postene har samme emne og avsender og e-postprogrammet tror de hører sammen.</li></ol>\n<h2>Hvordan løses det?</h2>\n<p>Tre ting, og alle tre må på plass:</p>\n<p><strong>1. Send via SMTP i stedet for fra webserveren.</strong> Nettsiden kobles til en skikkelig e-posttjeneste som sender på vegne av deg. Da kommer e-posten fra en avsender mottakeren kjenner og stoler på.</p>\n<p><strong>2. SPF på domenet.</strong> En liten innstilling i domenet ditt som sier «disse serverne har lov til å sende e-post for meg». Uten den kan hvem som helst late som de er deg, og mottakerne vet det.</p>\n<p><strong>3. DKIM på domenet.</strong> En digital signatur som beviser at e-posten ikke er endret på veien. SPF og DKIM sammen er det Gmail og Outlook krever for å levere til innboks.</p>\n<p>I tillegg setter vi unikt emne per henvendelse (for eksempel med navnet til avsenderen), så de ikke lenger slås sammen i innboksen din.</p>\n<h2>Hva koster det?</h2>\n<p>For kunder med driftsavtale er dette inkludert. Uten driftsavtale er det normalt én times arbeid til 1 280 kr. Selve e-posttjenesten er som regel gratis for de få e-postene et kontaktskjema sender. Les mer om hva en driftsavtale dekker: <a href=\"/sporsmal/trenger-jeg-driftsavtale/\">Trenger du egentlig en driftsavtale for nettsiden?</a></p>\n<h2>Vanlige spørsmål</h2>\n<h3>Kan jeg fikse dette selv?</h3>\n<p>Hvis du er komfortabel med DNS-innstillinger og WordPress-utvidelser, ja. Det finnes gode utvidelser for SMTP. Feilen de fleste gjør er å sette opp SMTP uten SPF og DKIM, og da er du bare halvveis.</p>\n<h3>Gjelder dette også Shopify?</h3>\n<p>Shopify håndterer mye av dette selv, men SPF og DKIM må fortsatt settes opp på ditt eget domene hvis du sender fra egen adresse. Samme prinsipp.</p>\n<h3>Hvordan tester jeg om det er fikset?</h3>\n<p>Send en test fra skjemaet til en Gmail-adresse og en Outlook-adresse og se hvor den havner. Vi gjør dette som siste steg på alle oppsett.</p>\n<p>Har du dette problemet nå? <a href=\"/kontakt/\">Ta kontakt</a>, så ser vi på det.</p>",
+  faq: [
+    {
+      "question": "Kan jeg fikse dette selv?",
+      "answer": "Hvis du er komfortabel med DNS-innstillinger og WordPress-utvidelser, ja. Det finnes gode utvidelser for SMTP. Feilen de fleste gjør er å sette opp SMTP uten SPF og DKIM, og da er du bare halvveis."
+    },
+    {
+      "question": "Gjelder dette også Shopify?",
+      "answer": "Shopify håndterer mye av dette selv, men SPF og DKIM må fortsatt settes opp på ditt eget domene hvis du sender fra egen adresse. Samme prinsipp."
+    },
+    {
+      "question": "Hvordan tester jeg om det er fikset?",
+      "answer": "Send en test fra skjemaet til en Gmail-adresse og en Outlook-adresse og se hvor den havner. Vi gjør dette som siste steg på alle oppsett."
+    }
+  ],
+}

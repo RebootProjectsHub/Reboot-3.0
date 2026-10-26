@@ -1,0 +1,12 @@
+export type QaPage = {
+  /** URL path segment under /sporsmal/. */
+  slug: string
+  /** Question, used as the on-page <h1> and the <title>. */
+  title: string
+  /** Meta description, also the one-liner on the /sporsmal/ index. */
+  description: string
+  /** Body as an HTML string (converted from the brief's markdown). */
+  contentHtml: string
+  /** The "Vanlige spørsmål" H3s and the paragraph under each, for FAQPage JSON-LD. */
+  faq: { question: string; answer: string }[]
+}
