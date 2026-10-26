@@ -1,6 +1,6 @@
-import type { QaPage } from "@/sporsmal/types"
+import type { QaPageContent } from "@/sporsmal/types"
 
-export const page: QaPage = {
+export const page: QaPageContent = {
   slug: "wordpress-oppdateringer-og-sarbarheter",
   title: "Er varslene om oppdateringer og sårbarheter på WordPress farlige?",
   description: "Får du e-post om sårbarheter, utgåtte lisenser og oppdateringer på WordPress-siden din? Her er hva som er viktig, hva som kan ignoreres, og hva du bør gjøre.",

@@ -1,4 +1,5 @@
-export type QaPage = {
+/** A page's text, as converted from the brief's markdown. */
+export type QaPageContent = {
   /** URL path segment under /sporsmal/. */
   slug: string
   /** Question, used as the on-page <h1> and the <title>. */
@@ -10,3 +11,17 @@ export type QaPage = {
   /** The "Vanlige spørsmål" H3s and the paragraph under each, for FAQPage JSON-LD. */
   faq: { question: string; answer: string }[]
 }
+
+export type QaImage = {
+  /** 1600x1067 WebP hero; a 480x320 `-thumb.webp` sits next to it for the index. */
+  src: string
+  thumb: string
+  /** Norwegian, describing the photo itself rather than the page topic. */
+  alt: string
+  photographer: string
+  /** Unsplash profile and photo page, linked from the credit under the hero. */
+  profileUrl: string
+  photoUrl: string
+}
+
+export type QaPage = QaPageContent & { image: QaImage }

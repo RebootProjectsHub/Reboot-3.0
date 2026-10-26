@@ -1,6 +1,6 @@
-import type { QaPage } from "@/sporsmal/types"
+import type { QaPageContent } from "@/sporsmal/types"
 
-export const page: QaPage = {
+export const page: QaPageContent = {
   slug: "hvor-lang-tid-tar-det-a-lage-nettside",
   title: "Hvor lang tid tar det å lage en nettside?",
   description: "Realistisk tidsplan for en ny nettside til en liten bedrift: hva som tar tid, hva som forsinker, og hva du selv kan gjøre for å få siden lansert raskere.",

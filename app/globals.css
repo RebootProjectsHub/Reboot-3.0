@@ -239,3 +239,18 @@
     letter-spacing: -0.01em;
   }
 }
+
+/* /sporsmal/sammenligne-tilbud-nettside: keep the offer checklist on one
+   printed page, and when printed via its "Skriv ut" button, print only it. */
+@media print {
+  #sjekkliste {
+    break-inside: avoid;
+  }
+  html[data-print='sjekkliste'] body :not(:has(#sjekkliste)):not(#sjekkliste):not(#sjekkliste *) {
+    display: none !important;
+  }
+  html[data-print='sjekkliste'] #sjekkliste {
+    margin: 0;
+    max-width: none;
+  }
+}

@@ -1,6 +1,6 @@
-import type { QaPage } from "@/sporsmal/types"
+import type { QaPageContent } from "@/sporsmal/types"
 
-export const page: QaPage = {
+export const page: QaPageContent = {
   slug: "sammenligne-tilbud-nettside",
   title: "Hvordan sammenligne tilbud på nettside?",
   description: "Har du fått flere tilbud på ny nettside? Her er de åtte tingene du faktisk bør sammenligne, og hvorfor laveste pris ofte blir dyrest.",

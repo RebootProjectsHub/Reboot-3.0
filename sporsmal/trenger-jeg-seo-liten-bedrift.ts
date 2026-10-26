@@ -1,6 +1,6 @@
-import type { QaPage } from "@/sporsmal/types"
+import type { QaPageContent } from "@/sporsmal/types"
 
-export const page: QaPage = {
+export const page: QaPageContent = {
   slug: "trenger-jeg-seo-liten-bedrift",
   title: "Trenger jeg SEO hvis jeg har en liten lokal bedrift?",
   description: "Ærlig svar på om en liten lokal bedrift trenger SEO: hva som gir effekt, hva som er bortkastet, og når du kan gjøre jobben selv.",

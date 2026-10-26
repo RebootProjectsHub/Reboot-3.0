@@ -1,6 +1,6 @@
-import type { QaPage } from "@/sporsmal/types"
+import type { QaPageContent } from "@/sporsmal/types"
 
-export const page: QaPage = {
+export const page: QaPageContent = {
   slug: "kan-jeg-redigere-nettsiden-selv",
   title: "Kan jeg redigere nettsiden selv etter lansering?",
   description: "Ja. Her er hva du enkelt kan endre selv på en WordPress- eller Shopify-side, hva du bør få hjelp til, og hvorfor det er et godt tegn når leverandøren vil at du skal kunne det.",

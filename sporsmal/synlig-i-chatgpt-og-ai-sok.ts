@@ -1,6 +1,6 @@
-import type { QaPage } from "@/sporsmal/types"
+import type { QaPageContent } from "@/sporsmal/types"
 
-export const page: QaPage = {
+export const page: QaPageContent = {
   slug: "synlig-i-chatgpt-og-ai-sok",
   title: "Hvorfor vises ikke bedriften min når folk spør ChatGPT?",
   description: "Stadig flere spør ChatGPT og Google AI om anbefalinger i stedet for å google. Her er hvorfor små bedrifter ikke dukker opp, og hva som faktisk påvirker om du blir nevnt.",

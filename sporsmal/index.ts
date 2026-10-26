@@ -1,4 +1,5 @@
-import type { QaPage } from "@/sporsmal/types"
+import type { QaPage, QaPageContent } from "@/sporsmal/types"
+import { qaImages } from "@/sporsmal/images"
 import { page as trengerJegDriftsavtale } from "@/sporsmal/trenger-jeg-driftsavtale"
 import { page as hvaKosterEnNettside } from "@/sporsmal/hva-koster-en-nettside"
 import { page as sammenligneTilbud } from "@/sporsmal/sammenligne-tilbud-nettside"
@@ -10,7 +11,7 @@ import { page as hvorLangTid } from "@/sporsmal/hvor-lang-tid-tar-det-a-lage-net
 import { page as synligIChatgpt } from "@/sporsmal/synlig-i-chatgpt-og-ai-sok"
 import { page as trengerJegSeo } from "@/sporsmal/trenger-jeg-seo-liten-bedrift"
 
-export const qaPages: QaPage[] = [
+const content: QaPageContent[] = [
   trengerJegDriftsavtale,
   hvaKosterEnNettside,
   sammenligneTilbud,
@@ -22,6 +23,12 @@ export const qaPages: QaPage[] = [
   synligIChatgpt,
   trengerJegSeo,
 ]
+
+export const qaPages: QaPage[] = content.map((page) => {
+  const image = qaImages[page.slug]
+  if (!image) throw new Error(`Missing hero image for /sporsmal/${page.slug}`)
+  return { ...page, image }
+})
 
 export function getQaPage(slug: string) {
   return qaPages.find((p) => p.slug === slug)

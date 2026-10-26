@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
@@ -48,13 +49,25 @@ export default function SporsmalPage() {
 
       <section className="px-6 pb-24">
         <ul className="mx-auto max-w-[820px] divide-y divide-border border-y border-border">
-          {qaPages.map((page) => (
+          {qaPages.map((page, i) => (
             <li key={page.slug}>
               <Link
                 href={`/sporsmal/${page.slug}`}
-                className="group flex items-start justify-between gap-6 py-6"
+                className="group flex items-start justify-between gap-4 py-6 sm:gap-6"
               >
-                <span>
+                <span className="relative block w-[96px] shrink-0 overflow-hidden rounded-[14px] sm:w-[150px] sm:rounded-[18px]">
+                  <Image
+                    src={page.image.thumb}
+                    alt={page.image.alt}
+                    width={480}
+                    height={320}
+                    // The first two rows are in the first viewport.
+                    loading={i < 2 ? "eager" : "lazy"}
+                    className="aspect-[3/2] h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                    sizes="150px"
+                  />
+                </span>
+                <span className="flex-1">
                   <span className="block font-heading text-[22px] leading-[1.3] text-foreground transition-colors group-hover:text-brand">
                     {page.title}
                   </span>

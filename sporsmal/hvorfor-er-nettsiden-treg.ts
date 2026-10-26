@@ -1,6 +1,6 @@
-import type { QaPage } from "@/sporsmal/types"
+import type { QaPageContent } from "@/sporsmal/types"
 
-export const page: QaPage = {
+export const page: QaPageContent = {
   slug: "hvorfor-er-nettsiden-treg",
   title: "Hvorfor er nettsiden min treg, og hjelper det å bytte hosting?",
   description: "Lav score på hastighetstest? Som regel er det ikke hostingen som er problemet, men det du har lagt på siden. Her er hva som faktisk gjør nettsider trege.",
