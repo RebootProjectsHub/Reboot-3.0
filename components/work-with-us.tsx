@@ -52,7 +52,7 @@ export function WorkWithUs() {
   {/* saucer */}
   <path d="M5 40 H33" />
 </svg>
-          <h2 className="mt-4 text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
+          <h2 className="mt-4 text-balance font-heading text-4xl font-extrabold leading-[1.1] text-foreground md:text-5xl">
             Sving innom for en kaffe
           </h2>
           <p className="mt-6 text-pretty text-lg leading-relaxed text-foreground/80">

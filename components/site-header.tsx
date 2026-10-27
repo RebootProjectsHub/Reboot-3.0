@@ -93,7 +93,7 @@ export function SiteHeader() {
                 <div key={link.label} className="group relative flex items-center">
                   <a
                     href={link.href}
-                    className="inline-flex items-center gap-1 text-[0.95rem] font-medium text-foreground/80 transition-colors hover:text-brand group-hover:text-brand group-focus-within:text-brand"
+                    className="inline-flex items-center gap-1 text-[0.95rem] font-[550] text-foreground/80 transition-colors hover:text-brand group-hover:text-brand group-focus-within:text-brand"
                   >
                     {link.label}
                     <ChevronDown
@@ -127,7 +127,7 @@ export function SiteHeader() {
                                 <span className="shrink-0 font-mono text-[0.72rem] font-bold text-muted-foreground">
                                   {child.number}
                                 </span>
-                                <span className="whitespace-nowrap text-[1.125rem] font-medium text-foreground transition-colors group-hover/item:text-brand">
+                                <span className="whitespace-nowrap text-[1.125rem] font-[550] text-foreground transition-colors group-hover/item:text-brand">
                                   {child.label}
                                 </span>
                               </span>
@@ -145,7 +145,7 @@ export function SiteHeader() {
                         </span>
                         <a
                           href={link.href}
-                          className="text-sm font-medium text-foreground transition-colors hover:text-brand"
+                          className="text-sm font-[550] text-foreground transition-colors hover:text-brand"
                         >
                           Se alle tjenester
                         </a>
@@ -157,7 +157,7 @@ export function SiteHeader() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-[0.95rem] font-medium text-foreground/80 transition-colors hover:text-brand"
+                  className="text-[0.95rem] font-[550] text-foreground/80 transition-colors hover:text-brand"
                 >
                   {link.label}
                 </a>
@@ -168,7 +168,7 @@ export function SiteHeader() {
           <div className="hidden items-center lg:flex">
             <a
               href="/kontakt"
-              className="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-normal text-ink-foreground transition-opacity hover:opacity-85"
+              className="group inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-bold text-ink-foreground transition-opacity hover:opacity-85"
             >
               <span aria-hidden="true" className="doodle-sparkle text-brand">
                 <span className="doodle-star">✦︎</span>
@@ -182,7 +182,7 @@ export function SiteHeader() {
           <div className="flex items-center gap-3 lg:hidden">
             <a
               href="/kontakt"
-              className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-normal text-foreground transition-colors hover:bg-secondary"
+              className="inline-flex w-fit items-center gap-1.5 rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-bold text-foreground transition-colors hover:bg-secondary"
             >
               Kontakt oss
             </a>
@@ -209,7 +209,7 @@ export function SiteHeader() {
                       <a
                         href={link.href}
                         onClick={() => setOpen(false)}
-                        className="flex-1 rounded-2xl px-4 py-3 text-base font-medium text-foreground/85 transition-colors hover:bg-secondary"
+                        className="flex-1 rounded-2xl px-4 py-3 text-base font-[550] text-foreground/85 transition-colors hover:bg-secondary"
                       >
                         {link.label}
                       </a>
@@ -239,7 +239,7 @@ export function SiteHeader() {
                             <span className="w-5 shrink-0 font-mono text-[0.72rem] font-bold text-muted-foreground">
                               {child.number}
                             </span>
-                            <span className="text-[0.95rem] font-medium text-foreground/85">
+                            <span className="text-[0.95rem] font-[550] text-foreground/85">
                               {child.label}
                             </span>
                           </a>

@@ -38,7 +38,7 @@ export default function SporsmalPage() {
           Spørsmål og svar
         </span>
 
-        <h1 className="mt-[18px] mb-6 text-balance font-heading text-[clamp(40px,5vw,64px)] font-normal leading-[1.04] tracking-[-0.02em] text-foreground">
+        <h1 className="mt-[18px] mb-6 text-balance font-heading text-[clamp(40px,5vw,64px)] font-extrabold leading-[1.1] text-foreground">
           Det kundene våre spør om
         </h1>
 

@@ -95,7 +95,7 @@ function PackageCard({
       </span>
       <div className="mt-3 flex items-baseline gap-1.5">
         <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">kr</span>
-        <span className="whitespace-nowrap font-heading text-[32px] font-normal leading-none text-foreground sm:text-[46px]">
+        <span className="whitespace-nowrap font-heading text-[32px] font-extrabold leading-[1.1] text-foreground sm:text-[46px]">
           {pkg.price}
         </span>
         <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">/mnd</span>
@@ -138,7 +138,7 @@ function FeatureDetails() {
 
   return (
     <div className="mx-auto mt-24 max-w-[700px]">
-      <h3 className="text-center font-heading text-[22px] font-normal text-foreground">
+      <h3 className="text-center font-heading text-[22px] font-extrabold text-foreground">
         Hva er inkludert i pakkene?
       </h3>
       <ul className="mt-6 divide-y divide-border border-y border-border">
@@ -186,7 +186,7 @@ export function ServicesMaintenance() {
           <span className="font-mono text-xs font-normal uppercase tracking-[0.12em] text-brand">
             Hosting, drift &amp; vedlikehold
           </span>
-          <h2 className="mt-4 text-balance font-heading text-[clamp(32px,3.8vw,48px)] font-normal leading-[1.1] tracking-[-0.02em] text-foreground">
+          <h2 className="mt-4 text-balance font-heading text-[clamp(32px,3.8vw,48px)] font-extrabold leading-[1.1] text-foreground">
             Vedlikehold og support
           </h2>
           <p className="mt-4 text-[16.5px] leading-[1.6] text-foreground/70">

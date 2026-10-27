@@ -46,7 +46,7 @@ export function Projects() {
     <section id="kundecaser" className="px-4 py-12 sm:px-6 lg:px-10 lg:py-16">
       <div className="mx-auto max-w-[1280px]">
         <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-          <h2 className="max-w-2xl text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
+          <h2 className="max-w-2xl text-balance font-heading text-4xl font-extrabold leading-[1.1] text-foreground md:text-5xl">
             Noen av våre leveranser
           </h2>
           <a
@@ -100,7 +100,7 @@ export function Projects() {
                   <span className="font-mono text-xs uppercase tracking-[0.14em] text-brand">
                     {project.kicker}
                   </span>
-                  <h3 className="mt-3 font-heading text-lg font-normal leading-snug text-foreground">
+                  <h3 className="mt-3 font-heading text-lg font-extrabold leading-snug text-foreground">
                     {project.title}
                   </h3>
                 </div>

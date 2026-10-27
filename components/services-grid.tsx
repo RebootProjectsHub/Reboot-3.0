@@ -34,7 +34,7 @@ const digitalTech = [
 ]
 
 const kickerClass = "font-mono text-xs uppercase tracking-[0.12em] text-brand"
-const titleClass = "mt-3 font-heading text-[29px] font-normal leading-[1.14]"
+const titleClass = "mt-3 font-heading text-[29px] font-extrabold leading-[1.14]"
 const chipClass =
   "inline-flex rounded-full border bg-foreground/5 px-[18px] py-[9px] text-[14.5px] font-semibold text-foreground/85"
 

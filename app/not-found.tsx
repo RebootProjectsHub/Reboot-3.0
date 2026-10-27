@@ -15,7 +15,7 @@ export default function NotFound() {
         <span className="font-mono text-sm uppercase tracking-[0.18em] text-brand">
           404
         </span>
-        <h1 className="mt-4 mb-6 text-balance font-heading text-[clamp(36px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
+        <h1 className="mt-4 mb-6 text-balance font-heading text-[clamp(36px,5vw,60px)] font-extrabold leading-[1.1] text-foreground">
           Denne siden finnes ikke
         </h1>
         <p className="mx-auto mb-9 max-w-[520px] text-pretty text-[19px] leading-[1.6] text-foreground/70">

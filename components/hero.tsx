@@ -34,7 +34,7 @@ export function Hero() {
           Nydalen, Oslo
         </span>
 
-        <h1 className="mb-6 max-w-[900px] text-balance font-heading text-[clamp(40px,7vw,78px)] font-normal leading-none tracking-[-0.02em] text-foreground">
+        <h1 className="mb-6 max-w-[900px] text-balance font-heading text-[clamp(40px,7vw,78px)] font-extrabold leading-[1.1] text-foreground">
           Én partner for alt innen nettsider
         </h1>
 

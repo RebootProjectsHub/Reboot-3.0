@@ -48,7 +48,7 @@ export function ArticlesList({ page }: { page: number }) {
                     {post.date}
                   </time>
                 </div>
-                <h2 className="mt-3 font-heading text-xl font-normal leading-snug text-foreground">
+                <h2 className="mt-3 font-heading text-xl font-extrabold leading-snug text-foreground">
                   {post.title}
                 </h2>
               </div>

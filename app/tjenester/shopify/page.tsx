@@ -154,7 +154,7 @@ export default function ShopifyPage() {
           Nettbutikk &amp; e-handel
         </span>
 
-        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
+        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-extrabold leading-[1.1] text-foreground">
           Shopify-byrå i Oslo
         </h1>
 
@@ -182,7 +182,7 @@ export default function ShopifyPage() {
                 key={item.title}
                 className="flex flex-col rounded-[26px] bg-card px-7 pb-8 pt-7"
               >
-                <h2 className="font-heading text-[21px] font-normal leading-[1.2] text-foreground">
+                <h2 className="font-heading text-[21px] font-extrabold leading-[1.2] text-foreground">
                   {item.title}
                 </h2>
                 <div className="mt-3.5 mb-4 flex items-center gap-[2px]">
@@ -217,7 +217,7 @@ export default function ShopifyPage() {
                 <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
                   Kundecase · Shopify
                 </span>
-                <h2 className="mt-5 text-balance font-heading text-[clamp(28px,3.2vw,40px)] font-normal leading-[1.12] tracking-[-0.02em]">
+                <h2 className="mt-5 text-balance font-heading text-[clamp(28px,3.2vw,40px)] font-extrabold leading-[1.12]">
                   Nettbutikk for Ditt Apotek
                 </h2>
                 <p className="mt-5 text-[17px] leading-[1.65] text-ink-foreground/80">
@@ -254,7 +254,7 @@ export default function ShopifyPage() {
       {/* Why Reboot */}
       <section className="px-6 py-14 sm:py-16">
         <div className="mx-auto max-w-[720px]">
-          <h2 className="text-balance text-center font-heading text-[clamp(28px,3.4vw,40px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
+          <h2 className="text-balance text-center font-heading text-[clamp(28px,3.4vw,40px)] font-extrabold leading-[1.12] text-foreground">
             Hvorfor velge oss som Shopify-byrå?
           </h2>
           <ul className="mx-auto mt-8 max-w-[560px] space-y-[14px]">
@@ -282,7 +282,7 @@ export default function ShopifyPage() {
       {/* FAQ */}
       <section className="px-6 pt-7 pb-16">
         <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-extrabold leading-[1.15] text-foreground">
             Ofte stilte spørsmål om Shopify
           </h2>
           <div className="mt-8">

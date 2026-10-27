@@ -1,6 +1,6 @@
 import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata, Viewport } from 'next'
-import { Space_Mono, Tiro_Gurmukhi } from 'next/font/google'
+import { Onest, Space_Mono } from 'next/font/google'
 import { OpenAiPixelPageViews } from '@/components/openai-pixel'
 import './globals.css'
 
@@ -13,11 +13,10 @@ const spaceMono = Space_Mono({
   weight: ['400', '700'],
 })
 
-const tiroGurmukhi = Tiro_Gurmukhi({
-  variable: '--font-tiro-gurmukhi',
+// Variable font, so one file covers every weight the site asks for.
+const onest = Onest({
+  variable: '--font-onest',
   subsets: ['latin'],
-  weight: '400',
-  style: ['normal', 'italic'],
 })
 
 const siteUrl = 'https://reboot.no'
@@ -86,7 +85,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="no" className={`${spaceMono.variable} ${tiroGurmukhi.variable} bg-background`}>
+    <html lang="no" className={`${spaceMono.variable} ${onest.variable} bg-background`}>
       <head>
         {/* OpenAI Ads conversion pixel. Loads its SDK async, so it does not
             block page rendering. */}

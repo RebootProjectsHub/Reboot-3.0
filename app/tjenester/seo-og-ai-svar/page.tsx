@@ -108,7 +108,7 @@ function SeoPackageCard({
       </span>
       <div className="mt-3 flex items-baseline gap-1.5">
         <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">kr</span>
-        <span className="whitespace-nowrap font-heading text-[32px] font-normal leading-none text-foreground sm:text-[46px]">
+        <span className="whitespace-nowrap font-heading text-[32px] font-extrabold leading-[1.1] text-foreground sm:text-[46px]">
           {pkg.price}
         </span>
         <span className="text-[13px] text-foreground/60 sm:text-[14.5px]">/mnd</span>
@@ -225,7 +225,7 @@ export default function SeoOgAiSvarPage() {
           Synlighet &amp; søk
         </span>
 
-        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
+        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-extrabold leading-[1.1] text-foreground">
           SEO og AI-søk
         </h1>
 
@@ -255,7 +255,7 @@ export default function SeoOgAiSvarPage() {
               ✦︎
             </span>
             <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
-              <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-ink-foreground">
+              <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-extrabold leading-[1.15] text-ink-foreground">
                 Bli funnet der kundene faktisk leter
               </h2>
               <div>
@@ -297,7 +297,7 @@ export default function SeoOgAiSvarPage() {
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
             Spesialister på synlighet
           </span>
-          <h2 className="mt-4 max-w-[720px] text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
+          <h2 className="mt-4 max-w-[720px] text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-extrabold leading-[1.12] text-foreground">
             SEO- og GEO-tjenester fra Reboot
           </h2>
           <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:items-center lg:gap-20">
@@ -323,7 +323,7 @@ export default function SeoOgAiSvarPage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-heading text-[20px] font-normal leading-[1.25] text-foreground sm:text-[22px]">
+                    <h3 className="font-heading text-[20px] font-extrabold leading-[1.25] text-foreground sm:text-[22px]">
                       {service.title}
                     </h3>
                     <p className="mt-2.5 text-[15.5px] leading-[1.65] text-foreground/70">
@@ -343,7 +343,7 @@ export default function SeoOgAiSvarPage() {
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
             Synlighet &amp; vekst
           </span>
-          <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
+          <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-extrabold leading-[1.12] text-foreground">
             Velg SEO-pakken som passer dere
           </h2>
           <p className="mt-3 max-w-[56ch] text-[17px] leading-[1.6] text-foreground/70">
@@ -391,7 +391,7 @@ export default function SeoOgAiSvarPage() {
             </span>
           </div>
           <div>
-            <blockquote className="text-balance font-heading text-[clamp(22px,2.6vw,28px)] leading-[1.35] tracking-[-0.01em] text-foreground">
+            <blockquote className="text-balance font-heading text-[clamp(22px,2.6vw,28px)] leading-[1.35] text-foreground">
               «Vi dukker opp der vi skal nå og flere nye kunder har sagt at de fant oss via ChatGPT.»
             </blockquote>
             <p className="mt-6 font-medium text-foreground">
@@ -414,7 +414,7 @@ export default function SeoOgAiSvarPage() {
       {/* FAQ */}
       <section className="px-6 pt-7 pb-16">
         <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-extrabold leading-[1.15] text-foreground">
             Ofte stilte spørsmål om SEO og AI-svar
           </h2>
           <div className="mt-8">
@@ -441,7 +441,7 @@ export default function SeoOgAiSvarPage() {
             ✦︎
           </span>
 
-          <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">
+          <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-extrabold leading-[1.1] text-foreground">
             Klar for å bli mer synlig?
           </h2>
           <p className="mx-auto mt-4 max-w-[460px] text-pretty text-lg leading-relaxed text-foreground/70">

@@ -52,7 +52,7 @@ export function Testimonials() {
         </span>
 
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <h2 className="max-w-2xl text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
+          <h2 className="max-w-2xl text-balance font-heading text-4xl font-extrabold leading-[1.1] text-foreground md:text-5xl">
             Dette sier kundene våre
           </h2>
           <div className="flex items-center gap-2">
