@@ -34,7 +34,7 @@ export function AboutTeamBand() {
               <span className="font-mono text-xs font-bold uppercase tracking-[0.1em] text-brand">
                 Hvem er vi i Reboot?
               </span>
-              <h2 className="mt-5 text-balance font-heading text-[clamp(30px,3.6vw,44px)] font-extrabold leading-[1.1]">
+              <h2 className="mt-5 text-balance font-heading text-[clamp(30px,3.6vw,44px)] font-semibold leading-[1.1]">
                 Et lite team i Nydalen 
               </h2>
               <p className="mt-6 text-[17px] leading-[1.65] text-ink-foreground/80">
@@ -51,7 +51,7 @@ Vi bruker moderne teknologi der det faktisk gir mening, men det personlige tar v
                   }`
                   const content = (
                     <>
-                    <div className="flex items-baseline gap-1 font-heading text-2xl font-extrabold leading-[1.1]">
+                    <div className="flex items-baseline gap-1 font-heading text-2xl font-semibold leading-[1.1]">
                       {stat.value}
                       {stat.suffix && (
                         <span className="text-sm text-brand">{stat.suffix}</span>

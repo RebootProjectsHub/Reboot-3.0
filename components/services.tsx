@@ -36,7 +36,7 @@ export function Services() {
               <span className="w-7 shrink-0 font-mono text-xs font-bold text-brand sm:w-11 sm:text-sm">
                 {item.number}
               </span>
-              <span className="flex-1 font-heading text-lg font-extrabold leading-[1.2] text-foreground transition-colors duration-200 group-hover:text-brand sm:text-[34px] sm:leading-[1.14] sm:">
+              <span className="flex-1 font-heading text-lg font-semibold leading-[1.2] text-foreground transition-colors duration-200 group-hover:text-brand sm:text-[34px] sm:leading-[1.14] sm:">
                 {item.title}
               </span>
               <span className="hidden shrink-0 font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground sm:inline-block">

@@ -169,7 +169,7 @@ export default function WooCommercePage() {
           Nettbutikk i WordPress
         </span>
 
-        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-extrabold leading-[1.1] text-foreground">
+        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-semibold leading-[1.1] text-foreground">
           WooCommerce-eksperter i Oslo
         </h1>
 
@@ -193,7 +193,7 @@ export default function WooCommercePage() {
         className="scroll-mt-24 px-4 pt-7 pb-14 sm:px-6 lg:px-10"
       >
         <div className="mx-auto max-w-[1280px]">
-          <h2 className="max-w-2xl text-balance font-heading text-4xl font-extrabold leading-[1.1] text-foreground md:text-5xl">
+          <h2 className="max-w-2xl text-balance font-heading text-4xl font-semibold leading-[1.1] text-foreground md:text-5xl">
             Ulike Woocommerce-løsninger
           </h2>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -215,7 +215,7 @@ export default function WooCommercePage() {
                   <span className="font-mono text-xs uppercase tracking-[0.13em] text-brand">
                     {useCase.kicker}
                   </span>
-                  <h3 className="mt-3 font-heading text-[21px] font-extrabold leading-[1.25] text-foreground">
+                  <h3 className="mt-3 font-heading text-[21px] font-semibold leading-[1.25] text-foreground">
                     {useCase.title}
                   </h3>
                   <p className="mt-3 text-[15.5px] leading-[1.65] text-foreground/70">
@@ -245,7 +245,7 @@ export default function WooCommercePage() {
                 <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
                   Alt inkludert
                 </span>
-                <h2 className="mt-4 text-balance font-heading text-[clamp(26px,3vw,38px)] font-extrabold leading-[1.15] text-foreground">
+                <h2 className="mt-4 text-balance font-heading text-[clamp(26px,3vw,38px)] font-semibold leading-[1.15] text-foreground">
                   Nettbutikk med fokus på høy konvertering
                 </h2>
                 <p className="mt-4 text-[16.5px] leading-[1.65] text-foreground/70">
@@ -280,7 +280,7 @@ export default function WooCommercePage() {
             ✦︎
           </span>
           <div className="mx-auto max-w-[720px] text-center">
-            <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-extrabold leading-[1.15]">
+            <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-semibold leading-[1.15]">
               Usikker på om WooCommerce er riktig valg?
             </h2>
             <p className="mx-auto mt-4 max-w-[560px] text-[16.5px] leading-[1.65] text-ink-foreground/80">
@@ -318,7 +318,7 @@ export default function WooCommercePage() {
       {/* FAQ */}
       <section className="px-6 py-14 sm:py-16">
         <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-extrabold leading-[1.15] text-foreground">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-semibold leading-[1.15] text-foreground">
             Ofte stilte spørsmål om WooCommerce
           </h2>
           <div className="mt-8">

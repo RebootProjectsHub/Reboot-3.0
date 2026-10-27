@@ -18,7 +18,7 @@ export function ContactHero() {
         Kontakt oss
       </span>
 
-      <h1 className="mt-[18px] mb-6 text-balance font-heading text-[clamp(40px,5vw,64px)] font-extrabold leading-[1.1] text-foreground">
+      <h1 className="mt-[18px] mb-6 text-balance font-heading text-[clamp(40px,5vw,64px)] font-semibold leading-[1.1] text-foreground">
         Vi hører gjerne fra deg
       </h1>
 

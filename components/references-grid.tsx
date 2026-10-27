@@ -40,7 +40,7 @@ function CardFooter({
   return (
     <div className="flex flex-1 items-center justify-between gap-4 p-6">
       <div>
-        <h2 className="font-heading text-xl font-extrabold leading-snug text-foreground">
+        <h2 className="font-heading text-xl font-semibold leading-snug text-foreground">
           {name}
         </h2>
         <p

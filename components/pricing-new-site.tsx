@@ -18,7 +18,7 @@ export function PricingNewSite() {
             <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
               Ny nettside
             </span>
-            <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-extrabold leading-[1.15] text-foreground">
+            <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-semibold leading-[1.15] text-foreground">
               Har du en hjemmeside som trenger nytt design?
             </h2>
             <p className="mt-5 text-[16.5px] leading-[1.65] text-foreground/70">
@@ -38,7 +38,7 @@ export function PricingNewSite() {
             </ul>
 
             <div className="mt-8 flex flex-wrap items-center gap-6">
-              <p className="font-heading text-[40px] font-extrabold leading-[1.1] text-foreground">
+              <p className="font-heading text-[40px] font-semibold leading-[1.1] text-foreground">
                 29 900,-
               </p>
               <a

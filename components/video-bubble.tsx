@@ -126,7 +126,7 @@ export function VideoBubble() {
             />
 
             <div className="absolute inset-x-0 top-0 bg-gradient-to-b from-[color-mix(in_srgb,var(--ink)_35%,black)]/90 to-transparent p-5 pb-12">
-              <h3 className="font-heading text-lg font-extrabold text-ink-foreground">
+              <h3 className="font-heading text-lg font-semibold text-ink-foreground">
                 Hei fra oss i Reboot
               </h3>
               <p className="mt-2 text-[13.5px] leading-[1.5] text-ink-foreground/80">

@@ -27,7 +27,7 @@ export function PostCta({
           {eyebrow}
         </div>
       )}
-      <div className="text-balance font-heading text-[clamp(26px,3vw,34px)] font-extrabold leading-[1.15]">
+      <div className="text-balance font-heading text-[clamp(26px,3vw,34px)] font-semibold leading-[1.15]">
         {title}
       </div>
       <div className="mt-4 max-w-[52ch] text-pretty text-[17px] leading-[1.6] text-ink-foreground/80">

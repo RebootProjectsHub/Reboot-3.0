@@ -37,7 +37,7 @@ export function QaLayout({ page }: { page: QaPage }) {
           Spørsmål og svar
         </span>
 
-        <h1 className="mt-[18px] text-balance font-heading text-[clamp(34px,4.5vw,54px)] font-extrabold leading-[1.1] text-foreground">
+        <h1 className="mt-[18px] text-balance font-heading text-[clamp(34px,4.5vw,54px)] font-semibold leading-[1.1] text-foreground">
           {page.title}
         </h1>
       </header>

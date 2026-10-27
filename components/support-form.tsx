@@ -84,7 +84,7 @@ export function SupportForm() {
         <span className="font-mono text-sm uppercase tracking-[0.18em] text-brand">
           Mottatt
         </span>
-        <h2 className="mt-3 mb-4 font-heading text-[clamp(28px,3vw,36px)] font-extrabold leading-[1.1] text-foreground">
+        <h2 className="mt-3 mb-4 font-heading text-[clamp(28px,3vw,36px)] font-semibold leading-[1.1] text-foreground">
           Takk, vi er på saken
         </h2>
         <p className="mx-auto max-w-[440px] text-pretty text-[17px] leading-[1.6] text-foreground/70">

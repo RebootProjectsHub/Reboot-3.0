@@ -28,7 +28,7 @@ export function Articles() {
     <section id="aktuelt" className="px-4 py-12 sm:px-6 lg:px-10 lg:py-16">
       <div className="mx-auto max-w-[1280px]">
         <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-          <h2 className="max-w-2xl text-balance font-heading text-4xl font-extrabold leading-[1.1] text-foreground md:text-5xl">
+          <h2 className="max-w-2xl text-balance font-heading text-4xl font-semibold leading-[1.1] text-foreground md:text-5xl">
             Aktuelt fra Reboot
           </h2>
           <a
@@ -64,7 +64,7 @@ export function Articles() {
                     {featured.date}
                   </time>
                 </div>
-                <h3 className="mt-3 font-heading text-lg font-extrabold leading-snug text-foreground">
+                <h3 className="mt-3 font-heading text-lg font-semibold leading-snug text-foreground">
                   {featured.title}
                 </h3>
               </div>
@@ -89,7 +89,7 @@ export function Articles() {
                     {post.date}
                   </time>
                 </div>
-                <h3 className="mt-10 font-heading text-2xl font-extrabold leading-snug">
+                <h3 className="mt-10 font-heading text-2xl font-semibold leading-snug">
                   {post.title}
                 </h3>
                 <ArrowUpRight className={`mt-6 size-6 transition-colors ${variant.arrow}`} />

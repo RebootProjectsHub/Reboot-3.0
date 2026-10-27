@@ -62,7 +62,7 @@ export function SiteFooter() {
           <div className="grid grid-cols-2 gap-6 md:contents">
             {columns.map((col) => (
               <div key={col.title}>
-                <p className="font-heading text-xs font-extrabold text-ink-foreground/60">
+                <p className="font-heading text-xs font-semibold text-ink-foreground/60">
                   {col.title}
                 </p>
                 <ul className="mt-5 space-y-3">

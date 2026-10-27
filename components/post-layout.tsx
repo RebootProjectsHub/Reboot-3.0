@@ -5,7 +5,7 @@ import type { Post } from "@/posts/types"
 
 /** Body typography for article-style pages (also used by QaLayout). */
 export const articleProseClass =
-  "mx-auto max-w-[720px] text-[17px] leading-[1.75] text-foreground/80 [&_h2]:mt-12 [&_h2]:mb-4 [&_h2]:font-heading [&_h2]:text-[30px] [&_h2]:font-extrabold [&_h2]:leading-[1.2] [&_h2]: [&_h2]:text-foreground [&_h3]:mt-9 [&_h3]:mb-3 [&_h3]:font-heading [&_h3]:text-[21px] [&_h3]:font-extrabold [&_h3]:leading-[1.3] [&_h3]:text-foreground [&_p]:mb-5 [&_a]:text-brand [&_a]:underline-offset-4 [&_a:hover]:underline [&_code]:rounded-md [&_code]:bg-foreground/5 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:font-mono [&_code]:text-[14px] [&_code]:text-foreground [&_ul]:mb-5 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:mb-5 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:mb-1.5 [&_blockquote]:my-8 [&_blockquote]:border-l-2 [&_blockquote]:border-brand [&_blockquote]:pl-5 [&_blockquote]:font-heading [&_blockquote]:text-[21px] [&_blockquote]:text-foreground [&_figure]:my-9 [&_img]:w-full [&_img]:rounded-[26px] [&_figcaption]:mt-3 [&_figcaption]:text-center [&_figcaption]:font-mono [&_figcaption]:text-[12px] [&_figcaption]:uppercase [&_figcaption]:tracking-[0.08em] [&_figcaption]:text-foreground/50"
+  "mx-auto max-w-[720px] text-[17px] leading-[1.75] text-foreground/80 [&_h2]:mt-12 [&_h2]:mb-4 [&_h2]:font-heading [&_h2]:text-[30px] [&_h2]:font-semibold [&_h2]:leading-[1.2] [&_h2]: [&_h2]:text-foreground [&_h3]:mt-9 [&_h3]:mb-3 [&_h3]:font-heading [&_h3]:text-[21px] [&_h3]:font-semibold [&_h3]:leading-[1.3] [&_h3]:text-foreground [&_p]:mb-5 [&_a]:text-brand [&_a]:underline-offset-4 [&_a:hover]:underline [&_code]:rounded-md [&_code]:bg-foreground/5 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:font-mono [&_code]:text-[14px] [&_code]:text-foreground [&_ul]:mb-5 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:mb-5 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:mb-1.5 [&_blockquote]:my-8 [&_blockquote]:border-l-2 [&_blockquote]:border-brand [&_blockquote]:pl-5 [&_blockquote]:font-heading [&_blockquote]:text-[21px] [&_blockquote]:text-foreground [&_figure]:my-9 [&_img]:w-full [&_img]:rounded-[26px] [&_figcaption]:mt-3 [&_figcaption]:text-center [&_figcaption]:font-mono [&_figcaption]:text-[12px] [&_figcaption]:uppercase [&_figcaption]:tracking-[0.08em] [&_figcaption]:text-foreground/50"
 
 export function PostLayout({ post }: { post: Post }) {
   return (
@@ -28,7 +28,7 @@ export function PostLayout({ post }: { post: Post }) {
           {post.category}
         </span>
 
-        <h1 className="mt-[18px] text-balance font-heading text-[clamp(34px,4.5vw,54px)] font-extrabold leading-[1.1] text-foreground">
+        <h1 className="mt-[18px] text-balance font-heading text-[clamp(34px,4.5vw,54px)] font-semibold leading-[1.1] text-foreground">
           {post.title}
         </h1>
 

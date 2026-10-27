@@ -65,7 +65,7 @@ function ServiceCard({
         <div className="h-1 w-[28px] rounded-full bg-brand" />
         <div className="h-1 w-[16px] rounded-full bg-brand/25" />
       </div>
-      <h3 className="font-heading text-[22px] font-extrabold leading-[1.2] text-foreground">
+      <h3 className="font-heading text-[22px] font-semibold leading-[1.2] text-foreground">
         {service.title}
       </h3>
     </article>
@@ -179,7 +179,7 @@ export default function AiRadgivningPage() {
           Rådgivning &amp; kompetanse
         </span>
 
-        <h1 className="mt-4 mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-extrabold leading-[1.1] text-foreground">
+        <h1 className="mt-4 mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-semibold leading-[1.1] text-foreground">
           AI-rådgivning for bedrifter i Norge
         </h1>
 
@@ -206,7 +206,7 @@ export default function AiRadgivningPage() {
               <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
                 Kjenner du deg igjen?
               </span>
-              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-extrabold leading-[1.15] text-ink-foreground">
+              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,40px)] font-semibold leading-[1.15] text-ink-foreground">
                 Vanlige problemstillinger
               </h2>
               <div className="relative mt-6 aspect-[3/2] overflow-hidden rounded-[var(--radius)]">
@@ -224,7 +224,7 @@ export default function AiRadgivningPage() {
                 {pains.map((pain) => (
                   <li
                     key={pain}
-                    className="flex items-baseline gap-4 border-b border-ink-foreground/15 py-[22px] font-heading text-[22px] font-extrabold leading-[1.35] text-ink-foreground first:pt-0"
+                    className="flex items-baseline gap-4 border-b border-ink-foreground/15 py-[22px] font-heading text-[22px] font-semibold leading-[1.35] text-ink-foreground first:pt-0"
                   >
                     <span aria-hidden className="shrink-0 text-brand">
                       ✳︎
@@ -248,7 +248,7 @@ export default function AiRadgivningPage() {
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
             Praktisk hjelp
           </span>
-          <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-extrabold leading-[1.12] text-foreground">
+          <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-semibold leading-[1.12] text-foreground">
             AI-rådgivning fra Reboot
           </h2>
 
@@ -286,7 +286,7 @@ export default function AiRadgivningPage() {
                 <Star key={i} className="size-4 fill-brand text-brand" />
               ))}
             </div>
-            <blockquote className="mt-4 font-heading text-[21px] font-extrabold leading-[1.4] text-foreground">
+            <blockquote className="mt-4 font-heading text-[21px] font-semibold leading-[1.4] text-foreground">
               «Godt samarbeid og vi følte vi fikk veldig mye igjen for alt vi investerte i dette. Kan anbefales til alle.»
             </blockquote>
             <div className="mt-6 flex items-center justify-between gap-4 border-t border-border pt-5">
@@ -311,7 +311,7 @@ export default function AiRadgivningPage() {
       {/* FAQ */}
       <section className="px-6 pb-16">
         <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-extrabold leading-[1.15] text-foreground">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-semibold leading-[1.15] text-foreground">
             FAQ: Bruk av AI som verktøy
           </h2>
           <div className="mt-8">
@@ -338,7 +338,7 @@ export default function AiRadgivningPage() {
             ✦︎
           </span>
 
-          <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-extrabold leading-[1.1] text-foreground">
+          <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-semibold leading-[1.1] text-foreground">
             Klar for å komme i gang med AI?
           </h2>
           <p className="mx-auto mt-4 max-w-[460px] text-pretty text-lg leading-relaxed text-foreground/70">
