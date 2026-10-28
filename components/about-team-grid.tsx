@@ -26,12 +26,12 @@ const team = [
     photo: "/Evgeniia-dev1.webp",
   },
   {
-    name: "Silje Walmann",
+    name: "Nora Fjeldstad",
     role: "Designer",
-    email: "silje@reboot.no",
+    email: "nora@reboot.no",
     phone: "46 95 06 27",
     tel: "+4746950627",
-    photo: "/silje-design4.jpg",
+    photo: "/nora-design1.webp",
   },
 ]
 
