@@ -72,7 +72,7 @@ export function SiteHeader() {
           hidden && !open ? "-translate-y-full" : "translate-y-0"
         }`}
       >
-        <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between gap-6 px-4 sm:px-6 lg:px-10">
+        <div className="relative mx-auto flex h-20 max-w-[1440px] items-center justify-between gap-6 px-4 sm:px-6 lg:px-10">
           <a href="/" className="flex items-center" aria-label="Reboot forside">
             <Image
               src="/Reboot3.svg"
@@ -90,7 +90,9 @@ export function SiteHeader() {
                 // Opens on hover and on keyboard focus (focus-within), so it
                 // works for mouse, touch-after-tap and keyboard alike. The
                 // parent link still navigates to the /tjenester overview.
-                <div key={link.label} className="group relative flex items-center">
+                // The wrapper is full header height so the pointer never
+                // leaves the group on its way down to the panel.
+                <div key={link.label} className="group flex h-20 items-center">
                   <a
                     href={link.href}
                     className="inline-flex items-center gap-1 text-[0.95rem] font-medium text-foreground/80 transition-colors hover:text-brand group-hover:text-brand group-focus-within:text-brand"
@@ -102,54 +104,65 @@ export function SiteHeader() {
                     />
                   </a>
 
-                  <div className="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 translate-y-1 pt-3 opacity-0 transition-[opacity,transform] duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                  {/* Positioned against the header container (relative), not
+                      the menu item, so the panel spans the container width and
+                      lines up with the logo's left edge and the button's right
+                      edge. It stays a descendant of the item wrapper so
+                      group-hover keeps it open while the pointer is on it. */}
+                  <div className="invisible absolute inset-x-10 top-full z-50 translate-y-1 pt-2 opacity-0 transition-[opacity,transform] duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
                     {/* Flat per brand guide: hairline border, no shadow, small
-                        (--radius-xs) corners. Three image cards in a row plus
-                        a footer strip; narrower below xl so it stays inside
-                        the viewport at 1024px. */}
-                    <div className="flex w-[660px] flex-col rounded-xs border border-border bg-[#fcf2ec] p-2 xl:w-[816px]">
-                      <div className="grid grid-cols-3 gap-2">
-                        {link.children.map((child) => (
-                          <a
-                            key={child.href}
-                            href={child.href}
-                            className="group/item flex flex-col gap-3 rounded-[8px] p-2 transition-colors hover:bg-secondary"
-                          >
-                            <Image
-                              src={child.image}
-                              alt={child.alt}
-                              width={512}
-                              height={300}
-                              className="h-[120px] w-full rounded-[6px] object-cover xl:h-[150px]"
-                            />
-                            <span className="flex items-center justify-between gap-2 px-1 pb-1.5">
-                              <span className="inline-flex items-baseline gap-2.5">
-                                <span className="shrink-0 font-mono text-[0.72rem] font-bold text-muted-foreground">
-                                  {child.number}
-                                </span>
-                                <span className="whitespace-nowrap text-[1.125rem] font-medium text-foreground transition-colors group-hover/item:text-brand">
-                                  {child.label}
-                                </span>
-                              </span>
-                              <ArrowUpRight
-                                aria-hidden
-                                className="size-4 shrink-0 text-foreground transition-colors group-hover/item:text-brand"
-                              />
-                            </span>
-                          </a>
-                        ))}
-                      </div>
-                      <div className="mt-2 flex items-center justify-between border-t border-border px-3 pb-1 pt-2.5">
-                        <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">
-                          Reboot
-                        </span>
+                        (--radius-xs) corners. Intro column plus three image
+                        cards; the intro is narrower below xl so the cards keep
+                        a usable width at 1024px. */}
+                    <div className="grid grid-cols-[240px_repeat(3,minmax(0,1fr))] gap-2 rounded-xs border border-border bg-[#fcf2ec] p-2 xl:grid-cols-[300px_repeat(3,minmax(0,1fr))]">
+                      <div className="mr-2 flex flex-col justify-between border-r border-border py-3 pl-4 pr-6 xl:pr-8">
+                        <div>
+                          <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">
+                            Reboot
+                          </span>
+                          <p className="mb-2.5 mt-3 font-heading text-[26px] font-medium leading-[1.1] tracking-[-0.01em] text-foreground xl:text-[28px]">
+                            Våre tjenester
+                          </p>
+                          <p className="max-w-[250px] text-[15px] leading-[1.5] text-muted-foreground">
+                            Nettside, synlighet i Google og i AI-svar, alt fra ett team.
+                          </p>
+                        </div>
                         <a
                           href={link.href}
-                          className="text-sm font-medium text-foreground transition-colors hover:text-brand"
+                          className="w-fit text-[15px] font-medium text-foreground transition-colors hover:text-brand"
                         >
                           Se alle tjenester
                         </a>
                       </div>
+                      {link.children.map((child) => (
+                        <a
+                          key={child.href}
+                          href={child.href}
+                          className="group/item flex flex-col gap-3 rounded-[8px] p-2 transition-colors hover:bg-secondary"
+                        >
+                          <Image
+                            src={child.image}
+                            alt={child.alt}
+                            width={512}
+                            height={300}
+                            className="h-[150px] w-full rounded-[6px] object-cover xl:h-[180px]"
+                          />
+                          <span className="flex items-center justify-between gap-2 px-1 pb-1.5">
+                            <span className="inline-flex items-baseline gap-2.5">
+                              <span className="shrink-0 font-mono text-[0.72rem] font-bold text-muted-foreground">
+                                {child.number}
+                              </span>
+                              <span className="whitespace-nowrap text-[1.125rem] font-medium text-foreground transition-colors group-hover/item:text-brand">
+                                {child.label}
+                              </span>
+                            </span>
+                            <ArrowUpRight
+                              aria-hidden
+                              className="size-4 shrink-0 text-foreground transition-colors group-hover/item:text-brand"
+                            />
+                          </span>
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </div>
