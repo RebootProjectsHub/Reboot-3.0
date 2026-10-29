@@ -17,7 +17,7 @@ export function ServicesCta() {
           ✦︎
         </span>
 
-        <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-semibold leading-[1.1] text-foreground">
+        <h2 className="mx-auto max-w-[620px] text-balance font-heading text-[clamp(30px,3.8vw,46px)] font-normal leading-[1.08] tracking-[-0.02em] text-foreground">
           Klar for å komme i gang?
         </h2>
         <p className="mx-auto mt-4 max-w-[460px] text-pretty text-lg leading-relaxed text-foreground/70">

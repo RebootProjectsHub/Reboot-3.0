@@ -5,7 +5,7 @@ export function WhatWeDo() {
         <p className="font-heading text-sm font-medium uppercase tracking-[0.18em] text-brand">
           Vår ekspertise
         </p>
-        <h2 className="mt-4 max-w-3xl text-balance font-heading text-4xl font-semibold leading-[1.1] text-foreground md:text-5xl">
+        <h2 className="mt-4 max-w-3xl text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
         Vi leverer moderne nettsider for bedrifter
 
         </h2>

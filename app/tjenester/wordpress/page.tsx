@@ -182,7 +182,7 @@ export default function WordPressPage() {
           Nettsider &amp; nettbutikker
         </span>
 
-        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-semibold leading-[1.1] text-foreground">
+        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
           WordPress-utvikler i Oslo
         </h1>
 
@@ -207,7 +207,7 @@ export default function WordPressPage() {
         <div className="mx-auto max-w-[1280px]">
           <div className="rounded-[var(--radius)] bg-card px-8 py-12 sm:px-12 sm:py-14 lg:px-16">
             <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
-              <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-semibold leading-[1.15] text-foreground">
+              <h2 className="text-balance font-heading text-[clamp(26px,3vw,38px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
                 Vi bruker Wordpress for de fleste av våre leveranser
               </h2>
               <div>
@@ -222,7 +222,7 @@ export default function WordPressPage() {
                 </p>
                 <div className="mt-8 flex flex-wrap gap-10">
                   <div>
-                    <div className="font-heading text-3xl font-semibold leading-[1.1] text-foreground">
+                    <div className="font-heading text-3xl font-normal leading-none text-foreground">
                       80+
                     </div>
                     <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/60">
@@ -230,7 +230,7 @@ export default function WordPressPage() {
                     </p>
                   </div>
                   <div>
-                    <div className="flex items-baseline gap-1 font-heading text-3xl font-semibold leading-[1.1] text-foreground">
+                    <div className="flex items-baseline gap-1 font-heading text-3xl font-normal leading-none text-foreground">
                       5/5
                       <span className="text-base text-brand">★</span>
                     </div>
@@ -239,7 +239,7 @@ export default function WordPressPage() {
                     </p>
                   </div>
                   <div>
-                    <div className="font-heading text-3xl font-semibold leading-[1.1] text-foreground">
+                    <div className="font-heading text-3xl font-normal leading-none text-foreground">
                       990,-
                     </div>
                     <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.08em] text-foreground/60">
@@ -261,7 +261,7 @@ export default function WordPressPage() {
               <span className="font-mono text-xs uppercase tracking-[0.12em] text-brand">
                 Spesialister på WordPress
               </span>
-              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-semibold leading-[1.12] text-foreground">
+              <h2 className="mt-4 text-balance font-heading text-[clamp(28px,3.4vw,42px)] font-normal leading-[1.12] tracking-[-0.02em] text-foreground">
                 WordPress-tjenester fra Reboot
               </h2>
               <div className="relative mt-14 aspect-[1500/1091] overflow-hidden rounded-[var(--radius)]">
@@ -281,7 +281,7 @@ export default function WordPressPage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-heading text-[20px] font-semibold leading-[1.25] text-foreground sm:text-[22px]">
+                    <h3 className="font-heading text-[20px] font-normal leading-[1.25] text-foreground sm:text-[22px]">
                       {service.title}
                     </h3>
                     <p className="mt-2.5 text-[15.5px] leading-[1.65] text-foreground/70">
@@ -299,7 +299,7 @@ export default function WordPressPage() {
       <section id="prosjekter" className="scroll-mt-24 px-4 py-14 sm:px-6 lg:px-10 lg:py-16">
         <div className="mx-auto max-w-[1280px]">
           <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-            <h2 className="max-w-2xl text-balance font-heading text-4xl font-semibold leading-[1.1] text-foreground md:text-5xl">
+            <h2 className="max-w-2xl text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
               WordPress-prosjekter vi har levert
             </h2>
             <a
@@ -331,7 +331,7 @@ export default function WordPressPage() {
                   <span className="font-mono text-xs uppercase tracking-[0.14em] text-brand">
                     {project.kicker}
                   </span>
-                  <h3 className="mt-3 font-heading text-lg font-semibold leading-snug text-foreground">
+                  <h3 className="mt-3 font-heading text-lg font-normal leading-snug text-foreground">
                     {project.title}
                   </h3>
                 </div>
@@ -360,7 +360,7 @@ export default function WordPressPage() {
           >
             ✳︎
           </span>
-          <blockquote className="mx-auto max-w-[720px] text-balance font-heading text-[clamp(22px,2.6vw,32px)] font-semibold leading-[1.3]">
+          <blockquote className="mx-auto max-w-[720px] text-balance font-heading text-[clamp(22px,2.6vw,32px)] font-normal leading-[1.3] tracking-[-0.01em]">
             «Hele prosessen med oppsett og administrasjon har vært en effektiv
             og produktiv opplevelse, og vi er veldig fornøyde med samarbeidet
             med vår driftspartner.»
@@ -374,7 +374,7 @@ export default function WordPressPage() {
       {/* FAQ */}
       <section className="px-6 py-14 sm:py-16">
         <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-semibold leading-[1.15] text-foreground">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
             Ofte stilte spørsmål om WordPress
           </h2>
           <div className="mt-8">

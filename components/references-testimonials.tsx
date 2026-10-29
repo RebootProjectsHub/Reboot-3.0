@@ -42,7 +42,7 @@ export function ReferencesTestimonials() {
 
             <blockquote
               key={review.slug}
-              className="mt-7 min-h-[100px] text-balance font-heading text-[clamp(19px,2.6vw,27px)] font-semibold leading-[1.4] text-ink-foreground sm:min-h-[80px]"
+              className="mt-7 min-h-[100px] text-balance font-heading text-[clamp(19px,2.6vw,27px)] font-normal leading-[1.4] text-ink-foreground sm:min-h-[80px]"
             >
               «{review.text}»
             </blockquote>

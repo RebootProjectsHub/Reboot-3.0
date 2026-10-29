@@ -38,7 +38,7 @@ export function WhoWeAre() {
                 <p className="font-mono text-xs uppercase tracking-[0.18em] text-ink-foreground/70">
                   Hvem er vi i Reboot?
                 </p>
-                <h2 className="mt-5 text-balance font-heading text-4xl font-semibold leading-[1.1] md:text-5xl">
+                <h2 className="mt-5 text-balance font-heading text-4xl font-light leading-[1.08] md:text-5xl">
                   Et lite team med stor lidenskap for å lage nettsider som
                   faktisk skaper resultater.
                 </h2>

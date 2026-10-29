@@ -23,7 +23,7 @@ export function PricingVisibilityCta() {
             <span className="font-mono text-xs font-bold uppercase tracking-[0.12em] text-brand">
               SEO / AI-svar
             </span>
-            <h2 className="text-balance font-heading text-[clamp(30px,3.8vw,48px)] font-semibold leading-[1.1]">
+            <h2 className="text-balance font-heading text-[clamp(30px,3.8vw,48px)] font-normal leading-[1.1] tracking-[-0.02em]">
               Synlighet og vekst
             </h2>
             <p className="max-w-[52ch] text-pretty text-[19px] leading-[1.6] text-ink-foreground/80">

@@ -149,7 +149,7 @@ export default function SkreddersyddNettsidePage() {
           Ny nettside &amp; redesign
         </span>
 
-        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-semibold leading-[1.1] text-foreground">
+        <h1 className="mt-[18px] mb-[22px] text-balance font-heading text-[clamp(38px,5vw,60px)] font-normal leading-[1.05] tracking-[-0.02em] text-foreground">
           Skreddersydde nettsider
         </h1>
 
@@ -192,7 +192,7 @@ export default function SkreddersyddNettsidePage() {
                   <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
                     Ny hjemmeside &amp; redesign
                   </span>
-                  <h3 className="mt-3 font-heading text-[30px] font-semibold leading-[1.14]">
+                  <h3 className="mt-3 font-heading text-[30px] font-normal leading-[1.14] tracking-[-0.01em]">
                     Ny side eller redesign
                   </h3>
                   <p className="mt-2.5 text-[16px] leading-[1.6] text-ink-foreground/80">
@@ -204,7 +204,7 @@ export default function SkreddersyddNettsidePage() {
                   <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
                     SEO og AI-søk
                   </span>
-                  <h3 className="mt-3 font-heading text-[30px] font-semibold leading-[1.14]">
+                  <h3 className="mt-3 font-heading text-[30px] font-normal leading-[1.14] tracking-[-0.01em]">
                     Synlig fra dag én
                   </h3>
                   <p className="mt-2.5 text-[16px] leading-[1.6] text-ink-foreground/80">
@@ -216,7 +216,7 @@ export default function SkreddersyddNettsidePage() {
                   <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
                     Rask og sikker
                   </span>
-                  <h3 className="mt-3 font-heading text-[30px] font-semibold leading-[1.14]">
+                  <h3 className="mt-3 font-heading text-[30px] font-normal leading-[1.14] tracking-[-0.01em]">
                     Bygget for å konvertere
                   </h3>
                   <p className="mt-2.5 text-[16px] leading-[1.6] text-ink-foreground/80">
@@ -252,7 +252,7 @@ export default function SkreddersyddNettsidePage() {
       {/* FAQ */}
       <section className="px-6 pb-16 pt-14 sm:pt-16">
         <div className="mx-auto max-w-[700px]">
-          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-semibold leading-[1.15] text-foreground">
+          <h2 className="text-center font-heading text-[clamp(26px,3vw,36px)] font-normal leading-[1.15] tracking-[-0.02em] text-foreground">
             Vanlige spørsmål
           </h2>
           <div className="mt-8">
@@ -282,7 +282,7 @@ export default function SkreddersyddNettsidePage() {
                 <span className="font-mono text-xs uppercase tracking-[0.1em] text-brand">
                   Kundecase · Skreddersydd nettside
                 </span>
-                <h2 className="mt-5 text-balance font-heading text-[clamp(28px,3.2vw,40px)] font-semibold leading-[1.12]">
+                <h2 className="mt-5 text-balance font-heading text-[clamp(28px,3.2vw,40px)] font-normal leading-[1.12] tracking-[-0.02em]">
                   Nettside for Höegh Evi
                 </h2>
                                 <blockquote className="mt-6 text-[17px] italic leading-[1.6] text-ink-foreground/70">

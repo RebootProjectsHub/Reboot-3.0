@@ -13,7 +13,7 @@ export function Cta() {
 
       <div className="mx-auto grid max-w-[1280px] items-start gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="max-w-xl">
-          <h2 className="text-balance font-heading text-4xl font-semibold leading-[1.1] text-foreground md:text-5xl">
+          <h2 className="text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
             Vi hører gjerne fra deg
           </h2>
           <p className="mt-6 text-pretty text-lg leading-relaxed text-foreground/80">
