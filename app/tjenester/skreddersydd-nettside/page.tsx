@@ -231,7 +231,7 @@ export default function SkreddersyddNettsidePage() {
                 <div className="relative min-h-[280px] flex-1 overflow-hidden rounded-[22px] lg:min-h-[380px]">
                   <Image
                     src="/Reboot-Norge-ipad-scaled.webp"
-                    alt="Reboot-teamet i møte"
+                    alt="Nettbrett med Reboots nettside på en benk"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 420px"
