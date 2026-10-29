@@ -109,7 +109,7 @@ export function SiteHeader() {
                       lines up with the logo's left edge and the button's right
                       edge. It stays a descendant of the item wrapper so
                       group-hover keeps it open while the pointer is on it. */}
-                  <div className="invisible absolute inset-x-10 top-full z-50 translate-y-1 pt-2 opacity-0 transition-[opacity,transform] duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                  <div className="invisible absolute inset-x-10 top-full z-50 translate-y-1 opacity-0 transition-[opacity,transform] duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
                     {/* Flat per brand guide: hairline border, no shadow, small
                         (--radius-xs) corners. Intro column plus three image
                         cards; the intro is narrower below xl so the cards keep
