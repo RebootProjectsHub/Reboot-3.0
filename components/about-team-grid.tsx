@@ -25,14 +25,14 @@ const team = [
     tel: "+4748630905",
     photo: "/Evgeniia-dev1.webp",
   },
-  {
-    name: "Nora Fjeldstad",
-    role: "Designer",
-    email: "nora@reboot.no",
-    phone: "46 95 06 27",
-    tel: "+4746950627",
-    photo: "/nora-design1.webp",
-  },
+  // {
+  //   name: "Nora Fjeldstad",
+  //   role: "Designer",
+  //   email: "nora@reboot.no",
+  //   phone: "46 95 06 27",
+  //   tel: "+4746950627",
+  //   photo: "/nora-design1.webp",
+  // },
 ]
 
 export function AboutTeamGrid() {
