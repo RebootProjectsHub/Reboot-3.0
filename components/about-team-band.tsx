@@ -86,7 +86,7 @@ Vi bruker moderne teknologi der det faktisk gir mening, men det personlige tar v
             <div className="order-1 relative min-h-[280px] lg:order-none lg:min-h-[360px]">
               <Image
                 src="/sable-flow-o-6GhmpELnw-unsplash2.webp"
-                alt="Reboot-teamet i en idémyldring rundt en tavle"
+                alt="Idémyldring ved en tavle"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -185,7 +185,7 @@ export default function AiRadgivningPage() {
 
         <p className="mx-auto max-w-[600px] text-pretty text-[19px] leading-[1.6] text-foreground/70">
           Føler du at alle andre har kommet i gang med AI? Vi hjelper små og
-          mellomstore bedrifter å finne ut hvor AI faktisk gir verd.
+          mellomstore bedrifter å finne ut hvor AI faktisk gir verdi.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
@@ -212,7 +212,7 @@ export default function AiRadgivningPage() {
               <div className="relative mt-6 aspect-[3/2] overflow-hidden rounded-[var(--radius)]">
                 <Image
                   src="/Felles5.webp"
-                  alt="Reboot-teamet kartlegger AI-muligheter ved et whiteboard"
+                  alt="Lyst kontorbygg med trapp og sittegrupper"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 45vw"
@@ -274,7 +274,7 @@ export default function AiRadgivningPage() {
           <div className="relative h-[360px] overflow-hidden rounded-[var(--radius)] sm:h-[460px] lg:h-[520px]">
             <Image
               src="/team-meeting.webp"
-              alt="Reboot-teamet i et møte rundt et bord"
+              alt="Møte rundt et bord"
               fill
               className="object-cover"
               sizes="100vw"

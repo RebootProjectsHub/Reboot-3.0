@@ -9,7 +9,7 @@ export function WorkWithUs() {
                 <div className="overflow-hidden rounded-[var(--radius)] border border-border">
             <Image
               src="/Felles5.webp"
-              alt="Teamet i Reboot i et møte rundt et bord"
+              alt="Lyst kontorbygg med trapp og sittegrupper"
               width={1200}
               height={900}
               className="aspect-[4/3] size-full object-cover"

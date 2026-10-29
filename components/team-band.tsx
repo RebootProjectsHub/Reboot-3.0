@@ -8,7 +8,7 @@ export function TeamBand() {
         <div className="aspect-[1966/1002] overflow-hidden rounded-[28px] sm:aspect-auto sm:h-[clamp(420px,42vw,620px)]">
           <Image
             src="/team-band.webp"
-            alt="Reboot-teamet i et møte"
+            alt="Tre kollegaer i et møte på et kontor"
             width={1966}
             height={1002}
             // First image on the homepage and the mobile LCP element. Without

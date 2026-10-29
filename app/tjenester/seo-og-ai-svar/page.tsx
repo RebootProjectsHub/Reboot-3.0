@@ -304,7 +304,7 @@ export default function SeoOgAiSvarPage() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius)] lg:sticky lg:top-24">
               <Image
                 src="/team-whiteboard.jpg"
-                alt="Reboot-teamet planlegger synlighetsarbeid ved et whiteboard"
+                alt="Planlegging ved en tavle"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"
