@@ -39,4 +39,7 @@ export type Reference = {
   /** Card media — image path or video path (mp4) */
   image?: string
   video?: string
+  /** First frame of a scrolling site capture. When set, the video is fully
+   *  downloaded before it plays once (no loop) and then rewinds to this frame. */
+  poster?: string
 }

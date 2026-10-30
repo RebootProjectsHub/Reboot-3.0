@@ -2,11 +2,28 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { references } from "@/cases/references"
+import { ScrollVideo } from "@/components/scroll-video"
 
-function CardMedia({ image, video, name }: { image?: string; video?: string; name: string }) {
+function CardMedia({
+  image,
+  video,
+  poster,
+  name,
+}: {
+  image?: string
+  video?: string
+  poster?: string
+  name: string
+}) {
   return (
     <div className="relative aspect-[4/3] overflow-hidden">
-      {video ? (
+      {video && poster ? (
+        <ScrollVideo
+          src={video}
+          poster={poster}
+          className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+        />
+      ) : video ? (
         <video
           src={video}
           autoPlay
@@ -78,7 +95,7 @@ export function ReferencesGrid() {
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {withCase.map((ref) => (
             <Link key={ref.name} href={`/ny-nettside/${ref.caseSlug}`} className={cardClass}>
-              <CardMedia image={ref.image} video={ref.video} name={ref.name} />
+              <CardMedia image={ref.image} video={ref.video} poster={ref.poster} name={ref.name} />
               <CardFooter name={ref.name} external={false} label="Se kundecase" />
             </Link>
           ))}
@@ -110,7 +127,7 @@ export function ReferencesMoreProjects() {
                 rel="noopener noreferrer"
                 className={cardClass}
               >
-                <CardMedia image={ref.image} video={ref.video} name={ref.name} />
+                <CardMedia image={ref.image} video={ref.video} poster={ref.poster} name={ref.name} />
                 <CardFooter name={ref.name} external label={domain} />
               </a>
             )

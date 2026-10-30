@@ -50,6 +50,7 @@ export const references: Reference[] = [
     name: "Studio Pietra",
     url: "https://studio.vbku.no/",
     video: "/referanser/studio-pietra.mp4",
+    poster: "/referanser/studio-pietra-poster.webp",
   },
   {
     name: "Romerikes Råeste",
