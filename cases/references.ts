@@ -47,9 +47,9 @@ export const references: Reference[] = [
     image: "/referanser/ditt-apotek.webp",
   },
   {
-    name: "VBKU Studio",
+    name: "Studio Pietra",
     url: "https://studio.vbku.no/",
-    video: "/referanser/vbku-studio.mp4",
+    video: "/referanser/studio-pietra.mp4",
   },
   {
     name: "Romerikes Råeste",
