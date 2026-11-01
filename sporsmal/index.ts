@@ -10,6 +10,7 @@ import { page as redigereSelv } from "@/sporsmal/kan-jeg-redigere-nettsiden-selv
 import { page as hvorLangTid } from "@/sporsmal/hvor-lang-tid-tar-det-a-lage-nettside"
 import { page as synligIChatgpt } from "@/sporsmal/synlig-i-chatgpt-og-ai-sok"
 import { page as trengerJegSeo } from "@/sporsmal/trenger-jeg-seo-liten-bedrift"
+import { page as hjelpChatgptOslo } from "@/sporsmal/hjelp-til-synlighet-i-chatgpt-oslo"
 
 const content: QaPageContent[] = [
   trengerJegDriftsavtale,
@@ -22,6 +23,7 @@ const content: QaPageContent[] = [
   hvorLangTid,
   synligIChatgpt,
   trengerJegSeo,
+  hjelpChatgptOslo,
 ]
 
 export const qaPages: QaPage[] = content.map((page) => {

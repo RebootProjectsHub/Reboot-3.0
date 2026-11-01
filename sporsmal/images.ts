@@ -90,4 +90,11 @@ export const qaImages: Record<string, QaImage> = {
     "eskarstein",
     "bRU8UP_Y4bM",
   ),
+  "hjelp-til-synlighet-i-chatgpt-oslo": unsplash(
+    "hjelp-til-synlighet-i-chatgpt-oslo",
+    "Høyhusene i Bjørvika i Oslo speiler seg i vannet en blå kveld, med en byggekran til høyre",
+    "Christoffer Engström",
+    "christoffere",
+    "tjguVu0GoEM",
+  ),
 }
