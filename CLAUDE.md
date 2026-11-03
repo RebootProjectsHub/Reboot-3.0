@@ -19,3 +19,7 @@ If unsure which category a change falls in, treat it as higher-risk and verify.
 ## Commit message convention
 
 Short, single-line, imperative summary (e.g. "Update SNU reference image to SNU-Reboot.webp", "Remove quote strip from skreddersydd-nettside bento section"). No body text, no bullet lists, no Co-Authored-By trailer — this repo's history is entirely one-liners without it.
+
+## GEO
+
+Before creating or changing any page under /sporsmal/, /tjenester/ or posts/, read docs/geo-rules.md and follow it. This applies to every session and every routine.
