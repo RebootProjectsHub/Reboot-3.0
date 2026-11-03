@@ -99,10 +99,10 @@ export const qaImages: Record<string, QaImage> = {
   ),
   "bytte-webbyra": unsplash(
     "bytte-webbyra",
-    "Et knippe nøkler på en ring som ligger på et bord i mørkt tre",
-    "Filip Szalbot",
-    "fess0",
-    "PxiAc1aElFQ",
+    "Fjord omgitt av bratte, grå fjelltopper under hvite skyer, sett fra Reinebringen i Lofoten",
+    "Fernando Strabuli",
+    "fernandostrabuli456",
+    "W1FIkdPAB7E",
   ),
   "bytte-fra-coretrek": unsplash(
     "bytte-fra-coretrek",
