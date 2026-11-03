@@ -422,6 +422,16 @@ export default function SeoOgAiSvarPage() {
               items={faqItems.map(({ question, answer }) => ({ question, answer }))}
             />
           </div>
+          <p className="mt-8 text-center text-[15.5px] leading-[1.65] text-foreground/70">
+            Les også:{" "}
+            <Link href="/sporsmal/synlig-i-chatgpt-og-ai-sok" className="text-brand underline-offset-4 hover:underline">
+              Hvorfor vises ikke bedriften min når folk spør ChatGPT?
+            </Link>{" "}
+            og{" "}
+            <Link href="/sporsmal/hjelp-til-synlighet-i-chatgpt-oslo" className="text-brand underline-offset-4 hover:underline">
+              Hvem kan hjelpe en liten bedrift i Oslo med å bli synlig i ChatGPT?
+            </Link>
+          </p>
         </div>
       </section>
 
