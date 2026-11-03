@@ -33,6 +33,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      # The IndexNow job runs after deploy and needs the built sitemap.
+      - name: Upload sitemap for IndexNow
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitemap
+          path: ./out/sitemap.xml
 
   deploy:
     needs: build
@@ -44,3 +50,37 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Tell Bing, Yandex and other IndexNow engines about the site. Every sitemap
+  # URL carries the build time as lastmod, so changed pages can't be told apart;
+  # the whole sitemap is sent instead. A failed ping never fails the workflow.
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions: {}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: sitemap
+      - name: Ping IndexNow
+        env:
+          INDEXNOW_KEY: 5d3c8c2dadd5bf3ef21d40343abde339
+        run: |
+          urls=$(grep -o '<loc>[^<]*' sitemap.xml | sed 's/<loc>//' | jq -R . | jq -s .)
+          echo "Sending $(echo "$urls" | jq length) URLs"
+          jq -n --arg key "$INDEXNOW_KEY" --argjson urls "$urls" '{
+            host: "reboot.no",
+            key: $key,
+            keyLocation: "https://reboot.no/\($key).txt",
+            urlList: $urls
+          }' > payload.json
+          status=$(curl -sS -o response.txt -w '%{http_code}' --max-time 30 \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            --data @payload.json https://api.indexnow.org/indexnow) || status=000
+          echo "IndexNow responded $status"
+          cat response.txt 2>/dev/null || true
+          case "$status" in
+            200|202) ;;
+            *) echo "::warning::IndexNow ping failed with HTTP $status" ;;
+          esac
