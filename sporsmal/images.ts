@@ -97,4 +97,18 @@ export const qaImages: Record<string, QaImage> = {
     "christoffere",
     "tjguVu0GoEM",
   ),
+  "bytte-webbyra": unsplash(
+    "bytte-webbyra",
+    "Et knippe nøkler på en ring som ligger på et bord i mørkt tre",
+    "Filip Szalbot",
+    "fess0",
+    "PxiAc1aElFQ",
+  ),
+  "bytte-fra-coretrek": unsplash(
+    "bytte-fra-coretrek",
+    "Stablede flytteesker i papp med grønne potteplanter foran, i en lys stue med gulvlampe",
+    "Dina Badamshina",
+    "dinaamazing",
+    "j7vbBmTHmjY",
+  ),
 }
