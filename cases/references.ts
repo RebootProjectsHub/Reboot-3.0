@@ -148,4 +148,9 @@ export const references: Reference[] = [
     url: "https://www.kaffehusetas.no/",
     image: "/referanser/kaffehuset.webp",
   },
+  {
+    name: "Frysja 33",
+    url: "https://frysja33.no/",
+    image: "/referanser/frysja-33.webp",
+  },
 ]
