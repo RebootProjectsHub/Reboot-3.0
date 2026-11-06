@@ -30,7 +30,7 @@ const benefits = [
 
 const steps = [
   { title: "Fyll inn skjemaet.", text: "Det tar under ett minutt." },
-  { title: "Vi analyserer nettsiden din med AI.", text: "En av oss går gjennom funnene før du får dem." },
+  { title: "Vi analyserer nettsiden din med AI.", text: "Vi kvalitetssikrer funnene før du får dem." },
   { title: "Du får analysen på e-post innen to virkedager.", text: "" },
 ]
 
