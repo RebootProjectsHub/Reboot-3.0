@@ -141,8 +141,8 @@ export const post: Post = {
 
       <h2>Hva det betyr i praksis</h2>
       <p>
-        Den beste målestokken er om nye kunder faktisk finner deg via AI. Christina
-        Håland i Ved På Døra opplevde nettopp det etter at vi hadde jobbet med
+        Den beste målestokken er om nye kunder faktisk finner deg via AI. Arild
+        Ramberg i Ability Media opplevde nettopp det etter at vi hadde jobbet med
         synligheten deres:
       </p>
       <blockquote>
