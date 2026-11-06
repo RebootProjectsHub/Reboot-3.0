@@ -29,7 +29,7 @@ export function ArticlesList({ page }: { page: number }) {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src={post.image}
+                  src={post.thumbnail ?? post.image}
                   alt={post.imageAlt}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"

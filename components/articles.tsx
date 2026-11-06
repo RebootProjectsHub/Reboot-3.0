@@ -48,7 +48,7 @@ export function Articles() {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src={featured.image}
+                  src={featured.thumbnail ?? featured.image}
                   alt={featured.imageAlt}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"

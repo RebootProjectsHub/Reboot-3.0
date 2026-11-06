@@ -16,6 +16,9 @@ export type Post = {
    *  Aim for ~120-160 chars and always end on a complete sentence. */
   excerpt: string
   image: string
+  /** Smaller card image for listings (e.g. 800px wide). Falls back to
+   *  `image`. Avoids Chrome's aliased downscaling of large, grainy photos. */
+  thumbnail?: string
   imageAlt: string
   /** Body as JSX (hand-authored posts). Provide this or `contentHtml`. */
   content?: ReactNode

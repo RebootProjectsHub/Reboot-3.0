@@ -13,6 +13,7 @@ export const post: Post = {
   dateISO: "2026-11-06",
   excerpt: "AI lager nettsiden på en time, men gjør den ikke synlig. Slik blir du funnet i Google, lokale søk og AI-svar som ChatGPT, og når det er lurt å bygge selv.",
   image: `${IMG}/featured.webp`,
+  thumbnail: `${IMG}/thumb.webp`,
   imageAlt: "Laptop på et trebord ved et vindu med snødekt skog utenfor. Foto: Justin Kauffman / Unsplash",
   content: (
     <>
