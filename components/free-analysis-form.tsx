@@ -166,7 +166,7 @@ export function FreeAnalysisForm() {
           className={`${blankClass} min-w-[220px] md:min-w-[360px]`}
           placeholder="www.dinbedrift.no"
         />{" "}
-        send rapporten til{" "}
+        Send rapporten til{" "}
         <label htmlFor="email" className="sr-only">
           E-post
         </label>
