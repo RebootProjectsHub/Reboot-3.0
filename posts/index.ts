@@ -1,4 +1,5 @@
 import type { Post } from "@/posts/types"
+import { post as nettsideMedAi } from "@/posts/nettside-med-ai-hvorfor-finner-ingen-den"
 import { post as synlighetIAiSvar } from "@/posts/synlighet-i-ai-svar"
 import { post as designAvKnapper } from "@/posts/design-av-knapper-pa-nettsider"
 import { post as animasjonerPaNettsider } from "@/posts/animasjoner-pa-nettsider"
@@ -90,6 +91,7 @@ import { post as byggeBrukervennligNettbutikkWoocommerce } from "@/posts/a-bygge
  * (newest first) automatically below.
  */
 const allPosts: Post[] = [
+  nettsideMedAi,
   synlighetIAiSvar,
   designAvKnapper,
   animasjonerPaNettsider,
