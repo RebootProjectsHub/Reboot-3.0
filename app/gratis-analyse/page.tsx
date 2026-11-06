@@ -36,11 +36,12 @@ const steps = [
   { title: "Du får analysen på e-post innen to virkedager.", text: "" },
 ]
 
-// TODO: replace with the real quote, name and company from Henrik.
+// Same real quote as on /tjenester/seo-og-ai-svar.
 const testimonial = {
-  quote: "TODO: Sitat fra kunde kommer her.",
-  name: "TODO: Navn",
-  company: "TODO: Bedrift",
+  quote:
+    "Vi dukker opp der vi skal nå og flere nye kunder har sagt at de fant oss via ChatGPT.",
+  name: "Arild Ramberg",
+  company: "Ability Media",
 }
 
 const eyebrow =
