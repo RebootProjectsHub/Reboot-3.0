@@ -236,7 +236,7 @@ export default function SeoOgAiSvarPage() {
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
           <a
-            href="/kontakt"
+            href="/gratis-analyse/"
             className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
           >
             Få gratis synlighetsanalyse
@@ -461,7 +461,7 @@ export default function SeoOgAiSvarPage() {
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
             <a
-              href="/kontakt"
+              href="/gratis-analyse/"
               className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
             >
               Få gratis synlighetsanalyse
