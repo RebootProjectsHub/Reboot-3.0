@@ -32,7 +32,7 @@ const SUBMIT_ERROR =
 // The three required fields sit inside a sentence, so they are styled as
 // underlined blanks rather than boxed inputs.
 const blankClass =
-  "inline-block max-w-full border-0 border-b-2 border-foreground bg-transparent px-1.5 pb-0.5 align-baseline font-light italic text-brand outline-none transition-colors placeholder:italic placeholder:text-foreground/30 focus:border-brand aria-invalid:border-brand"
+  "inline-block max-w-full border-0 border-b-2 border-ink-foreground/50 bg-transparent px-1.5 pb-0.5 align-baseline font-light italic text-brand outline-none transition-colors placeholder:italic placeholder:text-ink-foreground/35 focus:border-brand aria-invalid:border-brand"
 
 export function FreeAnalysisForm() {
   const router = useRouter()
@@ -111,7 +111,11 @@ export function FreeAnalysisForm() {
   const errorList = [errors.name, errors.website, errors.email].filter(Boolean)
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="grid gap-9">
+    <form
+      onSubmit={handleSubmit}
+      noValidate
+      className="grid content-center gap-7 rounded-[var(--radius)] bg-ink p-7 text-ink-foreground sm:p-10 lg:px-12"
+    >
       {/* Honeypot: hidden from users, catches bots. */}
       <input
         type="checkbox"
@@ -128,7 +132,7 @@ export function FreeAnalysisForm() {
 
       {/* The form as a sentence. Labels are visually hidden; the sentence
           itself tells the reader what each blank is for. */}
-      <p className="max-w-[1180px] font-heading text-[clamp(26px,3.1vw,44px)] font-normal leading-[1.75] tracking-[-0.01em] text-foreground">
+      <p className="font-heading text-[clamp(24px,2.3vw,32px)] font-light leading-[1.8] tracking-[-0.01em] text-ink-foreground">
         Hei, jeg heter{" "}
         <label htmlFor="name" className="sr-only">
           Navn
@@ -142,7 +146,7 @@ export function FreeAnalysisForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           aria-invalid={errors.name ? true : undefined}
-          className={`${blankClass} min-w-[180px] md:min-w-[260px]`}
+          className={`${blankClass} min-w-[160px] md:min-w-[200px]`}
           placeholder="ditt navn"
         />{" "}
         og vil ha en gratis analyse av{" "}
@@ -159,7 +163,7 @@ export function FreeAnalysisForm() {
           value={website}
           onChange={(e) => setWebsite(e.target.value)}
           aria-invalid={errors.website ? true : undefined}
-          className={`${blankClass} min-w-[220px] md:min-w-[360px]`}
+          className={`${blankClass} min-w-[220px] md:min-w-[280px]`}
           placeholder="www.dinbedrift.no"
         />
         <br />
@@ -176,13 +180,13 @@ export function FreeAnalysisForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           aria-invalid={errors.email ? true : undefined}
-          className={`${blankClass} min-w-[200px] md:min-w-[320px]`}
+          className={`${blankClass} min-w-[200px] md:min-w-[260px]`}
           placeholder="navn@epost.no"
         />
       </p>
 
       {errorList.length > 0 && (
-        <ul className="-mt-4 grid gap-1 text-sm text-brand" role="alert">
+        <ul className="-mt-3 grid gap-1 text-sm text-brand" role="alert">
           {errorList.map((msg) => (
             <li key={msg}>{msg}</li>
           ))}
@@ -203,7 +207,7 @@ export function FreeAnalysisForm() {
               {formError}
             </p>
           ) : (
-            <p className="text-sm text-foreground/60">
+            <p className="text-sm text-ink-foreground/60">
               Ingen forpliktelser. Vi deler aldri e-posten din.
             </p>
           )}

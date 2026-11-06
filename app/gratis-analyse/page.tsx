@@ -60,8 +60,8 @@ export default function GratisAnalysePage() {
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      {/* Hero: headline and intro above a rule, then the form written as a sentence */}
-      <section className="relative px-4 pb-16 pt-14 sm:px-6 lg:px-10 lg:pb-20">
+      {/* Hero: centred title, then the form (dark card) beside the report preview (cream card) */}
+      <section className="relative px-4 pb-16 pt-12 sm:px-6 lg:px-10 lg:pb-20">
         <span
           aria-hidden
           className="absolute right-[6%] top-10 hidden text-[34px] leading-none text-brand/45 md:block"
@@ -69,23 +69,78 @@ export default function GratisAnalysePage() {
           ✳︎
         </span>
         <div className="mx-auto grid max-w-[1280px] gap-10">
-          <div className="flex flex-wrap items-end justify-between gap-6 border-b border-border pb-8">
-            <div>
-              <span className={`inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-2 ${eyebrow} text-foreground`}>
-                <span className="size-2 rounded-full bg-brand" aria-hidden />
-                Gratis analyse
-              </span>
-              <h1 className="mt-5 text-balance font-heading text-[clamp(40px,4.5vw,56px)] font-normal leading-none tracking-[-0.02em] text-foreground">
-                Gratis analyse av nettsiden din
-              </h1>
-            </div>
-            <p className="max-w-[460px] text-pretty text-[17px] leading-[1.55] text-foreground/75">
+          <div className="flex flex-col items-center gap-5 text-center">
+            <span className={`inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-2 ${eyebrow} text-foreground`}>
+              <span className="size-2 rounded-full bg-brand" aria-hidden />
+              Gratis analyse
+            </span>
+            <h1 className="text-balance font-heading text-[clamp(40px,4.8vw,60px)] font-normal leading-none tracking-[-0.02em] text-foreground">
+              Gratis analyse av nettsiden din
+            </h1>
+            <p className="max-w-[640px] text-pretty text-[18px] leading-[1.55] text-foreground/75">
               Vi sjekker hvordan bedriften din vises i Google og i AI-søk som
               ChatGPT, og sender deg en kort rapport med konkrete forbedringer.
               Uforpliktende, og du får svar innen to virkedager.
             </p>
           </div>
-          <FreeAnalysisForm />
+
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)]">
+            <FreeAnalysisForm />
+            {/* Illustrative report preview: the content lines are placeholders */}
+            <div className="grid gap-5 rounded-[var(--radius)] border border-border bg-card p-6 sm:p-8">
+                <div className="flex items-center justify-between gap-3 border-b border-foreground/10 pb-4">
+                  <div>
+                    <p className={`mb-1 ${eyebrow} tracking-[0.16em] text-foreground/55`}>
+                      Dette får du tilbake
+                    </p>
+                    <p className="font-heading text-[22px] leading-tight text-foreground">
+                      Analyse: www.dinbedrift.no
+                    </p>
+                  </div>
+                  <Image
+                    src="/Reboot3.svg"
+                    alt="Reboot"
+                    width={200}
+                    height={52}
+                    className="h-5 w-auto opacity-90"
+                  />
+                </div>
+
+                <div className="grid gap-2.5">
+                  <div className="flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+                    <span className="text-[15px] font-medium">Synlighet i AI-søk</span>
+                    <span className="rounded-full bg-background px-2.5 py-1 font-mono text-[11px] uppercase tracking-[0.1em]">
+                      ChatGPT · Google AI · Copilot
+                    </span>
+                  </div>
+                  <Skeleton className="w-[92%]" />
+                  <Skeleton className="w-[64%]" />
+                </div>
+
+                <div className="grid gap-2.5">
+                  <div className="flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+                    <span className="text-[15px] font-medium">Teknisk helse</span>
+                    <span className="rounded-full bg-background px-2.5 py-1 font-mono text-[11px] uppercase tracking-[0.1em]">
+                      Hastighet · Mobil · Sikkerhet
+                    </span>
+                  </div>
+                  <Skeleton className="w-[84%]" />
+                  <Skeleton className="w-[48%]" />
+                </div>
+
+                <div className="grid gap-3 rounded-[18px] bg-background px-5 py-[18px]">
+                  <span className="text-[15px] font-medium">Hva som bør gjøres først</span>
+                  {["w-full", "max-w-[78%]", "max-w-[60%]"].map((w, i) => (
+                    <div key={w} className="flex items-center gap-3">
+                      <span className="inline-flex size-[22px] shrink-0 items-center justify-center rounded-full bg-brand font-mono text-[11px] text-[var(--white)]">
+                        {i + 1}
+                      </span>
+                      <Skeleton className={`flex-1 ${w}`} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+          </div>
         </div>
       </section>
 
@@ -211,9 +266,9 @@ export default function GratisAnalysePage() {
         </div>
       </section>
 
-      {/* Hva er haken + Hvem passer dette for, with a preview of the report */}
+      {/* Hva er haken + Hvem passer dette for */}
       <section className="px-4 pb-24 pt-20 sm:px-6 lg:px-10 lg:pb-28 lg:pt-28">
-        <div className="mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="mx-auto grid max-w-[1280px] gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
             <h2 className={h2}>Hva er haken?</h2>
             <p className="mt-6 max-w-[520px] text-pretty text-[19px] leading-[1.6] text-foreground/80">
@@ -221,72 +276,13 @@ export default function GratisAnalysePage() {
               oss gjøre jobben etterpå. Andre tar rapporten og fikser det selv.
               Begge deler er helt greit, og vi maser ikke.
             </p>
-            <div className="mt-10 border-t border-border pt-7">
-              <h2 className="font-heading text-[26px] font-normal leading-tight text-foreground">
-                Hvem passer dette for
-              </h2>
-              <p className="mt-2.5 max-w-[520px] text-pretty text-[19px] leading-[1.6] text-foreground">
-                Norske små og mellomstore bedrifter som har en nettside, men ikke
-                er sikre på om den jobber for dem.
-              </p>
-            </div>
           </div>
-
-          {/* Illustrative report preview: the content lines are placeholders */}
-          <div className="w-full max-w-[520px] lg:justify-self-end">
-            <div className="grid gap-5 rounded-[var(--radius)] border border-border bg-card p-6 sm:p-8">
-              <div className="flex items-center justify-between gap-3 border-b border-foreground/10 pb-4">
-                <div>
-                  <p className={`mb-1 ${eyebrow} tracking-[0.16em] text-foreground/55`}>
-                    Slik ser rapporten ut
-                  </p>
-                  <p className="font-heading text-[22px] leading-tight text-foreground">
-                    Analyse: www.dinbedrift.no
-                  </p>
-                </div>
-                <Image
-                  src="/Reboot3.svg"
-                  alt="Reboot"
-                  width={200}
-                  height={52}
-                  className="h-5 w-auto opacity-90"
-                />
-              </div>
-
-              <div className="grid gap-2.5">
-                <div className="flex items-center justify-between gap-3">
-                  <span className="text-[15px] font-medium">Synlighet i AI-søk</span>
-                  <span className="rounded-full bg-background px-2.5 py-1 font-mono text-[11px] uppercase tracking-[0.1em]">
-                    ChatGPT · Google AI · Copilot
-                  </span>
-                </div>
-                <Skeleton className="w-[92%]" />
-                <Skeleton className="w-[64%]" />
-              </div>
-
-              <div className="grid gap-2.5">
-                <div className="flex items-center justify-between gap-3">
-                  <span className="text-[15px] font-medium">Teknisk helse</span>
-                  <span className="rounded-full bg-background px-2.5 py-1 font-mono text-[11px] uppercase tracking-[0.1em]">
-                    Hastighet · Mobil · Sikkerhet
-                  </span>
-                </div>
-                <Skeleton className="w-[84%]" />
-                <Skeleton className="w-[48%]" />
-              </div>
-
-              <div className="grid gap-3 rounded-[18px] bg-background px-5 py-[18px]">
-                <span className="text-[15px] font-medium">Hva som bør gjøres først</span>
-                {["w-full", "max-w-[78%]", "max-w-[60%]"].map((w, i) => (
-                  <div key={w} className="flex items-center gap-3">
-                    <span className="inline-flex size-[22px] shrink-0 items-center justify-center rounded-full bg-brand font-mono text-[11px] text-[var(--white)]">
-                      {i + 1}
-                    </span>
-                    <Skeleton className={`flex-1 ${w}`} />
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div>
+            <h2 className={h2}>Hvem passer dette for</h2>
+            <p className="mt-6 max-w-[520px] text-pretty text-[19px] leading-[1.6] text-foreground/80">
+              Norske små og mellomstore bedrifter som har en nettside, men ikke
+              er sikre på om den jobber for dem.
+            </p>
           </div>
         </div>
       </section>
