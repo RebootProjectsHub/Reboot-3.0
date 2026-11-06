@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
+import { ArrowRight } from "lucide-react"
 
 import { measureOpenAiLead } from "@/components/openai-pixel"
 
@@ -28,8 +29,10 @@ type Errors = { website?: string; email?: string; name?: string }
 const SUBMIT_ERROR =
   "Noe gikk galt da forespørselen skulle sendes. Prøv igjen, eller send en e-post til hallo@reboot.no."
 
-const inputClass =
-  "rounded-xs border border-border bg-background px-4 py-3 text-foreground outline-none transition-colors placeholder:text-foreground/40 focus:border-brand"
+// The three required fields sit inside a sentence, so they are styled as
+// underlined blanks rather than boxed inputs.
+const blankClass =
+  "inline-block max-w-full border-0 border-b-2 border-foreground bg-transparent px-1.5 pb-0.5 align-baseline font-light italic text-brand outline-none transition-colors placeholder:italic placeholder:text-foreground/30 focus:border-brand aria-invalid:border-brand"
 
 export function FreeAnalysisForm() {
   const router = useRouter()
@@ -64,13 +67,13 @@ export function FreeAnalysisForm() {
     if (botField?.checked) return
 
     const nextErrors: Errors = {}
+    if (!name.trim()) nextErrors.name = "Fyll inn navnet ditt."
     if (!website.trim()) nextErrors.website = "Fyll inn adressen til nettsiden."
     else if (!URL_RE.test(website.trim()))
       nextErrors.website = "Sjekk at adressen er riktig, f.eks. www.dinbedrift.no."
-    if (!email.trim()) nextErrors.email = "Fyll inn e-post."
+    if (!email.trim()) nextErrors.email = "Fyll inn e-posten din."
     else if (!EMAIL_RE.test(email.trim()))
       nextErrors.email = "Ugyldig e-postadresse."
-    if (!name.trim()) nextErrors.name = "Fyll inn navn."
 
     setErrors(nextErrors)
     if (Object.keys(nextErrors).length > 0) return
@@ -107,87 +110,89 @@ export function FreeAnalysisForm() {
   }
 
   const pending = status === "submitting"
+  const errorList = [errors.name, errors.website, errors.email].filter(Boolean)
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      noValidate
-      className="rounded-[var(--radius)] border border-border bg-card p-7 sm:p-9"
-    >
-      <div className="grid gap-5">
-        {/* Honeypot: hidden from users, catches bots. */}
+    <form onSubmit={handleSubmit} noValidate className="grid gap-9">
+      {/* Honeypot: hidden from users, catches bots. */}
+      <input
+        type="checkbox"
+        name="botcheck"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden
+        className="hidden"
+      />
+
+      {UTM_KEYS.map((key) => (
+        <input key={key} type="hidden" name={key} value={utm[key] ?? ""} />
+      ))}
+
+      {/* The form as a sentence. Labels are visually hidden; the sentence
+          itself tells the reader what each blank is for. */}
+      <p className="max-w-[1180px] font-heading text-[clamp(26px,3.1vw,44px)] font-normal leading-[1.75] tracking-[-0.01em] text-foreground">
+        Hei, jeg heter{" "}
+        <label htmlFor="name" className="sr-only">
+          Navn
+        </label>
         <input
-          type="checkbox"
-          name="botcheck"
-          tabIndex={-1}
-          autoComplete="off"
-          aria-hidden
-          className="hidden"
+          id="name"
+          name="name"
+          type="text"
+          autoComplete="name"
+          required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          aria-invalid={errors.name ? true : undefined}
+          className={`${blankClass} min-w-[180px] md:min-w-[260px]`}
+          placeholder="ditt navn"
+        />{" "}
+        og vil ha en gratis analyse av{" "}
+        <label htmlFor="website" className="sr-only">
+          Nettside
+        </label>
+        <input
+          id="website"
+          name="nettside"
+          type="text"
+          inputMode="url"
+          autoComplete="url"
+          required
+          value={website}
+          onChange={(e) => setWebsite(e.target.value)}
+          aria-invalid={errors.website ? true : undefined}
+          className={`${blankClass} min-w-[220px] md:min-w-[360px]`}
+          placeholder="www.dinbedrift.no"
         />
+        <br />
+        Send rapporten til{" "}
+        <label htmlFor="email" className="sr-only">
+          E-post
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autoComplete="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          aria-invalid={errors.email ? true : undefined}
+          className={`${blankClass} min-w-[200px] md:min-w-[320px]`}
+          placeholder="navn@epost.no"
+        />
+      </p>
 
-        {UTM_KEYS.map((key) => (
-          <input key={key} type="hidden" name={key} value={utm[key] ?? ""} />
-        ))}
+      {errorList.length > 0 && (
+        <ul className="-mt-4 grid gap-1 text-sm text-brand" role="alert">
+          {errorList.map((msg) => (
+            <li key={msg}>{msg}</li>
+          ))}
+        </ul>
+      )}
 
-        <div className="grid gap-2">
-          <label htmlFor="website" className="text-sm font-medium text-foreground">
-            Nettside
-          </label>
-          <input
-            id="website"
-            name="nettside"
-            type="text"
-            inputMode="url"
-            autoComplete="url"
-            required
-            value={website}
-            onChange={(e) => setWebsite(e.target.value)}
-            aria-invalid={errors.website ? true : undefined}
-            className={inputClass}
-            placeholder="www.dinbedrift.no"
-          />
-          {errors.website && <p className="text-sm text-brand">{errors.website}</p>}
-        </div>
-
-        <div className="grid gap-2">
-          <label htmlFor="email" className="text-sm font-medium text-foreground">
-            E-post
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autoComplete="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            aria-invalid={errors.email ? true : undefined}
-            className={inputClass}
-            placeholder="navn@epost.no"
-          />
-          {errors.email && <p className="text-sm text-brand">{errors.email}</p>}
-        </div>
-
-        <div className="grid gap-2">
-          <label htmlFor="name" className="text-sm font-medium text-foreground">
-            Navn
-          </label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            autoComplete="name"
-            required
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            aria-invalid={errors.name ? true : undefined}
-            className={inputClass}
-            placeholder="Ditt navn"
-          />
-          {errors.name && <p className="text-sm text-brand">{errors.name}</p>}
-        </div>
-
-        <div className="grid gap-2">
+      <div className="grid items-end gap-8 lg:grid-cols-[minmax(0,1fr)_auto]">
+        <div className="grid max-w-[640px] gap-2">
           <label htmlFor="notes" className="text-sm font-medium text-foreground">
             Noe vi bør vite?{" "}
             <span className="font-normal text-foreground/50">(valgfritt)</span>
@@ -198,28 +203,29 @@ export function FreeAnalysisForm() {
             rows={2}
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
-            className={`resize-none ${inputClass}`}
+            className="resize-none rounded-[var(--radius-xs)] border border-border bg-card px-4 py-3 text-foreground outline-none transition-colors placeholder:text-foreground/40 focus:border-brand"
             placeholder="F.eks. hvem dere vil nå, eller hva dere er mest usikre på"
           />
         </div>
 
-        {formError && (
-          <p className="text-sm text-brand" role="alert">
-            {formError}
-          </p>
-        )}
-
-        <div className="mt-1 grid gap-3">
+        <div className="grid justify-items-start gap-2.5">
           <button
             type="submit"
             disabled={pending}
-            className="inline-flex w-fit cursor-pointer items-center justify-center justify-self-start rounded-full bg-brand px-7 py-3.5 text-base font-normal text-[var(--white)] transition-colors hover:bg-[#DD2A2C] disabled:cursor-not-allowed disabled:opacity-60"
+            className="inline-flex h-[60px] cursor-pointer items-center justify-center gap-2.5 rounded-full bg-brand px-9 text-lg font-normal text-[var(--white)] transition-colors hover:bg-[#DD2A2C] disabled:cursor-not-allowed disabled:opacity-60"
           >
             {pending ? "Sender …" : "Send meg analysen"}
+            <ArrowRight className="size-[18px]" aria-hidden />
           </button>
-          <p className="text-sm text-foreground/60">
-            Ingen forpliktelser. Vi deler aldri e-posten din.
-          </p>
+          {formError ? (
+            <p className="text-sm text-brand" role="alert">
+              {formError}
+            </p>
+          ) : (
+            <p className="text-sm text-foreground/60">
+              Ingen forpliktelser. Vi deler aldri e-posten din.
+            </p>
+          )}
         </div>
       </div>
     </form>
