@@ -114,7 +114,7 @@ export function FreeAnalysisForm() {
     <form
       onSubmit={handleSubmit}
       noValidate
-      className="grid content-center gap-7 rounded-[var(--radius)] bg-ink p-7 text-ink-foreground sm:p-10 lg:px-12"
+      className="grid gap-8 rounded-[var(--radius)] bg-ink px-6 py-8 text-ink-foreground sm:p-10 lg:px-16 lg:py-14"
     >
       {/* Honeypot: hidden from users, catches bots. */}
       <input
@@ -132,7 +132,7 @@ export function FreeAnalysisForm() {
 
       {/* The form as a sentence. Labels are visually hidden; the sentence
           itself tells the reader what each blank is for. */}
-      <p className="font-heading text-[clamp(24px,2.3vw,32px)] font-light leading-[1.8] tracking-[-0.01em] text-ink-foreground">
+      <p className="font-heading text-[length:clamp(24px,3vw,42px)] font-light leading-[1.75] tracking-[-0.01em] text-ink-foreground">
         Hei, jeg heter{" "}
         <label htmlFor="name" className="sr-only">
           Navn
@@ -146,7 +146,7 @@ export function FreeAnalysisForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           aria-invalid={errors.name ? true : undefined}
-          className={`${blankClass} min-w-[160px] md:min-w-[200px]`}
+          className={`${blankClass} min-w-[160px] md:min-w-[260px]`}
           placeholder="ditt navn"
         />{" "}
         og vil ha en gratis analyse av{" "}
@@ -163,7 +163,7 @@ export function FreeAnalysisForm() {
           value={website}
           onChange={(e) => setWebsite(e.target.value)}
           aria-invalid={errors.website ? true : undefined}
-          className={`${blankClass} min-w-[220px] md:min-w-[280px]`}
+          className={`${blankClass} min-w-[220px] md:min-w-[360px]`}
           placeholder="www.dinbedrift.no"
         />
         <br />
@@ -180,7 +180,7 @@ export function FreeAnalysisForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           aria-invalid={errors.email ? true : undefined}
-          className={`${blankClass} min-w-[200px] md:min-w-[260px]`}
+          className={`${blankClass} min-w-[200px] md:min-w-[320px]`}
           placeholder="navn@epost.no"
         />
       </p>
