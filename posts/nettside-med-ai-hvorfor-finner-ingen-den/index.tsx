@@ -52,7 +52,9 @@ export const post: Post = {
         du ikke ba om den.
       </p>
 
-      <h2>Hva skjer når noen googler deg?</h2>
+      <PostImage src="/nettside-priser-laptop.webp" alt="Bærbar PC på et trebord ved siden av en hvit kontorstol" />
+
+      <h2>Hva skjer når noen googler dere?</h2>
       <p>
         Når en potensiell kunde søker etter «elektriker Hamar» eller «regnskapsfører for
         enkeltpersonforetak», ser Google etter sider den forstår, stoler på og kan vise
