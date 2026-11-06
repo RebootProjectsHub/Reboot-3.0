@@ -22,6 +22,20 @@ export default function OmOssPage() {
       <AboutHero />
       <AboutTeamBand />
       <AboutTeamGrid />
+      <section className="px-6 pb-12 text-center">
+        <p className="mx-auto max-w-[600px] text-pretty text-base leading-relaxed text-foreground/70">
+          Venner av huset:{" "}
+          <a
+            href="https://360review.io"
+            target="_blank"
+            rel="noopener"
+            className="font-medium text-brand underline-offset-4 hover:underline"
+          >
+            360review.io
+          </a>
+          , et verktøy for 360-graders tilbakemelding til ledere.
+        </p>
+      </section>
       <AboutCta />
       <SiteFooter />
     </main>
