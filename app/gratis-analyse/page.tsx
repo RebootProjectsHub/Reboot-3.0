@@ -30,7 +30,7 @@ const benefits = [
 
 const steps = [
   { title: "Fyll inn skjemaet.", text: "Det tar under ett minutt." },
-  { title: "Vi går gjennom nettsiden din manuelt.", text: "Ingen automatisk rapport." },
+  { title: "Vi analyserer nettsiden din med AI.", text: "En av oss går gjennom funnene før du får dem." },
   { title: "Du får analysen på e-post innen to virkedager.", text: "" },
 ]
 
@@ -210,11 +210,11 @@ export default function GratisAnalysePage() {
         </div>
       </section>
 
-      {/* Rapporten er din uansett + Hvem passer dette for, with a preview of the report */}
+      {/* Helt uforpliktende + Hvem passer dette for, with a preview of the report */}
       <section className="px-4 pb-24 pt-20 sm:px-6 lg:px-10 lg:pb-28 lg:pt-28">
         <div className="mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
-            <h2 className={h2}>Rapporten er din uansett</h2>
+            <h2 className={h2}>Helt uforpliktende</h2>
             <p className="mt-6 max-w-[520px] text-pretty text-[19px] leading-[1.6] text-foreground/80">
               Analysen er gratis fordi det er den enkleste måten å vise hva vi
               kan. Noen velger å la oss gjøre jobben etterpå. Andre tar rapporten
