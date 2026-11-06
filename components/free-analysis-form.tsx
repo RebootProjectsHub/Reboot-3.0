@@ -39,7 +39,6 @@ export function FreeAnalysisForm() {
   const [website, setWebsite] = useState("")
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
-  const [notes, setNotes] = useState("")
   const [utm, setUtm] = useState<Partial<Record<UtmKey, string>>>({})
   const [errors, setErrors] = useState<Errors>({})
   const [status, setStatus] = useState<"idle" | "submitting" | "error">("idle")
@@ -91,7 +90,6 @@ export function FreeAnalysisForm() {
           name: name.trim(),
           email: email.trim(),
           replyto: email.trim(),
-          message: notes.trim() || "(ingen)",
           ...utm,
         }),
       })
@@ -191,24 +189,7 @@ export function FreeAnalysisForm() {
         </ul>
       )}
 
-      <div className="grid items-end gap-8 lg:grid-cols-[minmax(0,1fr)_auto]">
-        <div className="grid max-w-[640px] gap-2">
-          <label htmlFor="notes" className="text-sm font-medium text-foreground">
-            Noe vi bør vite?{" "}
-            <span className="font-normal text-foreground/50">(valgfritt)</span>
-          </label>
-          <textarea
-            id="notes"
-            name="message"
-            rows={2}
-            value={notes}
-            onChange={(e) => setNotes(e.target.value)}
-            className="resize-none rounded-[var(--radius-xs)] border border-border bg-card px-4 py-3 text-foreground outline-none transition-colors placeholder:text-foreground/40 focus:border-brand"
-            placeholder="F.eks. hvem dere vil nå, eller hva dere er mest usikre på"
-          />
-        </div>
-
-        <div className="grid justify-items-start gap-2.5">
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
           <button
             type="submit"
             disabled={pending}
@@ -226,7 +207,6 @@ export function FreeAnalysisForm() {
               Ingen forpliktelser. Vi deler aldri e-posten din.
             </p>
           )}
-        </div>
       </div>
     </form>
   )

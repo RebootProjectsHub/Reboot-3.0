@@ -16,7 +16,7 @@ export const metadata = pageMetadata({
 const benefits = [
   {
     title: "Synlighet i AI-søk.",
-    text: "Dukker bedriften din opp når noen spør ChatGPT, Google AI eller Perplexity om det du selger?",
+    text: "Dukker bedriften din opp når noen spør ChatGPT, Google AI eller Copilot om det du selger?",
   },
   {
     title: "Teknisk helse.",
@@ -211,13 +211,13 @@ export default function GratisAnalysePage() {
         </div>
       </section>
 
-      {/* Hvorfor gratis + Hvem passer dette for, with a preview of the report */}
+      {/* Hva er haken + Hvem passer dette for, with a preview of the report */}
       <section className="px-4 pb-24 pt-20 sm:px-6 lg:px-10 lg:pb-28 lg:pt-28">
         <div className="mx-auto grid max-w-[1280px] items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
-            <h2 className={h2}>Hvorfor gratis?</h2>
+            <h2 className={h2}>Hva er haken?</h2>
             <p className="mt-6 max-w-[520px] text-pretty text-[19px] leading-[1.6] text-foreground/80">
-              Fordi det er den enkleste måten å vise hva vi kan. Noen velger å la
+              Ingen. Det er den enkleste måten å vise hva vi kan. Noen velger å la
               oss gjøre jobben etterpå. Andre tar rapporten og fikser det selv.
               Begge deler er helt greit, og vi maser ikke.
             </p>
@@ -257,7 +257,7 @@ export default function GratisAnalysePage() {
                 <div className="flex items-center justify-between gap-3">
                   <span className="text-[15px] font-medium">Synlighet i AI-søk</span>
                   <span className="rounded-full bg-background px-2.5 py-1 font-mono text-[11px] uppercase tracking-[0.1em]">
-                    ChatGPT · Google AI · Perplexity
+                    ChatGPT · Google AI · Copilot
                   </span>
                 </div>
                 <Skeleton className="w-[92%]" />
