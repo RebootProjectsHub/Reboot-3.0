@@ -32,7 +32,7 @@ const SUBMIT_ERROR =
 // The three required fields sit inside a sentence, so they are styled as
 // underlined blanks rather than boxed inputs.
 const blankClass =
-  "inline-block max-w-full border-0 border-b-2 border-ink-foreground/50 bg-transparent px-1.5 pb-0.5 align-baseline font-light italic text-brand outline-none transition-colors placeholder:italic placeholder:text-ink-foreground/35 focus:border-brand aria-invalid:border-brand"
+  "inline-block max-w-full border-0 border-b-2 border-ink-foreground/50 bg-transparent px-1.5 pb-0.5 align-baseline leading-[1.15] font-light italic text-brand outline-none transition-colors placeholder:italic placeholder:text-ink-foreground/35 focus:border-brand aria-invalid:border-brand"
 
 export function FreeAnalysisForm() {
   const router = useRouter()
