@@ -165,9 +165,8 @@ export function FreeAnalysisForm() {
           aria-invalid={errors.website ? true : undefined}
           className={`${blankClass} min-w-[220px] md:min-w-[360px]`}
           placeholder="www.dinbedrift.no"
-        />
-        <br />
-        Send rapporten til{" "}
+        />{" "}
+        send rapporten til{" "}
         <label htmlFor="email" className="sr-only">
           E-post
         </label>
