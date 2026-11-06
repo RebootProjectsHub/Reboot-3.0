@@ -18,6 +18,7 @@ const redirects = {
   "/trender/category/moderne-webdesign": "/trender",
   "/trender/category/kjopsreise": "/trender",
   "/trender/category/integrering-av-kunstig-intelligens": "/trender",
+  "/trender/nettside-med-ai-hvorfor-finner-ingen-den": "/trender/nettside-med-ai-eller-webbyra",
 }
 
 function stub(target) {

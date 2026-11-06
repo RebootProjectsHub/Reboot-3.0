@@ -2,12 +2,12 @@ import type { Post } from "@/posts/types"
 import { PostImage } from "@/components/post-image"
 import { PostCta } from "@/components/post-cta"
 
-const IMG = "/posts/nettside-med-ai-hvorfor-finner-ingen-den"
+const IMG = "/posts/nettside-med-ai-eller-webbyra"
 
 export const post: Post = {
-  slug: "nettside-med-ai-hvorfor-finner-ingen-den",
-  title: "Nettsiden er klar på en time. Hvorfor finner ingen den?",
-  metaTitle: "Nettsiden er klar på en time. Hvorfor finner ingen den?",
+  slug: "nettside-med-ai-eller-webbyra",
+  title: "Nettside med AI eller webbyrå?",
+  metaTitle: "Nettside med AI eller webbyrå? Slik blir du funnet",
   category: "SEO",
   date: "6. november 2026",
   dateISO: "2026-11-06",
@@ -18,11 +18,11 @@ export const post: Post = {
   content: (
     <>
       <p>
-        Nettsiden blir ikke funnet fordi AI-verktøyet som lagde den, aldri fikk i
-        oppgave å gjøre den synlig. Det bygde det du ba om: en forside, noen
-        tjenestesider og et kontaktskjema, og det gjorde det på en time. Å dukke opp
-        når noen googler eller spør ChatGPT, er et annet arbeid med andre spørsmål, og
-        det er det arbeidet denne artikkelen handler om. Vi går gjennom hva
+        AI kan lage nettsiden, men ikke gjøre den synlig, og det er der et webbyrå gir
+        mest verdi. Verktøyet bygger det du ber om: en forside, noen tjenestesider og
+        et kontaktskjema, gjerne på en time. Men det fikk aldri i oppgave å sørge for at
+        noen finner siden. Å dukke opp når noen googler eller spør ChatGPT, er et annet
+        arbeid med andre spørsmål, og det er det arbeidet denne artikkelen handler om. Vi går gjennom hva
         AI-verktøyene faktisk er gode til, hva som må være på plass for at kundene skal
         finne deg i Google og i AI-svar, og når det er fornuftig å bygge selv.
       </p>
