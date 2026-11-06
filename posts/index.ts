@@ -61,7 +61,7 @@ import { post as hvordan5gForandrer } from "@/posts/hvordan-5g-forandrer-det-nor
 import { post as draNytteAvBigData } from "@/posts/dra-nytte-av-big-data-for-a-drive-vekst"
 import { post as shopifyVsWoocommerce2024 } from "@/posts/shopify-vs-woocommerce-i-2024"
 import { post as digitaliseringDetaljhandelen } from "@/posts/digitalisering-av-detaljhandelen-i-norge"
-import { post as fjernarbeidetsFremtid } from "@/posts/fjernarbeidets-fremtid-hvordan-teknologi-pavirker-norske-arbeidsplasser"
+import { post as hybridarbeidTips } from "@/posts/hybridarbeid-tips-for-norske-bedrifter"
 import { post as digitalModerniseringKommuner } from "@/posts/digital-modernisering-i-norske-kommuner-hvordan-teknologi-fornyer-offentlige-tjenester"
 import { post as trenderIWebdesign2024 } from "@/posts/trender-i-webdesign-for-2024-hva-du-kan-forvente-og-hvordan-forberede-deg"
 import { post as baerekraftIDigitaltDesign } from "@/posts/baerekraft-i-digitalt-design-hvordan-gronn-it-og-miljovennlig-webdesign-pavirker-merkevaren-din"
@@ -152,7 +152,7 @@ const allPosts: Post[] = [
   draNytteAvBigData,
   shopifyVsWoocommerce2024,
   digitaliseringDetaljhandelen,
-  fjernarbeidetsFremtid,
+  hybridarbeidTips,
   digitalModerniseringKommuner,
   trenderIWebdesign2024,
   baerekraftIDigitaltDesign,
