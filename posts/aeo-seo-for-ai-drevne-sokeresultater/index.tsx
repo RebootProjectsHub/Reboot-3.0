@@ -187,7 +187,7 @@ export const post: Post = {
         title="Bli anbefalt når kundene spør AI"
         text="Se hva som inngår i Light, Medium og Komplett, eller start med en gratis synlighetsanalyse av bedriften din."
         primary={{ href: "/tjenester/seo-og-ai-svar#priser", label: "Se pakker og priser" }}
-        secondary={{ href: "/kontakt", label: "Få gratis analyse" }}
+        secondary={{ href: "/gratis-analyse/", label: "Få gratis analyse" }}
       />
     </>
   ),
