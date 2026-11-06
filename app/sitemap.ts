@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/referanser/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/om-oss/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/kontakt/`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE}/gratis-analyse/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/trender/`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
   ]
 

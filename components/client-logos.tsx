@@ -103,3 +103,18 @@ export function ClientLogosDesktop() {
     </div>
   )
 }
+
+/** Plain in-flow row for landing pages: all logos centred, wrapping on small screens. */
+export function ClientLogosRow() {
+  return (
+    <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 md:gap-x-10 xl:gap-x-12">
+      {clients.map((client) => (
+        <ClientLogo
+          key={client.name}
+          client={client}
+          sizeClassName={client.name === "NAF" ? "h-8" : "h-5 max-w-[130px] md:h-6 md:max-w-none"}
+        />
+      ))}
+    </div>
+  )
+}
