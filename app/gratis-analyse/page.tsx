@@ -71,8 +71,9 @@ export default function GratisAnalysePage() {
         <div className="mx-auto grid max-w-[1280px] gap-10">
           <div className="flex flex-col items-center gap-5 text-center">
             <span className={`inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-2 ${eyebrow} text-foreground`}>
+              ChatGPT
               <span className="size-2 rounded-full bg-brand" aria-hidden />
-              ChatGPT · Google
+              Google
             </span>
             <h1 className="text-balance font-heading text-[clamp(40px,4.8vw,60px)] font-normal leading-none tracking-[-0.02em] text-foreground">
               Gratis analyse av nettsiden din
