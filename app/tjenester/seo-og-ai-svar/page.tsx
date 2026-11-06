@@ -395,9 +395,9 @@ export default function SeoOgAiSvarPage() {
               «Vi dukker opp der vi skal nå og flere nye kunder har sagt at de fant oss via ChatGPT.»
             </blockquote>
             <p className="mt-6 font-medium text-foreground">
-              Christina Håland
+              Arild Ramberg
             </p>
-            <p className="mt-0.5 text-[14.5px] text-foreground/60">Ved På Døra</p>
+            <p className="mt-0.5 text-[14.5px] text-foreground/60">Ability Media</p>
             <div className="mt-6">
               <Link
                 href="/referanser"
