@@ -39,7 +39,7 @@ export function Hero() {
         </h1>
 
         <p className="mb-[34px] max-w-[660px] text-pretty text-[19px] leading-[1.55] text-foreground/70">
-          Moderne nettsider med fokus på synlighet på Google og i AI-svar.
+          Moderne nettsider med fokus på synlighet på Google og AI-svar.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-[26px]">
