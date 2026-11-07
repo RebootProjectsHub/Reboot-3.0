@@ -124,7 +124,7 @@ export function SiteHeader() {
                             Våre tjenester
                           </p>
                           <p className="max-w-[250px] text-[15px] leading-[1.5] text-muted-foreground">
-                            Nettside, synlighet i Google og i AI-svar, alt fra ett team.
+                            Nettside, synlighet i Google og AI-svar, alt fra ett team.
                           </p>
                         </div>
                         <a
