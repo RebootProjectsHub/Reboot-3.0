@@ -1,7 +1,7 @@
 import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata, Viewport } from 'next'
 import { Space_Mono } from 'next/font/google'
-import { OpenAiPixelPageViews } from '@/components/openai-pixel'
+import { OpenAiMailtoLeads, OpenAiPixelPageViews } from '@/components/openai-pixel'
 import './globals.css'
 
 const GA_ID = 'G-MXHZHBQVMB'
@@ -110,6 +110,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         {process.env.NODE_ENV === 'production' && <OpenAiPixelPageViews />}
+        {process.env.NODE_ENV === 'production' && <OpenAiMailtoLeads />}
         {children}
       </body>
       {process.env.NODE_ENV === 'production' && <GoogleAnalytics gaId={GA_ID} />}

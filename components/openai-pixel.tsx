@@ -125,3 +125,24 @@ export function OpenAiPixelPageViews() {
 
   return null
 }
+
+/**
+ * Pages written for ChatGPT-driven buyers end with a mailto link rather than a
+ * form, because the request usually arrives as an email drafted by ChatGPT.
+ * Count a click on the dedicated drift@ address as a lead so the ads dashboard
+ * is not blind to that path. Delegated on document, so it also covers links
+ * inside dangerouslySetInnerHTML content.
+ */
+export function OpenAiMailtoLeads() {
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const target = e.target as Element | null
+      const link = target?.closest?.('a[href^="mailto:drift@reboot.no"]')
+      if (link) measureOpenAiPixelEvent("lead_created", { event_id: newEventId() })
+    }
+    document.addEventListener("click", onClick)
+    return () => document.removeEventListener("click", onClick)
+  }, [])
+
+  return null
+}
