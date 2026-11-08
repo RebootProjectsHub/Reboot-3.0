@@ -21,13 +21,21 @@ const solidVariants = [
   },
 ]
 
-const months = [
-  "Januar", "Februar", "Mars", "April", "Mai", "Juni",
-  "Juli", "August", "September", "Oktober", "November", "Desember",
-]
+const months = ["jan", "feb", "mar", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "des"]
 
-function monthOf(dateISO: string) {
-  return months[Number(dateISO.slice(5, 7)) - 1]
+function parts(dateISO: string) {
+  const [y, m, d] = dateISO.split("-").map(Number)
+  return { y, m, d }
+}
+
+function timelineDate(dateISO: string) {
+  const { m, d } = parts(dateISO)
+  return `${d}. ${months[m - 1]}`
+}
+
+function shortDate(dateISO: string) {
+  const { y, m, d } = parts(dateISO)
+  return `${d}.${m}.${String(y).slice(2)}`
 }
 
 export function Articles() {
@@ -57,7 +65,7 @@ export function Articles() {
                 key={post.slug}
                 className={`font-mono text-xs font-semibold uppercase tracking-[0.14em] ${i === 0 ? "text-brand" : "text-foreground/60"}`}
               >
-                {monthOf(post.dateISO)}
+                {timelineDate(post.dateISO)}
                 {i === 0 && " · Nyeste artikkel"}
               </span>
             ))}
@@ -94,7 +102,7 @@ export function Articles() {
                     {featured.category}
                   </span>
                   <time dateTime={featured.dateISO} className="font-mono text-[11px] text-foreground/50">
-                    {featured.date}
+                    {shortDate(featured.dateISO)}
                   </time>
                 </div>
                 <h3 className="mt-3 font-heading text-lg font-normal leading-snug text-foreground">
@@ -119,7 +127,7 @@ export function Articles() {
                     {post.category}
                   </span>
                   <time dateTime={post.dateISO} className={`font-mono text-[11px] ${variant.kicker}`}>
-                    {post.date}
+                    {shortDate(post.dateISO)}
                   </time>
                 </div>
                 <h3 className="mt-10 font-heading text-2xl font-normal leading-snug">
