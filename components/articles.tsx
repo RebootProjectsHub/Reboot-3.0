@@ -21,8 +21,18 @@ const solidVariants = [
   },
 ]
 
+const months = [
+  "Januar", "Februar", "Mars", "April", "Mai", "Juni",
+  "Juli", "August", "September", "Oktober", "November", "Desember",
+]
+
+function monthOf(dateISO: string) {
+  return months[Number(dateISO.slice(5, 7)) - 1]
+}
+
 export function Articles() {
-  const [featured, ...rest] = posts.slice(0, 4)
+  const latest = posts.slice(0, 4)
+  const [featured, ...rest] = latest
 
   return (
     <section id="aktuelt" className="px-4 py-12 sm:px-6 lg:px-10 lg:py-16">
@@ -40,7 +50,30 @@ export function Articles() {
           </a>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 hidden lg:block" aria-hidden="true">
+          <div className="grid grid-cols-4 gap-5">
+            {latest.map((post, i) => (
+              <span
+                key={post.slug}
+                className={`font-mono text-xs font-semibold uppercase tracking-[0.14em] ${i === 0 ? "text-brand" : "text-foreground/60"}`}
+              >
+                {monthOf(post.dateISO)}
+                {i === 0 && " · Nyeste artikkel"}
+              </span>
+            ))}
+          </div>
+          <div className="relative mt-3 grid grid-cols-4 items-center gap-5">
+            <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-foreground/20" />
+            {latest.map((post, i) => (
+              <span
+                key={post.slug}
+                className={`relative block rounded-full ${i === 0 ? "size-3 bg-brand" : "size-2.5 border border-foreground bg-background"}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:mt-5 lg:grid-cols-4">
           {featured && (
             <Link
               href={`/trender/${featured.slug}`}
