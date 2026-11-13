@@ -104,11 +104,4 @@ export const qaImages: Record<string, QaImage> = {
     "bloudekp",
     "wHYmI9rFF2c",
   ),
-  "bytte-fra-coretrek": unsplash(
-    "bytte-fra-coretrek",
-    "Kvinne i lyseblå kåpe sitter på en trebenk og ser på mobilen, med folk og kontorbygg i bakgrunnen",
-    "VENUS MAJOR",
-    "venusmajor",
-    "43ckScnMrtQ",
-  ),
 }

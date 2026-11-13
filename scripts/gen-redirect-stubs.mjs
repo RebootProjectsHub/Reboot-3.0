@@ -19,6 +19,7 @@ const redirects = {
   "/trender/category/kjopsreise": "/trender",
   "/trender/category/integrering-av-kunstig-intelligens": "/trender",
   "/trender/nettside-med-ai-hvorfor-finner-ingen-den": "/trender/nettside-med-ai-eller-webbyra",
+  "/sporsmal/bytte-fra-coretrek": "/sporsmal",
 }
 
 function stub(target) {

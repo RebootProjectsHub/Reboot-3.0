@@ -12,7 +12,6 @@ import { page as synligIChatgpt } from "@/sporsmal/synlig-i-chatgpt-og-ai-sok"
 import { page as trengerJegSeo } from "@/sporsmal/trenger-jeg-seo-liten-bedrift"
 import { page as hjelpChatgptOslo } from "@/sporsmal/hjelp-til-synlighet-i-chatgpt-oslo"
 import { page as bytteWebbyra } from "@/sporsmal/bytte-webbyra"
-import { page as bytteFraCoretrek } from "@/sporsmal/bytte-fra-coretrek"
 
 const content: QaPageContent[] = [
   trengerJegDriftsavtale,
@@ -27,7 +26,6 @@ const content: QaPageContent[] = [
   trengerJegSeo,
   hjelpChatgptOslo,
   bytteWebbyra,
-  bytteFraCoretrek,
 ]
 
 export const qaPages: QaPage[] = content.map((page) => {
