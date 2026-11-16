@@ -20,8 +20,9 @@ export const references: Reference[] = [
   },
   {
     name: "Akademikerne Pluss",
-    url: "https://akademikernepluss.no/",
-    image: "/referanser/akademikerne-pluss.webp",
+    caseSlug: "akademikerne-pluss",
+    image: "/ny-nettside/akademikerne-pluss/hero.webp",
+    fill: true,
   },
   {
     name: "Runner's World",
