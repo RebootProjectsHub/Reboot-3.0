@@ -15,6 +15,7 @@ export const references: Reference[] = [
     name: "Höegh Evi",
     caseSlug: "hoegh-evi",
     video: "/referanser/hoegh-evi.mp4",
+    fill: true,
   },
   {
     name: "Akademikerne Pluss",
@@ -29,7 +30,8 @@ export const references: Reference[] = [
   {
     name: "Ved På Døra",
     caseSlug: "ved-pa-dora",
-    image: "/referanser/ved-pa-dora.webp",
+    image: "/referanser/ved-pa-dora.avif",
+    fill: true,
   },
   {
     name: "Oslo City Legesenter",
@@ -67,6 +69,7 @@ export const references: Reference[] = [
     name: "Ability Media",
     caseSlug: "ability-media",
     image: "/referanser/ability-media.webp",
+    fill: true,
   },
   {
     name: "Insignis",
@@ -77,6 +80,7 @@ export const references: Reference[] = [
     name: "Messecup",
     caseSlug: "messecup",
     image: "/referanser/messecup.webp",
+    fill: true,
   },
   {
     name: "OG Smil",
@@ -92,6 +96,7 @@ export const references: Reference[] = [
     name: "Fjellveterinæren",
     caseSlug: "fjellveterinaeren",
     image: "/referanser/fjellveterinaeren.webp",
+    fill: true,
   },
   {
     name: "Økern Bilpleie",

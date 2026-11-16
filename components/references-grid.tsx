@@ -15,6 +15,10 @@ function displayDomain(url?: string) {
  * Card media: the site screenshot (or scroll video) inside a browser window
  * drawn in CSS. The window stands on a tinted stage and runs flush into the
  * card footer. Screenshots in public/referanser are plain 5:3 captures.
+ *
+ * With `fill`, a photo or promo video covers the whole media area instead.
+ * The browser window is still laid out (invisible) so the card keeps exactly
+ * the same height as its framed neighbours and the footers line up.
  */
 function CardMedia({
   image,
@@ -22,16 +26,39 @@ function CardMedia({
   poster,
   name,
   domain,
+  fill = false,
 }: {
   image?: string
   video?: string
   poster?: string
   name: string
   domain?: string
+  fill?: boolean
 }) {
+  const position = fill ? "object-center" : "object-top"
+  const mediaClass = `size-full object-cover ${position} transition-transform duration-500 group-hover:scale-[1.04]`
+
+  const media =
+    video && poster ? (
+      <ScrollVideo src={video} poster={poster} className={mediaClass} />
+    ) : video ? (
+      <video src={video} autoPlay loop muted playsInline className={mediaClass} />
+    ) : (
+      <Image
+        src={image ?? "/placeholder.jpg"}
+        alt={fill ? "" : `Nettsiden til ${name}`}
+        fill
+        className={mediaClass}
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+      />
+    )
+
   return (
-    <div className="bg-[#e3d2bf] px-5 pt-5 sm:px-7 sm:pt-7">
-      <div className="overflow-hidden rounded-t-[12px] bg-ink">
+    <div className="relative bg-[#e3d2bf] px-5 pt-5 sm:px-7 sm:pt-7">
+      <div
+        aria-hidden={fill || undefined}
+        className={`overflow-hidden rounded-t-[12px] bg-ink ${fill ? "invisible" : ""}`}
+      >
         <div className="flex h-7 items-center gap-2.5 px-3">
           <span aria-hidden className="flex shrink-0 gap-[5px]">
             <span className="size-[7px] rounded-full bg-ink-foreground/35" />
@@ -44,33 +71,9 @@ function CardMedia({
             </span>
           )}
         </div>
-        <div className="relative aspect-[5/3] overflow-hidden">
-          {video && poster ? (
-            <ScrollVideo
-              src={video}
-              poster={poster}
-              className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
-            />
-          ) : video ? (
-            <video
-              src={video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
-            />
-          ) : (
-            <Image
-              src={image ?? "/placeholder.jpg"}
-              alt={`Nettsiden til ${name}`}
-              fill
-              className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            />
-          )}
-        </div>
+        <div className="relative aspect-[5/3] overflow-hidden">{!fill && media}</div>
       </div>
+      {fill && <div className="absolute inset-0 overflow-hidden">{media}</div>}
     </div>
   )
 }
@@ -131,6 +134,7 @@ export function ReferencesGrid() {
                 poster={ref.poster}
                 name={ref.name}
                 domain={ref.urlLabel ?? displayDomain(getCase(ref.caseSlug!)?.url)}
+                fill={ref.fill}
               />
               <CardFooter name={ref.name} external={false} label="Se kundecase" />
             </Link>
@@ -169,6 +173,7 @@ export function ReferencesMoreProjects() {
                   poster={ref.poster}
                   name={ref.name}
                   domain={domain}
+                  fill={ref.fill}
                 />
                 <CardFooter name={ref.name} external label={domain} />
               </a>

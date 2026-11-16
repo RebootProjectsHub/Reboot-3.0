@@ -42,4 +42,7 @@ export type Reference = {
   /** First frame of a scrolling site capture. When set, the video is fully
    *  downloaded before it plays once (no loop) and then rewinds to this frame. */
   poster?: string
+  /** Show the media edge to edge in the card instead of as a screenshot
+   *  inside the browser window. For photos and promo videos. */
+  fill?: boolean
 }
