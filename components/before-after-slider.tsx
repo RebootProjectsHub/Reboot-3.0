@@ -19,7 +19,7 @@ export function BeforeAfterSlider({
   const [position, setPosition] = useState(defaultPosition)
 
   return (
-    <div className="relative my-8 aspect-[1966/1390] w-full overflow-hidden rounded-[26px] border border-border select-none">
+    <div className="relative my-8 aspect-[8/5] w-full overflow-hidden rounded-[26px] border border-border select-none">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={after}
