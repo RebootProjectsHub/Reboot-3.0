@@ -19,17 +19,17 @@ export const references: Reference[] = [
   {
     name: "Akademikerne Pluss",
     url: "https://akademikernepluss.no/",
-    image: "/referanser/getty-images-OVHhgc0Y8nU-unsplash-scaled.jpg",
+    image: "/referanser/akademikerne-pluss.webp",
   },
   {
     name: "Runner's World",
     caseSlug: "runners-world",
-    image: "/ny-nettside/runners-world/skjerm-2.webp",
+    image: "/referanser/runners-world.webp",
   },
   {
     name: "Ved På Døra",
     caseSlug: "ved-pa-dora",
-    image: "/referanser/ved-pa-dora.avif",
+    image: "/referanser/ved-pa-dora.webp",
   },
   {
     name: "Oslo City Legesenter",
@@ -39,12 +39,12 @@ export const references: Reference[] = [
   {
     name: "Mad Goats",
     caseSlug: "mad-goats",
-    image: "/ny-nettside/mad-goats/skjerm-2.webp",
+    image: "/referanser/mad-goats.webp",
   },
   {
     name: "Ditt Apotek",
     caseSlug: "ditt-apotek-opera",
-    image: "/ny-nettside/ditt-apotek-opera/skjerm-1.webp",
+    image: "/referanser/ditt-apotek.webp",
   },
   {
     name: "Studio Pietra",
@@ -61,7 +61,7 @@ export const references: Reference[] = [
   {
     name: "FAM",
     url: "https://fam.no/",
-    image: "/referanser/fam.png",
+    image: "/referanser/fam.webp",
   },
   {
     name: "Ability Media",
@@ -76,7 +76,7 @@ export const references: Reference[] = [
   {
     name: "Messecup",
     caseSlug: "messecup",
-    image: "/ny-nettside/messecup/skjerm-1.webp",
+    image: "/referanser/messecup.webp",
   },
   {
     name: "OG Smil",
@@ -116,7 +116,7 @@ export const references: Reference[] = [
   {
     name: "CK Bygg Nor",
     url: "https://byggsoker.no/",
-    image: "/referanser/Reboot-CKBN.png",
+    image: "/referanser/ck-bygg-nor.webp",
   },
   {
     name: "Tekpartner",
@@ -126,22 +126,22 @@ export const references: Reference[] = [
   {
     name: "SNU",
     url: "https://snuorg.no/",
-    image: "/referanser/SNU-Reboot.webp",
+    image: "/referanser/snu.webp",
   },
   {
     name: "Bekkestua Kjøkkenstudio",
     url: "https://www.bekkestuaks.no/",
-    image: "/referanser/Reboot-BKS.webp",
+    image: "/referanser/bekkestua.webp",
   },
   {
     name: "Certnor",
     url: "https://certnor.no/",
-    image: "/referanser/Certnor-Reboot.webp",
+    image: "/referanser/certnor.webp",
   },
   {
     name: "NAF",
     url: "https://jobb.naf.no/",
-    image: "/referanser/NAF-ledige-stillinger.webp",
+    image: "/referanser/naf.webp",
   },
   {
     name: "Kaffehuset",

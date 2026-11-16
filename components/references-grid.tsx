@@ -2,45 +2,75 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { references } from "@/cases/references"
+import { getCase } from "@/cases"
 import { ScrollVideo } from "@/components/scroll-video"
 
+/** "https://www.example.no/path" -> "example.no". Keeps æøå as written,
+ *  which `new URL().hostname` would turn into punycode. */
+function displayDomain(url?: string) {
+  return url?.replace(/^https?:\/\/(www\.)?/, "").replace(/\/.*$/, "")
+}
+
+/**
+ * Card media: the site screenshot (or scroll video) inside a browser window
+ * drawn in CSS. The window stands on a tinted stage and runs flush into the
+ * card footer. Screenshots in public/referanser are plain 5:3 captures.
+ */
 function CardMedia({
   image,
   video,
   poster,
   name,
+  domain,
 }: {
   image?: string
   video?: string
   poster?: string
   name: string
+  domain?: string
 }) {
   return (
-    <div className="relative aspect-[4/3] overflow-hidden">
-      {video && poster ? (
-        <ScrollVideo
-          src={video}
-          poster={poster}
-          className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
-        />
-      ) : video ? (
-        <video
-          src={video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
-        />
-      ) : (
-        <Image
-          src={image ?? "/placeholder.jpg"}
-          alt={`Nettsiden til ${name}`}
-          fill
-          className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
-          sizes="(max-width: 1024px) 50vw, 33vw"
-        />
-      )}
+    <div className="bg-[#e3d2bf] px-5 pt-5 sm:px-7 sm:pt-7">
+      <div className="overflow-hidden rounded-t-[12px] bg-ink">
+        <div className="flex h-7 items-center gap-2.5 px-3">
+          <span aria-hidden className="flex shrink-0 gap-[5px]">
+            <span className="size-[7px] rounded-full bg-ink-foreground/35" />
+            <span className="size-[7px] rounded-full bg-ink-foreground/35" />
+            <span className="size-[7px] rounded-full bg-ink-foreground/35" />
+          </span>
+          {domain && (
+            <span className="truncate font-mono text-[10px] tracking-[0.06em] text-ink-foreground/85">
+              {domain}
+            </span>
+          )}
+        </div>
+        <div className="relative aspect-[5/3] overflow-hidden">
+          {video && poster ? (
+            <ScrollVideo
+              src={video}
+              poster={poster}
+              className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+            />
+          ) : video ? (
+            <video
+              src={video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+            />
+          ) : (
+            <Image
+              src={image ?? "/placeholder.jpg"}
+              alt={`Nettsiden til ${name}`}
+              fill
+              className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          )}
+        </div>
+      </div>
     </div>
   )
 }
@@ -95,7 +125,13 @@ export function ReferencesGrid() {
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {withCase.map((ref) => (
             <Link key={ref.name} href={`/ny-nettside/${ref.caseSlug}`} className={cardClass}>
-              <CardMedia image={ref.image} video={ref.video} poster={ref.poster} name={ref.name} />
+              <CardMedia
+                image={ref.image}
+                video={ref.video}
+                poster={ref.poster}
+                name={ref.name}
+                domain={ref.urlLabel ?? displayDomain(getCase(ref.caseSlug!)?.url)}
+              />
               <CardFooter name={ref.name} external={false} label="Se kundecase" />
             </Link>
           ))}
@@ -127,7 +163,13 @@ export function ReferencesMoreProjects() {
                 rel="noopener noreferrer"
                 className={cardClass}
               >
-                <CardMedia image={ref.image} video={ref.video} poster={ref.poster} name={ref.name} />
+                <CardMedia
+                  image={ref.image}
+                  video={ref.video}
+                  poster={ref.poster}
+                  name={ref.name}
+                  domain={domain}
+                />
                 <CardFooter name={ref.name} external label={domain} />
               </a>
             )
