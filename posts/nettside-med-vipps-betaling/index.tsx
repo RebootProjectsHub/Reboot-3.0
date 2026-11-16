@@ -1,5 +1,4 @@
 import type { Post } from "@/posts/types"
-import { PostImage } from "@/components/post-image"
 
 const IMG = "/posts/nettside-med-vipps-betaling"
 
@@ -73,7 +72,6 @@ export const post: Post = {
         av siden. Brukeren skal aldri føle at de blir sendt videre til noe helt annet.
         Derfor legger vi vekt på både visuell integrasjon og teknisk stabilitet.
       </p>
-      <PostImage src={`${IMG}/1.webp`} alt="Vipps-betaling integrert i nettbutikk" />
 
       <h2>Er det dyrt?</h2>
       <p>
