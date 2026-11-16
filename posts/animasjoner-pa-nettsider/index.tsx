@@ -45,7 +45,7 @@ export const post: Post = {
 <p>Det viktigste er at animasjonen følger identiteten til siden. En seriøs tjeneste bør ha en annen rytme enn en mer leken kampanje. Når uttrykket stemmer overens med forventningene, oppleves siden som troverdig. Når det ikke gjør det, kan selv teknisk imponerende effekter virke forstyrrende.</p>
 <h2>Gode valg som varer</h2>
 <p>For at animasjon skal fungere over tid, må den være forankret i tydelige prinsipper. Det holder ikke at noe ser bra ut i en demo. Det må også fungere i bruk, på ulike enheter og i ulike situasjoner.</p>
-<figure><img src="/posts/animasjoner-pa-nettsider/4.webp" alt="Animasjoner på nettsider" loading="lazy" /></figure>
+<figure><img src="/posts/animasjoner-pa-nettsider/4.webp" alt="Skrivebord med stasjonær PC, bærbar PC, nettbrett og mobil" loading="lazy" /></figure>
 <h3>Når hensikt styrer bevegelsen</h3>
 <p>Hver animasjon bør kunne forklares. Hva hjelper den brukeren med, og hvordan forbedrer den opplevelsen. Hvis dette ikke er tydelig, er det ofte et tegn på at effekten kan fjernes. Samtidig bør bevegelsen være kort og naturlig. Lange sekvenser forsinker handling, mens små justeringer gir flyt uten å stjele oppmerksomhet.</p>
 <p>Bevegelse fungerer også best når den gir tilbakemelding. Når noe skjer på skjermen, bør det være synlig hvorfor det skjer. Dette skaper trygghet og gjør systemet mer forståelig. Samtidig må ytelsen være stabil. Selv små forsinkelser kan bryte flyten og redusere tilliten til løsningen. Derfor bør tekniske valg støtte raske og jevne overganger.</p>

@@ -44,7 +44,7 @@ export const references: Reference[] = [
   {
     name: "Ditt Apotek",
     caseSlug: "ditt-apotek-opera",
-    image: "/referanser/ditt-apotek.webp",
+    image: "/ny-nettside/ditt-apotek-opera/skjerm-1.webp",
   },
   {
     name: "Studio Pietra",
