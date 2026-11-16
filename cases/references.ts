@@ -38,7 +38,8 @@ export const references: Reference[] = [
   {
     name: "Oslo City Legesenter",
     caseSlug: "oslo-city-legesenter",
-    image: "/referanser/oslo-city-legesenter.webp",
+    image: "/ny-nettside/oslo-city-legesenter/banner.webp",
+    fill: true,
   },
   {
     name: "Mad Goats",
@@ -49,7 +50,8 @@ export const references: Reference[] = [
   {
     name: "Ditt Apotek",
     caseSlug: "ditt-apotek-opera",
-    image: "/referanser/ditt-apotek.webp",
+    image: "/ny-nettside/ditt-apotek-opera/hero.webp",
+    fill: true,
   },
   {
     name: "Studio Pietra",
