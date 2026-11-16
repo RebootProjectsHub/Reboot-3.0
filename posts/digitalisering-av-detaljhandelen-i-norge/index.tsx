@@ -8,7 +8,7 @@ export const post: Post = {
   dateISO: "2023-12-26",
   excerpt: "Norsk detaljhandel er midt i en digital omstilling. Det holder ikke lenger med en nettbutikk – digital og fysisk handel må spille sammen.",
   image: "/posts/digitalisering-av-detaljhandelen-i-norge/featured.webp",
-  imageAlt: "Digitalisering av detaljhandelen i Norge",
+  imageAlt: "Butikkfasade med skiltet Joh. Jørg. Backe og sykler parkert utenfor",
   contentHtml: `<p>Den norske detaljhandelens landskap er i en spennende fase av digital utvikling. Som teknologer og strateger, ser vi denne overgangen som en nødvendighet for å møte dagens forbrukers forventninger. Det er ikke lenger nok å ha en nettbutikk; det handler om å integrere digital og fysisk handel for å skape en sømløs kundeopplevelse.</p>
 <h2>Skreddersy kjøpsopplevelsen</h2>
 <p>E-handelens vekst i Norge har akselerert, og med det følger en rekke muligheter for personalisering og kundeinnsikt. Gjennom avanserte dataanalyseverktøy kan detaljhandlere nå forstå kundenes kjøpsatferd på et dyptgående nivå. Dette muliggjør skreddersydd markedsføring og en mer personlig shoppingopplevelse – både online og i butikk.</p>

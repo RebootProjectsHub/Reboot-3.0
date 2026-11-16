@@ -9,7 +9,7 @@ export const post: Post = {
   dateISO: "2023-11-23",
   excerpt: "Hva er egentlig forskjellen på UX og UI? Vi forklarer hvordan brukeropplevelse og brukergrensesnitt henger sammen, og hvorfor begge betyr noe.",
   image: "/posts/brukeropplevelse-ux-vs-brukergrensesnitt-ui-forsta-forskjellene/featured.webp",
-  imageAlt: "Brukeropplevelse (UX) vs. Brukergrensesnitt (UI): Hva skiller dem?",
+  imageAlt: "Hender som jobber med skisser av app-skjermer og fargeprøver på et bord",
   contentHtml: `<h2>Brukeropplevelse (UX) vs. Brukergrensesnitt (UI): Hva skiller dem?</h2>
 <p>Når man navigerer i den digitale verden, høres ofte begrepene brukeropplevelse (UX) vs brukergrensesnitt (UI). Men hva betyr de egentlig, og hvorfor er de viktige for din bedrift?</p>
 <p>Brukeropplevelse, eller UX, handler om hvordan en bruker føler når de samhandler med et system. Det kan være en nettside, en mobilapp eller et annet interaktivt system. Målet med UX er å skape en enkel, effektiv og behagelig opplevelse for brukeren. Derfor er forståelse av brukerens behov, ønsker og vaner kritisk. Hos Næringsforeningen kan du se hvorfor <a href="https://www.nikr.no/derfor-bor-du-bry-deg-om-ux" target="_blank" rel="noopener noreferrer">UX er så viktig</a>.</p>

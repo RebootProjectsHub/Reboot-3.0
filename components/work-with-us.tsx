@@ -8,8 +8,8 @@ export function WorkWithUs() {
         <div className="relative">
                 <div className="overflow-hidden rounded-[var(--radius)] border border-border">
             <Image
-              src="/Felles5.webp"
-              alt="Lyst kontorbygg med trapp og sittegrupper"
+              src="/posts/hvordan-bruke-ki-i-webdesign/2.webp"
+              alt="Lyst kontorlandskap med trebjelker i taket og sittegrupper"
               width={1200}
               height={900}
               className="aspect-[4/3] size-full object-cover"

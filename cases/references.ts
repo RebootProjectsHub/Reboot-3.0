@@ -24,7 +24,7 @@ export const references: Reference[] = [
   {
     name: "Runner's World",
     caseSlug: "runners-world",
-    image: "/referanser/runners-world.webp",
+    image: "/ny-nettside/runners-world/skjerm-2.webp",
   },
   {
     name: "Ved På Døra",

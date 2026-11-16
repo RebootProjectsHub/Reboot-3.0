@@ -8,7 +8,7 @@ export const post: Post = {
   dateISO: "2025-09-26",
   excerpt: "Har du lurt på hvordan NRK TV treffer med neste programforslag, eller hvordan BankID kjenner igjen ansiktet ditt på to sekunder.",
   image: "/posts/hvordan-ki-egentlig-virker/featured.webp",
-  imageAlt: "Hvordan KI egentlig virker",
+  imageAlt: "Abstrakt nettverk av lysende punkter og linjer på mørk bakgrunn",
   contentHtml: `<p>Har du lurt på hvordan NRK TV treffer med neste programforslag, eller hvordan BankID kjenner igjen ansiktet ditt på to sekunder. Det er ikke magi, det er maskinlæring i arbeid. Kunstig intelligens er i ferd med å bli en usynlig infrastruktur i hverdagen, fra kundeservice hos offentlige etater til logistikken hos Posten. Likevel oppleves den ofte som en svart boks. Nettopp derfor er det nyttig å forstå hva som skjer bak kulissene, og hvordan data, algoritmer og trening får maskiner til å lære.</p>
 <h2>Hva er kunstig intelligens</h2>
 <p>I sin kjerne handler kunstig intelligens om å få maskiner til å etterligne menneskelig problemløsning. Maskinlæring er metoden som gjør dette mulig i praksis. I stedet for at utviklere skriver alle regler på forhånd, lar vi systemet se mange eksempler og trekke ut mønstre selv. Dermed kan det ta beslutninger med høy fart og lav feilrate, som å flagge mistenkelige transaksjoner i en norsk bank eller sortere henvendelser i helsevesenet etter hastegrad. Kunstig intelligens og maskinlæring henger tett sammen, men de er ikke det samme. AI er ambisjonen om smarte systemer, mens maskinlæring er verktøykassen som lar dem bli bedre med erfaring.</p>

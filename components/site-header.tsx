@@ -33,7 +33,7 @@ const navLinks: NavLink[] = [
         label: "AI-rådgivning",
         href: "/tjenester/ai-radgivning",
         image: "/meny/ai-radgivning.webp",
-        alt: "Kontorlokale med glassvegger og trapp",
+        alt: "Lyst kontorlandskap med trebjelker i taket",
       },
     ],
   },
