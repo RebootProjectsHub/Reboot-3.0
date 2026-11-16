@@ -9,7 +9,6 @@ import { caseStudy as messecup } from "@/cases/messecup"
 import { caseStudy as madGoats } from "@/cases/mad-goats"
 import { caseStudy as fjellveterinaeren } from "@/cases/fjellveterinaeren"
 import { caseStudy as abilityMedia } from "@/cases/ability-media"
-import { caseStudy as akademikernePluss } from "@/cases/akademikerne-pluss"
 
 /** All imported case studies. Add new cases to this list. */
 export const cases: CaseStudy[] = [
@@ -23,7 +22,6 @@ export const cases: CaseStudy[] = [
   madGoats,
   fjellveterinaeren,
   abilityMedia,
-  akademikernePluss,
 ]
 
 export function getCase(slug: string): CaseStudy | undefined {
