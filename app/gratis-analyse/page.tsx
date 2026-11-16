@@ -130,15 +130,12 @@ export default function GratisAnalysePage() {
         <div className="mx-auto grid max-w-[1280px] items-center gap-10 lg:grid-cols-2 lg:gap-20">
           <div>
             <Image
-              src="/SEO-Reboot-1.webp"
-              alt="Mobil som viser Googles AI-oversikt om Reboot"
+              src="/posts/aeo-seo-for-ai-drevne-sokeresultater/1.webp"
+              alt="Mobil som viser Googles søkeside"
               width={1600}
-              height={841}
+              height={900}
               className="aspect-[4/4.2] w-full rounded-[var(--radius)] object-cover object-[60%_50%]"
             />
-            <p className={`mt-3.5 ${eyebrow} tracking-[0.1em] text-foreground/55`}>
-              Googles AI-oversikt ved søk på Reboot
-            </p>
           </div>
           <div>
             <h2 className={h2}>Dette får du</h2>

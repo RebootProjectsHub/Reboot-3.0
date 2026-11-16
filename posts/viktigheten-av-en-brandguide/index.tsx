@@ -8,7 +8,7 @@ export const post: Post = {
   dateISO: "2024-11-14",
   excerpt: "Merkevareidentitet er viktig for å lykkes med bedriften og en brandguide et uunnværlig verktøy for enhver virksomhet.",
   image: "/posts/viktigheten-av-en-brandguide/featured.webp",
-  imageAlt: "Viktigheten av en brandguide",
+  imageAlt: "Vifte med fargeprøver i pastellfarger",
   contentHtml: `<p>Merkevareidentitet er viktig for å lykkes med bedriften og en brandguide et uunnværlig verktøy for enhver virksomhet. Denne veilederen viser hvordan bedriften presenteres visuelt og kommunikativt, sikrer konsistens som er kritisk for å bygge tillit og gjenkjennelse i markedet.</p>
 <p>I dagens konkurranseutsatte næringsliv er ikke konsistent merkevarebygging bare en fordel; det er nødvendig. Merker som opprettholder et enhetlig image på tvers av alle plattformer, øker sjansene for å bygge tillit og gjenkjennelse blant målgruppen. En sammenhengende merkevareidentitet skaper en følelse av kjennskap som fører til kundelojalitet og talspersoner.</p>
 <p>En brandguide, også kjent som en merkeguide, er et omfattende dokument som skisserer nøkkelelementene i en merkevares identitet, inkludert visuell stil, tone og meldingsretningslinjer.</p>

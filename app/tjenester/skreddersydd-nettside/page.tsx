@@ -230,8 +230,8 @@ export default function SkreddersyddNettsidePage() {
               <div className="order-1 flex flex-col gap-5 lg:order-2">
                 <div className="relative min-h-[280px] flex-1 overflow-hidden rounded-[22px] lg:min-h-[380px]">
                   <Image
-                    src="/Reboot-Norge-ipad-scaled.webp"
-                    alt="Nettbrett med Reboots nettside på en benk"
+                    src="/posts/hvor-mye-koster-en-ny-nettside-i-2025/6.webp"
+                    alt="Bærbar PC og kaffekopp på et trebord i et lyst rom"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 420px"

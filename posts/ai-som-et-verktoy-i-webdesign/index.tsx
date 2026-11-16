@@ -8,7 +8,7 @@ export const post: Post = {
   dateISO: "2024-01-30",
   excerpt: "KI er ikke lenger en adskilt spiller i digitale innovasjoner, men en kraftfull partner som jobber side om side med kreative mennesker i webdesign.",
   image: "/posts/ai-som-et-verktoy-i-webdesign/featured.webp",
-  imageAlt: "KI som et verktøy i webdesign",
+  imageAlt: "Bærbar PC som viser en illustrasjon av et menneskehode med en lysende hjerne",
   contentHtml: `<p>KI er ikke lenger en adskilt spiller i digitale innovasjoner; det er en kraftfull partner som arbeider side om side med kreative menneskelige sinn for å forme fremtidens nettdesign.</p>
 <h3>Symbiose av kreativitet og intelligens</h3>
 <p>I hjertet av dagens webdesign ligger en harmonisk balanse mellom menneskelig kreativitet og kunstig intelligens. Kunstig intelligens fungerer som et verktøy som forsterker og utvider designernes kreative evner. Tenk på KI som en pensel i en kunstners hånd. Den utfører ikke arbeidet alene, men er en forlengelse av kunstnerens visjon og ferdigheter. For å finne ut hvordan KI kan forbedre din nettside, sjekk ut <a href="/tjenester" target="_blank" rel="noopener noreferrer">våre tjenester</a> og ta kontakt med oss.</p>

@@ -39,7 +39,7 @@ export const references: Reference[] = [
   {
     name: "Mad Goats",
     caseSlug: "mad-goats",
-    image: "/referanser/mad-goats.webp",
+    image: "/ny-nettside/mad-goats/skjerm-2.webp",
   },
   {
     name: "Ditt Apotek",
@@ -76,7 +76,7 @@ export const references: Reference[] = [
   {
     name: "Messecup",
     caseSlug: "messecup",
-    image: "/referanser/messecup.webp",
+    image: "/ny-nettside/messecup/skjerm-1.webp",
   },
   {
     name: "OG Smil",

@@ -86,7 +86,7 @@ export const post: Post = {
         har til begge.
       </p>
 
-      <PostImage src="/SEO-Reboot-1.webp" alt="Mobil som viser et Google-søk" />
+      <PostImage src="/posts/seo-og-webdesign/6.webp" alt="Google-skilt utenfor et kontorbygg" />
 
       <h2>Hva skjer når noen spør ChatGPT?</h2>
       <p>

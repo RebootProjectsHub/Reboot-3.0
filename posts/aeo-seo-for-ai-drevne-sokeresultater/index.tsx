@@ -12,7 +12,7 @@ export const post: Post = {
   dateISO: "2025-12-29",
   excerpt: "AEO står for Answer Engine Optimization, og handler om å gjøre innholdet ditt forståelig nok til at AI-baserte søkemotorer og assistenter velger det som svar.",
   image: `${IMG}/featured.webp`,
-  imageAlt: "AEO vs SEO for AI-drevne søkeresultater",
+  imageAlt: "Mobil med OpenAI-logoen på skjermen, liggende på et tastatur",
   content: (
     <>
       <p>

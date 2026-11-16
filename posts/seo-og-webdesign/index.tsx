@@ -27,7 +27,7 @@ export const post: Post = {
 <p>Mennesker trekkes mot det intuitive. Et design med få distraksjoner hjelper brukerne med å finne informasjon raskt og effektivt. Ved å prioritere enkelhet kan du fokusere på det som virkelig betyr noe – innholdet. For eksempel har nettsteder med god typografi og strategisk bruk av hvitt rom høyere sannsynlighet for å holde brukerne engasjert, uavhengig av enhet.</p>
 <h3>SEO-fordelene med enkelhet</h3>
 <p>Søkemotorer rangerer nettsteder basert på brukernes opplevelser. En nettside med enkel design har vanligvis lavere fluktfrekvens og høyere tidsbruk per side – to faktorer som forbedrer SEO. I tillegg er en oversiktlig lenkestruktur og en brukervennlig navigasjon viktig for både søkemotorer og brukere. Norske selskaper som Finn.no har utnyttet dette prinsippet for å bygge en struktur som både er lett å forstå og SEO-optimalisert.</p>
-<figure><img src="/posts/seo-og-webdesign/4.webp" alt="SEO og webdesign" loading="lazy" /></figure>
+<figure><img src="/posts/seo-og-webdesign/4.webp" alt="Nettleser med et analyseverktøy åpent, tatt tett på skjermen" loading="lazy" /></figure>
 <h2>SEO på mobil</h2>
 <p>Den mest populære enheten for internettbruk er definitivt mobilen. Derfor må nettstedet ditt være designet med mobilen som utgangspunkt. Å ignorere mobilvennlighet er som å stenge døren for halve kundegrunnlaget ditt.</p>
 <p>Statistikk viser at over halvparten av alle nettsøk i Norge gjøres via mobil. Hvis nettsiden din ikke er optimalisert for mindre skjermer, mister du en betydelig andel av potensielle kunder. Tenk for eksempel på en lokal restaurant som tilbyr takeaway: En dårlig mobilopplevelse kan koste dem verdifulle bestillinger.</p>

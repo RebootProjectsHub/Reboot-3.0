@@ -26,7 +26,7 @@ const navLinks: NavLink[] = [
         label: "SEO & GEO",
         href: "/tjenester/seo-og-ai-svar",
         image: "/meny/seo-geo.webp",
-        alt: "Mobil som viser Reboot i Google-søk",
+        alt: "Mobil som viser Googles søkeside",
       },
       {
         number: "03",

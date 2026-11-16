@@ -8,7 +8,7 @@ export const post: Post = {
   dateISO: "2025-01-27",
   excerpt: "Hva koster en ny nettside i 2025? Guiden går gjennom prisnivåer, hva som påvirker prisen, og forskjellen på byrå, frilanser og nettsidebyggere.",
   image: "/posts/hvor-mye-koster-en-ny-nettside-i-2025/featured.webp",
-  imageAlt: "Hvor mye koster en ny nettside i 2025",
+  imageAlt: "Bærbar PC, åpen notatbok og kaffekopp på et trebord",
   contentHtml: `<p>Denne guiden tar for seg hva du kan forvente av kostnader når du skal få utviklet en ny nettside. Den ser også på hvilke faktorer som påvirker prisen, ulike typer prosjekter og hva du kan få ut av budsjettet ditt.</p>
 <p>Gjennom årene har webdesign vokst enormt og blitt en sentral del av merkevarebygging for både organisasjoner og enkeltpersoner. I dagens digitale landskap er det en økende etterspørsel etter brukervennlige og estetisk tiltalende nettsteder. Dette gjør det viktig å ha innsikt i hva det faktisk koster å utvikle en nettside, og hvilke faktorer som påvirker prisen.</p>
 <p>For kunder gir en forståelse av kostnadene bedre grunnlag for å budsjettere effektivt og sikre at man får rett verdi for pengene, tilpasset prosjektets omfang. Samtidig kan designere og utviklere prise sine tjenester på en konkurransedyktig måte, basert på kompetanse og erfaring, slik at det legges til rette for gode arbeidsforhold og klare forventninger.</p>

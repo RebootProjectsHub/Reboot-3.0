@@ -16,7 +16,7 @@ export const post: Post = {
 <p><strong>Navigasjonslenker: </strong>Hjelp brukerne med å finne viktig innhold raskt.</p>
 <p><strong>Kontaktinformasjon: </strong>Gjør det enkelt for brukere å komme i kontakt.</p>
 <p><strong>Sosiale medier og sertifiseringer:</strong> Bygg tillit og øk nettverksmulighetene.</p>
-<figure><img src="/posts/utforming-av-en-nettside-footer/1.webp" alt="Utforming av en nettside-footer" loading="lazy" /></figure>
+<figure><img src="/posts/utforming-av-en-nettside-footer/1.webp" alt="Skisser av nettsideoppsett på papir" loading="lazy" /></figure>
 <h3>Eksempler på god footerdesign</h3>
 <p>Ved å analysere vellykkede fotere og se på tidligere <a href="/referanser">kundereferanser</a> kan vi identifisere felles trekk som kan inspirere til innovasjon og kreativitet i designet av våre egne sider. Et godt eksempel er hvordan noen nettsteder bruker footeren til å fremheve brukervennlige grensesnitt og responsiv design, som tilpasser seg ulike enheter og skjermstørrelser.</p>
 <h3>Gjennomtenkt design forbedrer brukeropplevelsen</h3>
@@ -28,7 +28,7 @@ export const post: Post = {
 <h3>Viktige elementer</h3>
 <p>En footer gjør mer enn å bare utvide nettstedets geografiske grenser. Den forsterker brukerens interaksjon med nettstedet og dets funksjoner ved å tilby:</p>
 <p>Når man designer en footer, er det flere nøkkelkomponenter som bør vurderes for å sikre at den er både funksjonell og tiltalende:</p>
-<figure><img src="/posts/utforming-av-en-nettside-footer/3.webp" alt="Utforming av en nettside-footer" loading="lazy" /></figure>
+<figure><img src="/posts/utforming-av-en-nettside-footer/3.webp" alt="Bærbar PC med et designprogram åpent" loading="lazy" /></figure>
 <h2>Footer og SEO</h2>
 <p>Optimalisering av footeren på din nettside er avgjørende for både synligheten i søkemotorer og den overordnede brukeropplevelsen. Her er noen strategier for hvordan du kan forbedre disse aspektene.</p>
 <h3>SEO-vennlige linker i footeren</h3>

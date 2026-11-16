@@ -266,8 +266,8 @@ export default function WordPressPage() {
               </h2>
               <div className="relative mt-14 aspect-[1500/1091] overflow-hidden rounded-[var(--radius)]">
                 <Image
-                  src="/Reboot-Norge-ipad-scaled.webp"
-                  alt="WordPress-administrasjonspanel"
+                  src="/posts/hva-er-en-produktdesigner/2.webp"
+                  alt="Bærbar PC med kode på skjermen på et lyst trebord"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"

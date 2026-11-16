@@ -376,8 +376,8 @@ export default function SeoOgAiSvarPage() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden rounded-[var(--radius)]">
               <Image
-                src="/SEO-Reboot-1.webp"
-                alt="Mobil som viser Google-søk etter Reboot"
+                src="/posts/synlighet-i-ai-svar/1.webp"
+                alt="Mobil med en mappe av AI-apper som ChatGPT, Gemini og Claude"
                 width={1200}
                 height={900}
                 className="size-full object-cover"
