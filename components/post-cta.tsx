@@ -36,7 +36,7 @@ export function PostCta({
       <div className="mt-7 flex flex-wrap items-center gap-3">
         <a
           href={primary.href}
-          className="inline-flex items-center rounded-full bg-brand px-[26px] py-3.5 text-base font-light !text-white transition-colors duration-200 hover:bg-[#E8432F] hover:!no-underline"
+          className="inline-flex items-center rounded-full bg-brand px-[26px] py-3.5 text-base font-light !text-white transition-colors duration-200 hover:bg-[#F04A3A] hover:!no-underline"
         >
           {primary.label}
         </a>

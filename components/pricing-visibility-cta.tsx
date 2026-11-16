@@ -36,7 +36,7 @@ export function PricingVisibilityCta() {
           <div className="flex flex-wrap items-center gap-7 lg:justify-end">
             <a
               href="/tjenester/seo-og-ai-svar#priser"
-              className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
+              className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#F04A3A]"
             >
               Se SEO-priser
             </a>

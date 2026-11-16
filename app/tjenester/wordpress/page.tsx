@@ -195,7 +195,7 @@ export default function WordPressPage() {
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
           <a
             href="/kontakt"
-            className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#E8432F]"
+            className="inline-flex items-center rounded-full bg-brand px-[30px] py-4 text-base font-light text-white transition-colors duration-200 hover:bg-[#F04A3A]"
           >
             Fortell oss om ditt prosjekt
           </a>
