@@ -9,7 +9,8 @@ export const references: Reference[] = [
   {
     name: "OBOS",
     caseSlug: "obos",
-    image: "/referanser/obos.webp",
+    image: "/work-obos.webp",
+    fill: true,
   },
   {
     name: "Höegh Evi",
@@ -25,7 +26,8 @@ export const references: Reference[] = [
   {
     name: "Runner's World",
     caseSlug: "runners-world",
-    image: "/referanser/runners-world.webp",
+    image: "/ny-nettside/runners-world/hero.webp",
+    fill: true,
   },
   {
     name: "Ved På Døra",
@@ -41,7 +43,8 @@ export const references: Reference[] = [
   {
     name: "Mad Goats",
     caseSlug: "mad-goats",
-    image: "/referanser/mad-goats.webp",
+    image: "/ny-nettside/mad-goats/hero.webp",
+    fill: true,
   },
   {
     name: "Ditt Apotek",
