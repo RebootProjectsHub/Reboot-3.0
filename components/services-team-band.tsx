@@ -7,8 +7,8 @@ export function ServicesTeamBand() {
       <div className="relative mx-auto max-w-[1280px]">
         <div className="relative aspect-[3/2] overflow-hidden rounded-[26px] sm:aspect-auto sm:h-[clamp(420px,42vw,620px)]">
           <Image
-            src="/posts/hvordan-bruke-ki-i-webdesign/2.webp"
-            alt="Lyst kontorlandskap med trebjelker i taket og sittegrupper"
+            src="/Felles5.webp"
+            alt="Lyst kontorbygg med trapp og sittegrupper"
             fill
             className="size-full object-cover"
           />

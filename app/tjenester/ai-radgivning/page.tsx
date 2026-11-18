@@ -211,8 +211,8 @@ export default function AiRadgivningPage() {
               </h2>
               <div className="relative mt-6 aspect-[3/2] overflow-hidden rounded-[var(--radius)]">
                 <Image
-                  src="/posts/hvordan-bruke-ki-i-webdesign/2.webp"
-                  alt="Lyst kontorlandskap med trebjelker i taket og sittegrupper"
+                  src="/Felles5.webp"
+                  alt="Lyst kontorbygg med trapp og sittegrupper"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 45vw"
