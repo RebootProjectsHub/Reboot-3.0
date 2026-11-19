@@ -102,7 +102,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://use.typekit.net" />
         <link rel="preconnect" href="https://use.typekit.net" crossOrigin="" />
         <link rel="preconnect" href="https://p.typekit.net" />
-        <link rel="stylesheet" href="https://use.typekit.net/aah4tvk.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/wat5ztj.css" />
       </head>
       <body className="font-sans antialiased">
         <script
