@@ -51,7 +51,7 @@ export const caseStudy: CaseStudy = {
         Google. Før vi flyttet noe, målte vi rangering, trafikk og indekserte
         sider for hele nettstedet.
       </p>
-      <ul className="mb-5 list-disc space-y-1 pl-6 marker:text-brand">
+      <ul>
         <li>Over 450 gamle adresser ble gjennomgått, og alle med verdi fikk en direkte videresending</li>
         <li>Sidetitler, beskrivelser og språkkoblinger mellom engelsk og norsk ble ført videre</li>
         <li>2 206 adresser ble testet på lanseringsdagen, uten feil</li>
@@ -65,7 +65,7 @@ export const caseStudy: CaseStudy = {
         er nå flyttet fra delt webhotell til en egen skyserver hos Google Cloud,
         med caching på serveren og egen cache for mobil.
       </p>
-      <ul className="mb-5 list-disc space-y-1 pl-6 marker:text-brand">
+      <ul>
         <li>Mobilscore i Google Lighthouse på forsiden: fra 37 til 97</li>
         <li>Tid til største innhold vises på mobil: fra 17 sekunder til 1,9 sekunder</li>
         <li>Forsiden veier rundt 0,3 MB, mot 31 MB før</li>
