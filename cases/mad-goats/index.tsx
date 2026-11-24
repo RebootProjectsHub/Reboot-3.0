@@ -5,57 +5,90 @@ const IMG = "/ny-nettside/mad-goats"
 export const caseStudy: CaseStudy = {
   slug: "mad-goats",
   name: "Mad Goats",
-  tagline: "Friskere og mer moderne design, med forbedret Google-rangering",
-  metaTitle: "Mad Goats – redesign med bedre ytelse og SEO",
+  tagline: "Ny nettside på et raskere teknisk fundament, bygget for synlighet i Google",
+  metaTitle: "Mad Goats – raskere nettside med fokus på SEO",
   metaDescription:
-    "Friskere og mer moderne design for Mad Goats, med raskere lastetid, forbedret Google-rangering og en nettside de enkelt oppdaterer selv.",
+    "Ny WordPress-løsning for Mad Goats: mobilscore fra 37 til 97, forsiden fra 31 MB til 0,3 MB, og en SEO-struktur som bygger videre på rangeringen de har.",
   url: "https://madgoats.no",
-  services: ["WordPress", "Moderne redesign", "Økt ytelse", "SEO", "Enkel redigering av innhold"],
+  services: ["WordPress", "SEO-migrering", "Hastighet", "Hosting og drift", "Flerspråklig nettside"],
   image: `${IMG}/hero.webp`,
-  imageAlt: "Mad Goats",
+  imageAlt: "Kajakkpadlere på Akerselva under en bro i Oslo",
   gallery: [
-    { src: `${IMG}/skjerm-2.webp`, alt: "Forsiden til madgoats.no" },
-    { src: `${IMG}/skjerm-3.webp`, alt: "Madgoats.no på mobil", portrait: true },
-    { src: `${IMG}/skjerm-4.webp`, alt: "Madgoats.no på mobil, alternativ side", portrait: true },
-    { src: `${IMG}/skjerm-5.webp`, alt: "Madgoats.no på mobil, produktside", portrait: true },
-    { src: `${IMG}/skjerm-6.webp`, alt: "Mad Goats" },
+    { src: `${IMG}/skjerm-1.webp`, alt: "Forsiden til nye madgoats.no" },
+    { src: `${IMG}/skjerm-2.webp`, alt: "Forsiden på mobil", portrait: true },
+    { src: `${IMG}/skjerm-3.webp`, alt: "Oslo-siden på mobil", portrait: true },
+    { src: `${IMG}/skjerm-4.webp`, alt: "Sjoa-siden på mobil", portrait: true },
+    { src: `${IMG}/skjerm-6.webp`, alt: "Mad Goats på Akerselva" },
   ],
   content: (
     <>
       <p>
-        Mad Goats ønsket å oppgradere deres nettside med et friskere og mer moderne
-        design, samtidig som de bevarte sin høye rangering på Google. De var ute
-        etter å revitalisere nettsidens estetikk og funksjonalitet.
+        Mad Goats driver kajakk, packraft, SUP, rafting og badstue i Oslo og på
+        Sjoa. Nettsiden har mye innhold som allerede rangerer godt i Google, og
+        de fleste kundene kommer fra mobil. Vi bygget første versjon av
+        nettsiden i 2024. Nå var det tid for et sterkere teknisk fundament, i stedet for å
+        fortsette å optimalisere det gamle oppsettet bit for bit.
       </p>
 
-      <h2>Raskere, enklere, bedre</h2>
+      <h2>To destinasjoner, tydelig struktur</h2>
       <p>
-        Reboot utviklet et nytt og moderne nettsted basert på eksisterende innhold,
-        men med forbedret brukervennlighet og design skapt i Adobe XD.
-        Implementeringen ble gjort i et WordPress-utviklingsmiljø. For å øke
-        ytelsen, ble hosting flyttet til en raskere leverandør, og avansert
-        caching-teknologi ble implementert. SEO-analyser har blitt gjennomført og
-        vi fortsetter SEO-arbeidet for å sikre at nettsiden fortsetter å rangere
-        høyt på Google.
+        Forsiden gir et enkelt valg mellom Oslo og Sjoa. Hver destinasjon har sin
+        egen side med de viktigste aktivitetene og booking, og derfra går man
+        videre til hver aktivitet. Private arrangementer er samlet på én side.
+        Nettsiden er på engelsk, med norske versjoner av de viktigste sidene.
+      </p>
+      <p>
+        Den nye løsningen er bygget i WordPress med Gutenberg-editoren, uten
+        sidebygger. Det gir mindre kode på hver side, og Mad Goats redigerer
+        sider og innlegg som før.
       </p>
 
-      <h2>Et kontinuerlig samarbeid</h2>
+      <h2>Synligheten i Google flyttet med</h2>
       <p>
-        En kontinuerlig og åpen kommunikasjon mellom Reboot og Mad Goats var
-        nøkkelen til å møte deres behov og forventninger effektivt. Dette
-        samarbeidet sikret en smidig overgang til den nye plattformen. Vi ser frem
-        til å fortsette dette partnerskapet for å videreutvikle og optimalisere
-        nettstedet basert på brukerfeedback og teknologiske fremskritt.
+        Mad Goats har bygget opp sterke plasseringer i Google over flere år, og
+        den nye nettsiden skulle bygge videre på dem. Før vi flyttet noe, målte
+        vi rangering, trafikk og indekserte sider for hele nettstedet.
+      </p>
+      <ul>
+        <li>Over 450 gamle adresser ble gjennomgått, og alle med verdi fikk en direkte videresending</li>
+        <li>Sidetitler, beskrivelser og språkkoblinger mellom engelsk og norsk ble ført videre</li>
+        <li>2 206 adresser ble testet på lanseringsdagen, uten feil</li>
+        <li>Rangering og indeksering følges tett de første ukene etter lansering</li>
+      </ul>
+
+      <h2>Fra 37 til 97 på mobil</h2>
+      <p>
+        Den gamle forsiden lastet en video på 28 MB ved første visning, og
+        tunge skript fra temaet og eksterne widgets bremset alle sider. Nettsiden
+        er nå flyttet fra delt webhotell til en egen skyserver hos Google Cloud,
+        med caching på serveren og egen cache for mobil.
+      </p>
+      <ul>
+        <li>Mobilscore i Google Lighthouse på forsiden: fra 37 til 97</li>
+        <li>Tid til største innhold vises på mobil: fra 17 sekunder til 1,9 sekunder</li>
+        <li>Forsiden veier rundt 0,3 MB, mot 31 MB før</li>
+        <li>100 i tilgjengelighet på alle sidene vi målte</li>
+      </ul>
+      <p>
+        Bilder lagres i AVIF og lastes først når de trengs. Anmeldelser og
+        sosiale medier vises uten tunge tredjeparts-widgets, og
+        samtykkebanneret er bygget inn i temaet.
       </p>
 
-      <h2>Design som fanger interessen</h2>
+      <h2>Booking, nyhetsbrev og sporing</h2>
       <p>
-        Mad Goats fikk en betydelig oppgradert nettside som laster raskere, ser
-        bedre ut og er enklere å håndtere. Vi jobber kontinuerlig med å forbedre
-        deres SEO-posisjon. Den nye nettsiden har forbedret brukeropplevelsen,
-        spesielt med det nye videoinnholdet og det responsive designet. De fleste
-        av deres kunder er på mobil, og det nye designet er spesialtilpasset for
-        dette.
+        Bookingknappene går til BookSpot, nyhetsbrevet til Mailchimp, og Google
+        Analytics og Google Ads er satt opp med samtykke, slik at Mad Goats ser
+        hvilke klikk som fører til bookinger.
+      </p>
+
+      <h2>Videre SEO-arbeid</h2>
+      <p>
+        Vi fortsetter med SEO etter lansering, med fokus på Oslo, Sjoa og de
+        viktigste aktivitetssøkene. Sider som dekker samme tema slås sammen til
+        én sterkere side, og blogginnleggene oppdateres fortløpende. Vi jobber
+        også med synlighet utenfor nettsiden, siden stadig flere søk skjer i
+        AI-verktøy.
       </p>
     </>
   ),
