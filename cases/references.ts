@@ -44,7 +44,7 @@ export const references: Reference[] = [
   {
     name: "Mad Goats",
     caseSlug: "mad-goats-2026",
-    image: "/ny-nettside/mad-goats-2026/hero.webp",
+    image: "/ny-nettside/mad-goats/hero.webp",
     fill: true,
   },
   {

@@ -6,20 +6,20 @@ const IMG = "/ny-nettside/mad-goats-2026"
 export const caseStudy: CaseStudy = {
   slug: "mad-goats-2026",
   name: "Mad Goats",
-  tagline: "Ny nettside på et raskere teknisk fundament, uten å miste rangering i Google",
-  metaTitle: "Mad Goats – raskere nettside uten tap av rangering",
+  tagline: "Ny nettside på et raskere teknisk fundament, bygget for synlighet i Google",
+  metaTitle: "Mad Goats – raskere nettside med fokus på SEO",
   metaDescription:
-    "Ny WordPress-løsning for Mad Goats: mobilscore fra 37 til 97, forsiden fra 31 MB til 0,3 MB, og alle verdifulle gamle adresser videresendt.",
+    "Ny WordPress-løsning for Mad Goats: mobilscore fra 37 til 97, forsiden fra 31 MB til 0,3 MB, og en SEO-struktur som bygger videre på rangeringen de har.",
   url: "https://madgoats.no",
   services: ["WordPress", "SEO-migrering", "Hastighet", "Hosting og drift", "Flerspråklig nettside"],
-  image: `${IMG}/hero.webp`,
-  imageAlt: "Familie i raftingbåt i stryk på Sjoa",
+  image: "/ny-nettside/mad-goats/hero.webp",
+  imageAlt: "Kajakkpadlere på Akerselva under en bro i Oslo",
   gallery: [
     { src: `${IMG}/skjerm-1.webp`, alt: "Forsiden til nye madgoats.no" },
     { src: `${IMG}/skjerm-2.webp`, alt: "Forsiden på mobil", portrait: true },
     { src: `${IMG}/skjerm-3.webp`, alt: "Oslo-siden på mobil", portrait: true },
     { src: `${IMG}/skjerm-4.webp`, alt: "Sjoa-siden på mobil", portrait: true },
-    { src: `${IMG}/skjerm-5.webp`, alt: "Aktivitetssiden for Akerselva" },
+    { src: "/ny-nettside/mad-goats/skjerm-6.webp", alt: "Mad Goats på Akerselva" },
   ],
   content: (
     <>
@@ -45,11 +45,11 @@ export const caseStudy: CaseStudy = {
         sider og innlegg som før.
       </p>
 
-      <h2>Ingen tapt rangering</h2>
+      <h2>Synligheten i Google flyttet med</h2>
       <p>
-        Kravet fra Mad Goats var klart: flyttingen skulle ikke koste plasser i
-        Google. Før vi flyttet noe, målte vi rangering, trafikk og indekserte
-        sider for hele nettstedet.
+        Mad Goats har bygget opp sterke plasseringer i Google over flere år, og
+        den nye nettsiden skulle bygge videre på dem. Før vi flyttet noe, målte
+        vi rangering, trafikk og indekserte sider for hele nettstedet.
       </p>
       <ul>
         <li>Over 450 gamle adresser ble gjennomgått, og alle med verdi fikk en direkte videresending</li>
