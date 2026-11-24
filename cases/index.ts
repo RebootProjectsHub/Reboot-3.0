@@ -7,6 +7,7 @@ import { caseStudy as runnersWorld } from "@/cases/runners-world"
 import { caseStudy as osloCityLegesenter } from "@/cases/oslo-city-legesenter"
 import { caseStudy as messecup } from "@/cases/messecup"
 import { caseStudy as madGoats } from "@/cases/mad-goats"
+import { caseStudy as madGoats2026 } from "@/cases/mad-goats-2026"
 import { caseStudy as fjellveterinaeren } from "@/cases/fjellveterinaeren"
 import { caseStudy as abilityMedia } from "@/cases/ability-media"
 
@@ -20,6 +21,7 @@ export const cases: CaseStudy[] = [
   osloCityLegesenter,
   messecup,
   madGoats,
+  madGoats2026,
   fjellveterinaeren,
   abilityMedia,
 ]
