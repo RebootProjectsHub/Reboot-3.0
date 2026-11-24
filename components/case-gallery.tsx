@@ -142,7 +142,7 @@ export function CaseGallery({ gallery }: { gallery: GalleryItem[] }) {
       </div>
 
       {/* Desktop/tablet: original wrapped layout, unchanged. */}
-      <div className="hidden items-stretch justify-center gap-5 sm:flex sm:flex-wrap">
+      <div className="hidden items-stretch justify-center gap-x-5 gap-y-12 sm:flex sm:flex-wrap">
         {gallery.map((shot) =>
           shot.video ? (
             <video
