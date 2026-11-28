@@ -88,12 +88,12 @@ export function NewestDeliveries() {
           </div>
 
           <div className="flex min-w-0 flex-col gap-5">
-            <div className="overflow-hidden rounded-[14px] bg-[#e3d2bf]">
+            <div className="overflow-hidden rounded-[14px] bg-[#5c2a36]">
               <div className="flex h-[34px] items-center gap-[7px] px-3.5">
-                <span className="size-2 rounded-full bg-ink/45" />
-                <span className="size-2 rounded-full bg-ink/45" />
-                <span className="size-2 rounded-full bg-ink/45" />
-                <span className="ml-2.5 font-mono text-[11px] text-ink">
+                <span className="size-2 rounded-full bg-ink-foreground/35" />
+                <span className="size-2 rounded-full bg-ink-foreground/35" />
+                <span className="size-2 rounded-full bg-ink-foreground/35" />
+                <span className="ml-2.5 font-mono text-[11px] text-ink-foreground/75">
                   {current.domain}
                 </span>
               </div>
@@ -119,7 +119,7 @@ export function NewestDeliveries() {
                 href={current.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center rounded-full bg-ink-foreground px-[22px] py-2.5 text-[15px] text-ink transition-opacity hover:opacity-85"
+                className="inline-flex min-h-11 items-center rounded-full border border-ink-foreground/30 px-[22px] py-2.5 text-[15px] text-ink-foreground transition-colors hover:border-ink-foreground/50"
               >
                 Besøk nettsiden
               </a>
