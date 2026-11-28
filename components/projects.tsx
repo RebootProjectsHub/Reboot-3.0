@@ -21,7 +21,7 @@ const projects: Project[] = [
   },
   {
     kicker: "Höegh EVI",
-    title: "Hosting, drift og Wordpress nettside for Höegh Evi",
+    title: "Hosting, drift og nettside for Höegh Evi",
     image: "/work-hoegh.webp",
     href: "/ny-nettside/hoegh-evi",
   },
