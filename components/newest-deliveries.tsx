@@ -44,17 +44,17 @@ export function NewestDeliveries() {
   return (
     <section id="nyeste-leveranser" className="px-4 py-6 sm:px-6 lg:px-10">
       <div className="mx-auto max-w-[1280px]">
-        <div className="grid gap-10 rounded-[var(--radius)] border border-border bg-card px-6 py-10 sm:px-10 sm:py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-14 lg:p-12">
+        <div className="grid gap-10 rounded-[var(--radius)] bg-ink px-6 py-10 sm:px-10 sm:py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-14 lg:p-12">
           <div className="flex flex-col justify-between gap-10">
-            <h2 className="text-balance font-heading text-4xl font-light leading-[1.08] text-foreground md:text-5xl">
+            <h2 className="text-balance font-heading text-4xl font-light leading-[1.08] text-ink-foreground md:text-5xl">
               Våre 3 nyeste leveranser
             </h2>
 
-            <ul className="flex flex-col border-b border-foreground/20">
+            <ul className="flex flex-col border-b border-ink-foreground/25">
               {deliveries.map((d, i) => {
                 const isActive = i === active
                 return (
-                  <li key={d.name} className="border-t border-foreground/20">
+                  <li key={d.name} className="border-t border-ink-foreground/25">
                     <button
                       type="button"
                       onClick={() => setActive(i)}
@@ -62,21 +62,21 @@ export function NewestDeliveries() {
                       onFocus={() => setActive(i)}
                       aria-pressed={isActive}
                       className={`flex w-full items-center gap-5 py-5 text-left transition-colors ${
-                        isActive ? "text-foreground" : "text-muted-foreground"
+                        isActive ? "text-ink-foreground" : "text-ink-foreground/70"
                       }`}
                     >
-                      <span className="font-mono text-xs tracking-[0.14em] text-muted-foreground">
+                      <span className="font-mono text-xs tracking-[0.14em] text-ink-foreground/70">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <span className="flex flex-1 flex-col gap-1">
                         <span className="font-heading text-3xl leading-[1.1]">{d.name}</span>
-                        <span className="text-[15px] leading-snug text-muted-foreground">
+                        <span className="text-[15px] leading-snug text-ink-foreground/70">
                           {d.released}
                         </span>
                       </span>
                       <span
                         aria-hidden
-                        className={`size-3 shrink-0 rounded-full border border-foreground transition-colors ${
+                        className={`size-3 shrink-0 rounded-full border border-ink-foreground transition-colors ${
                           isActive ? "bg-brand" : "bg-transparent"
                         }`}
                       />
@@ -88,12 +88,12 @@ export function NewestDeliveries() {
           </div>
 
           <div className="flex min-w-0 flex-col gap-5">
-            <div className="overflow-hidden rounded-[14px] bg-ink">
+            <div className="overflow-hidden rounded-[14px] bg-[#e3d2bf]">
               <div className="flex h-[34px] items-center gap-[7px] px-3.5">
-                <span className="size-2 rounded-full bg-ink-foreground/45" />
-                <span className="size-2 rounded-full bg-ink-foreground/45" />
-                <span className="size-2 rounded-full bg-ink-foreground/45" />
-                <span className="ml-2.5 font-mono text-[11px] text-ink-foreground">
+                <span className="size-2 rounded-full bg-ink/45" />
+                <span className="size-2 rounded-full bg-ink/45" />
+                <span className="size-2 rounded-full bg-ink/45" />
+                <span className="ml-2.5 font-mono text-[11px] text-ink">
                   {current.domain}
                 </span>
               </div>
@@ -119,13 +119,13 @@ export function NewestDeliveries() {
                 href={current.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center rounded-full bg-primary px-[22px] py-2.5 text-[15px] text-primary-foreground transition-opacity hover:opacity-85"
+                className="inline-flex min-h-11 items-center rounded-full bg-ink-foreground px-[22px] py-2.5 text-[15px] text-ink transition-opacity hover:opacity-85"
               >
                 Besøk nettsiden
               </a>
               <a
                 href="/referanser"
-                className="inline-flex min-h-11 items-center gap-1.5 text-[15px] text-foreground transition-colors hover:text-muted-foreground"
+                className="inline-flex min-h-11 items-center gap-1.5 text-[15px] text-ink-foreground transition-colors hover:text-ink-foreground/70"
               >
                 Se flere referanser
                 <ArrowUpRight className="size-4" aria-hidden />
