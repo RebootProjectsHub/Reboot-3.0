@@ -4,7 +4,7 @@ import { TeamBand } from "@/components/team-band"
 import { ClientLogosMobile } from "@/components/client-logos"
 import { WhatWeDo } from "@/components/what-we-do"
 import { Services } from "@/components/services"
-import { WhoWeAre } from "@/components/who-we-are"
+import { NewestDeliveries } from "@/components/newest-deliveries"
 import { Projects } from "@/components/projects"
 import { WorkWithUs } from "@/components/work-with-us"
 import { Testimonials } from "@/components/testimonials"
@@ -34,9 +34,9 @@ export default function Page() {
       <ClientLogosMobile />
       <WhatWeDo />
       <Services />
-      <WhoWeAre />
-      <Projects />
+      <NewestDeliveries />
       <WorkWithUs />
+      <Projects />
       <Testimonials />
       <Articles />
       <Cta />

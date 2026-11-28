@@ -47,7 +47,7 @@ export function Projects() {
       <div className="mx-auto max-w-[1280px]">
         <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <h2 className="max-w-2xl text-balance font-heading text-4xl font-normal leading-[1.1] text-foreground md:text-5xl">
-            Noen av våre leveranser
+            Større løsninger vi har levert
           </h2>
           <a
             href="/referanser"
