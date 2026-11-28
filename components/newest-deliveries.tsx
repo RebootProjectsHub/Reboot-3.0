@@ -51,7 +51,9 @@ export function NewestDeliveries() {
                 Høst/vinter 2026
               </p>
               <h2 className="text-balance font-heading text-3xl font-light leading-[1.12] text-ink-foreground md:text-[34px]">
-                Våre 3 nyeste leveranser
+                Våre 3 nyeste
+                <br />
+                leveranser
               </h2>
             </div>
 
