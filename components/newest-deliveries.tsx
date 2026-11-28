@@ -42,7 +42,7 @@ export function NewestDeliveries() {
   const current = deliveries[active]
 
   return (
-    <section id="nyeste-leveranser" className="px-4 py-6 sm:px-6 lg:px-10">
+    <section id="nyeste-leveranser" className="px-4 py-12 sm:px-6 lg:px-10 lg:py-16">
       <div className="mx-auto max-w-[1280px]">
         <div className="grid gap-10 rounded-[var(--radius)] bg-ink px-6 py-10 sm:px-10 sm:py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-14 lg:p-12">
           <div className="flex flex-col justify-between gap-10">
