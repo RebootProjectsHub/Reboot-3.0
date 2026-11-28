@@ -46,9 +46,14 @@ export function NewestDeliveries() {
       <div className="mx-auto max-w-[1280px]">
         <div className="grid gap-10 rounded-[var(--radius)] bg-ink px-6 py-10 sm:px-10 sm:py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-14 lg:p-12">
           <div className="flex flex-col justify-between gap-10">
-            <h2 className="text-balance font-heading text-4xl font-light leading-[1.08] text-ink-foreground md:text-5xl">
-              Våre 3 nyeste leveranser
-            </h2>
+            <div className="flex flex-col gap-4">
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-ink-foreground/70">
+                Høst/vinter 2026
+              </p>
+              <h2 className="text-balance font-heading text-3xl font-light leading-[1.12] text-ink-foreground md:text-[34px]">
+                Våre 3 nyeste leveranser
+              </h2>
+            </div>
 
             <ul className="flex flex-col border-b border-ink-foreground/25">
               {deliveries.map((d, i) => {
